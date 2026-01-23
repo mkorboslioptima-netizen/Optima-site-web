@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.home-two-nav-item {
+  @apply relative overflow-hidden transition-all duration-300 border-b border-transparent before:block hover:before:w-full before:overflow-hidden before:border-b before:text-purple before:border-purple before:absolute before:w-0 before:transition-all before:duration-300 before:-bottom-0 before:text-base before:leading-5 before:font-medium before:font-inter;
+}
+
+.home-two-btn-bg {
+  @apply inline-flex justify-center gap-2 px-[30px]  rounded-[41px]  items-center border overflow-hidden  relative before:block before:w-[300px] before:h-[300px] before:absolute before:bg-white before:-top-[400px] before:rotate-45 hover:before:-top-[100px] transition-all duration-300 before:transition-all before:duration-1000 before:z-0 z-10 hover:text-blue-seo after:block after:w-[300px] after:h-[300px] after:absolute after:bg-white after:-bottom-[400px] after:rotate-45 hover:after:-bottom-[100px]  after:transition-all after:duration-1000 after:z-0;
+}
+
+@layer components {
+  .home-two-btn-white {
+    @apply flex justify-center gap-2 px-5 sm:px-10 py-2 sm:py-[11px] rounded-[40px] bg-transparent items-center border overflow-hidden border-white relative before:block before:w-[320px] before:h-[320px] before:absolute before:bg-white before:-top-[100px] before:rotate-45 hover:before:-top-[400px] transition-all duration-300 before:transition-all before:duration-1000 before:z-0 z-10 text-blue-seo hover:text-blue-seo after:block after:w-[320px] after:h-[320px] after:absolute after:bg-white after:-bottom-[100px] after:rotate-45 hover:after:-bottom-[400px]  after:transition-all after:duration-1000 after:z-0;
+  }
+  .home-two-btn-white-rev {
+    @apply flex justify-center gap-2 px-10 py-[13px] rounded-[40px] bg-transparent items-center border overflow-hidden border-white relative before:block before:w-[300px] before:h-[300px] before:absolute before:bg-white before:-top-[400px] before:rotate-45 hover:before:-top-[100px] transition-all duration-300 before:transition-all before:duration-1000 before:z-0 z-10 text-blue-seo hover:text-blue-seo after:block after:w-[300px] after:h-[300px] after:absolute after:bg-white after:-bottom-[400px] after:rotate-45 hover:after:-bottom-[100px]  after:transition-all after:duration-1000 after:z-0;
+  }
+}
+
+.home-two-btn-white-rev-sm {
+  @apply py-2.5 px-7;
+}
+.section-title-top-tag {
+  @apply text-purple font-medium px-5 py-3 bg-main-gray border border-[#e7e3fa] leading-none rounded-full inline-block;
+}
+.section-title-top-tag-two {
+  @apply px-5 py-3 text-white font-medium rounded-full border border-[#2D2539] bg-white bg-opacity-5 inline-block leading-none;
+}
+.common-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* paginations  */
+
+.h2-testimonial-pagination {
+  @apply flex items-center justify-center gap-2;
+}
+
+.h2-testimonial-pagination > .swiper-pagination-bullet {
+  @apply transition-all duration-200 bg-blue-seo/70;
+}
+.h2-testimonial-pagination > .swiper-pagination-bullet-active {
+  @apply bg-blue-seo;
+}
+
+.h3-testimonial-pagination > .swiper-pagination-bullet {
+  @apply transition-all duration-200 bg-purple/70;
+}
+.h3-testimonial-pagination > .swiper-pagination-bullet-active {
+  @apply bg-purple;
+}
+
+.btn-gradient {
+  position: relative;
+  background: linear-gradient(94.31deg, #794aff 5.85%, #1904e5 95.44%);
+}
+.btn-gradient::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(60.9deg, #06cff1 6.71%, #defa8e 92.09%);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.btn-gradient:hover::before {
+  opacity: 1;
+}
+
+/* h5 button active  */
+
+.h5-service-btn.active-tab {
+  @apply bg-buisness-red shadow-business-red;
+}
+.h5-service-btn.active-tab > span {
+  @apply text-white;
+}
+.h5-service-btn.active-tab > span > svg > path {
+  @apply fill-white;
+}
+
+.h5-service-btn.active-tab > span > svg > mask > path {
+  @apply fill-white;
+}
+.h5-service-btn.active-tab > span > svg > g > path {
+  @apply stroke-white;
+}
+
+@layer components {
+  .h6_card_hover {
+    @apply relative before:block before:w-[500px] before:aspect-square before:-top-[350px] before:left-0 before:-z-10 before:absolute before:bg-orange before:scale-x-0 hover:before:scale-x-100 before:origin-top-left before:transition-all before:duration-1000 before:rotate-45 after:block after:w-[500px] after:aspect-square after:-bottom-[350px] after:right-0 after:-z-10 after:absolute after:bg-orange after:scale-x-0 hover:after:scale-x-100 after:origin-bottom-right after:transition-all after:duration-1000 after:rotate-45 overflow-hidden;
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 1 !important;
+  @apply bg-opacity-30;
+}
+.swiper-button-disabled path {
+  @apply stroke-green-dark;
+}
+
+.active-h7-faq h1 {
+  @apply text-it-blue;
+}
+
+.h10-service-pagination .swiper-pagination-bullet {
+  background: #00df8e;
+}
+
+.course-description ul {
+  @apply flex flex-wrap mt-5 w-full gap-[40px];
+}
+
+.course-description ul li {
+  @apply w-1/2 flex relative flex-1 gap-6 min-w-[300px];
+}
+
+.course-description ul li {
+  @apply before:min-w-[18px] before:min-h-[18px] before:w-[18px] before:h-[18px]  before:aspect-square before:rounded-full before:overflow-hidden before:bg-purple before:flex before:justify-center before:flex-col before:items-center before:content-[url('./assets/images/course/tick.png')] before:mt-1.5 text-paragraph;
+}
+
+.course-description ol {
+  @apply mt-4;
+}
+
+.course-description ol li {
+  @apply before:content-[url('./assets/images/course/arrow-right.png')] before:mt-2  text-paragraph flex items-center gap-2;
+}
+
+.dropdown-deActive {
+  @apply h-0;
+}
