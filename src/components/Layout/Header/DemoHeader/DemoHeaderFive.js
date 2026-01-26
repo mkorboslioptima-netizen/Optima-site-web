@@ -1,6 +1,8 @@
 import React from "react";
 import { demoLinkData, pagesLinkData, Horoquartzlink,Idemialink} from "../data";
 import { Link } from "react-router-dom";
+import LogoOptima from '../../../../assets/images/home-five/logo_optima.png';
+import LogoOptima2 from '../../../../assets/images/home-five/Optima.png';
 
 export default function DemoHeaderFour() {
   return (
@@ -8,14 +10,16 @@ export default function DemoHeaderFour() {
       <div className="header-wrapper w-full fixed left-0 top-0 z-20 bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 xl:block hidden">
         <div className="relative z-20 mx-auto theme-container">
           <div className="w-full h-[95px] flex justify-between items-center">
-            <div className="flex space-x-[100px] items-center">
+              <div className="flex items-center space-x-8">
               <div>
                 <Link to="/">
-                  <img src="/assets/images/home-four/logo.webp" alt="logo" />
+                  <img src={LogoOptima2} alt="logo" className="   "  />
+                        
+
                 </Link>
               </div>
               <div>
-                <ul className="flex items-center space-x-10">
+                <ul className="flex items-center space-x-12">
                   <a
                   href="#"
                    className="
@@ -53,7 +57,7 @@ export default function DemoHeaderFour() {
                   after:left-0
                   after:-bottom-1
                   after:w-0
-                  after:h-[2x]
+                  after:h-[2px]
                   after:bg-[#E11D48]
                   after:transition-all
                   after:duration-300
@@ -84,7 +88,7 @@ export default function DemoHeaderFour() {
                         {pagesLinkData.map((item, index) => (
                           <li key={index} className="relative py-1">
                             <Link
-                              className="relative leading-5 text-white home-two-nav-item hover:text-purple w-fit"
+                              className="relative leading-5 text-white home-two-nav-item hover:text-[#E11D48] w-fit"
                               to={item.pageLink}
                             >
                               {item.linkLabel}
@@ -139,7 +143,7 @@ export default function DemoHeaderFour() {
                         {Horoquartzlink.map((item, index) => (
                           <li key={index} className="relative py-1">
                             <Link
-                              className="relative leading-5 text-white home-two-nav-item hover:text-purple w-fit"
+                              className="relative leading-5 text-white home-two-nav-item hover:text-[#E11D48] w-fit"
                               to={item.pageLink}
                             >
                               {item.linkLabel}
@@ -194,7 +198,7 @@ export default function DemoHeaderFour() {
                         {Idemialink.map((item, index) => (
                           <li key={index} className="relative py-1">
                             <Link
-                              className="relative leading-5 text-white home-two-nav-item hover:text-purple w-fit"
+                              className="relative leading-5 text-white home-two-nav-item hover:text-[#E11D48] w-fit"
                               to={item.pageLink}
                             >
                               {item.linkLabel}

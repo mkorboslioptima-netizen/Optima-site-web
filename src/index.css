@@ -10,7 +10,10 @@
 }
 
 .home-two-nav-item {
-  @apply relative overflow-hidden transition-all duration-300 border-b border-transparent before:block hover:before:w-full before:overflow-hidden before:border-b before:text-purple before:border-purple before:absolute before:w-0 before:transition-all before:duration-300 before:-bottom-0 before:text-base before:leading-5 before:font-medium before:font-inter;
+  @apply relative overflow-hidden transition-all duration-300 border-b border-transparent 
+    before:block before:w-0 before:overflow-hidden before:border-b before:border-white before:absolute 
+    before:transition-all before:duration-300 before:-bottom-0 before:text-base before:leading-5 
+    before:font-medium before:font-inter hover:before:w-full;
 }
 
 .home-two-btn-bg {
