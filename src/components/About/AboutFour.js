@@ -1,7 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
-
+import Logo from '../../assets/images/home-five/hero/g.jpg';
 export default function AboutFour() {
   return (
     <section id="about">
@@ -10,24 +10,23 @@ export default function AboutFour() {
           <div className="col-span-6">
             <div className="max-w-[476px]">
               <h1 className="border text-main-black border-buisness-red/10 py-0.5 px-5 rounded-[30px] w-fit bg-buisness-red/5 font-medium">
-                About Company
+                Qui sommes-nous
               </h1>
               <h2 className="pt-5 font-semibold text-24 sm:text-48 text-main-black">
-                Empowering Your Business for Success with Expert Guidance
+                18 Ans d'Excellence en Gestion d'Entreprise
               </h2>
               <p className="pt-5 text-paragraph sm:pt-10">
-                Business agencies often feature a diverse team of professionals
-                expertise in various areas such as marketing, finance
+                Partenaire SAGE et HOROQUARTZ depuis 2006. Nous sommes le choix de référence des entreprises tunisiennes pour leurs solutions ERP, GRH et finance.
               </p>
               <ul className="flex flex-col gap-0.5 mt-6 mb-11">
                 <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                  Write and translate to all languages
+                 Partenaire officiel SAGE et HOROQUARTZ depuis 18 ans
                 </li>
                 <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                  Crafting quality content has been very easier
+                 Centaines de projets réussis : PME, grandes entreprises, secteur public
                 </li>
                 <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                  Built for scale and enterprise level security
+                  Solutions 360° : ERP, Paie, GRH, formation et support
                 </li>
               </ul>
               <Link to="/services">
@@ -76,17 +75,11 @@ export default function AboutFour() {
             </svg>
             <img
               data-aos="fade-left"
-              src="./assets/images/home-five/hero/about1.webp"
+              src={Logo}
               alt=""
               className="relative z-10 hidden sm:block"
             />
-            <img
-              data-aos="fade-left"
-              data-aos-delay="100"
-              src="./assets/images/home-five/hero/about2.webp"
-              alt=""
-              className="relative z-10"
-            />
+        
             <div className="bg-buisness-red p-[30px] rounded-2xl absolute z-20 bottom-8 w-[295px]">
               <img
                 src="./assets/images/home-five/hero/about-card-shape.webp"
@@ -113,7 +106,7 @@ export default function AboutFour() {
               </div>
 
               <h1 className="text-[27px] leading-[35px] text-white font-semibold tracking-tight max-w-[170px]">
-                <CountUp start={0} end={25} /> + Taux de Satisfaction
+                <CountUp start={0} end={98} /> % Taux de Satisfaction
               </h1>
             </div>
           </div>

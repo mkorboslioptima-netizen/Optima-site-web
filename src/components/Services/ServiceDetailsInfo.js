@@ -8,18 +8,10 @@ export default function ServiceDetailsInfo() {
         <div className="grid grid-cols-8 lg:grid-cols-12 gap-[30px]">
           <div data-aos="fade-up" className="col-span-8">
             <h1 className="font-semibold text-[35px] leading-[42px] text-main-black">
-              Digital Marketing Solutions
+              Horoquartz
             </h1>
             <p className="text-paragraph mt-[30px] mb-10 max-w-[786px]">
-              In the ever-evolving landscape of technology, businesses require
-              robust and reliable solutions to manage their IT infrastructure
-              seamlessly. Our IT Managed Solutions offer a comprehensive
-              approach, combining cutting-edge technology and strategic
-              expertise to optimize your digital operations. From proactive
-              system monitoring to rapid issue resolution, our team ensures that
-              your IT environment remains secure, scalable, and highly
-              efficient. With tailored solutions that align with your business
-              objectives
+              Leader et pionnier des solutions de gestion des temps depuis sa création en 1971, Horoquartz accompagne aujourd'hui plus de 3 500 clients sur 2 domaines d'expertise : - l'optimisation des Ressources Humaines avec eTemptation, pour superviser la gestion des présences, le suivi d'activité et la gestion des plannings - une solution de gestion des temps dédiée à la PME eTsentiel - la sûreté et la sécurité avec Protecsys 2 Suite, pour assurer la sécurité des biens et des personnes grâce à des solutions de contrôle d'accès, détection intrusion, vidéosurveillance, supervision et gestion des visiteurs; Aujourd'hui, près de 4 millions de salariés sont gérés au quotidien grâce aux solutions Horoquartz, dans tous les secteurs d'activité : industrie, agroalimentaire, banque et assurance, distribution, santé, BTP, enseignement, hôtellerie et restauration, secteur public, services, transport et logistique... Répartis dans 40 pays, les clients Horoquartz bénéficient de solutions globales parfaitement adaptées aux spécificités locales, grâce à une expérience de plus de 50 ans.
             </p>
             <img src="/assets/images/service/detail.webp" alt="" />
             <h2 className="font-semibold text-[27px] leading-[35px] tracking-tight text-main-black mt-10">
@@ -73,7 +65,7 @@ export default function ServiceDetailsInfo() {
                   >
                     <path
                       d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z"
-                      fill="#5D51F2"
+                      fill="#f25151"
                     />
                     <path
                       fillRule="evenodd"

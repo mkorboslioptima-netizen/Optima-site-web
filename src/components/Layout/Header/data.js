@@ -90,7 +90,7 @@ const pagesLinkData = [
 const Horoquartzlink = [
   {
     linkLabel: "Présentation Horoquartz",
-    pageLink: "/projects",
+    pageLink: "/horoquartz",
   },
   {
     linkLabel: "eTemptation",

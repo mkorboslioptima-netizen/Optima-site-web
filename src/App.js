@@ -12,6 +12,7 @@ import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
+import Horoquartz from "./pages/Horoquartz";
 import Cart from "./pages/Cart";
 import CourseDetails from "./pages/CourseDetails";
 import Faq from "./pages/Faq";
@@ -74,6 +75,7 @@ export default function App() {
       <Route path="/teams" element={<Teams />} />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="*" element={<Notfound />} />
+      <Route path="/horoquartz" element={<Horoquartz />} />
     </Routes>
   );
 }

@@ -4,50 +4,66 @@ import WinGridBg from "../Hero/WinGridBg";
 
 export default function BreadCrumb({ pageTitle, to, currentPage }) {
   return (
-    <section id="h1-breadcrumb">
-      <div className="relative w-full pb-16 overflow-hidden h1-breadcrumb h-fit bg-main-gray md:pb-24">
+    <section
+      id="h1-breadcrumb"
+      className="relative pt-[80px]" // hauteur du header
+    >
+      <div className="relative w-full overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center">
+
+        {/* Background */}
         <WinGridBg />
-        <div className="absolute left-1/4 w-full top-[300px] overflow-hidden z-0 pointer-events-none">
-          <div className="flex justify-center">
-            <img src="/assets/images/home-one-hero-circle-shadow.svg" alt="" />
-          </div>
-        </div>
-        <div className="relative z-20 mx-auto theme-container h-fit w-fit">
-          <div className="mt-[120px] md:mt-[272px] w-fit mx-auto relative z-10">
-            <h1 className="w-full font-semibold text-center text-main-black text-34 sm:text-48">
+
+        {/* Content */}
+        <div className="relative z-10 mx-auto theme-container w-full">
+          <div className="flex flex-col items-center justify-center py-16">
+
+            {/* Icon */}
+            <div className="mb-6">
+              <div className="relative">
+                <div className="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center shadow-lg">
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </div>
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-400 rounded-full animate-pulse" />
+              </div>
+            </div>
+
+            {/* Title */}
+            <h1 className="text-center font-bold text-gray-900 text-4xl sm:text-5xl md:text-6xl">
               {pageTitle}
             </h1>
-            <div className="flex items-center justify-center gap-5 mt-4">
-              <Link
-                to="/"
-                className="relative leading-5 transition-all duration-300 home-two-nav-item text-18 font-inter text-paragraph hover:text-buisness-red"
-              >
-                Home
-              </Link>
-              <svg
-                width="6"
-                height="12"
-                viewBox="0 0 6 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 1L5 6L1 11"
-                  stroke="#D90A2C"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <Link
-                to={to}
-                className="relative leading-5 transition-all duration-300 home-two-nav-item text-18 font-inter text-paragraph hover:text-buisness-red"
-              >
-                {currentPage}
-              </Link>
-            </div>
+
+            {/* Subtitle */}
+            <p className="mt-4 text-center text-gray-600 text-lg max-w-2xl">
+              Solution de gestion complète pour optimiser votre activité commerciale
+            </p>
+
+            {/* Breadcrumb */}
+            {to && currentPage && (
+              <div className="mt-8 flex items-center gap-2 text-sm text-gray-500">
+                <Link to={to} className="hover:text-emerald-600">
+                  Accueil
+                </Link>
+                <span>›</span>
+                <span className="text-emerald-600 font-medium">
+                  {currentPage}
+                </span>
+              </div>
+            )}
           </div>
         </div>
+
       </div>
     </section>
   );

@@ -1,93 +1,137 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 const WinGridBg = () => {
   const gridRef = useRef(null);
-  const [nearBy, setNearBy] = useState([]);
+  const nearByRef = useRef([]);
+  const anglesRef = useRef([]);
+  const rafIdRef = useRef(null);
 
   useEffect(() => {
     const grid = gridRef.current;
-    if (grid) {
-      for (let i = 0; i < 1000; i++) {
-        const newElement = document.createElement("div");
-        newElement.classList.add("win-btn");
-        newElement.id = i;
-        grid.appendChild(newElement);
-      }
+    if (!grid) return;
 
-      const offset = 49;
-      const angles = []; // in deg
+    // Créer la grille une seule fois
+    const fragment = document.createDocumentFragment();
+    for (let i = 0; i < 1000; i++) {
+      const newElement = document.createElement("div");
+      newElement.classList.add("win-btn");
+      newElement.id = i;
+      fragment.appendChild(newElement);
+    }
+    grid.appendChild(fragment);
+
+    // Précalculer les angles une seule fois
+    if (anglesRef.current.length === 0) {
       for (let i = 0; i <= 360; i += 45) {
-        angles.push((i * Math.PI) / 180);
+        anglesRef.current.push((i * Math.PI) / 180);
+      }
+    }
+
+    const offset = 49;
+    const buttons = grid.querySelectorAll(".win-btn");
+
+    const clearNearBy = () => {
+      nearByRef.current.forEach((e) => {
+        if (e && e.style) {
+          e.style.borderImage = null;
+        }
+      });
+      nearByRef.current = [];
+    };
+
+    // Utiliser la délégation d'événements au lieu d'attacher aux boutons individuels
+    const handleButtonMouseLeave = (e) => {
+      if (e.target.classList.contains("win-btn")) {
+        e.target.style.borderImage = null;
+        e.target.style.border = "1px solid transparent";
+      }
+    };
+
+    const handleButtonMouseEnter = (e) => {
+      if (e.target.classList.contains("win-btn")) {
+        clearNearBy();
+      }
+    };
+
+    const handleButtonMouseMove = (e) => {
+      if (e.target.classList.contains("win-btn")) {
+        const rect = e.target.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        e.target.style.borderImage = `radial-gradient(20% 65% at ${x}px ${y}px, rgba(121, 74, 255, 0.7), rgba(121, 74, 255, 0.4), rgba(121, 74, 255, 0), #eaebf0, transparent) 9 / 2px / 0px stretch`;
+      }
+    };
+
+    // Throttle avec requestAnimationFrame
+    const handleMouseMove = (e) => {
+      if (rafIdRef.current) {
+        return;
       }
 
-      const clearNearBy = () => {
-        nearBy
-          .splice(0, nearBy.length)
-          .forEach((e) => (e.style.borderImage = null));
-      };
-
-      document.querySelectorAll(".win-btn").forEach((b) => {
-        b.onmouseleave = (e) => {
-          e.target.style.borderImage = null;
-          e.target.style.border = "1px solid transparent";
-        };
-
-        b.onmouseenter = (e) => {
-          clearNearBy();
-        };
-
-        b.addEventListener("mousemove", (e) => {
-          const rect = e.target.getBoundingClientRect();
-          const x = e.clientX - rect.left; // x position within the element.
-          const y = e.clientY - rect.top; // y position within the element.
-          e.target.style.borderImage = `radial-gradient(20% 65% at ${x}px ${y}px ,rgba(121, 74, 255,0.7),rgba(121, 74, 255,0.4),rgba(121, 74, 255,0),#eaebf0,transparent ) 9 / 2px / 0px stretch `;
-        });
-      });
-
-      const handleMouseMove = (e) => {
-        const x = e.clientX; // x position within the element.
-        const y = e.clientY; // y position within the element.
+      rafIdRef.current = requestAnimationFrame(() => {
+        const x = e.clientX;
+        const y = e.clientY;
 
         clearNearBy();
-        const newNearBy = angles.reduce((acc, rad) => {
+
+        const seenIds = new Set();
+
+        anglesRef.current.forEach((rad) => {
           const cx = Math.floor(x + Math.cos(rad) * offset);
           const cy = Math.floor(y + Math.sin(rad) * offset);
           const element = document.elementFromPoint(cx, cy);
 
-          if (element !== null) {
-            if (
-              element.className === "win-btn" &&
-              acc.findIndex((ae) => ae.id === element.id) < 0
-            ) {
-              const brect = element.getBoundingClientRect();
-              const bx = x - brect.left; // x position within the element.
-              const by = y - brect.top; // y position within the element.
-              if (!element.style.borderImage)
-                element.style.borderImage = `radial-gradient(${offset * 2}px ${
-                  offset * 2
-                }px at ${bx}px ${by}px ,rgba(121, 74, 255,0.7),rgba(121, 74, 255,0.1),transparent ) 9 / 1px / 0px stretch `;
-              return [...acc, element];
+          if (
+            element &&
+            element.classList.contains("win-btn") &&
+            !seenIds.has(element.id)
+          ) {
+            seenIds.add(element.id);
+            const brect = element.getBoundingClientRect();
+            const bx = x - brect.left;
+            const by = y - brect.top;
+
+            if (!element.style.borderImage) {
+              element.style.borderImage = `radial-gradient(${offset * 2}px ${
+                offset * 2
+              }px at ${bx}px ${by}px, rgba(255, 74, 74, 0.7), rgba(255, 0, 0, 0.1), transparent) 9 / 1px / 0px stretch`;
             }
+            nearByRef.current.push(element);
           }
-          return acc;
-        }, []);
-        setNearBy(newNearBy);
-      };
+        });
 
-      const handleMouseLeave = () => {
-        clearNearBy();
-      };
+        rafIdRef.current = null;
+      });
+    };
 
-      grid.addEventListener("mousemove", handleMouseMove);
-      grid.addEventListener("mouseleave", handleMouseLeave);
+    const handleMouseLeave = () => {
+      clearNearBy();
+      if (rafIdRef.current) {
+        cancelAnimationFrame(rafIdRef.current);
+        rafIdRef.current = null;
+      }
+    };
 
-      return () => {
-        grid.removeEventListener("mousemove", handleMouseMove);
-        grid.removeEventListener("mouseleave", handleMouseLeave);
-      };
-    }
-  }, [nearBy]);
+    // Délégation d'événements
+    grid.addEventListener("mouseleave", handleButtonMouseLeave, true);
+    grid.addEventListener("mouseenter", handleButtonMouseEnter, true);
+    grid.addEventListener("mousemove", handleButtonMouseMove, true);
+    grid.addEventListener("mousemove", handleMouseMove);
+    grid.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      grid.removeEventListener("mouseleave", handleButtonMouseLeave, true);
+      grid.removeEventListener("mouseenter", handleButtonMouseEnter, true);
+      grid.removeEventListener("mousemove", handleButtonMouseMove, true);
+      grid.removeEventListener("mousemove", handleMouseMove);
+      grid.removeEventListener("mouseleave", handleMouseLeave);
+      if (rafIdRef.current) {
+        cancelAnimationFrame(rafIdRef.current);
+      }
+      clearNearBy();
+    };
+  }, []); // Dépendances vides !
 
   return (
     <div
