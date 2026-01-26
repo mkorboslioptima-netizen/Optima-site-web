@@ -296,8 +296,8 @@ export default function FooterFive() {
         <div className="h-full mx-auto theme-container">
           <div className="flex flex-wrap items-center justify-between w-full h-full">
             <span className="text-white/50 max-w-80">
-              2024 © All rights reserved by
-              <b className="text-white">Quland</b>
+              2026 &copy; tout droit réservé{" "}
+              <b className="text-white"> Optima</b>
             </span>
             <div className="relative flex justify-center w-full sm:w-fit">
               <a

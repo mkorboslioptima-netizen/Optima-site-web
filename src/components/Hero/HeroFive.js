@@ -107,12 +107,16 @@ export default function HeroFive() {
                         </clipPath>
                       </defs>
                     </svg>
-                    <span className="font-semibold text-white text-18 sm:text-20">
-                      Quland Business Agency
+                    <span 
+                      className="font-semibold text-white text-18 sm:text-20"
+                      style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}
+                    >
+                      Votre partenaire digital
                     </span>
                   </div>
-                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8">
-                    The Innovating Solutions for Your Business Challenges
+                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8"
+                   style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}>
+                    Optima - Leadership en Gestion d'Entreprise
                   </h1>
                   <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-11">
                     <Link to="/services">
@@ -226,12 +230,16 @@ export default function HeroFive() {
                         </clipPath>
                       </defs>
                     </svg>
-                    <span className="font-semibold text-white text-18 sm:text-20">
-                      Quland Business Agency
+                    <span 
+                      className="font-semibold text-white text-18 sm:text-20"
+                      style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}
+                    >
+                      Votre partenaire digital
                     </span>
                   </div>
-                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8">
-                    Quland digital agency We’re Modern & effective DIGITAL
+                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8"
+                   style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}>
+                    Des solutions innovantes pour optimiser votre gestion d'entreprise 
                   </h1>
                   <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-11">
                     <Link to="/services">
@@ -345,12 +353,17 @@ export default function HeroFive() {
                         </clipPath>
                       </defs>
                     </svg>
-                    <span className="font-semibold text-white text-18 sm:text-20">
-                      Quland Business Agency
+                    <span 
+                      className="font-semibold text-white text-18 sm:text-20"
+                      style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}
+                    >
+                       Votre partenaire digital
                     </span>
                   </div>
-                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8">
-                    The Innovating Solutions for Your Business Challenges
+             
+                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8"
+                   style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}>
+                    L’excellence opérationnelle commence ici
                   </h1>
                   <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-11">
                     <Link to="/services">
@@ -484,12 +497,11 @@ export default function HeroFive() {
             </div>
             <Link to="/services">
               <h1 className="pt-6 font-semibold text-22 text-main-black">
-                Tailored Solutions
+                SAGE Partner Officiel
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">
-              Modern business agencies to customized solutions tailored specific
-              needs
+              Partenaire officiel SAGE depuis 2006, nous accompagnons votre transformation digitale avec expertise et fiabilité
             </p>
           </div>
           {/* <!-- single card end  --> */}
@@ -525,12 +537,11 @@ export default function HeroFive() {
             </div>
             <Link to="/services" className="">
               <h1 className="pt-6 font-semibold text-22 text-main-black">
-                Multi-disciplinary Expertise
+                Horoquartaz-Leader du Marché
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">
-              Business agencies often feature a diverse team of professionals
-              with expertise
+              Solution leader en gestion du temps et des ressources humaines. Optimisez la performance de vos équipes.
             </p>
           </div>
           {/* <!-- single card end  --> */}
@@ -557,12 +568,11 @@ export default function HeroFive() {
             </div>
             <Link to="/services">
               <h1 className="pt-6 font-semibold text-22 text-main-black">
-                Innovative Technologies
+                Certifié ISO 9001 & 27001
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">
-              Leading business agencies to innovative technologies and tools to
-              enhance
+              Qualité et sécurité certifiées. Nos processus répondent aux normes internationales les plus exigeantes.
             </p>
           </div>
           {/* <!-- single card end  --> */}
@@ -571,3 +581,6 @@ export default function HeroFive() {
     </section>
   );
 }
+
+
+ 
