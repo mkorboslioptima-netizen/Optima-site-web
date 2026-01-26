@@ -62,54 +62,63 @@ const demoLinkData = [
 ];
 
 const pagesLinkData = [
+ 
   {
-    linkLabel: "Project",
-    pageLink: "/projects",
-  },
-  {
-    linkLabel: "Project Details",
+    linkLabel: "Gestion commerciale",
     pageLink: "/project-details",
   },
   {
-    linkLabel: "Service Details",
-    pageLink: "/service-details",
-  },
-  {
-    linkLabel: "Blog Details",
+    linkLabel: "Comptabilité",
     pageLink: "/blog-details",
   },
   {
-    linkLabel: "Blogs",
-    pageLink: "/blogs",
-  },
-  {
-    linkLabel: "Pricing",
+    linkLabel: "Immobilisation",
     pageLink: "/pricing",
   },
   {
-    linkLabel: "Team Members",
-    pageLink: "/teams",
+    linkLabel: "Paie & RH",
+    pageLink: "/service-details",
+  },
+  
+  {
+    linkLabel: "Sage BI",
+    pageLink: "/blogs",
+  },
+  
+ 
+];
+const Horoquartzlink = [
+  {
+    linkLabel: "Présentation Horoquartz",
+    pageLink: "/projects",
   },
   {
-    linkLabel: "FAQ'S",
-    pageLink: "/faqs",
+    linkLabel: "eTemptation",
+    pageLink: "/project-details",
   },
   {
-    linkLabel: "Course Details",
-    pageLink: "/course-details",
+    linkLabel: "Self Service",
+    pageLink: "/service-details",
   },
   {
-    linkLabel: "Cart",
-    pageLink: "/cart",
-  },
-  {
-    linkLabel: "Checkout",
-    pageLink: "/checkout",
-  },
-  {
-    linkLabel: "Not Found",
-    pageLink: "/not-found",
+    linkLabel: "Côntrole d'accès",
+    pageLink: "/blog-details",
   },
 ];
+ const Idemialink = [
+  {
+    linkLabel: "Présentation Idemia",
+    pageLink: "/projects",
+  },
+  {
+    linkLabel: "Morpho Manager Suite",
+    pageLink: "/project-details",
+  },
+  {
+    linkLabel: "Pointeuses IDEMIA",
+    pageLink: "/service-details",
+  },
 
-export { demoLinkData, pagesLinkData };
+];
+
+export { demoLinkData, pagesLinkData, Horoquartzlink, Idemialink };

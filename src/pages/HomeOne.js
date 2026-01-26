@@ -5,6 +5,7 @@ import LogoSliderOne from "../components/ClientLogoSlider/LogoSliderOne";
 import AboutOne from "../components/About/AboutOne";
 import FunFactOne from "../components/FunFact/FunFactOne";
 import ServiceOne from "../components/Services/ServiceOne";
+import ServiceFive from "../components/Services/ServiceFive";
 import WorkProcessOne from "../components/WorkProcess/WorkProcessOne";
 import TestimonialOne from "../components/Testimonials/TestimonialOne";
 import LatestBlogOne from "../components/LatestBlog/LatestBlogOne";
@@ -22,7 +23,7 @@ export default function HomeOne() {
       <LogoSliderOne />
       <AboutOne />
       <FunFactOne />
-      <ServiceOne />
+      <ServiceFive />
       <WorkProcessOne />
       <TestimonialOne />
       <LatestBlogOne />

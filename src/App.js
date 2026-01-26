@@ -5,6 +5,7 @@ import AOS from "aos";
 
 /* Pages */
 import HomeOne from "./pages/HomeOne";
+import Homefive from "./pages/HomeFive";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import BlogDetails from "./pages/BlogDetails";
@@ -59,7 +60,7 @@ export default function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<HomeOne />} />
+      <Route path="/" element={<Homefive/>} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/blog-details" element={<BlogDetails />} />
