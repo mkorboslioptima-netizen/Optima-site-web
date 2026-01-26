@@ -39,7 +39,7 @@ export default function HeroFive() {
     >
       {/* <!-- background  --> */}
       <img
-        src="/assets/images/home-five/hero/bg.webp"
+        src="/assets/images/home-five/hero/a.jpg"
         alt=""
         className="w-full object-cover absolute top-0 z-0 buisness-dark-black min-h-[520px]"
       />
