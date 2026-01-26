@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function DemoHeaderFour() {
   return (
     <header>
-      <div className="header-wrapper w-full fixed left-0 top-0 z-20 bg-[#0A0118] xl:block hidden">
+      <div className="header-wrapper w-full fixed left-0 top-0 z-20 bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 xl:block hidden">
         <div className="relative z-20 mx-auto theme-container">
           <div className="w-full h-[95px] flex justify-between items-center">
             <div className="flex space-x-[100px] items-center">
@@ -16,20 +16,51 @@ export default function DemoHeaderFour() {
               </div>
               <div>
                 <ul className="flex items-center space-x-10">
-                  <li className="group">
-                    <a
-                      href="#"
-                      className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:content-['Acceuil'] before:text-purple before:border-purple transition-all ease-out duration-300 w-fit flex gap-2 items-center"
-                    >
-                      Acceuil
-                      
-                    </a>
-                  </li>
+                  <a
+                  href="#"
+                   className="
+                   relative
+                   text-gray-800 font-semibold
+                   transition-all duration-300
+                   hover:text-[#E11D48]
+
+                   after:content-['']
+                  after:absolute
+                  after:left-0
+                  after:-bottom-1
+                  after:w-0
+                  after:h-[2px]
+                  after:bg-[#E11D48]
+                  after:transition-all
+                  after:duration-300
+                  hover:after:w-full
+                  "
+                  >
+                   Acceuil
+                  </a>
+
                     <li className="relative group">
                     <a
-                      href="#"
-                      className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:content-['Sage'] before:text-purple before:border-purple transition-all ease-out duration-300 w-fit flex gap-2 items-center"
-                    >
+                  href="#"
+                   className="
+                   relative
+                   text-gray-800 font-semibold
+                   transition-all duration-300
+                   hover:text-[#E11D48]
+
+                   after:content-['']
+                  after:absolute
+                  after:left-0
+                  after:-bottom-1
+                  after:w-0
+                  after:h-[2x]
+                  after:bg-[#E11D48]
+                  after:transition-all
+                  after:duration-300
+                  hover:after:w-full
+                  w-fit flex gap-2 items-center
+                  "
+                  >
                       Sage
                       <svg
                         className="transition-all duration-300 group-hover:rotate-180"
@@ -64,10 +95,26 @@ export default function DemoHeaderFour() {
                     </div>
                   </li>
                     <li className="relative group">
-                  
+
                        <a
                       href="#"
-                      className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:content-['Horoquartz'] before:text-purple before:border-purple transition-all ease-out duration-300 w-fit flex gap-2 items-center"
+                      className="
+                      relative
+                      text-gray-800 font-semibold
+                      transition-all duration-300
+                      hover:text-[#E11D48]
+
+                      after:content-['']
+                      after:absolute
+                      after:left-0
+                      after:-bottom-1
+                      after:w-0
+                      after:h-[2px]
+                      after:bg-[#E11D48]
+                      after:transition-all
+                      after:duration-300
+                      hover:after:w-full
+                      w-fit flex gap-2 items-center"
                     >
                         Horoquartz
                         <svg
@@ -103,10 +150,26 @@ export default function DemoHeaderFour() {
                     </div>
                     </li>
                    <li className="relative group">
-                  
+
                       <a
                       href="#"
-                      className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:content-['IDEMIA'] before:text-purple before:border-purple transition-all ease-out duration-300 w-fit flex gap-2 items-center"
+                      className="
+                      relative
+                      text-gray-800 font-semibold
+                      transition-all duration-300
+                      hover:text-[#E11D48]
+
+                      after:content-['']
+                      after:absolute
+                      after:left-0
+                      after:-bottom-1
+                      after:w-0
+                      after:h-[2px]
+                      after:bg-[#E11D48]
+                      after:transition-all
+                      after:duration-300
+                      hover:after:w-full
+                      w-fit flex gap-2 items-center"
                     >
                       IDEMIA
                        <svg
@@ -143,7 +206,23 @@ export default function DemoHeaderFour() {
                     </li>
                   <li>
                     <Link
-                      className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:content-['Company'] before:text-purple before:border-purple transition-all ease-out duration-300 w-fit"
+                      className="
+                      relative
+                      text-gray-800 font-semibold
+                      transition-all duration-300
+                      hover:text-[#E11D48]
+
+                      after:content-['']
+                      after:absolute
+                      after:left-0
+                      after:-bottom-1
+                      after:w-0
+                      after:h-[2px]
+                      after:bg-[#E11D48]
+                      after:transition-all
+                      after:duration-300
+                      hover:after:w-full
+                      w-fit"
                       to="/about"
                     >
                       Company
@@ -151,7 +230,23 @@ export default function DemoHeaderFour() {
                   </li>
                   <li>
                     <Link
-                      className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:content-['Services'] before:text-purple before:border-purple transition-all ease-out duration-300 w-fit"
+                      className="
+                      relative
+                      text-gray-800 font-semibold
+                      transition-all duration-300
+                      hover:text-[#E11D48]
+
+                      after:content-['']
+                      after:absolute
+                      after:left-0
+                      after:-bottom-1
+                      after:w-0
+                      after:h-[2px]
+                      after:bg-[#E11D48]
+                      after:transition-all
+                      after:duration-300
+                      hover:after:w-full
+                      w-fit"
                       to="/services"
                     >
                       Services
@@ -160,7 +255,23 @@ export default function DemoHeaderFour() {
                   
                   <li>
                     <Link
-                      className="text-white font-semibold hover:text-purple home-two-nav-item leading-5 relative before:content-['Contact'] before:text-purple before:border-purple transition-all ease-out duration-300 w-fit"
+                      className="
+                      relative
+                      text-gray-800 font-semibold
+                      transition-all duration-300
+                      hover:text-[#E11D48]
+
+                      after:content-['']
+                      after:absolute
+                      after:left-0
+                      after:-bottom-1
+                      after:w-0
+                      after:h-[2px]
+                      after:bg-[#E11D48]
+                      after:transition-all
+                      after:duration-300
+                      hover:after:w-full
+                      w-fit"
                       to="/contact"
                     >
                       Contact
@@ -174,8 +285,8 @@ export default function DemoHeaderFour() {
                 
               </a>
               <Link to="/contact">
-                <div className="home-two-btn-bg py-2.5 group bg-purple border-purple">
-                  <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-purple font-inter">
+                <div className="home-two-btn-bg py-2.5 group bg-gradient-to-r from-purple-600 to-blue-600 border-purple shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                  <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-white/90 font-inter">
                     Contact US
                   </span>
                   <svg
