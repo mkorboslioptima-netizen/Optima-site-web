@@ -29,8 +29,8 @@ export default function FunFactTwo() {
               />
             </svg>
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={28} />
-              K+
+              <CountUp start={0} end={500} />
+              +
             </h1>
 
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
@@ -67,8 +67,8 @@ export default function FunFactTwo() {
             </svg>
 
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={35} />
-              K+
+              <CountUp start={0} end={98} />
+              %
             </h1>
 
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
@@ -105,10 +105,10 @@ export default function FunFactTwo() {
               </defs>
             </svg>
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={30} />+
+              <CountUp start={0} end={300} />+
             </h1>
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
-              Expert Team Member
+              Clients
             </h2>
             <p className="text-paragraph leading-[30px] tracking-tight pt-5">
               Agencies may services related market research, branding
@@ -198,11 +198,11 @@ export default function FunFactTwo() {
             </svg>
 
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={25} />+
+              <CountUp start={0} end={15} />+
             </h1>
 
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
-              Taux de Satisfaction
+              Collaborateurs
             </h2>
             <p className="text-paragraph leading-[30px] tracking-tight pt-5">
               Agencies may services related market research, branding

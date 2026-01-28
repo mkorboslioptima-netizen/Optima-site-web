@@ -6,10 +6,10 @@ export default function ServiceFive() {
     <section id="services" className="py-[70px] sm:py-[130px] bg-white">
       <div className="w-full mx-auto theme-container">
         <h1 className="px-5 bg-main-gray border border-it-blue/20 text-it-red font-medium rounded-[30px] w-fit mx-auto">
-          Nos Services
+          Notre Expertise
         </h1>
         <h2 className="max-w-[747px] font-semibold text-24 sm:text-48 text-main-black text-center mx-auto mt-5">
-          High Impact Creative Services to grow your business
+          Une équipe pluridisciplinaire à votre service
         </h2>
         <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 min-h-[303px] gap-[30px] mt-[70px]">
           {/* <!-- single card  --> */}
@@ -30,11 +30,10 @@ export default function ServiceFive() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Managed IT Services
+                Expertise Technique
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Outsourcing IT operations third part service provider
-                responsible for a business's IT systems
+                Plus de 20 ans d'expérience dans le développement de solutions de gestion d'entreprise
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-it-blue group">
@@ -89,11 +88,10 @@ export default function ServiceFive() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Cyber security Services
+                Accompagnement Client
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Providing service security audit penetration testing det
-                incident response, and security.
+                Une équipe dédiée pour vous accompagner à chaque étape de votre projet
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-it-blue group">
@@ -137,11 +135,10 @@ export default function ServiceFive() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Data Backup & Recovery
+                Support Premium
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Offering solution data backup, disaster recovery planning data
-                restoration to prevent data.
+                Service client réactif disponible 24/7 pour répondre à toutes vos questions
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-it-blue group">
@@ -185,11 +182,10 @@ export default function ServiceFive() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Software Development
+                Innovation Continue
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Develop customs applications tailored specific business needs
-                including web applications
+                Investissement constant dans la R&D pour rester à la pointe de la technologie
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-it-blue group">

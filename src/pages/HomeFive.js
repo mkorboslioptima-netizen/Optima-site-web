@@ -19,12 +19,13 @@ export default function HomeFive() {
       <HeroFive />
       <AboutFour />
       <ServiceFive />
+     
       <SuccessStory />
       <FunFactTwo />
       <TestimonialFive />
-      
+     
       <LogoSliderThree />
-      <CtaFive />
+     
       <FooterFive />
     </PageLayout>
   );

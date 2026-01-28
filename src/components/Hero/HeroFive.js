@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+﻿import React, { useEffect } from "react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import GLightbox from "glightbox";
@@ -144,7 +144,7 @@ export default function HeroFive() {
                       </div>
                     </Link>
                     <a
-                      href="https://www.youtube-nocookie.com/embed/JdqL89ZZwFw?si=jnriuBsR3pv2EoUa"
+                      href="https://www.youtube.com/watch?v=TpnFiQm-uVg&list=PL85MFMSouYfQa7FVSc_tf2DqlmzOiM9cp"
                       aria-label="play-video"
                       className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
                     >
@@ -267,7 +267,7 @@ export default function HeroFive() {
                       </div>
                     </Link>
                     <a
-                      href="https://www.youtube-nocookie.com/embed/JdqL89ZZwFw?si=jnriuBsR3pv2EoUa"
+                      href="https://www.youtube.com/watch?v=3PNt8fZ2xtE"
                       aria-label="play-video"
                       className="flex items-center space-x-8 video-play-btn ml-7 sm:ml-0"
                     >

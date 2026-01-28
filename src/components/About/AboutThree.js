@@ -106,7 +106,7 @@ export default function AboutThree() {
             </div>
             <div className="relative z-10 flex flex-col items-center justify-center">
               <h1 className="text-48 text-main-black font-semibold pb-[18px]">
-                <CountUp start={0} end={28} />
+                <CountUp start={0} end={500} />
                 +
               </h1>
 

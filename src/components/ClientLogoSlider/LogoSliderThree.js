@@ -41,26 +41,26 @@ export default function LogoSliderThree() {
               {/* <!-- Slides --> */}
               <SwiperSlide>
                 <div>
-                  <img src="./assets/images/home-five/clinets/1.svg" alt="" />
+                  <img src="./assets/images/home-five/clinets/" alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="./assets/images/home-five/clinets/2.svg" alt="" />
+                <img src="./assets/images/home-five/clinets/6.svg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
                 <div>
-                  <img src="./assets/images/home-five/clinets/3.svg" alt="" />
+                  <img src="./assets/images/home-five/clinets/3.png" alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div>
-                  <img src="./assets/images/home-five/clinets/4.svg" alt="" />
+                  <img src="./assets/images/home-five/clinets/4.jpg" alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div>
-                  <img src="./assets/images/home-five/clinets/5.svg" alt="" />
+                  <img src="./assets/images/home-five/clinets/5.jpg" alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -70,7 +70,12 @@ export default function LogoSliderThree() {
               </SwiperSlide>
               <SwiperSlide>
                 <div>
-                  <img src="./assets/images/home-five/clinets/2.svg" alt="" />
+                  <img src="./assets/images/home-five/clinets/2.png" alt="" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <img src="./assets/images/home-five/clinets/7.png" alt="" />
                 </div>
               </SwiperSlide>
             </Swiper>
