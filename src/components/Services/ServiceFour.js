@@ -215,14 +215,14 @@ const InvestIcon = () => {
 };
 
 const tabs = [
-  { name: "first", label: "Marketing & Advertising", icon: <MarketingIcon /> },
-  { name: "second", label: "Public Relations (PR)", icon: <PrIcon /> },
-  { name: "three", label: "Consulting Services", icon: <ServiceIcon /> },
-  { name: "four", label: " Sales and Distribution", icon: <SalesIcon /> },
-  { name: "five", label: "Legal & Regulatory Compliance", icon: <LegalIcon /> },
+  { name: "first", label: " Audit de Systèmes Existants", icon: <MarketingIcon /> },
+  { name: "second", label: " Migration de Données", icon: <PrIcon /> },
+  { name: "three", label: "Intégration Multi-Systèmes", icon: <ServiceIcon /> },
+  { name: "four", label: "  Déploiement & Migration", icon: <SalesIcon /> },
+  { name: "five", label: "Formation des Équipes", icon: <LegalIcon /> },
   {
     name: "six",
-    label: "Financial & Investment Services",
+    label: "Assistance & Hot-line",
     icon: <InvestIcon />,
   },
 ];
@@ -243,11 +243,10 @@ export default function ServiceFour() {
       {/* <!-- title  --> */}
       <div className="flex flex-col items-center mx-auto theme-container">
         <h1 className="border text-main-black border-buisness-red/10 py-0.5 px-5 rounded-[30px] w-fit bg-buisness-red/5 font-medium">
-          What We Provide
+          Notre Approche
         </h1>
         <h2 className="text-24 sm:text-48 font-semibold text-main-black pt-5 max-w-[692px] text-center">
-          Business agency services refer to a range of professional services
-          provided
+          Une Méthodologie Éprouvée pour Garantir Votre Succès
         </h2>
       </div>
       {/* <!-- services --> */}
@@ -311,24 +310,20 @@ export default function ServiceFour() {
                 </svg>
                 <div className="relative z-10">
                   <h1 className="text-20 sm:text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                    Audit de Systèmes Existants
                   </h1>
                   <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
+                    Analyse complète de vos systèmes actuels, identification des failles, recommandations d'amélioration, plan de mise à niveau.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/home-five/hero/c.png"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />
                 </div>
                 <div className="absolute top-0 right-0 hidden md:block">
                   <img
-                    src="/assets/images/home-five/tab-content-shape.png"
+                    src="/assets/images/home-five/tab-contente.png"
                     alt=""
                   />
                 </div>
@@ -364,17 +359,13 @@ export default function ServiceFour() {
                 </svg>
                 <div className="relative z-10">
                   <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                    Migration de Données 
                   </h1>
                   <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
+                    Migration sécurisée depuis vos anciens systèmes, validation des données, tests de cohérence, pas de perte d'information.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/home-five/hero/d.png"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />
@@ -417,17 +408,13 @@ export default function ServiceFour() {
                 </svg>
                 <div className="relative z-10">
                   <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                     Intégration Multi-Systèmes 
                   </h1>
                   <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
+                    Connexion de vos différents logiciels (ERP, CRM, e-commerce, banque), flux automatisés, données synchronisées.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/home-five/hero/j.png"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />
@@ -470,17 +457,14 @@ export default function ServiceFour() {
                 </svg>
                 <div className="relative z-10">
                   <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                     Déploiement & Migration
+
                   </h1>
                   <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
+                     Migration sécurisée des données, mise en production progressive, accompagnement terrain. Transition en douceur.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/home-five/hero/G4.png"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />
@@ -523,17 +507,13 @@ export default function ServiceFour() {
                 </svg>
                 <div className="relative z-10">
                   <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                    Formation des Équipes
                   </h1>
                   <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
+                    Formation complète des utilisateurs, documentation détaillée, création de procédures. Vos équipes deviennent autonomes.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/home-five/hero/6.png"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />
@@ -576,17 +556,13 @@ export default function ServiceFour() {
                 </svg>
                 <div className="relative z-10">
                   <h1 className="text-24 text-main-black font-semibold mt-4 md:mt-[50px]">
-                    Elevating Your Presence through Strategic Marketing and
-                    Advertising Solutions
+                    Assistance & Hot-line
                   </h1>
                   <p className="mt-4 text-paragraph md:mt-6">
-                    Agencies may offer services related to market research,
-                    branding, advertising campaigns, digital marketing, social
-                    media management, and content creation to help businesses
-                    promote
+                    Support téléphonique, interventions sur site, dépannage rapide, maintenance préventive. Disponibilité maximale.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/service-img.webp"
+                    src="/assets/images/home-five/hero/2.png"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />
