@@ -471,29 +471,35 @@ export default function HeroFive() {
           >
             <div className="p-5 transition-all duration-300 ease-out rounded-full bg-buisness-red/5 group-hover:bg-buisness-red group-hover:shadow-business-red w-fit">
               <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  className="transition-all duration-300 group-hover:stroke-white"
-                  d="M10 7V5.5C10 3.01472 12.0147 1 14.5 1H17.5C19.9853 1 22 3.01472 22 5.5V7M1 13.5212C1 13.5212 5.67706 16.6367 12.9665 17.3663M31 13.5212C31 13.5212 26.3229 16.6367 19.0335 17.3663M7 31H25C28.3137 31 31 28.3137 31 25V13C31 9.68629 28.3137 7 25 7H7C3.68629 7 1 9.68629 1 13V25C1 28.3137 3.68629 31 7 31Z"
-                  stroke="#D90A2C"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  className="transition-all duration-300 group-hover:stroke-white"
-                  d="M19 16.2402V17.7402C19 17.7552 19 17.7552 19 17.7702C19 19.4052 18.985 20.7402 16 20.7402C13.03 20.7402 13 19.4202 13 17.7852V16.2402C13 14.7402 13 14.7402 14.5 14.7402H17.5C19 14.7402 19 14.7402 19 16.2402Z"
-                  stroke="#D90A2C"
-                  strokeWidth="2"
-                  strokeMiterlimit="10"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    className="transition-all duration-300 group-hover:stroke-white"
+    d="M3 21H21"
+    stroke="#D90A2C"
+    strokeWidth="2"
+    strokeLinecap="round"
+  />
+  <path
+    className="transition-all duration-300 group-hover:stroke-white"
+    d="M5 21V7L12 3L19 7V21"
+    stroke="#D90A2C"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    className="transition-all duration-300 group-hover:stroke-white"
+    d="M9 21V13H15V21"
+    stroke="#D90A2C"
+    strokeWidth="2"
+    strokeLinecap="round"
+  />
+</svg>
             </div>
             <Link to="/services">
               <h1 className="pt-6 font-semibold text-22 text-main-black">
@@ -520,24 +526,54 @@ export default function HeroFive() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle
-                  className="transition-all duration-300 group-hover:fill-white"
+                  className="transition-all duration-300 group-hover:stroke-white"
                   cx="16"
                   cy="16"
-                  r="3"
-                  fill="#D90A2C"
+                  r="14"
+                  stroke="#D90A2C"
+                  strokeWidth="2"
                 />
                 <path
                   className="transition-all duration-300 group-hover:stroke-white"
-                  d="M16 16L31 1M25 16C25 20.9706 20.9706 25 16 25C11.0294 25 7 20.9706 7 16C7 11.0294 11.0294 7 16 7C20.9706 7 25 11.0294 25 16ZM31 16C31 24.2843 24.2843 31 16 31C7.71573 31 1 24.2843 1 16C1 7.71573 7.71573 1 16 1C24.2843 1 31 7.71573 31 16Z"
+                  d="M16 8V16L21 21"
                   stroke="#D90A2C"
                   strokeWidth="2"
                   strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle
+                  className="transition-all duration-300 group-hover:fill-white"
+                  cx="16"
+                  cy="4"
+                  r="1.5"
+                  fill="#D90A2C"
+                />
+                <circle
+                  className="transition-all duration-300 group-hover:fill-white"
+                  cx="28"
+                  cy="16"
+                  r="1.5"
+                  fill="#D90A2C"
+                />
+                <circle
+                  className="transition-all duration-300 group-hover:fill-white"
+                  cx="16"
+                  cy="28"
+                  r="1.5"
+                  fill="#D90A2C"
+                />
+                <circle
+                  className="transition-all duration-300 group-hover:fill-white"
+                  cx="4"
+                  cy="16"
+                  r="1.5"
+                  fill="#D90A2C"
                 />
               </svg>
             </div>
             <Link to="/services" className="">
               <h1 className="pt-6 font-semibold text-22 text-main-black">
-                Horoquartaz-Leader du Marché
+                Horoquartz-Leader du Marché
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">
@@ -552,19 +588,30 @@ export default function HeroFive() {
             className="px-6 py-5 sm:px-[50px] col-span-4 sm:py-10 bg-white rounded-[20px] group shadow-card"
           >
             <div className="p-5 transition-all duration-300 ease-out rounded-full bg-buisness-red/5 group-hover:bg-buisness-red group-hover:shadow-business-red w-fit">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  className="transition-all duration-300 group-hover:fill-white"
-                  d="M19.75 10.5C19.1977 10.5 18.75 10.9477 18.75 11.5C18.75 12.0523 19.1977 12.5 19.75 12.5V10.5ZM23.9146 12.3292L23.0202 12.7764V12.7764L23.9146 12.3292ZM24.1056 14.9472C24.3526 15.4412 24.9532 15.6414 25.4472 15.3944C25.9412 15.1474 26.1414 14.5468 25.8944 14.0528L24.1056 14.9472ZM23.5863 12.7983L24.1346 11.9619L22.4619 10.8654L21.9137 11.7017L23.5863 12.7983ZM18.6466 18.5093L17.8103 17.961L18.6466 18.5093ZM16.1089 18.4636L15.2535 18.9815L16.1089 18.4636ZM13.2467 13.7351L12.3912 14.2529L13.2467 13.7351ZM10.6457 13.7953L9.76714 13.3176L10.6457 13.7953ZM6.12148 20.0223C5.85765 20.5075 6.03711 21.1147 6.5223 21.3785C7.0075 21.6423 7.6147 21.4629 7.87852 20.9777L6.12148 20.0223ZM7 2H25V0H7V2ZM30 7V25H32V7H30ZM25 30H7V32H25V30ZM2 25V7H0V25H2ZM7 30C4.23858 30 2 27.7614 2 25H0C0 28.866 3.13401 32 7 32V30ZM30 25C30 27.7614 27.7614 30 25 30V32C28.866 32 32 28.866 32 25H30ZM25 2C27.7614 2 30 4.23858 30 7H32C32 3.13401 28.866 0 25 0V2ZM7 0C3.13401 0 0 3.13401 0 7H2C2 4.23858 4.23858 2 7 2V0ZM19.75 12.5H22.573V10.5H19.75V12.5ZM23.0202 12.7764L24.1056 14.9472L25.8944 14.0528L24.809 11.882L23.0202 12.7764ZM22.573 12.5C22.7623 12.5 22.9355 12.607 23.0202 12.7764L24.809 11.882C24.3855 11.035 23.5199 10.5 22.573 10.5V12.5ZM21.9137 11.7017L17.8103 17.961L19.4829 19.0575L23.5863 12.7983L21.9137 11.7017ZM16.9644 17.9458L14.1022 13.2173L12.3912 14.2529L15.2535 18.9815L16.9644 17.9458ZM9.76714 13.3176L6.12148 20.0223L7.87852 20.9777L11.5242 14.273L9.76714 13.3176ZM14.1022 13.2173C13.1028 11.5663 10.689 11.6222 9.76714 13.3176L11.5242 14.273C11.7086 13.9339 12.1913 13.9227 12.3912 14.2529L14.1022 13.2173ZM17.8103 17.961C17.6086 18.2687 17.1549 18.2605 16.9644 17.9458L15.2535 18.9815C16.206 20.5551 18.4745 20.5959 19.4829 19.0575L17.8103 17.961Z"
-                  fill="#D90A2C"
-                />
-              </svg>
+             <svg
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    className="transition-all duration-300 group-hover:stroke-white"
+    d="M12 2L20 5V11C20 16.55 16.16 20.74 12 22C7.84 20.74 4 16.55 4 11V5L12 2Z"
+    stroke="#D90A2C"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    className="transition-all duration-300 group-hover:stroke-white"
+    d="M9 12L11 14L15 10"
+    stroke="#D90A2C"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+</svg>
             </div>
             <Link to="/services">
               <h1 className="pt-6 font-semibold text-22 text-main-black">

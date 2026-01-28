@@ -48,7 +48,7 @@ export default function App() {
   /* AOS */
   useEffect(() => {
     AOS.init({
-      once: true,
+      once: false,
       duration: 700,
       easing: "ease-out-cubic",
     });
@@ -67,7 +67,7 @@ export default function App() {
       <Route path="/blog-details" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/project-details" element={<ProjectDetails />} />
+      <Route path="/Sage-100-Gestion-Commerciale" element={<ProjectDetails />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/course-details" element={<CourseDetails />} />

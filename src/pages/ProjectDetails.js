@@ -11,8 +11,8 @@ export default function ProjectDetails() {
     <InnerPageLayout>
       <BreadCrumb
         pageTitle="Sage 100 Gestion Commerciale"
-        currentPage="Project Details"
-        href="/project-details"
+        currentPage="Sage 100 Gestion Commerciale"
+        href="/Sage-100-Gestion-Commerciale"
       />
       <ProjectOverview />
       <ProjectRequirement />

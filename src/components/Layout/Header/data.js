@@ -65,7 +65,7 @@ const pagesLinkData = [
  
   {
     linkLabel: "Gestion commerciale",
-    pageLink: "/project-details",
+    pageLink: "/Sage-100-Gestion-Commerciale",
   },
   {
     linkLabel: "Comptabilité",

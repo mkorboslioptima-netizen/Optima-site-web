@@ -13,7 +13,7 @@ export default function AboutFour() {
                 Qui sommes-nous
               </h1>
               <h2 className="pt-5 font-semibold text-24 sm:text-48 text-main-black">
-                18 Ans d'Excellence en Gestion d'Entreprise
+                20 Ans d'Excellence en Gestion d'Entreprise
               </h2>
               <p className="pt-5 text-paragraph sm:pt-10">
                 Partenaire SAGE et HOROQUARTZ depuis 2006. Nous sommes le choix de référence des entreprises tunisiennes pour leurs solutions ERP, GRH et finance.

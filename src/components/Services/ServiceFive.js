@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 export default function ServiceFive() {
   return (
-    <section id="services" className="py-[70px] sm:py-[130px] bg-white">
+ <section
+  id="services"
+  className="pt-[70px] pb-0 sm:pt-[130px] sm:pb-0 bg-white"
+>
       <div className="w-full mx-auto theme-container">
         <h1 className="px-5 bg-main-gray border border-it-blue/20 text-it-red font-medium rounded-[30px] w-fit mx-auto">
           Notre Expertise

@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 export default function FunFactTwo() {
   return (
-    <section className="pb-16 md:pb-[130px]">
+    <section className="mt-20 pb-16 md:pb-[130px]">
       <div className="w-full mx-auto theme-container">
         <div className="border border-buisness-dark-black/10 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-12 rounded-[15px]">
           {/* <!-- single card start --> */}
@@ -29,7 +29,7 @@ export default function FunFactTwo() {
               />
             </svg>
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={500} />
+              <CountUp start={0} end={500}  duration={2} enableScrollSpy />
               +
             </h1>
 

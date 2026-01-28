@@ -14,7 +14,7 @@ export default function ProjectRequirement() {
         </div>
         <div className="grid grid-cols-6 gap-5 py-10 border-b sm:grid-cols-12 border-purple/10 sm:gap-0">
           <div className="flex items-center col-span-6 gap-4 h-fit">
-            <span className="flex items-center justify-center w-6 rounded-full aspect-square bg-purple">
+            <span className="flex items-center justify-center w-6 rounded-full aspect-square bg-[#E11D48]">
               <svg
                 width="6"
                 height="10"
@@ -41,7 +41,7 @@ export default function ProjectRequirement() {
         </div>
         <div className="grid grid-cols-6 gap-5 py-10 border-b sm:grid-cols-12 border-purple/10 sm:gap-0">
           <div className="flex items-center col-span-6 gap-4 h-fit">
-            <span className="flex items-center justify-center w-6 rounded-full aspect-square bg-purple">
+            <span className="flex items-center justify-center w-6 rounded-full aspect-square bg-[#E11D48]">
               <svg
                 width="6"
                 height="10"
@@ -68,7 +68,7 @@ export default function ProjectRequirement() {
         </div>
         <div className="grid grid-cols-6 gap-5 py-10 border-b sm:grid-cols-12 border-purple/10 sm:gap-0">
           <div className="flex items-center col-span-6 gap-4 h-fit">
-            <span className="flex items-center justify-center w-6 rounded-full aspect-square bg-purple">
+            <span className="flex items-center justify-center w-6 rounded-full aspect-square bg-[#E11D48]">
               <svg
                 width="6"
                 height="10"

@@ -12,6 +12,7 @@ import CtaFive from "../components/Cta/CtaFive";
 import AboutFour from "../components/About/AboutFour";
 import FooterFive from "../components/Layout/Footer/FooterFive";
 import PageLayout from "../components/Layout/PageLayout";
+import ServiceFour from "../components/Services/ServiceFour";
 export default function HomeFive() {
   return (
     <PageLayout>
@@ -20,7 +21,7 @@ export default function HomeFive() {
       <AboutFour />
       <ServiceFive />
      
-      <SuccessStory />
+      <ServiceFour />
       <FunFactTwo />
       <TestimonialFive />
      

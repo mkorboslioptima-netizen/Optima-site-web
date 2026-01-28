@@ -1,7 +1,7 @@
 import React from "react";
 import { demoLinkData, pagesLinkData, Horoquartzlink,Idemialink} from "../data";
 import { Link } from "react-router-dom";
-import LogoOptima from '../../../../assets/images/home-five/logo_optima.png';
+import LogoOptima from '../../../../assets/images/home-five/logo.svg';
 import LogoOptima2 from '../../../../assets/images/home-five/Optima.png';
 
 export default function DemoHeaderFour() {
@@ -13,7 +13,7 @@ export default function DemoHeaderFour() {
               <div className="flex items-center space-x-8">
               <div>
                 <Link to="/">
-                  <img src={LogoOptima2} alt="logo" className="   "  />
+                  <img src={LogoOptima} alt="logo" className="   "  />
                         
 
                 </Link>
@@ -257,30 +257,7 @@ export default function DemoHeaderFour() {
                     </Link>
                   </li>
                   
-                  <li>
-                    <Link
-                      className="
-                      relative
-                      text-gray-800 font-semibold
-                      transition-all duration-300
-                      hover:text-[#E11D48]
-
-                      after:content-['']
-                      after:absolute
-                      after:left-0
-                      after:-bottom-1
-                      after:w-0
-                      after:h-[2px]
-                      after:bg-[#E11D48]
-                      after:transition-all
-                      after:duration-300
-                      hover:after:w-full
-                      w-fit"
-                      to="/contact"
-                    >
-                      Contact
-                    </Link>
-                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -289,29 +266,29 @@ export default function DemoHeaderFour() {
                 
               </a>
               <Link to="/contact">
-                <div className="home-two-btn-bg py-2.5 group bg-gradient-to-r from-purple-600 to-blue-600 border-purple shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                  <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-white/90 font-inter">
-                    Contact US
-                  </span>
-                  <svg
-                    className="relative z-10"
-                    width="7"
-                    height="12"
-                    viewBox="0 0 7 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      className="transition-all duration-300 group-hover:stroke-purple"
-                      d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                      stroke="white"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
+                          <div className="home-two-btn-bg py-3.5 group bg-buisness-red border-buisness-red w-fit mt-0.5">
+                            <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
+                              Contact US
+                            </span>
+                            <svg
+                              className="relative z-10"
+                              width="7"
+                              height="12"
+                              viewBox="0 0 7 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                className="transition-all duration-300 group-hover:stroke-buisness-red"
+                                d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                                stroke="white"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </Link>
             </div>
           </div>
         </div>
