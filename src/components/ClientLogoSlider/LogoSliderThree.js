@@ -9,7 +9,7 @@ export default function LogoSliderThree() {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 1000,
       disableOnInteraction: false,
     },
     pagination: false,
@@ -45,37 +45,35 @@ export default function LogoSliderThree() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="./assets/images/home-five/clinets/6.svg" alt="" />
+                <img src="./assets/images/home-five/clinets/Fourseason.svg" alt="" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
                 <div>
-                  <img src="./assets/images/home-five/clinets/3.png" alt="" />
+                  <img src="./assets/images/home-five/clinets/Valeo.png" alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div>
-                  <img src="./assets/images/home-five/clinets/4.jpg" alt="" />
+                  <img src="./assets/images/home-five/clinets/Carrefour.png" alt="" />
                 </div>
               </SwiperSlide>
+              
               <SwiperSlide>
                 <div>
-                  <img src="./assets/images/home-five/clinets/5.jpg" alt="" />
+                  <img src="./assets/images/home-five/clinets/Autoliv.svg" alt="" />
                 </div>
               </SwiperSlide>
+       
               <SwiperSlide>
                 <div>
-                  <img src="./assets/images/home-five/clinets/1.svg" alt="" />
+                  <img src="./assets/images/home-five/clinets/Sebn.png" alt="" />
                 </div>
               </SwiperSlide>
+             
               <SwiperSlide>
                 <div>
-                  <img src="./assets/images/home-five/clinets/2.png" alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div>
-                  <img src="./assets/images/home-five/clinets/7.png" alt="" />
+                  <img src="./assets/images/home-five/clinets/Lloyd.png" alt="" />
                 </div>
               </SwiperSlide>
             </Swiper>

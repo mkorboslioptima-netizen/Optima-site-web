@@ -20,11 +20,10 @@ export default function HomeFive() {
       <HeroFive />
       <AboutFour />
       <ServiceFive />
-     
       <ServiceFour />
       <FunFactTwo />
       <TestimonialFive />
-     
+
       <LogoSliderThree />
      
       <FooterFive />

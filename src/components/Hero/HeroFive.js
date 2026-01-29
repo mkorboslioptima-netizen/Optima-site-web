@@ -3,7 +3,6 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import GLightbox from "glightbox";
 import { Link } from "react-router-dom";
-
 export default function HeroFive() {
   const swiperOptions = {
     modules: [Autoplay, Navigation],
@@ -498,17 +497,27 @@ export default function HeroFive() {
     stroke="#D90A2C"
     strokeWidth="2"
     strokeLinecap="round"
+    
   />
+  
 </svg>
+
             </div>
-            <Link to="/services">
-              <h1 className="pt-6 font-semibold text-22 text-main-black">
-                SAGE Partner Officiel
-              </h1>
-            </Link>
+            
+<Link to="/services" className="flex flex-col items-start">
+ 
+
+  <h1 className="pt-3 font-semibold text-22 text-main-black">
+    SAGE Partner Officiel
+  </h1>
+  
+</Link>
+
+
             <p className="text-paragraph pt-3.5">
               Partenaire officiel SAGE depuis 2006, nous accompagnons votre transformation digitale avec expertise et fiabilité
             </p>
+         
           </div>
           {/* <!-- single card end  --> */}
           {/* <!-- single card start  --> */}
