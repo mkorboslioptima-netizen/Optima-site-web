@@ -7,16 +7,16 @@ export default function RelatedProject() {
         <div className="w-full flex flex-col sm:flex-row justify-between items-center border-t border-purple/10 pt-10 md:pt-20 pb-16 md:pb-[130px] gap-5">
           <div className="flex items-center gap-[50px]">
             <img
-              src="/assets/images/tech-1.webp"
+              src="/assets/images/en-stock.png"
               alt=""
               className="w-[110px] aspect-square rounded-lg object-cover"
             />
             <div className="">
               <p className="text-sm font-semibold text-paragraph">
-                Tech Solutions
+                Négoce et Distribution
               </p>
               <p className="mt-2 font-semibold text-22 text-main-black font-inter">
-                Digital Marketing Solutions
+                 Stock optimisé
               </p>
             </div>
           </div>
@@ -37,16 +37,16 @@ export default function RelatedProject() {
           </svg>
           <div className="flex items-center gap-[50px]">
             <img
-              src="/assets/images/tech-2.webp"
+              src="/assets/images/a.png"
               alt=""
               className="w-[110px] aspect-square rounded-lg object-cover"
             />
             <div className="">
               <p className="text-sm font-semibold text-paragraph">
-                Cyber Security
+                Services
               </p>
               <p className="mt-2 font-semibold text-22 text-main-black font-inter">
-                Remote support provider
+                Facturation & Rentabilité
               </p>
             </div>
           </div>

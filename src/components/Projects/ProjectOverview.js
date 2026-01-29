@@ -17,13 +17,10 @@ export default function ProjectOverview() {
         <div className="grid items-center grid-cols-6 md:grid-cols-12">
           <div className="col-span-6">
             <h1 className="text-24 sm:text-34 leading-[55px] tracking-tight font-semibold text-main-black">
-              Overview
+             Une solution unique pour piloter toute votre activité
             </h1>
             <p className="max-w-[533px] text-18 sm:text-24 leading-[40px] text-paragraph mt-2.5 md:mt-3.5">
-              In the ever-evolving landscape of technology, businesses require
-              robust and reliable solutions to manage their IT infrastructure
-              seamlessly. Our IT Managed Solutions offer a comprehensive
-              approach, combining and technology
+              Sage 100 Gestion Commerciale facilite la gestion quotidienne de votre entreprise. Du devis à la facturation, en passant par l'approvisionnement et les stocks, vous gagnez en efficacité et en traçabilité. Adaptée aux PME de tous secteurs, cette solution vous permet de structurer votre activité et de soutenir votre croissance.
             </p>
             <div className="flex items-center gap-5 mt-3.5 md:mt-8 w-fit">
               <div className="overflow-hidden rounded-full w-14 h-14">

@@ -33,7 +33,7 @@ export default function ProjectFaq() {
   return (
     <div className="w-full col-span-6">
       <img
-        src="./assets/images/project-result2.webp"
+        src="./assets/images/sage1.jpg"
         alt=""
         className="w-full rounded-xl"
       />
