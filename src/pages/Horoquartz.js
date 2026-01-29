@@ -9,11 +9,11 @@ import ServiceDetailsInfo from "../components/Services/ServiceDetailsInfo";
 
 export default function Horoquartz() {
   return (
-    <InnerPageLayout>
+      <InnerPageLayout>
       <BreadCrumb pageTitle="Horoquartz" currentPage="Horoquartz" href="/Horoquartz" />
       <AboutHoroquartz />
-    <ServiceDetailsInfo />
+      <ServiceDetailsInfo />
       <ServiceFiveRed />
-    </InnerPageLayout>
+      </InnerPageLayout>
   );
 }

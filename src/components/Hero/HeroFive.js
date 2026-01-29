@@ -167,7 +167,7 @@ export default function HeroFive() {
                         <div className="absolute w-[160%] h-[160%] rounded-full h5-play-btn-line3"></div>
                       </span>
                       <span className="font-semibold text-white border-b border-white">
-                        How IT Works
+                        
                       </span>
                     </a>
                   </div>

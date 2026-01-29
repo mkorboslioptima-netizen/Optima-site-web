@@ -5,17 +5,16 @@ import ProjectOverview from "../components/Projects/ProjectOverview";
 import ProjectRequirement from "../components/Projects/ProjectRequirement";
 import ProjectResult from "../components/Projects/ProjectResult";
 import RelatedProject from "../components/Projects/RelatedProject";
-
+import HeroTwo from "../components/Hero/HeroTwo";
+import ServiceTwo from "../components/Services/ServiceTwo";
 export default function ProjectDetails() {
   return (
     <InnerPageLayout>
-      <BreadCrumb
-        pageTitle="Sage 100 Gestion Commerciale"
-        currentPage="Sage 100 Gestion Commerciale"
-        href="/Sage-100-Gestion-Commerciale"
-      />
+      <HeroTwo />
+    
       <ProjectOverview />
-      <ProjectRequirement />
+      <ServiceTwo />
+      {/*<ProjectRequirement /> */}
       <ProjectResult />
       <RelatedProject />
     </InnerPageLayout>

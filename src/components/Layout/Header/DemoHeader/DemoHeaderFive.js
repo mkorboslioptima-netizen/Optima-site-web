@@ -267,7 +267,7 @@ export default function DemoHeaderFour() {
               </a>
               <Link to="/contact">
                           <div className="home-two-btn-bg py-3.5 group bg-buisness-red border-buisness-red w-fit mt-0.5">
-                            <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
+                            <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-[#E11D48] font-inter">
                               Contactez-nous 
                             </span>
                             <svg
