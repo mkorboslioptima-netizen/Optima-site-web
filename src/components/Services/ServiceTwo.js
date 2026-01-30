@@ -160,11 +160,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-white text-main-black text-22">
-                Optimisation de Site Web
+                Gestion des Stocks
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-white">
-                Optimisation des éléments du site web tels que les balises meta, les en-têtes,
-                le contenu et la structure de liens internes pour améliorer le référencement.
+                Optimisez vos stocks en temps réel, gérez le réapprovisionnement et évitez les ruptures
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-4 group">
@@ -255,11 +254,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-white text-main-black text-22">
-                Construction de Liens
+                Gestion des Achats
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-white">
-                Acquisition de liens externes de qualité vers votre site pour améliorer
-                l'autorité de domaine et le positionnement dans les résultats de recherche.
+                Maîtrisez vos coûts d'achat et gérez efficacement vos relations fournisseurs.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-4 group">
@@ -368,11 +366,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-white text-main-black text-22">
-                Marketing de Contenu
+                Pilotage & Reporting
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-white">
-                Approche stratégique qui se concentre sur la création et la distribution
-                de contenu précieux et pertinent pour attirer et engager une audience cible.
+                Accédez à des tableaux de bord dynamiques pour suivre votre activité commerciale en temps réel.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-4 group">
@@ -408,7 +405,7 @@ export default function ServiceTwo() {
           </p>
           <div className="flex flex-col items-end justify-between w-full mt-5 sm:flex-row">
             <h1 className="max-w-[660px] text-24 sm:text-48 text-main-black font-semibold">
-              Découvrez quelques-unes de nos réussites clients
+              Une Suite 100% Intégrée
             </h1>
             <div className="flex gap-2.5">
               <button className="h2-case-study-next w-8 h-8 sm:w-11 sm:h-11 rounded-full border-[1.5px] border-white/10 flex items-center justify-center overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-blue-seo before:bg-blue-seo relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
@@ -460,16 +457,16 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-white">
-                    SEO Optimization
+                    Audit Organisationnel
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve Company users retention
+                      Solution adaptée à votre organisation
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/1.svg"
+                  src="./assets/images/home-two/case_study/1.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -530,16 +527,16 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#ff0000] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-blue-seo group-hover:text-white">
-                    Keywords Research
+                   Déploiement Sur Mesure
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve keywords research users
+                      Paramétrage sur mesure de votre gestion
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/2.svg"
+                  src="./assets/images/home-two/case_study/2.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -599,16 +596,16 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-blue-seo group-hover:text-white">
-                    Content Marketing
+                    Digitalisation des Processus
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-white underlines">
-                      How we helped improve Company users retention
+                      Automatisation intelligente des processus
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/1.svg"
+                  src="./assets/images/home-two/case_study/3.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
