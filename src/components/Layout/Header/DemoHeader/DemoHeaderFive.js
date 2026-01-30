@@ -13,7 +13,8 @@ export default function DemoHeaderFour() {
               <div className="flex items-center space-x-8">
               <div>
                 <Link to="/">
-                  <img src={LogoOptima} alt="logo" className="   "  />
+                  <img src="/assets/images/image6.svg" 
+                  alt="logo" className="  w-72 h-auto "  />
                         
 
                 </Link>

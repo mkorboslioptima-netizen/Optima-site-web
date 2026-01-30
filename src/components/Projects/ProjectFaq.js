@@ -32,11 +32,7 @@ export default function ProjectFaq() {
   };
   return (
     <div className="w-full col-span-6">
-      <img
-        src="./assets/images/sage1.jpg"
-        alt=""
-        className="w-full rounded-xl"
-      />
+      
       <h1 className="col-span-6 mt-10 font-semibold tracking-tight text-24 sm:text-34">
         Preparation For IT Service
       </h1>
@@ -46,7 +42,7 @@ export default function ProjectFaq() {
           <div
             key={index}
             className={`py-5 cursor-pointer px-2 md:px-9 w-full ${
-              activeFAQ === index ? "bg-purple/5" : ""
+              activeFAQ === index ? "bg-[#d4d4d8]/5" : ""
             } rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit border border-purple/10`}
             name="faq-1"
             onClick={() => toggleFAQ(index)}
@@ -64,7 +60,7 @@ export default function ProjectFaq() {
               >
                 <path
                   d="M2 2L9.5 8L17 2"
-                  stroke="#794AFF"
+                  stroke="#007a55"
                   strokeWidth="3"
                   strokeLinecap="round"
                   strokeLinejoin="round"
