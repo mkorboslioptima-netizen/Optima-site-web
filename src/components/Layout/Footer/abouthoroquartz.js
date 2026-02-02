@@ -47,7 +47,7 @@ export default function AboutHoroquartz() {
           </div>
           <div className="relative flex flex-col justify-end w-full col-span-7 overflow-hidden sm:flex-row">
             <img
-              src="/assets/images/service/hero-img.webp"
+              src="/assets/images/service/gestiondutemps.png"
               alt="img"
               className="mt-9 w-full max-w-[630px]"
             />

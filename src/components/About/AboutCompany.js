@@ -116,7 +116,7 @@ export default function AboutCompany() {
             </div>
             <div>
               <img
-                src="/assets/images/about/hero-img.webp"
+                src="/assets/images/about/gestiondutemps.png"
                 alt="img"
                 className=""
               />

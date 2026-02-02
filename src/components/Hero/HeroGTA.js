@@ -23,13 +23,13 @@ export default function HeroTwo() {
              Du Temps et des Activités
           </h1>
           <p className="mt-5 font-medium text-black text-18 font-inter md:mt-5">
-            bal bla bla 
+            
           </p>
           <div className="flex flex-col gap-3 mt-5 sm:flex-row sm:gap-6 md:mt-12">
             <Link to="/pricing">
               <div className="home-two-btn-white group">
                 <span className="relative z-10 py-1 text-black font-semibold transition-all duration-300 group-hover:text-white font-inter">
-                 Nous contatcer
+                 HOROQUARTZ
                 </span>
                 <svg
                   className="relative z-10"
@@ -53,7 +53,31 @@ export default function HeroTwo() {
             <Link to="/blogs">
               <div className="home-two-btn-white-rev group">
                 <span className="text-base group-hover:text-blue-seo text-white transition-all duration-300 font-semibold font-inter relative z-10 py-0.5">
-                  Case Studies
+                  Etemptation
+                </span>
+                <svg
+                  className="relative z-10"
+                  width="7"
+                  height="12"
+                  viewBox="0 0 7 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className="transition-all duration-300 group-hover:stroke-blue-seo stroke-white"
+                    d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                    stroke="white"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </Link>
+            <Link to="/blogs">
+              <div className="home-two-btn-white-rev group">
+                <span className="text-base group-hover:text-blue-seo text-white transition-all duration-300 font-semibold font-inter relative z-10 py-0.5">
+                SelfService
                 </span>
                 <svg
                   className="relative z-10"
@@ -186,7 +210,7 @@ export default function HeroTwo() {
         {/* <!-- circle animations elements  --> */}
 
         <img
-          src="/assets/images/home-two/hero-img.webp"
+          src="/assets/images/home-two/gta1.png"
           alt="img"
           className="relative bottom-0 right-0 self-end col-span-7 2xl:-right-52 moving-h2-hero-main-img"
         />
