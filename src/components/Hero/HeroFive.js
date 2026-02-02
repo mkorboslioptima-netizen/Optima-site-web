@@ -504,7 +504,7 @@ export default function HeroFive() {
 
             </div>
             
-<Link to="/services" className="flex flex-col items-start">
+<Link to="/Gestion_Du_Temps" className="flex flex-col items-start">
  
 
   <h1 className="pt-3 font-semibold text-22 text-main-black">
@@ -580,7 +580,7 @@ export default function HeroFive() {
                 />
               </svg>
             </div>
-            <Link to="/services" className="">
+            <Link to="/GestionFinanciere" className="">
               <h1 className="pt-6 font-semibold text-22 text-main-black">
                 Gestion Financière & Comptable
               </h1>

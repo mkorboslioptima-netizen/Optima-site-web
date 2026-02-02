@@ -9,9 +9,9 @@ import FloatingDevis from "./components/Devis/FloatingDevis";
 
 /* Pages */
 import HomeOne from "./pages/HomeOne";
-import Homefive from "./pages/HomeFive";
+import Acceuil from "./pages/Acceuil";
 import About from "./pages/About";
-import Services from "./pages/Services";
+
 import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
@@ -25,7 +25,8 @@ import Blogs from "./pages/Blogs";
 import Checkout from "./pages/Checkout";
 import Notfound from "./pages/Notfound";
 import Devis from "./pages/Devis";
-
+import GTA from "./pages/Gestion_Du_Temps"
+import GestionFinanciere from "./pages/GestionFinanciere";
 /* ─── Page transition variants ─── */
 const pageVariants = {
   initial: { opacity: 0, y: 18 },
@@ -262,9 +263,10 @@ export default function App() {
       <AnimatePresence mode="wait">
      
           <Routes location={location}>
-            <Route path="/" element={<Homefive />} />
+            <Route path="/" element={<Acceuil />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/Gestion_Du_Temps" element={<GTA />} />
+            <Route path="/GestionFinanciere" element={<GestionFinanciere />} />
             <Route path="/blog-details" element={<BlogDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
