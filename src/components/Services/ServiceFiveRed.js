@@ -9,7 +9,7 @@ export default function ServiceFiveRed() {
           Popular Services
         </h1>
         <h2 className="max-w-[747px] font-semibold text-24 sm:text-48 text-main-black text-center mx-auto mt-5">
-          High Impact Creative Services to grow your business
+          Tout ce dont vous avez besoin pour piloter le temps de travail
         </h2>
         <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 min-h-[303px] gap-[30px] mt-[70px]">
           {/* <!-- single card  --> */}
@@ -30,7 +30,7 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Managed IT Services
+                Suivi des Présences en Temps Réel
               </h1>
               <p className="text-paragraph line-clamp-3">
                 Outsourcing IT operations third part service provider
@@ -89,7 +89,7 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Cyber security Services
+                Gestion des Plannings & Horaires
               </h1>
               <p className="text-paragraph line-clamp-3">
                 Providing service security audit penetration testing det
@@ -137,7 +137,7 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Data Backup & Recovery
+                Absences, Congés & Autorisations
               </h1>
               <p className="text-paragraph line-clamp-3">
                 Offering solution data backup, disaster recovery planning data
@@ -185,7 +185,7 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Software Development
+                Données Fiables pour la Paie
               </h1>
               <p className="text-paragraph line-clamp-3">
                 Develop customs applications tailored specific business needs

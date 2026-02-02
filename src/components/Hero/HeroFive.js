@@ -508,7 +508,7 @@ export default function HeroFive() {
  
 
   <h1 className="pt-3 font-semibold text-22 text-main-black">
-    SAGE Partner Officiel
+    Gestion du temps
   </h1>
   
 </Link>
@@ -582,7 +582,7 @@ export default function HeroFive() {
             </div>
             <Link to="/services" className="">
               <h1 className="pt-6 font-semibold text-22 text-main-black">
-                Horoquartz-Leader du Marché
+                Gestion Financière & Comptable
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">
@@ -624,7 +624,7 @@ export default function HeroFive() {
             </div>
             <Link to="/services">
               <h1 className="pt-6 font-semibold text-22 text-main-black">
-                Certifié ISO 9001 & 27001
+                Gestion Commerciale & Clients
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">

@@ -2,24 +2,24 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "What factors determine the pricing of SEO services?",
+    question: "C’est quoi exactement la Gestion du Temps (GTA)?",
     answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
+      "La GTA est une solution qui permet de suivre les heures de travail des employés : présences, retards, absences, heures supplémentaires et congés. Elle automatise le suivi du temps et facilite le travail des RH et de la paie.",
   },
   {
-    question: "What factors determine the pricing of SEO services?",
+    question: "À quoi sert un système de pointage ?",
     answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
+      "Il enregistre automatiquement les heures d’entrée et de sortie des employés. Cela évite les erreurs manuelles, les oublis et permet d’avoir des données fiables pour la paie.",
   },
   {
-    question: "What factors determine the pricing of SEO services?",
+    question: "Est-ce que la solution est compliquée à utiliser ?",
     answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
+      "Notre solution est conçue pour être simple et intuitive. Les employés pointent facilement et les responsables RH disposent de tableaux de bord clairs pour tout gérer.",
   },
   {
-    question: "What factors determine the pricing of SEO services?",
+    question: "Peut-on gérer les congés et absences avec la GTA ??",
     answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
+      "Les demandes de congés, absences et permissions sont centralisées dans le système, avec un processus de validation rapide et un historique complet. .",
   },
   // Add more FAQ items here if needed
 ];
@@ -39,7 +39,7 @@ export default function ServiceFaq() {
                 FAQs
               </h1>
               <h2 className="mt-5 font-semibold text-24 sm:text-48 text-main-black">
-                Asked Questions & Answer
+                Tout savoir sur la GTA
               </h2>
               <div className="flex flex-col gap-2.5 w-full mt-5 md:mt-10 p-0 sm:p-5">
                 {/* <!-- faq single start  --> */}

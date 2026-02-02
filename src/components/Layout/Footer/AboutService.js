@@ -9,11 +9,10 @@ export default function AboutService() {
         <div className="box-border grid grid-cols-6 lg:grid-cols-12">
           <div className="flex flex-col justify-center col-span-5">
             <h1 className="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
-              Digital Transforming Brands, Elevating Reach Crafting Success
+              Simplifiez la gestion du temps de vos équipes
             </h1>
             <p className="pb-10 mt-5 md:mt-10 text-paragraph">
-              Defined by digital dynamism, our digital marketing agency emerges
-              as a beacon of innovation and strategic prowess.
+              Automatisez le suivi des présences, plannings et absences. Gagnez du temps et éliminez les erreurs de saisie.
             </p>
             <Link to="/projects">
               <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-[15px]">
@@ -42,7 +41,7 @@ export default function AboutService() {
           </div>
           <div className="relative flex flex-col justify-end w-full col-span-7 overflow-hidden sm:flex-row">
             <img
-              src="/assets/images/service/hero-img.webp"
+              src="/assets/images/service/GTA.png"
               alt="img"
               className="mt-9 w-full max-w-[630px]"
             />
