@@ -41,9 +41,8 @@ export default function ServiceTwo() {
         <img
           src="./assets/images/home-two/shape-1.svg"
           alt="bg-shape"
-          className="absolute bottom-20 moving-anim tran"
-        />
-      </div>
+  className="absolute bottom-20 moving-anim tran filter grayscale transition-all duration-500"></img>    
+    </div>
       {/* <!-- animated circle bg  --> */}
       <div className="absolute z-0 flex items-center justify-center w-2 h-2 -top-1 -left-1">
         <div className="animated_circle bg-black/5"></div>
@@ -86,7 +85,30 @@ export default function ServiceTwo() {
               >
                 <path
                   className="transition-all duration-300 "
-                  d="M49.292 41.6126L54.5766 46.8972C56.6972 49.0177 56.6972 52.4558 54.5766 54.5763C52.4561 56.6969 49.018 56.6969 46.8975 54.5763L41.6128 49.2918M1.16699 24.5417C1.16699 11.6321 11.6323 1.16675 24.542 1.16675C37.4516 1.16675 47.917 11.6321 47.917 24.5417C47.917 37.4514 37.4516 47.9167 24.542 47.9167C11.6323 47.9167 1.16699 37.4514 1.16699 24.5417Z"
+                  d="M4 6C4 4.9 4.9 4 6 4H26L54 32L32 54L4 26V6Z"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle
+                  className="transition-all duration-300 "
+                  cx="16"
+                  cy="16"
+                  r="4"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                />
+                <path
+                  className="transition-all duration-300 "
+                  d="M36 28L28 36"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <path
+                  className="transition-all duration-300 "
+                  d="M42 34L34 42"
                   stroke="#007a55"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -128,7 +150,31 @@ export default function ServiceTwo() {
               >
                 <path
                   className="transition-all duration-300 "
-                  d="M15.25 15.25H42.75M15.25 29H29M40 42.75L48.25 56.5M18 42.75L9.75 56.5M29 42.75V51M48.25 1.5L9.75 1.5C5.19365 1.5 1.5 5.19365 1.5 9.75L1.5 34.5C1.5 39.0563 5.19365 42.75 9.75 42.75L48.25 42.75C52.8063 42.75 56.5 39.0563 56.5 34.5L56.5 9.75C56.5 5.19366 52.8064 1.5 48.25 1.5Z"
+                  d="M29 2L52 14V44L29 56L6 44V14L29 2Z"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  className="transition-all duration-300 "
+                  d="M29 56V29"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  className="transition-all duration-300 "
+                  d="M52 14L29 29L6 14"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  className="transition-all duration-300 "
+                  d="M40.5 8L17.5 21.5"
                   stroke="#007a55"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -163,48 +209,35 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <svg
-                width="56"
-                height="56"
-                viewBox="0 0 56 56"
+                width="58"
+                height="58"
+                viewBox="0 0 58 58"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   className="transition-all duration-300 "
-                  d="M41.833 51.0001V41.8334H50.9997"
+                  d="M2 2H10L16 38H46L54 14H12"
                   stroke="#007a55"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
-                <path
+                <circle
                   className="transition-all duration-300 "
-                  d="M5.16602 14.3331L14.3327 14.3331L14.3327 5.16644"
+                  cx="19"
+                  cy="50"
+                  r="4"
                   stroke="#007a55"
                   strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                 />
-                <path
+                <circle
                   className="transition-all duration-300 "
-                  d="M34.958 21.2081L21.208 34.9582"
+                  cx="43"
+                  cy="50"
+                  r="4"
                   stroke="#007a55"
                   strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M23.5 14.3333L33.0074 4.82589C35.3505 2.48275 39.1495 2.48275 41.4926 4.82589L51.3407 14.674C53.6839 17.0171 53.6839 20.8161 51.3407 23.1593L41.8333 32.6667"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M32.6661 41.8332L23.1587 51.3406C20.8155 53.6838 17.0165 53.6838 14.6734 51.3406L4.82528 41.4925C2.48213 39.1494 2.48213 35.3504 4.82528 33.0072L14.3327 23.4998"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
                 />
               </svg>
             </div>
@@ -238,7 +271,61 @@ export default function ServiceTwo() {
               >
                 <path
                   className="transition-all duration-300 "
-                  d="M1.58301 14.3333V2.58325C1.58301 2.03097 2.03072 1.58325 2.58301 1.58325H14.333C14.8853 1.58325 15.333 2.03097 15.333 2.58325V14.3333C15.333 14.8855 14.8853 15.3333 14.333 15.3333H2.58301C2.03072 15.3333 1.58301 14.8855 1.58301 14.3333Z"
+                  d="M4 54H54"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <path
+                  className="transition-all duration-300 "
+                  d="M4 54V4"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <rect
+                  className="transition-all duration-300 "
+                  x="10"
+                  y="34"
+                  width="8"
+                  height="20"
+                  rx="1"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                />
+                <rect
+                  className="transition-all duration-300 "
+                  x="22"
+                  y="24"
+                  width="8"
+                  height="30"
+                  rx="1"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                />
+                <rect
+                  className="transition-all duration-300 "
+                  x="34"
+                  y="14"
+                  width="8"
+                  height="40"
+                  rx="1"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                />
+                <rect
+                  className="transition-all duration-300 "
+                  x="46"
+                  y="22"
+                  width="8"
+                  height="32"
+                  rx="1"
+                  stroke="#007a55"
+                  strokeWidth="2"
+                />
+                <path
+                  className="transition-all duration-300 "
+                  d="M10 28L22 18L34 10L50 6"
                   stroke="#007a55"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -246,46 +333,7 @@ export default function ServiceTwo() {
                 />
                 <path
                   className="transition-all duration-300 "
-                  d="M42.833 14.3333V2.58325C42.833 2.03097 43.2807 1.58325 43.833 1.58325H55.583C56.1353 1.58325 56.583 2.03097 56.583 2.58325V14.3333C56.583 14.8855 56.1353 15.3333 55.583 15.3333H43.833C43.2807 15.3333 42.833 14.8855 42.833 14.3333Z"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M42.833 55.5833V43.8333C42.833 43.281 43.2807 42.8333 43.833 42.8333H55.583C56.1353 42.8333 56.583 43.281 56.583 43.8333V55.5833C56.583 56.1355 56.1353 56.5833 55.583 56.5833H43.833C43.2807 56.5833 42.833 56.1355 42.833 55.5833Z"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M1.58301 55.5833V43.8333C1.58301 43.281 2.03072 42.8333 2.58301 42.8333H14.333C14.8853 42.8333 15.333 43.281 15.333 43.8333V55.5833C15.333 56.1355 14.8853 56.5833 14.333 56.5833H2.58301C2.03072 56.5833 1.58301 56.1355 1.58301 55.5833Z"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M23.583 31.8335H34.583"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M20.833 37.3333L29.083 18.0833L37.333 37.3333"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M15.333 8.45837H42.833M49.708 15.3334V42.8334M42.833 49.7084H15.333M8.45801 42.8334V15.3334"
+                  d="M44 6H50V12"
                   stroke="#007a55"
                   strokeWidth="2"
                   strokeLinecap="round"

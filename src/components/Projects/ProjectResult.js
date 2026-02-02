@@ -7,14 +7,14 @@ export default function ProjectResult() {
       <div className="theme-container w-full mx-auto grid grid-cols-6 md:grid-cols-12 gap-[30px]">
         <div className="w-full col-span-6">
           
-          <h1 className="col-span-6 mt-10 font-semibold tracking-tight text-34">
+          <h1 className="col-span-6 mt-10 font-semibold tracking-tight text-34 mb-12">
             Pourquoi choisir Sage 100 Gestion Commerciale ?
           </h1>
           <p className="mt-4 mb-5 text-paragraph">
         
           </p>
           <ul className="">
-            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-4">
+            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
                 width="20"
                 height="15"
@@ -29,7 +29,7 @@ export default function ProjectResult() {
               </svg>
               Gain de productivité grâce à l'automatisation des processus administratifs
             </li>
-            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-4">
+            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
                 width="20"
                 height="15"
@@ -44,7 +44,7 @@ export default function ProjectResult() {
               </svg>
               Visibilité complète sur la chaîne de valeur (Achats, Stocks, Ventes)
             </li>
-            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-4">
+            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
                 width="20"
                 height="15"
@@ -59,7 +59,7 @@ export default function ProjectResult() {
               </svg>
               Sécurisation des marges commerciales
             </li>
-            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-4">
+            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
                 width="20"
                 height="15"
@@ -74,7 +74,7 @@ export default function ProjectResult() {
               </svg>
               Amélioration de la satisfaction client grâce à une meilleure réactivité
             </li>
-            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-4">
+            <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
                 width="20"
                 height="15"

@@ -3,9 +3,16 @@ import InnerPageLayout from "../components/Layout/InnerPageLayout";
 import BreadCrumb from "../components/Breadcrumb/BreadCrumb";
 import { Link } from "react-router-dom";
 
+import SEO from "../components/SEO";
+
 export default function Blogs() {
   return (
     <InnerPageLayout>
+      <SEO
+        title="Blog"
+        description="Actualités et articles sur Sage 100, la gestion d'entreprise, les ERP et les solutions Horoquartz. Blog Optima Tunisie."
+        path="/blogs"
+      />
       <BreadCrumb pageTitle="Blogs" href="/blogs" currentPage="Blogs" />
       <section className="py-16 md:py-[130px]">
         <div className="theme-container w-full mx-auto grid grid-cols-8 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">

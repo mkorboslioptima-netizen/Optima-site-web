@@ -8,15 +8,15 @@ export default function HeroFive() {
     modules: [Autoplay, Navigation],
     slidesPerView: 1,
     spaceBetween: 30,
-    effect: "fade",
+    effect: "slide",
     loop: true,
-    // centeredSlides: true,
-    speed: 3000,
+    centeredSlides: true,
+    speed: 3500,
     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+      delay: 6000,
+      disableOnInteraction: true,
     },
-    pagination: false,
+    pagination: true,
     navigation: {
       nextEl: ".h5-hero-next",
       prevEl: ".h5-hero-prev",
@@ -354,7 +354,7 @@ export default function HeroFive() {
                     </svg>
                     <span 
                       className="font-semibold text-white text-18 sm:text-20"
-                      style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}
+                      style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}
                     >
                        Votre partenaire digital
                     </span>

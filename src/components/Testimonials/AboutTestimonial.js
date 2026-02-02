@@ -239,10 +239,7 @@ export default function AboutTestimonial() {
                     </div>
 
                     <h1 className="text-18 sm:text-[35px] sm:leading-[55px] text-center text-main-black font-medium pt-5">
-                      In this ever-evolving digital era understand the
-                      significance of staying ahead through our blog invite
-                      explore the dynamic world of IT with us decoding
-                      algorithms to unraveling
+                      Optima a transformé notre gestion d'entreprise. Une solution exceptionnelle!
                     </h1>
                     <div className="flex items-center justify-center gap-5 mt-10">
                       <div className="flex min-w-12 w-12 sm:w-[60px] min-h-12 h-12 sm:h-[60px] rounded-full overflow-hidden">

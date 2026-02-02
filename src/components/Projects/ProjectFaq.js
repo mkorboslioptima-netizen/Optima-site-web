@@ -2,24 +2,29 @@
 import React, { useState } from "react";
 const faqs = [
   {
-    question: "What factors determine the pricing of SEO services?",
+    question: "Quelle est la durée de mise en place de Sage 100 ?",
     answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
+      "Déploiement standard en 2 à 4 semaines selon la complexité.",
   },
   {
-    question: "What factors determine the pricing of SEO services?",
+    question: "Quelle formation proposez-vous ?",
     answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
+      "Formation initiale incluse + supports vidéo et documentation complète.",
   },
   {
-    question: "What factors determine the pricing of SEO services?",
+    question: "Quel support technique est disponible ?",
     answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
+      "Hotline dédiée 5j/7 de 9h à 18h + plateforme en ligne 24/7.",
   },
   {
-    question: "What factors determine the pricing of SEO services?",
+    question: "Puis-je intégrer Sage avec mes outils existants?",
     answer:
-      "However, link building isn't merely about quantity; quality and relevance are paramount. High-quality links from reputable websites carry more weight in search engine algorithms, contributing significantly to a website's overall SEO performance.",
+      "Connecteurs disponibles pour Excel, e-commerce, CRM, comptabilité.",
+  },
+  {
+    question: "Quels sont les coûts de maintenance ?",
+    answer:
+      "Abonnement mensuel incluant mises à jour, support et hébergement.",
   },
   // Add more FAQ items here if needed
 ];
@@ -32,9 +37,9 @@ export default function ProjectFaq() {
   };
   return (
     <div className="w-full col-span-6">
-      
+
       <h1 className="col-span-6 mt-10 font-semibold tracking-tight text-24 sm:text-34">
-        Preparation For IT Service
+        Comment Nous Vous Accompagnons ?
       </h1>
       <div className="flex flex-col gap-2.5 w-full mt-8">
         {/* <!-- faq single start  --> */}
@@ -42,7 +47,7 @@ export default function ProjectFaq() {
           <div
             key={index}
             className={`py-5 cursor-pointer px-2 md:px-9 w-full ${
-              activeFAQ === index ? "bg-[#d4d4d8]/5" : ""
+              activeFAQ === index ? "bg-[#D4D4D8]/5" : ""
             } rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit border border-purple/10`}
             name="faq-1"
             onClick={() => toggleFAQ(index)}
@@ -60,7 +65,7 @@ export default function ProjectFaq() {
               >
                 <path
                   d="M2 2L9.5 8L17 2"
-                  stroke="#007a55"
+                  stroke="#007A55"
                   strokeWidth="3"
                   strokeLinecap="round"
                   strokeLinejoin="round"

@@ -132,21 +132,18 @@ export default function TestimonialFive() {
                     </div>
                   </div>
                   <h1 className="text-20 sm:text-24 text-white pt-[30px]">
-                    In this ever-evolving digital era understand the
-                    significance of staying ahead through our blog invite
-                    explore the dynamic world of IT with us decoding algorithms
-                    to unraveling
+                    Optima a transformé notre gestion d'entreprise. Une solution exceptionnelle!
                   </h1>
                   <div className="flex items-center gap-6 pt-10">
                     <div className="flex w-[60px] h-[60px] rounded-full overflow-hidden">
                       <img
                         className="object-cover w-full"
-                        src="/assets/images//home-five/client-sm.webp"
+                        src="/assets/images//home-five/m.png"
                         alt=""
                       />
                     </div>
                     <h1 className="font-semibold text-white text-18 sm:text-20">
-                      Matthew C. Lansberry,
+                      Mohamed Korbosli
                       <p className="text-sm font-medium">CEO & Founder</p>
                     </h1>
                   </div>
@@ -253,21 +250,18 @@ export default function TestimonialFive() {
                     </div>
                   </div>
                   <h1 className="text-20 sm:text-24 text-white pt-[30px]">
-                    In this ever-evolving digital era understand the
-                    significance of staying ahead through our blog invite
-                    explore the dynamic world of IT with us decoding algorithms
-                    to unraveling
+                    L'équipe Optima est toujours disponible et à l'écoute. Je recommande vivement!"
                   </h1>
                   <div className="flex items-center gap-6 pt-10">
                     <div className="flex w-[60px] h-[60px] rounded-full overflow-hidden">
                       <img
                         className="object-cover w-full"
-                        src="/assets/images//home-five/client-sm.webp"
+                        src="/assets/images//home-five/w.png"
                         alt=""
                       />
                     </div>
                     <h1 className="font-semibold text-white text-18 sm:text-20">
-                      Matthew C. Lansberry,
+                      Wael Chouchani,
                       <p className="text-sm font-medium">CEO & Founder</p>
                     </h1>
                   </div>
@@ -374,21 +368,18 @@ export default function TestimonialFive() {
                     </div>
                   </div>
                   <h1 className="text-20 sm:text-24 text-white pt-[30px]">
-                    In this ever-evolving digital era understand the
-                    significance of staying ahead through our blog invite
-                    explore the dynamic world of IT with us decoding algorithms
-                    to unraveling
+                    Un service professionnel et des solutions adaptées à nos besoins spécifiques
                   </h1>
                   <div className="flex items-center gap-6 pt-10">
                     <div className="flex w-[60px] h-[60px] rounded-full overflow-hidden">
                       <img
                         className="object-cover w-full"
-                        src="/assets/images//home-five/client-sm.webp"
+                        src="/assets/images//home-five/o.png"
                         alt=""
                       />
                     </div>
                     <h1 className="font-semibold text-white text-18 sm:text-20">
-                      Matthew C. Lansberry,
+                      Ons Aouadhi,
                       <p className="text-sm font-medium">CEO & Founder</p>
                     </h1>
                   </div>

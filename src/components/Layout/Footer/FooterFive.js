@@ -6,7 +6,7 @@ export default function FooterFive() {
     <footer className="pt-20 bg-buisness-light-black">
       <div className="flex flex-wrap justify-between gap-5 mx-auto mb-20 theme-container">
         <div className="w-fit max-w-[300px]">
-          <img src="/assets/images/home-five/footer-logo.svg" alt="logo" />
+          <img src="/assets/images/logo_optima (1).png" alt="logo" />
           <p className="max-w-[300px] text-white my-6">
             SEO agencies typically work businesses of all sizes across various
             industries to help them achieve their online
@@ -243,14 +243,14 @@ export default function FooterFive() {
             <h1 className="font-semibold text-white text-18">Address</h1>
             <div className="flex gap-2 items-center relative group font-medium text-white/50 hover:text-white hover:underline transition-all duration-300 mt-3.5">
               <span className="transition-all duration-300">
-                55 Street, 2nd block, 3rd Floor Melbourne, Australia
+                6, Rue Echih – 2éme étage – App B2.1 -  2080 Ariana
               </span>
             </div>
             <h1 className="mt-6 font-semibold text-white text-18">Contact</h1>
             <div className="flex gap-2 items-center relative group font-medium text-white/50 hover:text-white hover:underline transition-all duration-300 mt-3.5">
               <span className="transition-all duration-300">
-                infoquland@gmail.com <br />
-                +880 456 852 99
+                info@optima.tn <br />
+                +216 715 397
               </span>
             </div>
           </div>

@@ -28,10 +28,10 @@ export default function RelatedProject() {
             />
             <div className="">
               <p className="text-sm font-semibold text-paragraph">
-                Négoce et Distribution
+                performance commerciale
               </p>
               <p className="mt-2 font-semibold text-22 text-main-black font-inter">
-                 Stock optimisé
+                 Suivi des ventes
               </p>
             </div>
           </div>

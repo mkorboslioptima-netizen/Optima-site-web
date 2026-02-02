@@ -13,9 +13,16 @@ import AboutFour from "../components/About/AboutFour";
 import FooterFive from "../components/Layout/Footer/FooterFive";
 import PageLayout from "../components/Layout/PageLayout";
 import ServiceFour from "../components/Services/ServiceFour";
+import SEO from "../components/SEO";
+import GoogleReviews from "../components/Reviews/GoogleReviews";
 export default function HomeFive() {
   return (
     <PageLayout>
+      <SEO
+        title={null}
+        description="Optima, intégrateur Sage 100 en Tunisie. Solutions de gestion commerciale, comptabilité, paie, ressources humaines et gestion du temps avec Horoquartz."
+        path="/"
+      />
       <DemoHeaderFive />
       <HeroFive />
       <AboutFour />
@@ -23,9 +30,10 @@ export default function HomeFive() {
       <ServiceFour />
       <FunFactTwo />
       <TestimonialFive />
-
+      
       <LogoSliderThree />
-     
+
+      <GoogleReviews />
       <FooterFive />
     </PageLayout>
   );
