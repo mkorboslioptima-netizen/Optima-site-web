@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutService() {
   return (
-     <section className="mt-6 md:mt-10 pb-2 md:pb-4">
+     <section className="mt-6 md:mt-10 pb-0 md:pb-0">
       <div className="w-full mx-auto theme-container">
         <div className="box-border grid grid-cols-6 lg:grid-cols-12">
           <div className="flex flex-col justify-center col-span-5">
@@ -91,11 +91,11 @@ export default function AboutService() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="text-sm leading-8 text-white">We have</span>
+                <span className="text-sm leading-8 text-white">Leader n°1</span>
               </div>
 
               <h1 className="text-18 text-white font-semibold tracking-tight max-w-[170px]">
-                <CountUp start={0} end={25} /> + Awards Winning
+                 En gestion du temps
               </h1>
             </div>
           </div>

@@ -50,7 +50,7 @@ export default function CourseDetailsInfo() {
 
   return (
     <>
-      <section className="py-16 md:pb-0 md:pt-[130px]">
+      <section className="py-16 md:pb-0 md:pt-[50px]">
         <div className="theme-container w-full mx-auto grid grid-cols-8 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px] course-description">
           {/* <!-- Course  --> */}
           <div className="col-span-8">
@@ -92,9 +92,9 @@ export default function CourseDetailsInfo() {
           Votre navigateur ne supporte pas la lecture vidéo.
         </video>
       </div>
-<section className="mt-16 md:mt-[130px] pb-16 md:pb-[130px]">
+<section className="mt-0 md:mt-20 pb-0 md:pb-[0px]">
   <div className="theme-container w-full mx-auto grid grid-cols-8 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
-    <div className="col-span-8 lg:col-start-3">
+    <div className="col-span-12 lg:col-start-0">
       <div className="w-full flex flex-col items-center">
         <h1 className="font-semibold text-24 text-main-black text-center">
           Tout ce dont vous avez besoin pour piloter le temps de travail
