@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutService() {
   return (
-    <section className="w-full py-16 md:pt-[94px] md:pb-[130px] items-center">
+     <section className="mt-6 md:mt-10 pb-2 md:pb-4">
       <div className="w-full mx-auto theme-container">
         <div className="box-border grid grid-cols-6 lg:grid-cols-12">
           <div className="flex flex-col justify-center col-span-5">

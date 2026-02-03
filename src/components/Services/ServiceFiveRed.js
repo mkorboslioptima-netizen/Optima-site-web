@@ -30,11 +30,12 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Suivi des Présences en Temps Réel
+                La Gestion des temps
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Outsourcing IT operations third part service provider
-                responsible for a business's IT systems
+                
+
+                Le module eTemptation constitue généralement la base d’un projet de gestion du temps, des plannings et des activités. Il sert de fondation aux autres fonctionnalités complémentaires, comme la planification des horaires ou le suivi détaillé des activités, en assurant une circulation fiable et cohérente des données.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -89,11 +90,11 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Gestion des Plannings & Horaires
+                La Gestion des absences et des congés
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Providing service security audit penetration testing det
-                incident response, and security.
+                Grâce à eTemptation, la gestion des congés et des absences devient entièrement 
+                numérique, ce qui allège considérablement la charge administrative des équipes RH. Les demandes sont centralisées, suivies automatiquement et traitées plus rapidement.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -137,11 +138,10 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Absences, Congés & Autorisations
+                Le self-service de gestion des temps
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Offering solution data backup, disaster recovery planning data
-                restoration to prevent data.
+                Le portail self-service de gestion des temps met à disposition des outils RH modernes pour les managers comme pour les collaborateurs. Il permet d’effectuer les demandes d’absence en ligne, d’accéder à ses informations personnelles, de consulter les plannings d’équipe et de soumettre des demandes de régularisation en toute simplicité.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -185,11 +185,10 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Données Fiables pour la Paie
+                Les pointeuses et badgeuses
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Develop customs applications tailored specific business needs
-                including web applications
+                Les pointeuses assurent un enregistrement précis et sécurisé des heures de travail, garantissant des données fiables et vérifiables.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
