@@ -6,7 +6,7 @@ import ServiceFiveRed from "../components/Services/ServiceFiveRed";
 import ServiceFaq from "../components/Services/ServiceFaq";
 import HeroGTA from "../components/Hero/HeroGTA";
 import SEO from "../components/SEO";
-
+import CourseDetailsInfo from "../components/Course/CourseDetailsInfo";
 export default function Services() {
   return (
     <InnerPageLayout>
@@ -16,6 +16,7 @@ export default function Services() {
         path="/Gestion_Du_Temps"
       />
       <HeroGTA />
+      <CourseDetailsInfo />
       <AboutService />
       <ServiceFiveRed />
       <ServiceFaq />
