@@ -26,7 +26,7 @@ import Checkout from "./pages/Checkout";
 import Notfound from "./pages/Notfound";
 import Devis from "./pages/Devis";
 import GTA from "./pages/Gestion_Du_Temps"
-import GestionFinanciere from "./pages/GestionFinanciere";
+import Outsourcing from "./pages/Outsourcing";
 /* ─── Page transition variants ─── */
 const pageVariants = {
   initial: { opacity: 0, y: 18 },
@@ -266,7 +266,7 @@ export default function App() {
             <Route path="/" element={<Acceuil />} />
             <Route path="/about" element={<About />} />
             <Route path="/Gestion_Du_Temps" element={<GTA />} />
-            <Route path="/GestionFinanciere" element={<GestionFinanciere />} />
+            <Route path="/Outsourcing" element={<Outsourcing />} />
             <Route path="/blog-details" element={<BlogDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />

@@ -468,42 +468,60 @@ export default function HeroFive() {
             data-aos="fade-up"
             className="px-6 py-5 sm:px-[50px] col-span-4 sm:py-10 bg-white rounded-[20px] group shadow-card"
           >
-            <div className="p-5 transition-all duration-300 ease-out rounded-full bg-buisness-red/5 group-hover:bg-buisness-red group-hover:shadow-business-red w-fit">
+          <div className="p-5 transition-all duration-300 ease-out rounded-full bg-buisness-red/5 group-hover:bg-buisness-red group-hover:shadow-business-red w-fit">
               <svg
-  width="32"
-  height="32"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    className="transition-all duration-300 group-hover:stroke-white"
-    d="M3 21H21"
-    stroke="#D90A2C"
-    strokeWidth="2"
-    strokeLinecap="round"
-  />
-  <path
-    className="transition-all duration-300 group-hover:stroke-white"
-    d="M5 21V7L12 3L19 7V21"
-    stroke="#D90A2C"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  />
-  <path
-    className="transition-all duration-300 group-hover:stroke-white"
-    d="M9 21V13H15V21"
-    stroke="#D90A2C"
-    strokeWidth="2"
-    strokeLinecap="round"
-    
-  />
-  
-</svg>
-
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  className="transition-all duration-300 group-hover:stroke-white"
+                  cx="16"
+                  cy="16"
+                  r="14"
+                  stroke="#D90A2C"
+                  strokeWidth="2"
+                />
+                <path
+                  className="transition-all duration-300 group-hover:stroke-white"
+                  d="M16 8V16L21 21"
+                  stroke="#D90A2C"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle
+                  className="transition-all duration-300 group-hover:fill-white"
+                  cx="16"
+                  cy="4"
+                  r="1.5"
+                  fill="#D90A2C"
+                />
+                <circle
+                  className="transition-all duration-300 group-hover:fill-white"
+                  cx="28"
+                  cy="16"
+                  r="1.5"
+                  fill="#D90A2C"
+                />
+                <circle
+                  className="transition-all duration-300 group-hover:fill-white"
+                  cx="16"
+                  cy="28"
+                  r="1.5"
+                  fill="#D90A2C"
+                />
+                <circle
+                  className="transition-all duration-300 group-hover:fill-white"
+                  cx="4"
+                  cy="16"
+                  r="1.5"
+                  fill="#D90A2C"
+                />
+              </svg>
             </div>
-            
 <Link to="/Gestion_Du_Temps" className="flex flex-col items-start">
  
 
@@ -580,9 +598,9 @@ export default function HeroFive() {
                 />
               </svg>
             </div>
-            <Link to="/GestionFinanciere" className="">
-              <h1 className="pt-6 font-semibold text-22 text-main-black">
-                Gestion Financière & Comptable
+            <Link to="/Outsourcing" className="flex flex-col items-start">
+              <h1 className="pt-3 font-semibold text-22 text-main-black">
+                Outsourcing de la Paie & RH
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">
@@ -623,7 +641,7 @@ export default function HeroFive() {
 </svg>
             </div>
             <Link to="/services">
-              <h1 className="pt-6 font-semibold text-22 text-main-black">
+              <h1 className="pt-3 font-semibold text-22 text-main-black">
                 Gestion Commerciale & Clients
               </h1>
             </Link>

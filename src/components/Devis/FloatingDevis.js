@@ -18,10 +18,15 @@ const stepVariants = {
   exit: { opacity: 0, x: -30 },
 };
 
+// URL de l'API backend
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 export default function FloatingDevis() {
   const [isOpen, setIsOpen] = useState(false);
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
   const [form, setForm] = useState({
     modules: [],
     entreprise: "",
@@ -53,14 +58,38 @@ export default function FloatingDevis() {
     return true;
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch(`${API_URL}/api/devis`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || 'Une erreur est survenue');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message || 'Impossible d\'envoyer la demande. Veuillez réessayer.');
+    } finally {
+      setLoading(false);
+    }
   }
 
   function handleReset() {
     setStep(0);
     setSubmitted(false);
+    setError(null);
     setForm({ modules: [], entreprise: "", secteur: "", effectif: "", nom: "", email: "", telephone: "", message: "" });
     setIsOpen(false);
   }
@@ -348,16 +377,40 @@ export default function FloatingDevis() {
                     ) : (
                       <button
                         type="submit"
-                        className="flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-xs font-semibold bg-[#007a55] text-white hover:bg-[#005f43] transition-all"
+                        disabled={loading}
+                        className={`flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
+                          loading
+                            ? "bg-gray-400 cursor-not-allowed"
+                            : "bg-[#007a55] text-white hover:bg-[#005f43]"
+                        }`}
                       >
-                        Envoyer
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <line x1="22" y1="2" x2="11" y2="13" />
-                          <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                        </svg>
+                        {loading ? (
+                          <>
+                            <svg className="animate-spin h-3.5 w-3.5" viewBox="0 0 24 24">
+                              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                            </svg>
+                            Envoi...
+                          </>
+                        ) : (
+                          <>
+                            Envoyer
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <line x1="22" y1="2" x2="11" y2="13" />
+                              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                          </>
+                        )}
                       </button>
                     )}
                   </div>
+
+                  {/* Message d'erreur */}
+                  {error && (
+                    <div className="mt-3 p-2.5 bg-red-50 border border-red-200 rounded-lg text-red-600 text-xs">
+                      {error}
+                    </div>
+                  )}
                 </form>
               )}
             </div>

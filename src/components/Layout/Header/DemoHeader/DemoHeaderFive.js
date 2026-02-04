@@ -19,7 +19,7 @@ export default function DemoHeaderFour() {
               </div>
               <div>
                 <ul className="flex items-center space-x-12">
-                  <a
+                  <Link
                   href="#"
                    className="
                    relative
@@ -37,10 +37,12 @@ export default function DemoHeaderFour() {
                   after:transition-all
                   after:duration-300
                   hover:after:w-full
+                  
                   "
+                  to="/"
                   >
                    Acceuil
-                  </a>
+                  </Link>
 
                     <li className="relative group">
                     <a
@@ -119,7 +121,7 @@ export default function DemoHeaderFour() {
                       hover:after:w-full
                       w-fit flex gap-2 items-center"
                     >
-                        Horoquartz
+                        Gestion du Temps
                         <svg
                         className="transition-all duration-300 group-hover:rotate-180"
                         width="10"
@@ -228,7 +230,7 @@ export default function DemoHeaderFour() {
                       w-fit"
                       to="/about"
                     >
-                      Company
+                      Outsourcing de la Paie
                     </Link>
                   </li>
                   <li>
