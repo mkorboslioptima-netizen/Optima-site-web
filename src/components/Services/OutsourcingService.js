@@ -9,7 +9,7 @@ export default function ServiceFiveRed() {
           Nos Services
         </h1>
         <h2 className="max-w-[747px] font-semibold text-24 sm:text-48 text-main-black text-center mx-auto mt-5">
-          Tout ce dont vous avez besoin pour piloter le temps de travail
+          Nos Services de Gestion de la Paie
         </h2>
         <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 min-h-[303px] gap-[30px] mt-[70px]">
           {/* <!-- single card  --> */}
@@ -30,12 +30,12 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                La Gestion des temps
+                Traitement des bulletins de paie
               </h1>
               <p className="text-paragraph line-clamp-3">
                 
 
-                Le module eTemptation constitue généralement la base d’un projet de gestion du temps, des plannings et des activités. Il sert de fondation aux autres fonctionnalités complémentaires, comme la planification des horaires ou le suivi détaillé des activités, en assurant une circulation fiable et cohérente des données.
+                Calcul, édition et mise à disposition sécurisée des fiches de paie pour vos collaborateurs.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -90,11 +90,10 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                La Gestion des absences et des congés
+                Gestion des déclarations sociales
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Grâce à eTemptation, la gestion des congés et des absences devient entièrement 
-                numérique, ce qui allège considérablement la charge administrative des équipes RH. Les demandes sont centralisées, suivies automatiquement et traitées plus rapidement.
+                Préparation et transmission des déclarations obligatoires auprès des organismes sociaux.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -138,10 +137,10 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Le self-service de gestion des temps
+                Intégration des variables de paie
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Le portail self-service de gestion des temps met à disposition des outils RH modernes pour les managers comme pour les collaborateurs. Il permet d’effectuer les demandes d’absence en ligne, d’accéder à ses informations personnelles, de consulter les plannings d’équipe et de soumettre des demandes de régularisation en toute simplicité.
+                Connexion avec vos outils de gestion du temps (GTA), primes et absences pour une paie automatisée.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -185,10 +184,10 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Les pointeuses et badgeuses
+                Sécurisation & conformité
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Les pointeuses assurent un enregistrement précis et sécurisé des heures de travail, garantissant des données fiables et vérifiables.
+                Veille légale continue et contrôle des données pour garantir une paie conforme et sans risque.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">

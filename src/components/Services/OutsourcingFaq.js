@@ -2,24 +2,24 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "C’est quoi exactement la Gestion du Temps (GTA)?",
+    question: "C’est quoi exactement la gestion de la paie ?",
     answer:
-      "La GTA est une solution qui permet de suivre les heures de travail des employés : présences, retards, absences, heures supplémentaires et congés. Elle automatise le suivi du temps et facilite le travail des RH et de la paie.",
+      "C’est l’ensemble des opérations permettant de calculer les salaires, produire les bulletins et assurer les déclarations sociales en conformité avec la loi.",
   },
   {
-    question: "À quoi sert un système de pointage ?",
+    question: "Pourquoi externaliser la paie ?",
     answer:
-      "Il enregistre automatiquement les heures d’entrée et de sortie des employés. Cela évite les erreurs manuelles, les oublis et permet d’avoir des données fiables pour la paie.",
+      "Pour réduire les erreurs, rester conforme aux lois et libérer du temps pour les équipes RH.",
   },
   {
-    question: "Est-ce que la solution est compliquée à utiliser ?",
+    question: "Les données salariales sont-elles sécurisées ?",
     answer:
-      "Notre solution est conçue pour être simple et intuitive. Les employés pointent facilement et les responsables RH disposent de tableaux de bord clairs pour tout gérer.",
+      "Oui, les systèmes de paie respectent des normes strictes de confidentialité et de protection des données.",
   },
   {
-    question: "Peut-on gérer les congés et absences avec la GTA ?",
+    question: "La solution s’adapte-t-elle à mon entreprise ?",
     answer:
-      "Les demandes de congés, absences et permissions sont centralisées dans le système, avec un processus de validation rapide et un historique complet.",
+      "Absolument, elle prend en compte votre convention collective, vos primes et vos règles internes.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function ServiceFaq() {
               </h1>
 
               <h2 className="mt-5 font-semibold text-24 sm:text-48 text-main-black">
-                Tout savoir sur la GTA
+                Tout savoir sur la gestion de la paie
               </h2>
 
               <div className="flex flex-col gap-3 w-full mt-5 md:mt-10 p-0 sm:p-5">

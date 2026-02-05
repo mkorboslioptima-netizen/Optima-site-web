@@ -56,27 +56,35 @@ export default function CourseDetailsInfo() {
           <div className="col-span-8">
             <div className="w-full">
               <h1 className="text-24 sm:text-[30px] leading-[40px] tracking-tight text-main-black font-semibold mt-[30px]">
-                Qu’est-ce que la Gestion du Temps (GTA) ?
+                La Gestion de la Paie
               </h1>
               <p className="text-paragraph mt-[22px] mb-[25px]">
-                La Gestion du Temps et des Activités (GTA) est un système qui permet de suivre et d’enregistrer précisément les heures travaillées par les collaborateurs : présences, absences, retards, heures supplémentaires et congés. Grâce à l’automatisation, les entreprises améliorent leur productivité, leur conformité réglementaire et la qualité de vie au travail.
+                    La gestion de la paie regroupe l’ensemble des processus permettant de calculer, éditer et distribuer les salaires des collaborateurs tout en respectant la législation sociale et fiscale.
+                    Elle inclut le calcul des cotisations, des primes, des absences, des heures supplémentaires ainsi que l’édition des bulletins de paie et des déclarations sociales.
+
+                    Grâce à l’automatisation et à l’externalisation, les entreprises sécurisent leurs traitements, réduisent les erreurs et gagnent un temps précieux.
 
               </p>
               <h1 className="mt-10 font-semibold text-24 text-main-black">
-                Pourquoi bien gérer le temps ?
+                Qu’est-ce que la paie ?
               </h1>
               <p className="mt-4 text-paragraph">
-                Imaginez une journée où vous n'avez plus à vous inquiéter de savoir si vos heures sont bien enregistrées, si vos absences sont validées ou si votre équipe est correctement planifiée. C'est exactement ce que vous offre le module Etemptation et Self-Service du Horoquartz.
-                Conçu pour les managers comme pour les collaborateurs, cet outil transforme la gestion du temps en une tâche simple et transparente. Vous suivez vos activités en quelques clics, vous demandez vos congés sans paperasse, et vous avez une visibilité instantanée sur l'ensemble de votre équipe.
+                La paie ne se limite pas à verser un salaire. C’est un processus sensible qui combine le calcul précis des rémunérations, l’intégration des absences, des congés et des heures supplémentaires, ainsi que le respect des lois sociales et fiscales en vigueur. Elle comprend également la production des bulletins de paie et la gestion des déclarations sociales obligatoires. La moindre erreur peut avoir un impact sur la conformité légale de l’entreprise et sur la confiance des employés.
+                <br />
+                <br />
+                <h1 className="mt-10 font-semibold text-24 text-main-black">
+                Pourquoi externaliser la gestion de la paie ? 
+              </h1>
+                Imaginez ne plus avoir à vous soucier des mises à jour légales, des erreurs de calcul ou des retards dans l’édition des bulletins de salaire.
+                Avec un service de paie externalisé, votre entreprise bénéficie d’un traitement fiable, sécurisé et toujours conforme.
 
-                <br />
-                <br />
-                Au-delà du suivi quotidien, l'Horoquartz génère automatiquement les données nécessaires pour le traitement de la paie, vous économisant ainsi des heures de travail manuel chaque mois. C'est un gain de temps qui se répercute directement sur votre productivité et votre bien-être au travail.
+               Vous gagnez du temps, vous réduisez les risques juridiques et vous pouvez vous concentrer sur votre cœur de métier.
               </p>
             </div>
           </div>
         </div>
       </section>
+      
 
       {/* Vidéo - pleine largeur */}
       <div ref={containerRef} className="w-full h-[400px] my-10">
@@ -88,16 +96,17 @@ export default function CourseDetailsInfo() {
           loop
           controls
         >
-          <source src="/videos/GTA.mp4" type="video/mp4" />
+          <source src="/videos/paie.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la lecture vidéo.
         </video>
       </div>
+
 <section className="mt-0 md:mt-20 pb-0 md:pb-[0px]">
   <div className="theme-container w-full mx-auto grid grid-cols-8 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
     <div className="col-span-12 lg:col-start-0">
       <div className="w-full flex flex-col items-center">
         <h1 className="font-semibold text-24 text-main-black text-center">
-          Tout ce dont vous avez besoin pour piloter le temps de travail
+          Pourquoi choisir OPTIMA pour la gestion de votre paie ?
         </h1>
         <ul className="grid grid-cols-2 gap-x-24 gap-y-6 mt-6">
           <li className="flex items-center gap-2 whitespace-nowrap">
@@ -107,7 +116,7 @@ export default function CourseDetailsInfo() {
                 <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
-            Suivi des Présences en Temps Réel
+            Entreprise certifiée ISO 27001 & ISO 9001
           </li>
           <li className="flex items-center gap-2 whitespace-nowrap">
             <span className="mt-0.5 shrink-0">
@@ -116,7 +125,7 @@ export default function CourseDetailsInfo() {
                 <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
-            Absences, Congés & Autorisations
+            Externalisation rapide et automatisée de la paie
           </li>
           <li className="flex items-center gap-2 whitespace-nowrap">
             <span className="mt-0.5 shrink-0">
@@ -125,7 +134,7 @@ export default function CourseDetailsInfo() {
                 <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
-            Données Fiables pour la Paie
+            Sécurité et confidentialité des données
           </li>
           <li className="flex items-center gap-2 whitespace-nowrap">
             <span className="mt-0.5 shrink-0">
@@ -134,7 +143,56 @@ export default function CourseDetailsInfo() {
                 <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
-            Gestion des Plannings & Horaires
+           Une équipe d’experts dédiée à la paie
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section className="mt-0 md:mt-20 pb-0 md:pb-[0px]">
+  <div className="theme-container w-full mx-auto grid grid-cols-8 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
+    <div className="col-span-12 lg:col-start-0">
+      <div className="w-full flex flex-col items-center">
+        <h1 className="font-semibold text-24 text-main-black text-center">
+          Les avantages des services de paie
+        </h1>
+        <ul className="grid grid-cols-2 gap-x-24 gap-y-6 mt-6">
+          <li className="flex items-center gap-2 whitespace-nowrap">
+            <span className="mt-0.5 shrink-0">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" fill="#DC2626"/>
+                <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </span>
+            Réduction des erreurs de calcul
+          </li>
+          <li className="flex items-center gap-2 whitespace-nowrap">
+            <span className="mt-0.5 shrink-0">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" fill="#DC2626"/>
+                <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </span>
+            Gain de temps pour les équipes RH
+          </li>
+          <li className="flex items-center gap-2 whitespace-nowrap">
+            <span className="mt-0.5 shrink-0">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" fill="#DC2626"/>
+                <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </span>
+            Respect des délais de paiement
+          </li>
+          <li className="flex items-center gap-2 whitespace-nowrap">
+            <span className="mt-0.5 shrink-0">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" fill="#DC2626"/>
+                <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </span>
+            Production automatique des déclarations sociales
           </li>
         </ul>
       </div>

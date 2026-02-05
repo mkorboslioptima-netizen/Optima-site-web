@@ -421,7 +421,7 @@ export default function ServiceTwo() {
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/1.png"
+                  src="./assets/images/home-two/case_study/sagecommerciale.webp"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -449,7 +449,7 @@ export default function ServiceTwo() {
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/2.png"
+                  src="./assets/images/home-two/case_study/sageclients.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -476,7 +476,7 @@ export default function ServiceTwo() {
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/3.png"
+                  src="./assets/images/home-two/case_study/sage-doucment.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
