@@ -8,10 +8,10 @@ export default function AboutBenefit() {
           <div className="w-full">
             <div className="flex flex-col items-center">
               <span className="rounded-[30px] px-5 py-0.5 mb-5 bg-purple/10 font-medium text-purple border border-purple/20">
-                Our Benefit
+                Nos Avantages
               </span>
               <h2 className="text-24 sm:text-48 font-semibold text-main-black mb-[60px] text-center max-w-[653px]">
-                Digital Marketing Agency Can Provide Numerous Benefits
+                L'Outsourcing de la Paie Offre de Nombreux Bénéfices
               </h2>
             </div>
           </div>
@@ -58,10 +58,10 @@ export default function AboutBenefit() {
                 >
                   <div className="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                     <h1 className="font-semibold text-18 font-inter text-main-black">
-                      Expertise Marketing
+                      Expertise Comptable & Sociale
                     </h1>
                     <p className="text-paragraph">
-                      Provide visualizations an reports time saving for vacation
+                      Maîtrise complète de la législation du travail et calculs précis des cotisations CNSS
                     </p>
                   </div>
                 </div>
@@ -75,10 +75,10 @@ export default function AboutBenefit() {
                 >
                   <div className="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                     <h1 className="font-semibold text-18 font-inter text-main-black">
-                      Access tools & resources
+                      Économie de Temps & Ressources
                     </h1>
                     <p className="text-paragraph">
-                      Provide visualizations an reports time saving for vacation
+                      Libérez-vous des tâches administratives et concentrez-vous sur votre cœur de métier
                     </p>
                   </div>
                 </div>
@@ -92,10 +92,10 @@ export default function AboutBenefit() {
                 >
                   <div className="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                     <h1 className="font-semibold text-18 font-inter text-main-black">
-                      Cost-effectiveness
+                      Réduction des Coûts
                     </h1>
                     <p className="text-paragraph">
-                      Provide visualizations an reports time saving for vacation
+                      Éliminez les coûts de formation et de logiciels avec une tarification transparente
                     </p>
                   </div>
                 </div>
@@ -109,10 +109,10 @@ export default function AboutBenefit() {
                 >
                   <div className="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                     <h1 className="font-semibold text-18 font-inter text-main-black">
-                      Creativity & innovation
+                      Sécurité & Confidentialité
                     </h1>
                     <p className="text-paragraph">
-                      Provide visualizations an reports time saving for vacation
+                      Protection maximale des données sensibles avec respect strict du RGPD
                     </p>
                   </div>
                 </div>
@@ -126,10 +126,10 @@ export default function AboutBenefit() {
                 >
                   <div className="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                     <h1 className="font-semibold text-18 font-inter text-main-black">
-                      Time-saving
+                      Conformité Garantie
                     </h1>
                     <p className="text-paragraph">
-                      Provide visualizations an reports time saving for vacation
+                      Déclarations dans les délais légaux avec veille réglementaire permanente
                     </p>
                   </div>
                 </div>
@@ -143,10 +143,10 @@ export default function AboutBenefit() {
                 >
                   <div className="rounded-[10px] m-[1px] bg-white px-[26px] py-5 border border-transparent relative z-10">
                     <h1 className="font-semibold text-18 font-inter text-main-black">
-                      Consistent results
+                      Accompagnement Continu
                     </h1>
                     <p className="text-paragraph">
-                      Provide visualizations an reports time saving for vacation
+                     Support réactif et conseils en optimisation de masse salariale
                     </p>
                   </div>
                 </div>

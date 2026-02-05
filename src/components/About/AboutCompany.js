@@ -9,15 +9,15 @@ export default function AboutCompany() {
             <div className="">
               <div className="py-1.5 md:py-3 px-5 rounded-[30px] border-[1.2px] border-blue-seo/30 w-fit bg-blue-seo/10">
                 <h1 className="text-base font-medium leading-5 tracking-tight text-purple">
-                  About Company
+                  Notre Expertise Paie
+
                 </h1>
               </div>
               <h1 className="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
-                Digital Transforming Brands, Elevating Reach Crafting Success
-              </h1>
+                Gestion de Paie Externalisée, Conformité Garantie, Tranquillité d'Esprit
+              </h1>  
               <p className="mt-5 md:mt-10 text-paragraph">
-                Defined by digital dynamism, our digital marketing agency
-                emerges as a beacon of innovation and strategic prowess.
+                Spécialisés dans l'externalisation de la paie, nous offrons un service complet et sécurisé pour gérer l'ensemble de vos obligations sociales et fiscales avec précision et confidentialité.
               </p>
               <hr className="mt-10 border-purple/10" />
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 mt-[50px] gap-8 md:gap-[70px]">
@@ -41,10 +41,10 @@ export default function AboutCompany() {
                     />
                   </svg>
                   <h1 className="mt-4 font-semibold text-18 text-main-black">
-                    Expert Team Member
+                    Équipe d'Experts Certifiés
                   </h1>
                   <p className="mt-3 text-paragraph">
-                    An SEO Optimization agency is company that specializes
+                    Spécialistes en législation sociale et fiscale tunisienne, avec formation continue garantie pour rester à jour sur toutes les évolutions réglementaires.
                   </p>
                 </div>
                 <div
@@ -71,10 +71,10 @@ export default function AboutCompany() {
                     />
                   </svg>
                   <h1 className="mt-4 font-semibold text-18 text-main-black">
-                    Custom SEO Support
+                    Support Personnalisé
                   </h1>
                   <p className="mt-3 text-paragraph">
-                    These agencies typically offer range of services aimed
+                    Accompagnement dédié avec un interlocuteur unique pour toutes vos questions et un suivi rigoureux de vos dossiers paie.
                   </p>
                 </div>
               </div>
@@ -153,7 +153,7 @@ export default function AboutCompany() {
                 data-type-qs="+ Years of Experience"
                 data-speed-qs="1000"
               >
-                98% Taux de Satisfaction
+                99% Taux de Conformité
               </h1>
             </div>
           </div>

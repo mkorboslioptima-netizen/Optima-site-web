@@ -16,12 +16,12 @@ export default function FunFactCounterTwo() {
             </div>
             <div className="relative z-10 flex flex-col items-center justify-center">
               <h1 className="text-48 text-main-black font-semibold pb-[18px]">
-                <CountUp start={0} end={200} />
+                <CountUp start={0} end={300} />
                 +
               </h1>
               <div className="w-20 border-2 border-purple"></div>
               <p className="pt-6 font-semibold text-center text-18 text-paragraph">
-                Clients Satisfaits
+                Bulletins de Paie Traités Mensuellement
               </p>
             </div>
           </div>
@@ -37,11 +37,11 @@ export default function FunFactCounterTwo() {
             </div>
             <div className="relative z-10 flex flex-col items-center justify-center">
               <h1 className="text-48 text-main-black font-semibold pb-[18px]">
-                <CountUp start={0} end={10} />+
+                <CountUp start={0} end={15} />+
               </h1>
               <div className="w-20 border-2 border-purple"></div>
               <p className="pt-6 font-semibold text-center text-18 text-paragraph">
-                Taux de Satisfaction
+                Années d'Expérience en Gestion de Paie
               </p>
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function FunFactCounterTwo() {
                 data-type-qs="K+"
                 data-speed-qs="1000"
               >
-                15+
+                20+
               </h1>
               <div className="w-20 border-2 border-purple"></div>
               <p className="pt-6 font-semibold text-center text-18 text-paragraph">
@@ -89,11 +89,11 @@ export default function FunFactCounterTwo() {
                 data-type-qs="+"
                 data-speed-qs="200"
               >
-                50+
+                100%
               </h1>
               <div className="w-20 border-2 border-purple"></div>
               <p className="pt-6 font-semibold text-center text-18 text-paragraph">
-                Expert Team Member
+                Conformité Légale et Réglementaire
               </p>
             </div>
           </div>

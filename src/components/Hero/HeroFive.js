@@ -533,7 +533,7 @@ export default function HeroFive() {
 
 
             <p className="text-paragraph pt-3.5">
-              Partenaire officiel SAGE depuis 2006, nous accompagnons votre transformation digitale avec expertise et fiabilité
+              Leader en Tunisie, nous digitalisons le suivi des présences, des horaires et des activités pour aider les entreprises à gagner en fiabilité, productivité et visibilité sur leurs ressources humaines.
             </p>
          
           </div>
@@ -604,7 +604,7 @@ export default function HeroFive() {
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">
-              Solution leader en gestion du temps et des ressources humaines. Optimisez la performance de vos équipes.
+              Entreprise reconnue sur le marché tunisien, nous assurons l’externalisation complète de la paie avec sécurité, conformité et fiabilité, pour une gestion RH simple et sans stress.
             </p>
           </div>
           {/* <!-- single card end  --> */}
@@ -642,11 +642,11 @@ export default function HeroFive() {
             </div>
             <Link to="/services">
               <h1 className="pt-3 font-semibold text-22 text-main-black">
-                Gestion Commerciale & Clients
+                Gestion d'Entreprise & ERP
               </h1>
             </Link>
             <p className="text-paragraph pt-3.5">
-              Qualité et sécurité certifiées. Nos processus répondent aux normes internationales les plus exigeantes.
+             Solutions logicielles et ERP pour moderniser votre gestion : commerce, paie, comptabilité et finance. Des outils intégrés et performants adaptés à vos besoins.
             </p>
           </div>
           {/* <!-- single card end  --> */}
