@@ -121,7 +121,7 @@ export default function DemoHeaderFour() {
                       hover:after:w-full
                       w-fit flex gap-2 items-center"
                     >
-                        Gestion du Temps
+                        Gestion des temps
                         <svg
                         className="transition-all duration-300 group-hover:rotate-180"
                         width="10"

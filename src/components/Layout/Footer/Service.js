@@ -9,7 +9,7 @@ export default function AboutService() {
         <div className="box-border grid grid-cols-6 lg:grid-cols-12">
           <div className="flex flex-col justify-center col-span-5">
             <h1 className="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
-              Simplifiez la gestion du temps de vos équipes
+              Simplifiez la Gestion des temps de vos équipes
             </h1>
             <p className="pb-10 mt-5 md:mt-10 text-paragraph">
               Automatisez le suivi des présences, plannings et absences. Gagnez du temps et éliminez les erreurs de saisie.
@@ -95,7 +95,7 @@ export default function AboutService() {
               </div>
 
               <h1 className="text-18 text-white font-semibold tracking-tight max-w-[170px]">
-                 En gestion du temps
+                 En Gestion des temps
               </h1>
             </div>
           </div>

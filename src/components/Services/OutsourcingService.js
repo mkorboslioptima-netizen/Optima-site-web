@@ -140,7 +140,7 @@ export default function ServiceFiveRed() {
                 Intégration des variables de paie
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Connexion avec vos outils de gestion du temps (GTA), primes et absences pour une paie automatisée.
+                Connexion avec vos outils de Gestion des temps (GTA), primes et absences pour une paie automatisée.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">

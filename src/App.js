@@ -27,6 +27,7 @@ import Notfound from "./pages/Notfound";
 import Devis from "./pages/Devis";
 import GTA from "./pages/Gestion_Du_Temps"
 import Outsourcing from "./pages/Outsourcing";
+import GestionEntreprise from "./pages/GestionEntreprise";
 /* ─── Page transition variants ─── */
 const pageVariants = {
   initial: { opacity: 0, y: 18 },
@@ -278,6 +279,7 @@ export default function App() {
             <Route path="/teams" element={<Teams />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/horoquartz" element={<Horoquartz />} />
+            <Route path="/GestionEntreprise" element={<GestionEntreprise />} />
             <Route path="/devis" element={<Devis />} />
             <Route path="*" element={<Notfound />} />
           </Routes>

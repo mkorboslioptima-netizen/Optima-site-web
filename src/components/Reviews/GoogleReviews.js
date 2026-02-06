@@ -34,7 +34,7 @@ const REVIEWS = [
     role: "Responsable Planification",
     company: "SudTextile",
     rating: 4,
-    text: "L'intégration Horoquartz a transformé notre gestion du temps. L'équipe Optima a su adapter la solution à nos contraintes de production.",
+    text: "L'intégration Horoquartz a transformé notre Gestion des temps. L'équipe Optima a su adapter la solution à nos contraintes de production.",
     date: "Il y a 3 mois",
     avatar: "NG",
   },

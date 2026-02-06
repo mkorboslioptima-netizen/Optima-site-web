@@ -121,7 +121,7 @@ export default function HeroFive() {
                     <Link to="/services">
                       <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-3 sm:py-[15px]">
                         <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
-                          Explore Service
+                          Nos Service
                         </span>
                         <svg
                           className="relative z-10"
@@ -244,7 +244,7 @@ export default function HeroFive() {
                     <Link to="/services">
                       <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-3 sm:py-[15px]">
                         <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
-                          Explore Service
+                          Nos Service
                         </span>
                         <svg
                           className="relative z-10"
@@ -368,7 +368,7 @@ export default function HeroFive() {
                     <Link to="/services">
                       <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-3 sm:py-[15px]">
                         <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
-                          Explore Service
+                          Nos Service
                         </span>
                         <svg
                           className="relative z-10"
@@ -413,9 +413,7 @@ export default function HeroFive() {
                         <div className="absolute w-[130%] h-[130%] rounded-full h5-play-btn-line2"></div>
                         <div className="absolute w-[160%] h-[160%] rounded-full h5-play-btn-line3"></div>
                       </span>
-                      <span className="font-semibold text-white border-b border-white">
-                        How IT Works
-                      </span>
+                      
                     </a>
                   </div>
                 </SwiperSlide>
@@ -526,7 +524,7 @@ export default function HeroFive() {
  
 
   <h1 className="pt-3 font-semibold text-22 text-main-black">
-    Gestion du temps
+    Gestion des temps
   </h1>
   
 </Link>
@@ -640,7 +638,7 @@ export default function HeroFive() {
   />
 </svg>
             </div>
-            <Link to="/services">
+            <Link to="/GestionEntreprise" className="flex flex-col items-start">
               <h1 className="pt-3 font-semibold text-22 text-main-black">
                 Gestion d'Entreprise & ERP
               </h1>

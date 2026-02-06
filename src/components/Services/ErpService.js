@@ -35,7 +35,7 @@ export default function ServiceFiveRed() {
               <p className="text-paragraph line-clamp-3">
                 
 
-                Le module eTemptation constitue généralement la base d’un projet de gestion du temps, des plannings et des activités. Il sert de fondation aux autres fonctionnalités complémentaires, comme la planification des horaires ou le suivi détaillé des activités, en assurant une circulation fiable et cohérente des données.
+                Le module eTemptation constitue généralement la base d’un projet de Gestion des temps, des plannings et des activités. Il sert de fondation aux autres fonctionnalités complémentaires, comme la planification des horaires ou le suivi détaillé des activités, en assurant une circulation fiable et cohérente des données.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">

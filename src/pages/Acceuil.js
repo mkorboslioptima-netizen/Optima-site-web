@@ -20,7 +20,7 @@ export default function HomeFive() {
     <PageLayout>
       <SEO
         title={null}
-        description="Optima, intégrateur Sage 100 en Tunisie. Solutions de gestion commerciale, comptabilité, paie, ressources humaines et gestion du temps avec Horoquartz."
+        description="Optima, intégrateur Sage 100 en Tunisie. Solutions de gestion commerciale, comptabilité, paie, ressources humaines et Gestion des temps avec Horoquartz."
         path="/"
       />
       <DemoHeaderFive />

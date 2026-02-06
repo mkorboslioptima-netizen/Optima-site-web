@@ -30,7 +30,7 @@ export default function HeroTwo() {
              
                <img
                   src="/assets/images/home-five/hero/Sagepartner.svg"
-                  alt="Gestion du temps"
+                  alt="Gestion des temps"
                   className="w-36 h-auto"         
                 />
                 

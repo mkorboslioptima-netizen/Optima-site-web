@@ -2,7 +2,7 @@ import React from "react";
 import InnerPageLayout from "../components/Layout/InnerPageLayout";
 import BreadCrumb from "../components/Breadcrumb/BreadCrumb";
 import AboutService from "../components/Layout/Footer/AboutService";
-import ServiceFiveRed from "../components/Services/ServiceFiveRed";
+import ServiceFiveRed from "../components/Services/ErpService";
 import ServiceFaq from "../components/Services/ServiceFaq";
 import OutsourcingFaq from "../components/Services/OutsourcingFaq";
 import HeroFC from "../components/Hero/HeroF&C";

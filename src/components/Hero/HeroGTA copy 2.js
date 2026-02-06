@@ -107,7 +107,7 @@ export default function HeroFive() {
                     </span>
                   </div>
                   <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8">
-                    La Gestion Du Temps et des Activités
+                    La Gestion des Temps
                   </h1>
                   <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-11">
                     <Link to="/services">
