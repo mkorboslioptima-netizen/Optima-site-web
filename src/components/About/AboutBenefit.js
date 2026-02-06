@@ -17,8 +17,8 @@ export default function AboutBenefit() {
           </div>
           <div className="w-full grid grid-cols-6 lg:grid-cols-12 gap-5 sm:gap-[70px]">
             <div className="flex items-center justify-center col-span-6">
-              <img
-                src="./assets/images/about/benefit-img.webp"
+              <video
+                src="./assets/images/about/paie11.mp4"
                 alt=""
                 className="max-w-full"
               />

@@ -46,7 +46,7 @@ export default function BreadCrumb({ pageTitle, to, currentPage }) {
 
             {/* Subtitle */}
             <p className="mt-4 text-center text-gray-600 text-lg max-w-2xl">
-              Solution de gestion complète pour optimiser votre activité commerciale
+              Solution complète de gestion de paie pour optimiser vos processus RH et garantir la conformité totale
             </p>
 
             {/* Breadcrumb */}

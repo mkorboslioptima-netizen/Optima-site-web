@@ -87,7 +87,7 @@ export default function CourseDetailsInfo() {
       
 
       {/* Vidéo - pleine largeur */}
-      <div ref={containerRef} className="w-full h-[400px] my-10">
+      <div ref={containerRef} className="w-full h-[600px] my-21">
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
@@ -96,7 +96,7 @@ export default function CourseDetailsInfo() {
           loop
           controls
         >
-          <source src="/videos/paie.mp4" type="video/mp4" />
+          <source src="./assets/images/about/paie11.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la lecture vidéo.
         </video>
       </div>
