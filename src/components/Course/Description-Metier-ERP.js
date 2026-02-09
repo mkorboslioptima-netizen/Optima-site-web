@@ -56,22 +56,24 @@ export default function CourseDetailsInfo() {
           <div className="col-span-8">
             <div className="w-full">
               <h1 className="text-24 sm:text-[30px] leading-[40px] tracking-tight text-main-black font-semibold mt-[30px]">
-                Qu’est-ce que la Gestion des temps (GTA) ?
+                La Gestion d'Entreprise avec un ERP
               </h1>
               <p className="text-paragraph mt-[22px] mb-[25px]">
-                La Gestion des temps et des Activités (GTA) est un système qui permet de suivre et d’enregistrer précisément les heures travaillées par les collaborateurs : présences, absences, retards, heures supplémentaires et congés. Grâce à l’automatisation, les entreprises améliorent leur productivité, leur conformité réglementaire et la qualité de vie au travail.
-
+                La gestion d'entreprise regroupe l'ensemble des processus permettant de piloter efficacement votre activité : gestion commerciale, financière, comptable, ressources humaines et immobilisations. Un ERP (Enterprise Resource Planning) centralise ces fonctions dans une solution unique et interconnectée. Il assure la cohérence des données, automatise les flux d'informations entre les services et fournit une vision globale en temps réel pour une meilleure prise de décision. Grâce au paramétrage et à l'intégration sur mesure, les entreprises optimisent leurs processus, réduisent les erreurs et gagnent en agilité.
               </p>
+              
               <h1 className="mt-10 font-semibold text-24 text-main-black">
-                Pourquoi bien gérer le temps ?
+                Qu'est-ce qu'un ERP ?
               </h1>
               <p className="mt-4 text-paragraph">
-                Imaginez une journée où vous n'avez plus à vous inquiéter de savoir si vos heures sont bien enregistrées, si vos absences sont validées ou si votre équipe est correctement planifiée. C'est exactement ce que vous offre le module Etemptation et Self-Service du Horoquartz.
-                Conçu pour les managers comme pour les collaborateurs, cet outil transforme la Gestion des temps en une tâche simple et transparente. Vous suivez vos activités en quelques clics, vous demandez vos congés sans paperasse, et vous avez une visibilité instantanée sur l'ensemble de votre équipe.
-
-                <br />
-                <br />
-                Au-delà du suivi quotidien, l'Horoquartz génère automatiquement les données nécessaires pour le traitement de la paie, vous économisant ainsi des heures de travail manuel chaque mois. C'est un gain de temps qui se répercute directement sur votre productivité et votre bien-être au travail.
+                Un ERP ne se limite pas à l'installation d'un logiciel. C'est un écosystème qui connecte tous les métiers de l'entreprise : les ventes alimentent automatiquement la comptabilité, les achats mettent à jour les stocks, la paie s'intègre aux écritures comptables. Le paramétrage de l'ERP est une étape clé qui adapte la solution aux spécificités de votre organisation : workflows, règles de gestion, tableaux de bord personnalisés. Une mauvaise configuration peut entraîner des blocages opérationnels, des pertes de données ou des non-conformités réglementaires. C'est pourquoi l'expertise métier et technique est essentielle pour réussir votre projet ERP.
+              </p>
+              
+              <h1 className="mt-10 font-semibold text-24 text-main-black">
+                Pourquoi faire appel à un partenaire ERP ?
+              </h1>
+              <p className="mt-4 text-paragraph">
+                Imaginez ne plus avoir à gérer les complexités techniques, les mises à jour critiques ou les problèmes d'interfaçage entre modules. Avec un partenaire expert en ERP, votre entreprise bénéficie d'un paramétrage professionnel, d'une intégration sécurisée et d'un accompagnement continu. Vous gagnez du temps, vous sécurisez vos données et vous pouvez vous concentrer sur votre cœur de métier. Un projet ERP bien mené, c'est l'assurance d'une transformation digitale réussie.
               </p>
             </div>
           </div>
@@ -88,59 +90,60 @@ export default function CourseDetailsInfo() {
           loop
           controls
         >
-          <source src="/videos/GTA.mp4" type="video/mp4" />
+          <source src="/videos/erpoptima.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la lecture vidéo.
         </video>
       </div>
-<section className="mt-0 md:mt-20 pb-0 md:pb-[0px]">
-  <div className="theme-container w-full mx-auto grid grid-cols-8 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
-    <div className="col-span-12 lg:col-start-0">
-      <div className="w-full flex flex-col items-center">
-        <h1 className="font-semibold text-24 text-main-black text-center">
-          Tout ce dont vous avez besoin pour piloter le temps de travail
-        </h1>
-        <ul className="grid grid-cols-2 gap-x-24 gap-y-6 mt-6">
-          <li className="flex items-center gap-2 whitespace-nowrap">
-            <span className="mt-0.5 shrink-0">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="10" cy="10" r="10" fill="#DC2626"/>
-                <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </span>
-            Suivi des Présences en Temps Réel
-          </li>
-          <li className="flex items-center gap-2 whitespace-nowrap">
-            <span className="mt-0.5 shrink-0">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="10" cy="10" r="10" fill="#DC2626"/>
-                <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </span>
-            Absences, Congés & Autorisations
-          </li>
-          <li className="flex items-center gap-2 whitespace-nowrap">
-            <span className="mt-0.5 shrink-0">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="10" cy="10" r="10" fill="#DC2626"/>
-                <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </span>
-            Données Fiables pour la Paie
-          </li>
-          <li className="flex items-center gap-2 whitespace-nowrap">
-            <span className="mt-0.5 shrink-0">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="10" cy="10" r="10" fill="#DC2626"/>
-                <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </span>
-            Gestion des Plannings & Horaires
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+
+      <section className="mt-0 md:mt-20 pb-0 md:pb-[0px]">
+        <div className="theme-container w-full mx-auto grid grid-cols-8 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
+          <div className="col-span-12 lg:col-start-0">
+            <div className="w-full flex flex-col items-center">
+              <h1 className="font-semibold text-24 text-main-black text-center">
+                 Pourquoi choisir OPTIMA pour votre ERP ?
+              </h1>
+              <ul className="grid grid-cols-2 gap-x-24 gap-y-6 mt-6">
+                <li className="flex items-center gap-2 whitespace-nowrap">
+                  <span className="mt-0.5 shrink-0">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="10" fill="#DC2626"/>
+                      <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
+                  Partenaire certifié Sage 100 cloud
+                </li>
+                <li className="flex items-center gap-2 whitespace-nowrap">
+                  <span className="mt-0.5 shrink-0">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="10" fill="#DC2626"/>
+                      <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
+                  Expertise en paramétrage et intégration ERP
+                </li>
+                <li className="flex items-center gap-2 whitespace-nowrap">
+                  <span className="mt-0.5 shrink-0">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="10" fill="#DC2626"/>
+                      <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
+                  Accompagnement personnalisé de A à Z
+                </li>
+                <li className="flex items-center gap-2 whitespace-nowrap">
+                  <span className="mt-0.5 shrink-0">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="10" fill="#DC2626"/>
+                      <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
+                  Formation et support dédiés
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

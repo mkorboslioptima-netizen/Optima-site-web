@@ -12,10 +12,10 @@ export default function TeamTwo() {
         <div className="flex flex-col justify-between w-full xl:flex-row">
           <div className="">
             <h1 className="font-medium text-white border border-white/10 bg-white/5 px-5 rounded-[30px] py-1 w-fit">
-              Team Member
+              Nos Services
             </h1>
             <h2 className="pt-5 font-semibold text-white text-24 sm:text-48">
-              Experience Team Member
+              Services de Paie Complets
             </h2>
           </div>
           <div className="flex flex-col items-center gap-10 sm:flex-row">

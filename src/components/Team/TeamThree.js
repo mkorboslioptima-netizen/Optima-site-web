@@ -7,7 +7,7 @@ export default function TeamThree() {
       <div className="w-full mx-auto theme-container">
         <div className="flex flex-col items-center justify-center w-full">
           <h1 className="font-medium text-purple border border-purple/20 bg-purple/10 px-5 rounded-[30px] py-1 w-fit">
-            Team Member
+            Nos Services
           </h1>
           <h2 className="pt-5 font-semibold text-main-black text-24 sm:text-48">
             Experience Team Member

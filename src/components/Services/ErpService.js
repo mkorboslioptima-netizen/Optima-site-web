@@ -9,7 +9,7 @@ export default function ServiceFiveRed() {
           Nos Services
         </h1>
         <h2 className="max-w-[747px] font-semibold text-24 sm:text-48 text-main-black text-center mx-auto mt-5">
-          Tout ce dont vous avez besoin pour piloter le temps de travail
+           Nos Services de Gestion ERP
         </h2>
         <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 min-h-[303px] gap-[30px] mt-[70px]">
           {/* <!-- single card  --> */}
@@ -30,12 +30,12 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                La Gestion des temps
+                Paramétrage et intégration ERP
               </h1>
               <p className="text-paragraph line-clamp-3">
                 
 
-                Le module eTemptation constitue généralement la base d’un projet de Gestion des temps, des plannings et des activités. Il sert de fondation aux autres fonctionnalités complémentaires, comme la planification des horaires ou le suivi détaillé des activités, en assurant une circulation fiable et cohérente des données.
+                Configuration complète de votre Sage 100 cloud selon vos besoins métier et interconnexion de tous les modules.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -90,11 +90,11 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                La Gestion des absences et des congés
+                Connexion des modules métier
+
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Grâce à eTemptation, la gestion des congés et des absences devient entièrement 
-                numérique, ce qui allège considérablement la charge administrative des équipes RH. Les demandes sont centralisées, suivies automatiquement et traitées plus rapidement.
+                Mise en place des flux automatiques entre Gestion Commerciale, Finance, Comptabilité, Paie et Immobilisations.
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -138,10 +138,11 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Le self-service de gestion des temps
+                Tableaux de bord personnalisés
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Le portail self-service de gestion des temps met à disposition des outils RH modernes pour les managers comme pour les collaborateurs. Il permet d’effectuer les demandes d’absence en ligne, d’accéder à ses informations personnelles, de consulter les plannings d’équipe et de soumettre des demandes de régularisation en toute simplicité.
+                Création d'indicateurs de performance (KPI) adaptés à votre activité pour un pilotage stratégique.
+
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
@@ -185,10 +186,11 @@ export default function ServiceFiveRed() {
                 </svg>
               </div>
               <h1 className="text-18 font-semibold text-main-black mt-5 mb-2.5">
-                Les pointeuses et badgeuses
+                Formation & accompagnement
               </h1>
               <p className="text-paragraph line-clamp-3">
-                Les pointeuses assurent un enregistrement précis et sécurisé des heures de travail, garantissant des données fiables et vérifiables.
+                Formation de vos équipes sur l'utilisation optimale de l'ERP et accompagnement dans la conduite du changement.
+                
               </p>
               <Link to="/service-details">
                 <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">

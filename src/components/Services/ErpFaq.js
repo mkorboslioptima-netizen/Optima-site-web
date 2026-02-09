@@ -2,24 +2,24 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "C’est quoi exactement la Gestion des temps (GTA)?",
+    question: "C'est quoi exactement un ERP ?",
     answer:
-      "La GTA est une solution qui permet de suivre les heures de travail des employés : présences, retards, absences, heures supplémentaires et congés. Elle automatise le suivi du temps et facilite le travail des RH et de la paie.",
+      "Un ERP est un système qui intègre et centralise toutes les fonctions de gestion d'une entreprise dans une base de données unique.",
   },
   {
-    question: "À quoi sert un système de pointage ?",
+    question: "Pourquoi faire appel à un intégrateur ERP ?",
     answer:
-      "Il enregistre automatiquement les heures d’entrée et de sortie des employés. Cela évite les erreurs manuelles, les oublis et permet d’avoir des données fiables pour la paie.",
+      "Pour bénéficier d'une expertise technique et métier, garantir un paramétrage conforme et éviter les erreurs coûteuses lors du déploiement.",
   },
   {
-    question: "Est-ce que la solution est compliquée à utiliser ?",
+    question: "Combien de temps prend l'intégration d'un ERP ?",
     answer:
-      "Notre solution est conçue pour être simple et intuitive. Les employés pointent facilement et les responsables RH disposent de tableaux de bord clairs pour tout gérer.",
+      "Selon la taille de l'entreprise et la complexité des processus, de quelques semaines à plusieurs mois.",
   },
   {
-    question: "Peut-on gérer les congés et absences avec la GTA ?",
+    question: "La solution s'adapte-t-elle à mon secteur d'activité ?",
     answer:
-      "Les demandes de congés, absences et permissions sont centralisées dans le système, avec un processus de validation rapide et un historique complet.",
+      "Oui, Sage 100 cloud est paramétrable et s'adapte à tous les secteurs grâce à des configurations sur mesure.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function ServiceFaq() {
               </h1>
 
               <h2 className="mt-5 font-semibold text-24 sm:text-48 text-main-black">
-                Tout savoir sur la GTA
+                Tout savoir sur le ERP
               </h2>
 
               <div className="flex flex-col gap-3 w-full mt-5 md:mt-10 p-0 sm:p-5">
