@@ -20,6 +20,7 @@ export default function Services() {
       <HeroFC / >
       <Detail />
       <OutsourcingService />
+      
       <OutsourcingFaq />
     </InnerPageLayout>
   );
