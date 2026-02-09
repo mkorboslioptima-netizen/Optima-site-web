@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import OutsourcingSidebar from "../Services/OutsourcingSidebar";
 
 export default function CourseDetailsInfo() {
   const videoRef = useRef(null);
@@ -59,28 +60,33 @@ export default function CourseDetailsInfo() {
                 La Gestion de la Paie
               </h1>
               <p className="text-paragraph mt-[22px] mb-[25px]">
-                    La gestion de la paie regroupe l’ensemble des processus permettant de calculer, éditer et distribuer les salaires des collaborateurs tout en respectant la législation sociale et fiscale.
-                    Elle inclut le calcul des cotisations, des primes, des absences, des heures supplémentaires ainsi que l’édition des bulletins de paie et des déclarations sociales.
+                    La gestion de la paie regroupe l'ensemble des processus permettant de calculer, éditer et distribuer les salaires des collaborateurs tout en respectant la législation sociale et fiscale.
+                    Elle inclut le calcul des cotisations, des primes, des absences, des heures supplémentaires ainsi que l'édition des bulletins de paie et des déclarations sociales.
 
-                    Grâce à l’automatisation et à l’externalisation, les entreprises sécurisent leurs traitements, réduisent les erreurs et gagnent un temps précieux.
+                    Grâce à l'automatisation et à l'externalisation, les entreprises sécurisent leurs traitements, réduisent les erreurs et gagnent un temps précieux.
 
               </p>
               <h1 className="mt-10 font-semibold text-24 text-main-black">
-                Qu’est-ce que la paie ?
+                Qu'est-ce que la paie ?
               </h1>
               <p className="mt-4 text-paragraph">
-                La paie ne se limite pas à verser un salaire. C’est un processus sensible qui combine le calcul précis des rémunérations, l’intégration des absences, des congés et des heures supplémentaires, ainsi que le respect des lois sociales et fiscales en vigueur. Elle comprend également la production des bulletins de paie et la gestion des déclarations sociales obligatoires. La moindre erreur peut avoir un impact sur la conformité légale de l’entreprise et sur la confiance des employés.
+                La paie ne se limite pas à verser un salaire. C'est un processus sensible qui combine le calcul précis des rémunérations, l'intégration des absences, des congés et des heures supplémentaires, ainsi que le respect des lois sociales et fiscales en vigueur. Elle comprend également la production des bulletins de paie et la gestion des déclarations sociales obligatoires. La moindre erreur peut avoir un impact sur la conformité légale de l'entreprise et sur la confiance des employés.
                 <br />
                 <br />
                 <h1 className="mt-10 font-semibold text-24 text-main-black">
-                Pourquoi externaliser la gestion de la paie ? 
+                Pourquoi externaliser la gestion de la paie ?
               </h1>
-                Imaginez ne plus avoir à vous soucier des mises à jour légales, des erreurs de calcul ou des retards dans l’édition des bulletins de salaire.
-                Avec un service de paie externalisé, votre entreprise bénéficie d’un traitement fiable, sécurisé et toujours conforme.
+                Imaginez ne plus avoir à vous soucier des mises à jour légales, des erreurs de calcul ou des retards dans l'édition des bulletins de salaire.
+                Avec un service de paie externalisé, votre entreprise bénéficie d'un traitement fiable, sécurisé et toujours conforme.
 
                Vous gagnez du temps, vous réduisez les risques juridiques et vous pouvez vous concentrer sur votre cœur de métier.
               </p>
             </div>
+          </div>
+
+          {/* <!-- Sidebar Devis --> */}
+          <div className="col-span-8 lg:col-span-4">
+            <OutsourcingSidebar />
           </div>
         </div>
       </section>

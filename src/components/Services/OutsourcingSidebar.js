@@ -3,16 +3,8 @@ import { Link } from "react-router-dom";
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
-const MODULES_OUTSOURCING = [
-  { id: "paie-bulletins", label: "Traitement des bulletins de paie" },
-  { id: "paie-declarations", label: "Déclarations sociales" },
-  { id: "paie-variables", label: "Intégration variables de paie" },
-  { id: "paie-conformite", label: "Sécurisation & conformité" },
-];
-
 export default function OutsourcingSidebar() {
   const [form, setForm] = useState({
-    modules: [],
     entreprise: "",
     effectif: "",
     nom: "",
@@ -23,15 +15,6 @@ export default function OutsourcingSidebar() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(null);
-
-  function toggleModule(id) {
-    setForm((prev) => ({
-      ...prev,
-      modules: prev.modules.includes(id)
-        ? prev.modules.filter((m) => m !== id)
-        : [...prev.modules, id],
-    }));
-  }
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -44,6 +27,7 @@ export default function OutsourcingSidebar() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...form,
+          modules: ["externalisation-paie"],
           secteur: "Externalisation Paie"
         }),
       });
@@ -63,7 +47,6 @@ export default function OutsourcingSidebar() {
   function handleReset() {
     setSuccess(false);
     setForm({
-      modules: [],
       entreprise: "",
       effectif: "",
       nom: "",
@@ -122,43 +105,6 @@ export default function OutsourcingSidebar() {
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
-          {/* Services selection */}
-          <div>
-            <label className="block text-sm font-medium text-main-black mb-2">
-              Services souhaités *
-            </label>
-            <div className="space-y-2">
-              {MODULES_OUTSOURCING.map((mod) => {
-                const selected = form.modules.includes(mod.id);
-                return (
-                  <button
-                    type="button"
-                    key={mod.id}
-                    onClick={() => toggleModule(mod.id)}
-                    className={`w-full text-left px-3 py-2.5 rounded-lg border text-sm transition-all ${
-                      selected
-                        ? "border-[#007a55] bg-[#007a55]/5 text-[#007a55]"
-                        : "border-gray-200 hover:border-gray-300 text-gray-600"
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <div className={`w-4 h-4 rounded border flex items-center justify-center shrink-0 ${
-                        selected ? "border-[#007a55] bg-[#007a55]" : "border-gray-300"
-                      }`}>
-                        {selected && (
-                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                            <polyline points="20 6 9 17 4 12" />
-                          </svg>
-                        )}
-                      </div>
-                      <span className="font-medium">{mod.label}</span>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
           {/* Company */}
           <div>
             <label className="block text-sm font-medium text-main-black mb-1.5">
@@ -244,9 +190,9 @@ export default function OutsourcingSidebar() {
           {/* Submit */}
           <button
             type="submit"
-            disabled={loading || form.modules.length === 0}
+            disabled={loading}
             className={`w-full py-3 rounded-xl font-semibold text-white transition-all flex items-center justify-center gap-2 ${
-              loading || form.modules.length === 0
+              loading
                 ? "bg-gray-300 cursor-not-allowed"
                 : "bg-[#007a55] hover:bg-[#005f43]"
             }`}
@@ -286,29 +232,7 @@ export default function OutsourcingSidebar() {
       </div>
 
       {/* Quick links */}
-      <div className="mt-6 bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
-        <h4 className="font-semibold text-main-black mb-4">Nos autres services</h4>
-        <div className="space-y-3">
-          <Link to="/sage100" className="flex items-center gap-2 text-gray-600 hover:text-[#007a55] transition-colors">
-            <svg width="6" height="10" viewBox="0 0 7 11" fill="none">
-              <path d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            <span className="text-sm">Sage 100</span>
-          </Link>
-          <Link to="/horoquartz" className="flex items-center gap-2 text-gray-600 hover:text-[#007a55] transition-colors">
-            <svg width="6" height="10" viewBox="0 0 7 11" fill="none">
-              <path d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            <span className="text-sm">Horoquartz</span>
-          </Link>
-          <Link to="/formation" className="flex items-center gap-2 text-gray-600 hover:text-[#007a55] transition-colors">
-            <svg width="6" height="10" viewBox="0 0 7 11" fill="none">
-              <path d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            <span className="text-sm">Formation</span>
-          </Link>
-        </div>
-      </div>
+     
     </div>
   );
 }
