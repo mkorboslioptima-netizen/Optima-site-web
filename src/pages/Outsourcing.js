@@ -9,18 +9,19 @@ import HeroFC from "../components/Hero/HeroF&C";
 import SEO from "../components/SEO";
 import Detail from "../components/Course/Description-Metier-Finance";
 import OutsourcingService from "../components/Services/OutsourcingService";
+import Pkoptima from "../components/Services/PkOptima";
 export default function Services() {
   return (
     <InnerPageLayout>
       <SEO
-        title="Services"
+        title="Outsourcing de la paie"
         description="Découvrez nos services : intégration Sage 100, formation, support technique, gestion commerciale, comptabilité et solutions Horoquartz."
         path="/Outsourcing"
       />
       <HeroFC / >
       <Detail />
+      <Pkoptima />
       <OutsourcingService />
-      
       <OutsourcingFaq />
     </InnerPageLayout>
   );

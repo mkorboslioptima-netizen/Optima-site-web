@@ -34,7 +34,7 @@ export default function ServiceFaq() {
     <section className="relative md:mt-12">
       <div className="w-full pb-16 md:pb-[30px] relative z-10">
         <div className="mx-auto theme-container">
-          <div className="relative flex items-center justify-center px-4 py-10 md:px-0 md:py-20 rounded-3xl">
+          <div className="relative flex items-center justify-center px-4 py-10 md:px-0 md:py-2 rounded-3xl">
             <div className="max-w-[850px] w-full flex flex-col items-center relative z-10">
               <h1 className="py-0.5 px-5 bg-buisness-red/5 border-buisness-red/10 border rounded-[30px] font-medium text-buisness-red">
                 FAQs

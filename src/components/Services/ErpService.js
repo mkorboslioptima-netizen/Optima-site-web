@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function ServiceFiveRed() {
   return (
-    <section id="services" className="py-[120px] sm:py-[100px] bg-white">
+    <section id="services" className="py-[120px] sm:py-[40px] bg-white">
       <div className="w-full mx-auto theme-container">
         <h1 className="px-5 bg-buisness-red/5 border border-buisness-red/20 text-buisness-red font-medium rounded-[30px] w-fit mx-auto">
           Nos Services

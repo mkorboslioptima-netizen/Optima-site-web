@@ -9,6 +9,7 @@ import SEO from "../components/SEO";
 import DescriptionMetierERP from "../components/Course/Description-Metier-ERP";
 import Erpservice from "../components/Services/ErpService";
 import Erpfaq from "../components/Services/ErpFaq";
+import ErpSolutions from "../components/Services/ErpSolutions";
 export default function GestionEntreprise() {
   return (
     <InnerPageLayout>
@@ -19,6 +20,7 @@ export default function GestionEntreprise() {
       />
       <HeroERP />
       <DescriptionMetierERP />
+      <ErpSolutions />
       <Erpservice />
       <Erpfaq />
     </InnerPageLayout>

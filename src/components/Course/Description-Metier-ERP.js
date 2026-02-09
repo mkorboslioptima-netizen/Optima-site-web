@@ -95,55 +95,7 @@ export default function CourseDetailsInfo() {
         </video>
       </div>
 
-      <section className="mt-0 md:mt-20 pb-0 md:pb-[0px]">
-        <div className="theme-container w-full mx-auto grid grid-cols-8 lg:grid-cols-12 gap-y-16 lg:gap-y-0 lg:gap-x-[70px]">
-          <div className="col-span-12 lg:col-start-0">
-            <div className="w-full flex flex-col items-center">
-              <h1 className="font-semibold text-24 text-main-black text-center">
-                 Pourquoi choisir OPTIMA pour votre ERP ?
-              </h1>
-              <ul className="grid grid-cols-2 gap-x-24 gap-y-6 mt-6">
-                <li className="flex items-center gap-2 whitespace-nowrap">
-                  <span className="mt-0.5 shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="10" cy="10" r="10" fill="#DC2626"/>
-                      <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </span>
-                  Partenaire certifié Sage 100 cloud
-                </li>
-                <li className="flex items-center gap-2 whitespace-nowrap">
-                  <span className="mt-0.5 shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="10" cy="10" r="10" fill="#DC2626"/>
-                      <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </span>
-                  Expertise en paramétrage et intégration ERP
-                </li>
-                <li className="flex items-center gap-2 whitespace-nowrap">
-                  <span className="mt-0.5 shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="10" cy="10" r="10" fill="#DC2626"/>
-                      <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </span>
-                  Accompagnement personnalisé de A à Z
-                </li>
-                <li className="flex items-center gap-2 whitespace-nowrap">
-                  <span className="mt-0.5 shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="10" cy="10" r="10" fill="#DC2626"/>
-                      <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </span>
-                  Formation et support dédiés
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </>
   );
 }
