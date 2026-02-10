@@ -69,7 +69,7 @@ const pagesLinkData = [
   },
   {
     linkLabel: "Comptabilité",
-    pageLink: "/blog-details",
+    pageLink: "/Sage-100-Gestion-comptabilite",
   },
   {
     linkLabel: "Immobilisation",

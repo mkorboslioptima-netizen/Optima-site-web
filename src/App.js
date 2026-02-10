@@ -28,6 +28,7 @@ import Devis from "./pages/Devis";
 import GTA from "./pages/Gestion_Du_Temps"
 import Outsourcing from "./pages/Outsourcing";
 import GestionEntreprise from "./pages/GestionEntreprise";
+import SageCompta  from "./pages/SageCompta";
 /* ─── Page transition variants ─── */
 const pageVariants = {
   initial: { opacity: 0, y: 18 },
@@ -272,6 +273,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/Sage-100-Gestion-Commerciale" element={<SageCommerciale />} />
+            <Route path="/Sage-100-Gestion-comptabilite" element={<SageCompta />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/course-details" element={<CourseDetails />} />

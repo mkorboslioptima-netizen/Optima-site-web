@@ -4,7 +4,7 @@ import BreadCrumb from "../components/Breadcrumb/BreadCrumb";
 import ProjectOverview from "../components/Projects/ProjectOverview";
 import ProjectRequirement from "../components/Projects/ProjectRequirement";
 import ProjectResult from "../components/Projects/ProjectResult";
-import RelatedProject from "../components/Projects/RelatedProject";
+import RelatedProject from "../components/Projects/RelatedCompta";
 import HeroTwo from "../components/Hero/HeroTwo";
 import ServiceTwo from "../components/Services/ServiceTwo";
 import SEO from "../components/SEO";

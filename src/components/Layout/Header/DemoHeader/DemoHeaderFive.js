@@ -66,7 +66,7 @@ export default function DemoHeaderFour() {
                   w-fit flex gap-2 items-center
                   "
                   >
-                      Sage
+                      Gestion d'entreprise
                       <svg
                         className="transition-all duration-300 group-hover:rotate-180"
                         width="10"
