@@ -1,0 +1,110 @@
+{
+  "statistiques": {
+    "FIXE": 8,
+    "VARIABLE": 1,
+    "MIXTE": 1,
+    "ERREUR": 0
+  },
+  "details": [
+    {
+      "fichier": "BD jan 26_xlsx.msg",
+      "categorie": "FIXE",
+      "confiance": 0.7405390728294496,
+      "sujet_email": "BD jan 26.xlsx",
+      "rag_scores": {
+        "FIXE": 0.7405390728294496,
+        "VARIABLE": 0.2594609271705504
+      }
+    },
+    {
+      "fichier": "Eléments de calcul des salaires de janvier 2026 - directeurs BK Food.msg",
+      "categorie": "MIXTE",
+      "confiance": 0.5985809045484919,
+      "sujet_email": "Eléments de calcul des salaires de janvier 2026 - directeurs BK Food",
+      "rag_scores": {
+        "FIXE": 0.4014190954515081,
+        "VARIABLE": 0.5985809045484919
+      }
+    },
+    {
+      "fichier": "nouveau salaire  brut .msg",
+      "categorie": "FIXE",
+      "confiance": 0.6761739304666975,
+      "sujet_email": "nouveau salaire  brut ",
+      "rag_scores": {
+        "FIXE": 0.6761739304666975,
+        "VARIABLE": 0.32382606953330245
+      }
+    },
+    {
+      "fichier": "nv salaire brut .msg",
+      "categorie": "FIXE",
+      "confiance": 0.7307708261278012,
+      "sujet_email": "nv salaire brut ",
+      "rag_scores": {
+        "FIXE": 0.7307708261278012,
+        "VARIABLE": 0.2692291738721988
+      }
+    },
+    {
+      "fichier": "pointage janvier_xlsx.msg",
+      "categorie": "FIXE",
+      "confiance": 0.813965851322469,
+      "sujet_email": "pointage janvier.xlsx",
+      "rag_scores": {
+        "FIXE": 0.813965851322469,
+        "VARIABLE": 0.18603414867753096
+      }
+    },
+    {
+      "fichier": "Prime exceptionnelle (Annule et remplace) .msg",
+      "categorie": "FIXE",
+      "confiance": 0.9388863326850173,
+      "sujet_email": "Prime exceptionnelle (Annule et remplace) ",
+      "rag_scores": {
+        "FIXE": 0.9388863326850173,
+        "VARIABLE": 0.06111366731498264
+      }
+    },
+    {
+      "fichier": "Primes Décembre _Hutchinson F_xlsm.msg",
+      "categorie": "VARIABLE",
+      "confiance": 0.6055907986646184,
+      "sujet_email": "Primes Décembre _Hutchinson F.xlsm",
+      "rag_scores": {
+        "FIXE": 0.39440920133538154,
+        "VARIABLE": 0.6055907986646184
+      }
+    },
+    {
+      "fichier": "Prélèvement Eddebou.msg",
+      "categorie": "FIXE",
+      "confiance": 0.6788087258644544,
+      "sujet_email": "Prélèvement Eddebou",
+      "rag_scores": {
+        "FIXE": 0.6788087258644544,
+        "VARIABLE": 0.32119127413554555
+      }
+    },
+    {
+      "fichier": "RE_ Nouveaux salaires de base.msg",
+      "categorie": "FIXE",
+      "confiance": 0.8561125052556107,
+      "sujet_email": "RE: Nouveaux salaires de base",
+      "rag_scores": {
+        "FIXE": 0.8561125052556107,
+        "VARIABLE": 0.14388749474438936
+      }
+    },
+    {
+      "fichier": "RE_ Prime exceptionnelle (Annule et remplace) .msg",
+      "categorie": "FIXE",
+      "confiance": 0.8107025200642337,
+      "sujet_email": "RE: Prime exceptionnelle (Annule et remplace) ",
+      "rag_scores": {
+        "FIXE": 0.8107025200642337,
+        "VARIABLE": 0.1892974799357663
+      }
+    }
+  ]
+}

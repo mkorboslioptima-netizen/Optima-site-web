@@ -13,25 +13,24 @@ export default function ErpSolutions() {
             Nos Solutions ERP
           </h1>
           <h2 className="pt-5 font-semibold text-center text-black text-24 sm:text-48">
-            We Have 253+ Projects Discover Our Case Studies
+            Nos Solutions Sage 100 pour Piloter Votre Entreprise
           </h2>
         </div>
         <div className="grid grid-cols-6 lg:grid-cols-12 gap-[30px] mt-10 md:mt-[70px]">
           {/* <!-- card start  --> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 bg-white p-2.5 col-span-6 rounded-3xl h3_case_card_shadow transition-all duration-300 cursor-pointer gap-4">
             <div className="flex flex-col justify-center h-full col-span-1 px-4 md:px-10">
-              <p className="text-paragraph">Website Design</p>
+              <p className="text-paragraph">Solution Sage 100</p>
               <h3 className="case_card_title text-black text-24 font-semibold pt-0.5">
-                <Link to="/project-details"> Modern Website Design </Link>
+                <Link to="/project-details"> Gestion Commerciale </Link>
               </h3>
               <p className="text-paragraph py-[30px]">
-                Defined by digital dynamism our digital marketing agency emerges
-                as a beacon
+                Gérez vos ventes, achats, stocks et facturation avec une solution complète et connectée à votre comptabilité.
               </p>
               <Link to="/project-details">
                 <div className="overflow-hidden flex gap-2 items-center justify-center border border-main-black/10 rounded-[41px] px-[30px] py-1.5 w-fit relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-blue-seo before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300">
                   <span className="relative z-10 font-semibold text-main-black group-hover:text-white">
-                    Read More
+                    Découvrir le module
                   </span>
                   <svg
                     className="relative z-10 transition-all duration-100"
@@ -59,7 +58,7 @@ export default function ErpSolutions() {
               className="col-span-1 overflow-hidden rounded-2xl"
             >
               <img
-                src="/assets/images/home-three/case/1.svg"
+                src="./assets/images/home-two/case_study/sagecommerciale.webp"
                 alt=""
                 className="object-cover w-full"
               />
@@ -69,20 +68,21 @@ export default function ErpSolutions() {
           {/* <!-- card start  --> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 bg-white p-2.5 col-span-6 rounded-3xl h3_case_card_shadow transition-all duration-300 cursor-pointer gap-4">
             <div className="flex flex-col justify-center h-full col-span-1 px-4 md:px-10">
-              <p className="text-paragraph">Product Design</p>
+              <p className="text-paragraph">Solution Sage 100</p>
               <h3 className="case_card_title text-black text-24 font-semibold pt-0.5">
                 <Link to="/project-details">
-                  Mobile Apps Design & Development
+                  Comptabilité
                 </Link>
               </h3>
               <p className="text-paragraph py-[30px]">
-                Defined by digital dynamism our digital marketing agency emerges
-                as a beacon
+                Pilotez votre gestion financière : écritures, TVA, rapprochements bancaires et états comptables en temps réel.
+
+
               </p>
               <Link to="/project-details">
                 <div className="overflow-hidden flex gap-2 items-center justify-center border border-main-black/10 rounded-[41px] px-[30px] py-1.5 w-fit relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-blue-seo before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300">
                   <span className="relative z-10 font-semibold text-main-black group-hover:text-white">
-                    Read More
+                    Découvrir le module
                   </span>
                   <svg
                     className="relative z-10 transition-all duration-100"
@@ -110,7 +110,7 @@ export default function ErpSolutions() {
               className="col-span-1 overflow-hidden rounded-2xl"
             >
               <img
-                src="/assets/images/home-three/case/2.svg"
+                src="/assets/images/home-three/case/compta.png"
                 alt=""
                 className="object-cover w-full"
               />
@@ -120,18 +120,17 @@ export default function ErpSolutions() {
           {/* <!-- card start  --> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 bg-white p-2.5 col-span-6 rounded-3xl h3_case_card_shadow transition-all duration-300 cursor-pointer gap-4">
             <div className="flex flex-col justify-center h-full col-span-1 px-4 md:px-10">
-              <p className="text-paragraph">Mobile Apps Design</p>
+              <p className="text-paragraph">Solution Sage 100</p>
               <h3 className="case_card_title text-black text-24 font-semibold pt-0.5">
-                <Link to="/project-details">Task Management Mobile Apps</Link>
+                <Link to="/project-details">Gestion des Immobilisations</Link>
               </h3>
               <p className="text-paragraph py-[30px]">
-                Defined by digital dynamism our digital marketing agency emerges
-                as a beacon
+                Suivez le cycle de vie de vos actifs, calculez automatiquement les amortissements et sécurisez vos obligations comptables.
               </p>
               <Link to="/project-details">
                 <div className="overflow-hidden flex gap-2 items-center justify-center border border-main-black/10 rounded-[41px] px-[30px] py-1.5 w-fit relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-blue-seo before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300">
                   <span className="relative z-10 font-semibold text-main-black group-hover:text-white">
-                    Read More
+                    Découvrir le module
                   </span>
                   <svg
                     className="relative z-10 transition-all duration-100"
@@ -159,7 +158,7 @@ export default function ErpSolutions() {
               className="col-span-1 overflow-hidden rounded-2xl"
             >
               <img
-                src="/assets/images/home-three/case/3.svg"
+                src="/assets/images/home-three/case/sage_100c_immobilisations-functions_de_base.jpg"
                 alt=""
                 className="object-cover w-full"
               />
@@ -169,20 +168,19 @@ export default function ErpSolutions() {
           {/* <!-- card start  --> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 bg-white p-2.5 col-span-6 rounded-3xl h3_case_card_shadow transition-all duration-300 cursor-pointer gap-4">
             <div className="flex flex-col justify-center h-full col-span-1 px-4 md:px-10">
-              <p className="text-paragraph">Branding Design</p>
+              <p className="text-paragraph">Solution Sage 100</p>
               <h3 className="case_card_title text-black text-24 font-semibold pt-0.5">
                 <Link to="/project-details">
-                  Modern Website Design & Branding
+                  Paie & RH
                 </Link>
               </h3>
               <p className="text-paragraph py-[30px]">
-                Defined by digital dynamism our digital marketing agency emerges
-                as a beacon
+                Automatisez la paie, gérez les déclarations sociales et pilotez vos ressources humaines en toute conformité.
               </p>
               <Link to="/project-details">
                 <div className="overflow-hidden flex gap-2 items-center justify-center border border-main-black/10 rounded-[41px] px-[30px] py-1.5 w-fit relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-blue-seo before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300">
                   <span className="relative z-10 font-semibold text-main-black group-hover:text-white">
-                    Read More
+                    Découvrir le module
                   </span>
                   <svg
                     className="relative z-10 transition-all duration-100"
@@ -204,13 +202,14 @@ export default function ErpSolutions() {
                 </div>
               </Link>
             </div>
+            
             <div
               data-aos="flip-right"
               data-aos-duration="1000"
               className="col-span-1 overflow-hidden rounded-2xl"
             >
               <img
-                src="/assets/images/home-three/case/4.svg"
+                src="/assets/images/home-three/case/Mdp_Gestion des mandats.jpg"
                 alt=""
                 className="object-cover w-full"
               />
