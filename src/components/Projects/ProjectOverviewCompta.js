@@ -52,9 +52,7 @@ export default function ProjectOverview() {
             </h1>
 
             <p className="max-w-[533px] text-18 sm:text-24 leading-[40px] text-paragraph mt-2.5 md:mt-3.5">
-              Sage 100 Gestion Commerciale facilite la gestion quotidienne de votre entreprise.
-              Du devis à la facturation, en passant par l'approvisionnement et les stocks,
-              vous gagnez en efficacité et en traçabilité.
+              Sage 100 Comptabilité, simplifie la gestion comptable de votre entreprise au quotidien. De la saisie des écritures au suivi des comptes, en passant par la gestion de la TVA, les rapprochements bancaires et les états financiers, vous gagnez en fiabilité, en visibilité et en performance.
             </p>
           </div>
 
@@ -64,7 +62,7 @@ export default function ProjectOverview() {
             {/* Video preview (autoplay on scroll) */}
             <video
               ref={videoRef}
-              src="/videos/Sage.mp4"
+              src="/videos/compta.mp4"
               muted
               playsInline
               preload="metadata"
@@ -73,7 +71,7 @@ export default function ProjectOverview() {
 
             {/* Play button → Lightbox */}
             <a
-              href="/videos/Sage.mp4"
+              href="/videos/compta.mp4"
               data-type="video"
               data-source="local"
               className="absolute flex items-center justify-center video-play-btn"

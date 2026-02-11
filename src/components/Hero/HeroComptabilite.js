@@ -20,10 +20,10 @@ export default function HeroTwo() {
             data-depth="-0.28"
           >
             <span style={{ color: '#007a55' }}>Sage</span> 100c <br className="hidden md:block" />
-            Commerciale
+            Comptabilité
           </h1>
           <p className="mt-5 font-medium text-black text-18 font-inter md:mt-5">
-            Solution de gestion complète pour optimiser votre activité commerciale
+            Pilotez efficacement la comptabilité de votre PME avec Sage 100 Comptabilité, déployé et intégré par OPTIMA.
           </p>
           <div className="flex flex-col gap-3 mt-5 sm:flex-row sm:gap-6 md:mt-12">
             <Link to="/pricing">
@@ -43,7 +43,7 @@ export default function HeroTwo() {
         {/* <!-- circle animations elements  --> */}
 
         <img
-          src="/assets/images/sage4.png"
+          src="/assets/images/home-five/hero/Comptasage.png"
           alt="img"
           className="relative bottom-0 right-0 self-end col-span-7 2xl:-right-52 moving-h2-hero-main-img"
         />

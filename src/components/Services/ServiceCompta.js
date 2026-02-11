@@ -117,7 +117,7 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-black text-main-black text-22">
-                Gestion des Ventes
+                Documents prêts à l’emploi (comptes, sections, journaux... )
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
              Gérez l'intégralité de votre cycle de vente, du devis à la facturation, avec une fluidité exceptionnelle.
@@ -184,7 +184,7 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300  text-main-black text-22">
-                Gestion des Stocks
+                Gestion des abonnements
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
                 Optimisez vos stocks en temps réel, gérez le réapprovisionnement et évitez les ruptures
@@ -243,7 +243,7 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300  text-main-black text-22">
-                Gestion des Achats
+                Rapprochement bancaire manuel et automatique
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
                 Maîtrisez vos coûts d'achat et gérez efficacement vos relations fournisseurs.
@@ -343,7 +343,7 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-black text-main-black text-22">
-                Pilotage & Reporting
+                Reporting, contrôles comptables, gestion des collaborateurs.
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
                 Accédez à des tableaux de bord dynamiques pour suivre votre activité commerciale en temps réel.
@@ -416,12 +416,13 @@ export default function ServiceTwo() {
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Solution adaptée à votre organisation
+                      Une gestion comptable mobile
+
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/sagecommerciale.webp"
+                  src="./assets/images/home-two/case_study/gestioncomptable.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -444,12 +445,12 @@ export default function ServiceTwo() {
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Paramétrage sur mesure de votre gestion
+                      Comptabilité analytique
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/sageclients.png"
+                  src="./assets/images/home-two/case_study/gestioncomptable.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -471,7 +472,7 @@ export default function ServiceTwo() {
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Automatisation intelligente des processus
+                      Conformité et précision
                     </h1>
                   </a>
                 </div>
