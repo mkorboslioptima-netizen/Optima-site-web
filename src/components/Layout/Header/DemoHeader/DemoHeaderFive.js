@@ -154,6 +154,30 @@ export default function DemoHeaderFour() {
                       </ul>
                     </div>
                     </li>
+                     <li>
+                    <Link
+                      className="
+                      relative
+                      text-gray-800 font-semibold text-sm 2xl:text-base
+                      transition-all duration-300
+                      hover:text-[#E11D48]
+
+                      after:content-['']
+                      after:absolute
+                      after:left-0
+                      after:-bottom-1
+                      after:w-0
+                      after:h-[2px]
+                      after:bg-[#E11D48]
+                      after:transition-all
+                      after:duration-300
+                      hover:after:w-full
+                      w-fit"
+                      to="/about"
+                    >
+                      Outsourcing de la Paie
+                    </Link>
+                  </li>
                    <li className="relative group">
 
                       <a
@@ -209,6 +233,7 @@ export default function DemoHeaderFour() {
                       </ul>
                     </div>
                     </li>
+                 
                   <li>
                     <Link
                       className="
@@ -228,33 +253,9 @@ export default function DemoHeaderFour() {
                       after:duration-300
                       hover:after:w-full
                       w-fit"
-                      to="/about"
+                      to="/About"
                     >
-                      Outsourcing de la Paie
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="
-                      relative
-                      text-gray-800 font-semibold text-sm 2xl:text-base
-                      transition-all duration-300
-                      hover:text-[#E11D48]
-
-                      after:content-['']
-                      after:absolute
-                      after:left-0
-                      after:-bottom-1
-                      after:w-0
-                      after:h-[2px]
-                      after:bg-[#E11D48]
-                      after:transition-all
-                      after:duration-300
-                      hover:after:w-full
-                      w-fit"
-                      to="/services"
-                    >
-                      Services
+                      About
                     </Link>
                   </li>
                   
