@@ -45,7 +45,7 @@ export default function HeroFive() {
       {/* <!-- content  --> */}
 
       <div className="relative z-10 w-full mx-auto theme-container">
-        <div className="grid grid-cols-7 lg:grid-cols-12 pt-[113px] xl:pt-[213px] pb-[114px]">
+        <div className="grid grid-cols-7 lg:grid-cols-12 pt-[113px] xl:pt-[140px] 2xl:pt-[213px] pb-[80px] 2xl:pb-[114px]">
           <div className="col-span-7">
             <div>
               <Swiper {...swiperOptions} className="h5_hero_slider">
@@ -113,11 +113,11 @@ export default function HeroFive() {
                       Votre partenaire digital
                     </span>
                   </div>
-                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8"
+                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-55 2xl:text-75 sm:mt-5 2xl:mt-8"
                    style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}>
                     Optima - Leadership en Gestion d'Entreprise
                   </h1>
-                  <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-11">
+                  <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-6 2xl:pt-11">
                     <Link to="/services">
                       <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-3 sm:py-[15px]">
                         <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
@@ -236,11 +236,11 @@ export default function HeroFive() {
                       Votre partenaire digital
                     </span>
                   </div>
-                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8"
+                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-55 2xl:text-75 sm:mt-5 2xl:mt-8"
                    style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}>
                     Des solutions innovantes pour optimiser votre gestion d'entreprise 
                   </h1>
-                  <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-11">
+                  <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-6 2xl:pt-11">
                     <Link to="/services">
                       <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-3 sm:py-[15px]">
                         <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
@@ -360,11 +360,11 @@ export default function HeroFive() {
                     </span>
                   </div>
              
-                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-75 sm:mt-8"
+                  <h1 className="mt-4 font-semibold text-white text-24 sm:text-48 xl:text-55 2xl:text-75 sm:mt-5 2xl:mt-8"
                    style={{ textShadow: '2px 2px 10px rgba(0,0,0,0.9)' }}>
                     L’excellence opérationnelle commence ici
                   </h1>
-                  <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-11">
+                  <div className="flex flex-col gap-8 pt-5 sm:flex-row sm:pt-6 2xl:pt-11">
                     <Link to="/services">
                       <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-3 sm:py-[15px]">
                         <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
@@ -460,7 +460,7 @@ export default function HeroFive() {
           </div>
         </div>
         {/* <!-- cards  --> */}
-        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] pb-16 sm:pb-[130px]">
+        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] pb-16 sm:pb-[80px] 2xl:pb-[130px]">
           {/* <!-- single card start  --> */}
           <div
             data-aos="fade-up"

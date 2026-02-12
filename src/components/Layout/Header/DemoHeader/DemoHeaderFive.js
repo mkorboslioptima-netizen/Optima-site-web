@@ -8,9 +8,9 @@ export default function DemoHeaderFour() {
   return (
     <header>
       <div className="header-wrapper w-full fixed left-0 top-0 z-20 bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 xl:block hidden">
-        <div className="relative z-20 w-full px-10 lg:px-40">
+        <div className="relative z-20 w-full px-6 lg:px-10 xl:px-20 2xl:px-40">
           <div className="w-full h-[95px] flex justify-between items-center">
-            <div className="flex space-x-[60px] items-center">
+            <div className="flex space-x-6 xl:space-x-[40px] 2xl:space-x-[60px] items-center">
               <div>
                 <Link to="/">
                   <img src="/assets/images/Logo.svg" 
@@ -18,12 +18,12 @@ export default function DemoHeaderFour() {
                 </Link>
               </div>
               <div>
-                <ul className="flex items-center space-x-12">
+                <ul className="flex items-center space-x-6 xl:space-x-10 2xl:space-x-12 whitespace-nowrap">
                   <Link
                   href="#"
                    className="
                    relative
-                   text-gray-800 font-semibold text-base
+                   text-gray-800 font-semibold text-sm 2xl:text-base
                    transition-all duration-300
                    hover:text-[#E11D48]
 
@@ -49,7 +49,7 @@ export default function DemoHeaderFour() {
                   href="#"
                    className="
                    relative
-                   text-gray-800 font-semibold text-base
+                   text-gray-800 font-semibold text-sm 2xl:text-base
                    transition-all duration-300
                    hover:text-[#E11D48]
 
@@ -105,7 +105,7 @@ export default function DemoHeaderFour() {
                       href="#"
                       className="
                       relative
-                      text-gray-800 font-semibold text-base
+                      text-gray-800 font-semibold text-sm 2xl:text-base
                       transition-all duration-300
                       hover:text-[#E11D48]
 
@@ -160,7 +160,7 @@ export default function DemoHeaderFour() {
                       href="#"
                       className="
                       relative
-                      text-gray-800 font-semibold text-base
+                      text-gray-800 font-semibold text-sm 2xl:text-base
                       transition-all duration-300
                       hover:text-[#E11D48]
 
@@ -213,7 +213,7 @@ export default function DemoHeaderFour() {
                     <Link
                       className="
                       relative
-                      text-gray-800 font-semibold text-base
+                      text-gray-800 font-semibold text-sm 2xl:text-base
                       transition-all duration-300
                       hover:text-[#E11D48]
 
@@ -237,7 +237,7 @@ export default function DemoHeaderFour() {
                     <Link
                       className="
                       relative
-                      text-gray-800 font-semibold text-base
+                      text-gray-800 font-semibold text-sm 2xl:text-base
                       transition-all duration-300
                       hover:text-[#E11D48]
 
@@ -267,8 +267,8 @@ export default function DemoHeaderFour() {
                 
               </a>
               <Link to="/contact">
-                          <div className="home-two-btn-bg py-3.5 group bg-buisness-red border-buisness-red w-fit mt-0.5">
-                            <span className="relative z-10 text-sm font-semibold text-white transition-all duration-300 group-hover:text-[#E11D48] font-inter text-base">
+                          <div className="home-two-btn-bg py-3.5 group bg-buisness-red border-buisness-red w-fit mt-0.5 whitespace-nowrap">
+                            <span className="relative z-10 text-sm font-semibold text-white transition-all duration-300 group-hover:text-[#E11D48] font-inter 2xl:text-base">
                               Contactez-nous 
                             </span>
                             <svg

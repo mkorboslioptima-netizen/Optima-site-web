@@ -29,6 +29,7 @@ import GTA from "./pages/Gestion_Du_Temps"
 import Outsourcing from "./pages/Outsourcing";
 import GestionEntreprise from "./pages/GestionEntreprise";
 import SageCompta  from "./pages/SageCompta";
+import Immobilisation from "./pages/Immobilisation";
 /* ─── Page transition variants ─── */
 const pageVariants = {
   initial: { opacity: 0, y: 18 },
@@ -284,6 +285,7 @@ export default function App() {
             <Route path="/GestionEntreprise" element={<GestionEntreprise />} />
             <Route path="/devis" element={<Devis />} />
             <Route path="*" element={<Notfound />} />
+            <Route path="/Immobilisation" element={<Immobilisation />} />
           </Routes>
       
       </AnimatePresence>

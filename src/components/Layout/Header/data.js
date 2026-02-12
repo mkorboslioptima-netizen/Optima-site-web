@@ -73,16 +73,16 @@ const pagesLinkData = [
   },
   {
     linkLabel: "Immobilisation",
-    pageLink: "/pricing",
+    pageLink: "/Immobilisation",
   },
   {
     linkLabel: "Paie & RH",
-    pageLink: "/service-details",
+    pageLink: "/Paie-RH",
   },
   
   {
     linkLabel: "Sage BI",
-    pageLink: "/blogs",
+    pageLink: "/Sage-BI",
   },
   
  

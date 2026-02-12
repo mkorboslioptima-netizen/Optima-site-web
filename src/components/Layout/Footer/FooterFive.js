@@ -240,7 +240,7 @@ export default function FooterFive() {
 
         <div className="w-fit max-w-[300px]">
           <div className="max-w-[223px]">
-            <h1 className="font-semibold text-white text-18">Address</h1>
+            <h1 className="font-semibold text-white text-18">Addresse</h1>
             <div className="flex gap-2 items-center relative group font-medium text-white/50 hover:text-white hover:underline transition-all duration-300 mt-3.5">
               <span className="transition-all duration-300">
                 6, Rue Echih – 2éme étage – App B2.1 -  2080 Ariana
@@ -250,7 +250,7 @@ export default function FooterFive() {
             <div className="flex gap-2 items-center relative group font-medium text-white/50 hover:text-white hover:underline transition-all duration-300 mt-3.5">
               <span className="transition-all duration-300">
                 info@optima.tn <br />
-                +216 715 397
+                +216 71 000 000
               </span>
             </div>
           </div>
@@ -303,7 +303,7 @@ export default function FooterFive() {
               <a
                 href="#"
                 aria-label="go top"
-                className="w-[45px] h-[45px] rounded-full border-[3px] border-buisness-light-black flex justify-center items-center bg-purple absolute -top-[75px] sm:-top-[55px]"
+                className="w-[45px] h-[45px] rounded-full border-[3px] border-buisness-light-black flex justify-center items-center bg-white absolute -top-[75px] sm:-top-[55px]"
               >
                 <span>
                   <svg
@@ -315,7 +315,7 @@ export default function FooterFive() {
                   >
                     <path
                       d="M1 6.33333L6.33333 1M6.33333 1L11.6667 6.33333M6.33333 1V17"
-                      stroke="white"
+                      stroke="black"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
