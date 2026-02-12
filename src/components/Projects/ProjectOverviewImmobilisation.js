@@ -48,13 +48,11 @@ export default function ProjectOverview() {
           {/* TEXT */}
           <div className="col-span-6">
             <h1 className="text-24 sm:text-34 leading-[55px] tracking-tight font-semibold text-main-black">
-              Une solution unique pour piloter toute votre activité
+              Pilotez efficacement vos immobilisations
             </h1>
 
             <p className="max-w-[533px] text-18 sm:text-24 leading-[40px] text-paragraph mt-2.5 md:mt-3.5">
-              Sage 100 Gestion Commerciale facilite la gestion quotidienne de votre entreprise.
-              Du devis à la facturation, en passant par l'approvisionnement et les stocks,
-              vous gagnez en efficacité et en traçabilité.
+              Sage 100 Immobilisations assure un suivi rigoureux de vos biens, automatise les amortissements et garantit la conformité réglementaire de votre gestion patrimoniale.
             </p>
           </div>
 

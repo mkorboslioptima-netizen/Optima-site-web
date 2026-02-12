@@ -117,10 +117,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-black text-main-black text-22">
-                Gestion des Ventes
+                Une conformité optimale
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-             Gérez l'intégralité de votre cycle de vente, du devis à la facturation, avec une fluidité exceptionnelle.
+             Les écritures d’achats d’immobilisations de la comptabilité sont automatiquement transformées en fiches d’immobilisation. Vous pouvez lier les immobilisations entre elles et les céder simultanément.
               </p>
              
             </div>
@@ -184,10 +184,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300  text-main-black text-22">
-                Gestion des Stocks
+                Une évaluation immédiate
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-                Optimisez vos stocks en temps réel, gérez le réapprovisionnement et évitez les ruptures
+                Choisissez votre mode de calcul pour l’amortissement. Profitez des fonctions de fractionnement, de réévaluation des immobilisations et de révision des plans d’amortissement.
               </p>
              
             </div>
@@ -243,10 +243,11 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300  text-main-black text-22">
-                Gestion des Achats
+                Un gain de productivité avéré
+
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-                Maîtrisez vos coûts d'achat et gérez efficacement vos relations fournisseurs.
+                Votre logiciel s’interface et communique en temps réel avec Sage 100 Comptabilité, vous évitant de ressaisir vos données. Vous pouvez suivre les acquisitions et cessions et établir des budgets de prévisions de charges.
               </p>
               
             </div>
@@ -343,10 +344,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-black text-main-black text-22">
-                Pilotage & Reporting
+                Une administration simplifiée
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-                Accédez à des tableaux de bord dynamiques pour suivre votre activité commerciale en temps réel.
+                Vous disposez d'un accès permanant à vos rapports clés : états des immobilisations, des amortissements et des cessions ; états préparatoires à la liasse fiscale ; état comparatif.
               </p>
               
             </div>
@@ -412,16 +413,16 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#d4d4d8] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-black">
-                    Audit Organisationnel
+                    Gestion des immobilisations
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Solution adaptée à votre organisation
+                      Suivi complet du cycle de vie des actifs
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/sagecommerciale.webp"
+                  src="./assets/images/home-two/case_study/sage_100c_immobilisations-functions_de_base.jpg"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -440,16 +441,16 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#d4d4d8] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-black">
-                   Déploiement Sur Mesure
+                  Amortissements & Révisions
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Paramétrage sur mesure de votre gestion
+                      Calculs d’amortissement flexibles et évolutifs
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/sageclients.png"
+                  src="./assets/images/home-two/case_study/sage_100c_immobilisations-inventaire_comptable.jpg"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -467,16 +468,16 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#d4d4d8] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-black">
-                    Digitalisation des Processus
+                    Conformité fiscale et inventaire
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Automatisation intelligente des processus
+                      Fiscalité et arrêtés simplifiés
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/sage-doucment.png"
+                  src="./assets/images/home-two/case_study/sage_100c_immobilisations-code_analytique.jpg"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />

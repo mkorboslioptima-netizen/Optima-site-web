@@ -8,7 +8,7 @@ export default function ProjectResult() {
         <div className="w-full col-span-6">
           
           <h1 className="col-span-6 mt-10 font-semibold tracking-tight text-34 mb-12">
-            Pourquoi choisir Sage 100 Gestion Commerciale ?
+            Pourquoi choisir Sage 100 Immobilisations ?
           </h1>
           <p className="mt-4 mb-5 text-paragraph">
         
@@ -27,7 +27,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              Gain de productivité grâce à l'automatisation des processus administratifs
+              Gain de productivité grâce à l’automatisation des amortissements
             </li>
             <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
@@ -42,7 +42,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              Visibilité complète sur la chaîne de valeur (Achats, Stocks, Ventes)
+              Suivi complet du cycle de vie des actifs
             </li>
             <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
@@ -57,7 +57,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              Sécurisation des marges commerciales
+              Optimisation fiscale maîtrisée
             </li>
             <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
@@ -72,7 +72,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              Amélioration de la satisfaction client grâce à une meilleure réactivité
+              Fiabilité des arrêtés comptables
             </li>
             <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
@@ -87,7 +87,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              Conformité légale garantie (loi anti-fraude TVA, facture électronique)
+              Intégration fluide avec Sage 100 Comptabilité
             </li>
           </ul>
         </div>

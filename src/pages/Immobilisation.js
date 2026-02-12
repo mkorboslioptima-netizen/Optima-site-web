@@ -7,6 +7,7 @@ import SEO from "../components/SEO";
 import HeroImmobilisation from "../components/Hero/HeroImmobilisation";
 import ProjectOverviewImmobilisation from "../components/Projects/ProjectOverviewImmobilisation";
 import ProjectResultImmobilisation from "../components/Projects/ProjectResultImmobilisation";
+import RelatedImmobilisation from "../components/Projects/RelatedImmobilisation";
 export default function ProjectDetails() {
   return (
     <InnerPageLayout>
@@ -20,7 +21,7 @@ export default function ProjectDetails() {
       <ServiceImmobilisation />
       {/*<ProjectRequirement /> */}
       <ProjectResultImmobilisation />
-      <RelatedProject />
+      <RelatedImmobilisation/>
     </InnerPageLayout>
   );
 }

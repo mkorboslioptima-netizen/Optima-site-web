@@ -13,10 +13,10 @@ export default function RelatedProject() {
             />
             <div className="">
               <p className="text-sm font-semibold text-paragraph">
-                Négoce et Distribution
+                Gestion des actifs
               </p>
               <p className="mt-2 font-semibold text-22 text-main-black font-inter">
-                 Stock optimisé
+                 Actifs maîtrisés
               </p>
             </div>
           </div>
@@ -28,10 +28,10 @@ export default function RelatedProject() {
             />
             <div className="">
               <p className="text-sm font-semibold text-paragraph">
-                performance commerciale
+                Gestion des amortissements
               </p>
               <p className="mt-2 font-semibold text-22 text-main-black font-inter">
-                 Suivi des ventes
+                 Amortissements automatisés
               </p>
             </div>
           </div>
@@ -44,10 +44,10 @@ export default function RelatedProject() {
             />
             <div className="">
               <p className="text-sm font-semibold text-paragraph">
-                Services
+                Analyse financière
               </p>
               <p className="mt-2 font-semibold text-22 text-main-black font-inter">
-                Facturation & Rentabilité
+                Valeur & rentabilité des actifs
               </p>
             </div>
           </div>
