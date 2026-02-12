@@ -43,7 +43,7 @@ export default function HeroTwo() {
         {/* <!-- circle animations elements  --> */}
 
         <img
-          src="/assets/images/home-five/hero/Comptasage.png"
+          src="/assets/images/home-five/hero/comptabilité.png"
           alt="img"
           className="relative bottom-0 right-0 self-end col-span-7 2xl:-right-52 moving-h2-hero-main-img"
         />

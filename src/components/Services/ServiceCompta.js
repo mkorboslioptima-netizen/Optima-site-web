@@ -120,7 +120,7 @@ export default function ServiceTwo() {
                 Documents prêts à l’emploi (comptes, sections, journaux... )
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-             Gérez l'intégralité de votre cycle de vente, du devis à la facturation, avec une fluidité exceptionnelle.
+             Bénéficiez d’un plan comptable complet, de journaux paramétrés et de modèles prêts à l’emploi pour démarrer rapidement et structurer votre comptabilité selon les normes en vigueur.
               </p>
              
             </div>
@@ -187,7 +187,7 @@ export default function ServiceTwo() {
                 Gestion des abonnements
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-                Optimisez vos stocks en temps réel, gérez le réapprovisionnement et évitez les ruptures
+                Automatisez vos écritures récurrentes (loyers, assurances, charges fixes…) grâce aux abonnements comptables et gagnez un temps précieux chaque mois.
               </p>
              
             </div>
@@ -246,7 +246,7 @@ export default function ServiceTwo() {
                 Rapprochement bancaire manuel et automatique
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-                Maîtrisez vos coûts d'achat et gérez efficacement vos relations fournisseurs.
+              Comparez automatiquement vos relevés bancaires avec vos écritures comptables pour identifier rapidement les écarts et garantir une trésorerie toujours juste.
               </p>
               
             </div>
@@ -346,7 +346,7 @@ export default function ServiceTwo() {
                 Reporting, contrôles comptables, gestion des collaborateurs.
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-                Accédez à des tableaux de bord dynamiques pour suivre votre activité commerciale en temps réel.
+                Accédez à des états financiers fiables, des balances, grands livres et tableaux de bord pour analyser votre situation comptable et faciliter le travail collaboratif.
               </p>
               
             </div>
@@ -412,11 +412,11 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#d4d4d8] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-black">
-                    Audit Organisationnel
+                    Organisation comptable optimisée
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Une gestion comptable mobile
+                      Comptabilité mobile
 
                     </h1>
                   </a>
@@ -441,7 +441,7 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#d4d4d8] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-black">
-                   Déploiement Sur Mesure
+                   Analysez vos coûts avec précision
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
@@ -450,7 +450,7 @@ export default function ServiceTwo() {
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/gestioncomptable.png"
+                  src="./assets/images/home-two/case_study/comptaanalytique.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -468,7 +468,7 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#d4d4d8] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-black">
-                    Digitalisation des Processus
+                    Conformité comptable garantie
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
@@ -477,7 +477,7 @@ export default function ServiceTwo() {
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/sage-doucment.png"
+                  src="./assets/images/home-two/case_study/conformité.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
