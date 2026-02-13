@@ -30,6 +30,7 @@ import Outsourcing from "./pages/Outsourcing";
 import GestionEntreprise from "./pages/GestionEntreprise";
 import SageCompta  from "./pages/SageCompta";
 import Immobilisation from "./pages/Immobilisation";
+import SagePaieRh from "./pages/SagePaieRh";
 /* ─── Page transition variants ─── */
 const pageVariants = {
   initial: { opacity: 0, y: 18 },
@@ -286,6 +287,7 @@ export default function App() {
             <Route path="/devis" element={<Devis />} />
             <Route path="*" element={<Notfound />} />
             <Route path="/Immobilisation" element={<Immobilisation />} />
+            <Route path="/Sage-100-Gestion-Paie-RH" element={<SagePaieRh />} />
           </Routes>
       
       </AnimatePresence>

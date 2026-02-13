@@ -77,7 +77,7 @@ const pagesLinkData = [
   },
   {
     linkLabel: "Paie & RH",
-    pageLink: "/Paie-RH",
+    pageLink: "/Sage-100-Gestion-Paie-RH",
   },
   
   {
