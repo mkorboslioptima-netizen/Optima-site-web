@@ -2,41 +2,36 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const menuData = [
+  { title: "Accueil", href: "/" },
   {
-    title: "Home",
+    title: "Gestion d'entreprise",
     subMenu: [
-      { title: "Digital Marketing", href: "" },
-      { title: "SEO Agency", href: "/home-two" },
-      { title: "Creative Agency", href: "/home-three" },
-      { title: "AI Software", href: "/home-four" },
-      { title: "Business Consulting", href: "/home-five" },
-      { title: "ELearning", href: "/home-six" },
-      { title: "IT Business", href: "/home-seven" },
-      { title: "Saas", href: "/home-eight" },
-      { title: "App Landing", href: "/home-nine" },
-      { title: "Personal Portfolio", href: "/home-ten" },
+      { title: "Gestion commerciale", href: "/Sage-100-Gestion-Commerciale" },
+      { title: "Comptabilité", href: "/Sage-100-Gestion-comptabilite" },
+      { title: "Immobilisation", href: "/Immobilisation" },
+      { title: "Paie & RH", href: "/Paie-RH" },
+      { title: "Sage BI", href: "/Sage-BI" },
     ],
   },
-  { title: "Company", href: "/about" },
-  { title: "Services", href: "/services" },
-  { title: "Blogs", href: "/blogs" },
   {
-    title: "Pages",
+    title: "Gestion des temps",
     subMenu: [
-      { title: "Projects", href: "/projects" },
-      { title: "Projects Details", href: "/project-details/" },
-      { title: "Service Details", href: "/service-details" },
-      { title: "Blog Details", href: "/blog-details" },
-      { title: "Team Members", href: "/teams" },
-      { title: "FAQ's", href: "/faqs" },
-      { title: "Pricing", href: "/pricing" },
-      { title: "Course Details", href: "/course-details" },
-      { title: "Cart", href: "/cart" },
-      { title: "Checkout", href: "/checkout" },
-      { title: "Not Found", href: "/notfound" },
+      { title: "Présentation Horoquartz", href: "/horoquartz" },
+      { title: "eTemptation", href: "/project-details" },
+      { title: "Self Service", href: "/service-details" },
+      { title: "Contrôle d'accès", href: "/blog-details" },
     ],
   },
-  { title: "Contact", href: "contact" },
+  { title: "Outsourcing de la Paie", href: "/about" },
+  {
+    title: "IDEMIA",
+    subMenu: [
+      { title: "Présentation Idemia", href: "/projects" },
+      { title: "Morpho Manager Suite", href: "/project-details" },
+      { title: "Pointeuses IDEMIA", href: "/service-details" },
+    ],
+  },
+  { title: "À propos", href: "/about" },
 ];
 
 const MobileHeader = () => {
@@ -86,7 +81,7 @@ const MobileHeader = () => {
     <header className="relative flex flex-col xl:hidden">
       <div className="h-16 bg-white flex items-center justify-between fixed top-0 left-0 z-50 w-full px-2.5">
         <Link href="/" aria-label="logo">
-          <img src="/assets/images/home-two/logo.svg" alt="logo" />
+          <img src="/assets/images/Logo.svg" alt="logo" />
         </Link>
         <button
           aria-label="mobile-Menu"
@@ -210,13 +205,13 @@ const MobileHeader = () => {
                 />
               </svg>
               <span className="text-base font-bold leading-5 tracking-tight text-main-black">
-                Call : 000 (123) 456 88
+                Appelez-nous : +216 71 123 456
               </span>
             </a>
-            <Link href="/contact">
-              <div className="home-two-btn-bg py-2.5 group bg-blue-seo border-blue-seo w-fit">
-                <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-blue-seo font-inter">
-                  Contact US
+            <Link to="/contact">
+              <div className="home-two-btn-bg py-2.5 group bg-buisness-red border-buisness-red w-fit">
+                <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-[#E11D48] font-inter">
+                  Contactez-nous
                 </span>
                 <svg
                   className="relative z-10"
@@ -227,7 +222,7 @@ const MobileHeader = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    className="transition-all duration-300 group-hover:stroke-blue-seo"
+                    className="transition-all duration-300 group-hover:stroke-buisness-red"
                     d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
                     stroke="white"
                     strokeWidth="1.5"

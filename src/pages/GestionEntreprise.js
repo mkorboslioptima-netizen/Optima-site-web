@@ -16,7 +16,7 @@ export default function GestionEntreprise() {
       <SEO
         title="Gestion des entreprises"
         description="Découvrez nos services : intégration Sage 100, formation, support technique, gestion commerciale, comptabilité et solutions Horoquartz."
-        path="/Gestion_Entreprise"
+        path="/GestionEntreprise"
       />
       <HeroERP />
       <DescriptionMetierERP />

@@ -10,6 +10,7 @@ import SEO from "../components/SEO";
 import Detail from "../components/Course/Description-Metier-Finance";
 import OutsourcingService from "../components/Services/OutsourcingService";
 import Pkoptima from "../components/Services/PkOptima";
+import BeforeAfter from "../components/BeforeAfter/BeforeAfter";
 export default function Services() {
   return (
     <InnerPageLayout>
@@ -21,6 +22,7 @@ export default function Services() {
       <HeroFC / >
       <Detail />
       <Pkoptima />
+      
       <OutsourcingService />
       <OutsourcingFaq />
     </InnerPageLayout>

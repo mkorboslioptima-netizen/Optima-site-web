@@ -41,7 +41,7 @@ export default function DemoHeaderFour() {
                   "
                   to="/"
                   >
-                   Acceuil
+                   Accueil
                   </Link>
 
                     <li className="relative group">
@@ -253,9 +253,9 @@ export default function DemoHeaderFour() {
                       after:duration-300
                       hover:after:w-full
                       w-fit"
-                      to="/About"
+                      to="/about"
                     >
-                      About
+                      À propos
                     </Link>
                   </li>
                   

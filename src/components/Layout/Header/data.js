@@ -101,7 +101,7 @@ const Horoquartzlink = [
     pageLink: "/service-details",
   },
   {
-    linkLabel: "Côntrole d'accès",
+    linkLabel: "Contrôle d'accès",
     pageLink: "/blog-details",
   },
 ];

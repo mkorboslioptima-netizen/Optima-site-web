@@ -55,9 +55,9 @@ export default function AboutFour() {
               </Link>
             </div>
           </div>
-          <div className="relative col-span-6 flex flex-col sm:flex-row justify-center items-center gap-[30px]">
+          <div className="relative col-span-6 flex flex-col justify-center items-center">
             <svg
-              className="absolute z-0 max-w-full -top-16"
+              className="absolute z-0 max-w-full -top-16 hidden sm:block"
               width="465"
               height="465"
               viewBox="0 0 465 465"
@@ -77,10 +77,10 @@ export default function AboutFour() {
               data-aos="fade-left"
               src={Logo}
               alt=""
-              className="relative z-10 hidden sm:block"
+              className="relative z-10 w-full max-w-[450px] h-[350px] sm:h-[420px] object-cover rounded-2xl"
             />
-        
-            <div className="bg-buisness-red p-[30px] rounded-2xl absolute z-20 bottom-8 w-[295px]">
+
+            <div className="bg-buisness-red p-[30px] rounded-2xl absolute z-20 bottom-4 sm:bottom-8 w-[250px] sm:w-[295px]">
               <img
                 src="./assets/images/home-five/hero/about-card-shape.webp"
                 alt=""

@@ -14,7 +14,7 @@ export default function ProjectDetails() {
       <SEO
         title="Sage Immobilisation"
         description="Sage Immobilisation : gérez vos actifs, amortissements et inventaires. Solution complète intégrée par Optima en Tunisie pour une gestion efficace de vos immobilisations."
-        path="/Sage-Immobilisation"
+        path="/Immobilisation"
       />
       <HeroImmobilisation />
       <ProjectOverviewImmobilisation />

@@ -76,6 +76,7 @@ export default function ServiceTwo() {
               <div className="animated_circle_sm4 bg-white/10"></div>
             </div>
             <div className="relative z-10">
+              {/* Bouclier conformité */}
               <svg
                 width="58"
                 height="58"
@@ -84,34 +85,20 @@ export default function ServiceTwo() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  className="transition-all duration-300 "
-                  d="M4 6C4 4.9 4.9 4 6 4H26L54 32L32 54L4 26V6Z"
+                  className="transition-all duration-300"
+                  d="M29 4L8 14V28C8 42 29 54 29 54C29 54 50 42 50 28V14L29 4Z"
                   stroke="#007a55"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
-                <circle
-                  className="transition-all duration-300 "
-                  cx="16"
-                  cy="16"
-                  r="4"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                />
                 <path
-                  className="transition-all duration-300 "
-                  d="M36 28L28 36"
+                  className="transition-all duration-300"
+                  d="M20 29L26 35L38 23"
                   stroke="#007a55"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                   strokeLinecap="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M42 34L34 42"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -141,6 +128,7 @@ export default function ServiceTwo() {
               <div className="animated_circle_sm4 bg-white/10"></div>
             </div>
             <div className="relative z-10">
+              {/* Calculatrice amortissement */}
               <svg
                 width="58"
                 height="58"
@@ -148,38 +136,24 @@ export default function ServiceTwo() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  className="transition-all duration-300 "
-                  d="M29 2L52 14V44L29 56L6 44V14L29 2Z"
+                <rect
+                  className="transition-all duration-300"
+                  x="10" y="4" width="38" height="50" rx="4"
+                  stroke="#007a55"
+                  strokeWidth="2.5"
+                />
+                <rect
+                  className="transition-all duration-300"
+                  x="18" y="12" width="22" height="10" rx="2"
                   stroke="#007a55"
                   strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                 />
-                <path
-                  className="transition-all duration-300 "
-                  d="M29 56V29"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M52 14L29 29L6 14"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M40.5 8L17.5 21.5"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+                <circle className="transition-all duration-300" cx="22" cy="32" r="2.5" fill="#007a55"/>
+                <circle className="transition-all duration-300" cx="29" cy="32" r="2.5" fill="#007a55"/>
+                <circle className="transition-all duration-300" cx="36" cy="32" r="2.5" fill="#007a55"/>
+                <circle className="transition-all duration-300" cx="22" cy="42" r="2.5" fill="#007a55"/>
+                <circle className="transition-all duration-300" cx="29" cy="42" r="2.5" fill="#007a55"/>
+                <rect className="transition-all duration-300" x="33.5" y="39.5" width="5" height="5" rx="1" fill="#007a55"/>
               </svg>
             </div>
             <div className="relative z-10">
@@ -208,6 +182,7 @@ export default function ServiceTwo() {
               <div className="animated_circle_sm4 bg-white/10"></div>
             </div>
             <div className="relative z-10">
+              {/* Fusée / productivité */}
               <svg
                 width="58"
                 height="58"
@@ -216,28 +191,34 @@ export default function ServiceTwo() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  className="transition-all duration-300 "
-                  d="M2 2H10L16 38H46L54 14H12"
+                  className="transition-all duration-300"
+                  d="M29 6C29 6 24 16 24 29C24 42 29 52 29 52C29 52 34 42 34 29C34 16 29 6 29 6Z"
                   stroke="#007a55"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  className="transition-all duration-300"
+                  d="M24 38C24 38 16 40 12 44C12 44 16 34 24 30"
+                  stroke="#007a55"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  className="transition-all duration-300"
+                  d="M34 38C34 38 42 40 46 44C46 44 42 34 34 30"
+                  stroke="#007a55"
+                  strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <circle
-                  className="transition-all duration-300 "
-                  cx="19"
-                  cy="50"
-                  r="4"
+                  className="transition-all duration-300"
+                  cx="29" cy="22" r="4"
                   stroke="#007a55"
-                  strokeWidth="2"
-                />
-                <circle
-                  className="transition-all duration-300 "
-                  cx="43"
-                  cy="50"
-                  r="4"
-                  stroke="#007a55"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                 />
               </svg>
             </div>
@@ -263,6 +244,7 @@ export default function ServiceTwo() {
             {/* <!-- animation circle  --> */}
          
             <div className="relative z-10">
+              {/* Clipboard / rapports */}
               <svg
                 width="58"
                 height="58"
@@ -270,76 +252,21 @@ export default function ServiceTwo() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  className="transition-all duration-300 "
-                  d="M4 54H54"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  className="transition-all duration-300 "
-                  d="M4 54V4"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
                 <rect
-                  className="transition-all duration-300 "
-                  x="10"
-                  y="34"
-                  width="8"
-                  height="20"
-                  rx="1"
+                  className="transition-all duration-300"
+                  x="10" y="10" width="38" height="44" rx="4"
                   stroke="#007a55"
-                  strokeWidth="2"
-                />
-                <rect
-                  className="transition-all duration-300 "
-                  x="22"
-                  y="24"
-                  width="8"
-                  height="30"
-                  rx="1"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                />
-                <rect
-                  className="transition-all duration-300 "
-                  x="34"
-                  y="14"
-                  width="8"
-                  height="40"
-                  rx="1"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                />
-                <rect
-                  className="transition-all duration-300 "
-                  x="46"
-                  y="22"
-                  width="8"
-                  height="32"
-                  rx="1"
-                  stroke="#007a55"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                 />
                 <path
-                  className="transition-all duration-300 "
-                  d="M10 28L22 18L34 10L50 6"
+                  className="transition-all duration-300"
+                  d="M22 4H36C37.1 4 38 4.9 38 6V12C38 13.1 37.1 14 36 14H22C20.9 14 20 13.1 20 12V6C20 4.9 20.9 4 22 4Z"
                   stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeWidth="2.5"
                 />
-                <path
-                  className="transition-all duration-300 "
-                  d="M44 6H50V12"
-                  stroke="#007a55"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+                <path className="transition-all duration-300" d="M20 24H38" stroke="#007a55" strokeWidth="2" strokeLinecap="round"/>
+                <path className="transition-all duration-300" d="M20 32H38" stroke="#007a55" strokeWidth="2" strokeLinecap="round"/>
+                <path className="transition-all duration-300" d="M20 40H30" stroke="#007a55" strokeWidth="2" strokeLinecap="round"/>
               </svg>
             </div>
             <div className="relative z-10">
