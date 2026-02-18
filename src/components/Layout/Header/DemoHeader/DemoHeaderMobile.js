@@ -17,7 +17,7 @@ const menuData = [
     title: "Gestion des temps",
     subMenu: [
       { title: "Présentation Horoquartz", href: "/horoquartz" },
-      { title: "eTemptation", href: "/project-details" },
+      { title: "eTemptation", href: "/etemptation" },
       { title: "Self Service", href: "/service-details" },
       { title: "Contrôle d'accès", href: "/blog-details" },
     ],

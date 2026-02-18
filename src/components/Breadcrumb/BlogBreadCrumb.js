@@ -14,7 +14,7 @@ export default function BlogBreadCrumb() {
         <div className="relative z-20 mx-auto theme-container h-fit w-fit">
           <div className="mt-[120px] md:mt-[272px] w-fit mx-auto relative z-10">
             <h1 className="text-main-black text-34 font-semibold w-full text-center max-w-[624px]">
-              People The Office Analyzing Checking Finance Graphs
+              People The Office Analyzing Checking Finance Graphs1
             </h1>
             <div className="flex flex-col sm:flex-row mt-5 gap-2 md:gap-[30px] w-full justify-center items-center">
               <div className="flex items-center gap-2.5">

@@ -4,10 +4,9 @@ import React, { useEffect, useRef } from "react";
 import GLightbox from "glightbox";
 import "glightbox/dist/css/glightbox.min.css";
 
-export default function ProjectOverview() {
+export default function ProjectOverviewBI() {
   const videoRef = useRef(null);
 
-  // GLightbox
   useEffect(() => {
     const lightbox = GLightbox({
       selector: ".video-play-btn",
@@ -18,7 +17,6 @@ export default function ProjectOverview() {
     return () => lightbox.destroy();
   }, []);
 
-  // Preview on scroll
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -32,7 +30,7 @@ export default function ProjectOverview() {
           video.currentTime = 0;
         }
       },
-      { threshold: 0.5 } // 50% visible
+      { threshold: 0.5 }
     );
 
     observer.observe(video);
@@ -48,22 +46,21 @@ export default function ProjectOverview() {
           {/* TEXT */}
           <div className="col-span-6">
             <h1 className="text-24 sm:text-34 leading-[55px] tracking-tight font-semibold text-main-black">
-              Gestion RH en toute sérénité
+              Pilotez votre performance avec des tableaux de bord intelligents
             </h1>
 
             <p className="max-w-[533px] text-18 sm:text-24 leading-[40px] text-paragraph mt-2.5 md:mt-3.5">
-              Sage 100 Paie & RH simplifie la gestion des ressources humaines et de la paie au quotidien.
-De l’élaboration des bulletins de paie à la gestion administrative du personnel, en passant par le suivi des congés et absences, les déclarations sociales, la gestion des contrats et des dossiers salariés, vous gagnez en conformité, en efficacité et en sérénité.
+              Optima transforme vos données en véritables outils d’aide à la décision. Grâce à des tableaux de bord interactifs, des indicateurs clés (KPIs) et des rapports personnalisés, vous visualisez votre performance en temps réel et prenez des décisions stratégiques rapides et éclairées.
             </p>
           </div>
 
           {/* VIDEO PREVIEW */}
           <div className="relative flex items-center justify-center col-span-6 mt-5 md:mt-0">
 
-            {/* Video preview (autoplay on scroll) */}
+            {/* Video preview (autoplay on scroll) - reuse existing demo video */}
             <video
               ref={videoRef}
-              src="/videos/SagePaie&RH.mp4"
+              src="/videos/SageBIReporting.mp4"
               muted
               playsInline
               preload="metadata"
@@ -72,13 +69,11 @@ De l’élaboration des bulletins de paie à la gestion administrative du person
 
             {/* Play button → Lightbox */}
             <a
-              href="/videos/compta.mp4"
+              href="/videos/SageBIReporting.mp4"
               data-type="video"
               data-source="local"
               className="absolute flex items-center justify-center video-play-btn"
-            >
-             
-            </a>
+            ></a>
 
           </div>
 

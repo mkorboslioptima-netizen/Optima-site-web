@@ -17,6 +17,8 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import SageCommerciale from "./pages/SageCommerciale";
 import Horoquartz from "./pages/Horoquartz";
+import ETemptation from "./pages/etemptation";
+import ProjectDetails from "./pages/ProjectDetails";
 import Cart from "./pages/Cart";
 import CourseDetails from "./pages/CourseDetails";
 import Faq from "./pages/Faq";
@@ -29,8 +31,10 @@ import GTA from "./pages/Gestion_Du_Temps"
 import Outsourcing from "./pages/Outsourcing";
 import GestionEntreprise from "./pages/GestionEntreprise";
 import SageCompta  from "./pages/SageCompta";
+import SageBI from "./pages/SageBI";
 import Immobilisation from "./pages/Immobilisation";
 import SagePaieRh from "./pages/SagePaieRh";
+import SelfService from "./pages/SelfService";
 /* ─── Page transition variants ─── */
 const pageVariants = {
   initial: { opacity: 0, y: 18 },
@@ -274,8 +278,10 @@ export default function App() {
             <Route path="/blog-details" element={<BlogDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/project-details" element={<ProjectDetails />} />
             <Route path="/Sage-100-Gestion-Commerciale" element={<SageCommerciale />} />
             <Route path="/Sage-100-Gestion-comptabilite" element={<SageCompta />} />
+            <Route path="/Sage-BI" element={<SageBI />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/course-details" element={<CourseDetails />} />
@@ -288,6 +294,10 @@ export default function App() {
             <Route path="*" element={<Notfound />} />
             <Route path="/Immobilisation" element={<Immobilisation />} />
             <Route path="/Sage-100-Gestion-Paie-RH" element={<SagePaieRh />} />
+            
+            <Route path="/etemptation" element={<ETemptation />} />
+            <Route path="/self-service" element={<SelfService />} />
+            
           </Routes>
       
       </AnimatePresence>

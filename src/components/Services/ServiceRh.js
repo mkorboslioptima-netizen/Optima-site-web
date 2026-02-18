@@ -98,10 +98,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-black text-main-black text-22">
-                Documents prêts à l'emploi (comptes, sections, journaux... )
+                La paie
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-             Bénéficiez d’un plan comptable complet, de journaux paramétrés et de modèles prêts à l’emploi pour démarrer rapidement et structurer votre comptabilité selon les normes en vigueur.
+               Avec l’Assistant de préparation, réalisez vos bulletins de salaire en intégrant le report automatique des éléments constants, la gestion des titres restaurant, le calcul des paies à l’envers, la gestion des acomptes (de la génération au virement), le contrôle et le report automatique des acomptes payés et disposez d’une fonction de rappel des salaires pour gérer la rétroactivité.
               </p>
              
             </div>
@@ -166,12 +166,11 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300  text-main-black text-22">
-                Gestion des abonnements
+                Les ressources humaines
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-                Automatisez vos écritures récurrentes (loyers, assurances, charges fixes…) grâce aux abonnements comptables et gagnez un temps précieux chaque mois.
-              </p>
-             
+                Disposez de fiches de personnel détaillées (état civil, immatriculation, données personnelles, coordonnées...), de modèles de bulletins par catégorie de salariés, et gérez la pénibilité du travail.
+               </p>
             </div>
           </div>
           {/* <!-- single card end --> */}
@@ -223,10 +222,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300  text-main-black text-22">
-                Rapprochement bancaire manuel et automatique
+                Les déclarations obligatoires
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-              Comparez automatiquement vos relevés bancaires avec vos écritures comptables pour identifier rapidement les écarts et garantir une trésorerie toujours juste.
+              Produisez toutes les déclarations individuelles et collectives obligatoires conformes à la DSN (DADS-U, DUCS, AED), DTS-MSA, DPAE. Paramétrez le CICE et, si vous êtes dans le secteur du BTP, effectuez vos déclarations spécifiques.
               </p>
               
             </div>
@@ -270,10 +269,10 @@ export default function ServiceTwo() {
             </div>
             <div className="relative z-10">
               <h1 className="font-semibold transition-all duration-300 group-hover:text-black text-main-black text-22">
-                Reporting, contrôles comptables, gestion des collaborateurs.
+                La gestion administrative
               </h1>
               <p className="mt-4 transition-all duration-300 text-paragraph group-hover:text-black">
-                Accédez à des états financiers fiables, des balances, grands livres et tableaux de bord pour analyser votre situation comptable et faciliter le travail collaboratif.
+                Archivez vos données pour une durée de 10 ans, faites un suivi intégral de la gestion du CPF, produisez des éditions légales pré-paramétrées et gérez les honoraires.
               </p>
               
             </div>
@@ -343,13 +342,14 @@ export default function ServiceTwo() {
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Comptabilité mobile
+                      
+                    Dématérialisez les processus paie et RH
 
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/gestioncomptable.png"
+                  src="./assets/images/home-two/case_study/gestionrh.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -368,16 +368,16 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#d4d4d8] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-black">
-                   Analysez vos coûts avec précision
+                     Gestion avancée de la paie
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Comptabilité analytique
+                      Automatisez vos bulletins et calculs
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/comptaanalytique.png"
+                  src="./assets/images/home-two/case_study/paie.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />
@@ -395,16 +395,16 @@ export default function ServiceTwo() {
               <div className="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-[#d4d4d8] before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
                 <div className="relative z-10 px-2 md:px-10">
                   <p className="font-semibold leading-6 transition-all duration-300 ease-in-out delay-300 text-[#007a55] group-hover:text-black">
-                    Conformité comptable garantie
+                    Conformité sociale garantie
                   </p>
                   <a href="">
                     <h1 className="pt-1 font-semibold transition-all duration-300 text-24 text-main-black group-hover:text-black underlines">
-                      Conformité et précision
+                     Déclarations sociales simplifiées
                     </h1>
                   </a>
                 </div>
                 <img
-                  src="./assets/images/home-two/case_study/conformité.png"
+                  src="./assets/images/home-two/case_study/déclaration.png"
                   alt=""
                   className="max-w-[390px] w-full rounded-2xl mt-10 relative z-10"
                 />

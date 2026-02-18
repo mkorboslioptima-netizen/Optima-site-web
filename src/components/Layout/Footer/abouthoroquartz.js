@@ -9,16 +9,13 @@ export default function AboutHoroquartz() {
         <div className="box-border grid grid-cols-6 lg:grid-cols-12">
           <div className="flex flex-col justify-center col-span-5">
             <h1 className="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
-              Titre à ajouter Horoquartz
+              Pourquoi Horoquartaz ?
             </h1>
             <p className="mt-5 md:mt-10 text-paragraph">
-               Solutions de gestion des temps et plannings, contrôle d'accès et sécurité électronique
-               pour PME et grandes entreprises
+               Combien d'heures perdez-vous chaque semaine à essayer de reconstituer votre temps de travail ? Entre les feuilles Excel dispersées, les notes manuscrites oubliées et les estimations approximatives, la gestion du temps devient un casse-tête quotidien. Cette désorganisation coûte cher : facturation imprécise, projets non rentables, clients insatisfaits et stress constant.
             </p>
             <p className="pb-10 mt-5 text-paragraph">
-               Ajoutez ici des détails supplémentaires sur vos solutions Horoquartz,
-               les avantages pour vos clients, ou toute autre information pertinente
-               que vous souhaitez mettre en avant.
+               Horoquartaz met fin à cette anarchie. Notre solution transforme le suivi du temps en un processus simple, automatique et fiable. Plus de temps perdu à retrouver ce que vous avez fait la semaine dernière, plus d'heures de travail non facturées, plus de doutes sur la rentabilité de vos projets. Avec Horoquartaz, chaque minute compte et génère de la valeur.
             </p>
             <Link to="/projects">
               <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-[15px]">
@@ -47,7 +44,7 @@ export default function AboutHoroquartz() {
           </div>
           <div className="relative flex flex-col justify-end w-full col-span-7 overflow-hidden sm:flex-row">
             <img
-              src="/assets/images/service/gestiondutemps.png"
+              src="/assets/images/service/gta5.png"
               alt="img"
               className="mt-9 w-full max-w-[630px]"
             />
@@ -97,11 +94,12 @@ export default function AboutHoroquartz() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="text-sm leading-8 text-white">We have</span>
+                <span className="text-sm leading-8 text-white">Leader n°1</span>
               </div>
 
               <h1 className="text-18 text-white font-semibold tracking-tight max-w-[170px]">
-                <CountUp start={0} end={25} /> + Awards Winning
+                En Gestion des temps
+            
               </h1>
             </div>
           </div>

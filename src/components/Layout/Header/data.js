@@ -94,11 +94,11 @@ const Horoquartzlink = [
   },
   {
     linkLabel: "eTemptation",
-    pageLink: "/project-details",
+    pageLink: "/etemptation",
   },
   {
     linkLabel: "Self Service",
-    pageLink: "/service-details",
+    pageLink: "/self-service",
   },
   {
     linkLabel: "Contrôle d'accès",

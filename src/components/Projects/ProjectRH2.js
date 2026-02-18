@@ -8,7 +8,7 @@ export default function ProjectResult() {
         <div className="w-full col-span-6">
           
           <h1 className="col-span-6 mt-10 font-semibold tracking-tight text-34 mb-12">
-          Pourquoi choisir Sage 100 Comptabilité ?
+          Pourquoi choisir Sage 100 Paie & RH ?
           </h1>
           <p className="mt-4 mb-5 text-paragraph">
         
@@ -27,7 +27,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              Suivi trésorerie
+              Gestion complète des bulletins de paie
             </li>
             <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
@@ -42,7 +42,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              CA et tableaux de bord actualisés en temps réel
+              Suivi des congés, absences et dossiers salariés
             </li>
             <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
@@ -57,7 +57,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              Définition des politiques de dépense et des flux de validation
+              Calcul automatique des salaires et charges sociales
             </li>
             <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
@@ -72,7 +72,7 @@ export default function ProjectResult() {
                   fill="#007a55"
                 />
               </svg>
-              Facturation et gestion des impayés et relances
+              Tableaux de bord RH et indicateurs en temps réel
             </li>
             <li className="flex gap-[15px] items-center text-18 font-medium text-main-black mb-8">
               <svg
