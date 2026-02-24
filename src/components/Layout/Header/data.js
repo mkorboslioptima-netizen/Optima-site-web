@@ -102,7 +102,7 @@ const Horoquartzlink = [
   },
   {
     linkLabel: "Contrôle d'accès",
-    pageLink: "/blog-details",
+    pageLink: "/controle-acces",
   },
 ];
  const Idemialink = [

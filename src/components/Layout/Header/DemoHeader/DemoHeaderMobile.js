@@ -19,7 +19,7 @@ const menuData = [
       { title: "Présentation Horoquartz", href: "/horoquartz" },
       { title: "eTemptation", href: "/etemptation" },
       { title: "Self Service", href: "/service-details" },
-      { title: "Contrôle d'accès", href: "/blog-details" },
+      { title: "Contrôle d'accès", href: "/controle-acces" },
     ],
   },
   { title: "Outsourcing de la Paie", href: "/about" },

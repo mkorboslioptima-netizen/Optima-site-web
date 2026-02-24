@@ -35,6 +35,7 @@ import SageBI from "./pages/SageBI";
 import Immobilisation from "./pages/Immobilisation";
 import SagePaieRh from "./pages/SagePaieRh";
 import SelfService from "./pages/SelfService";
+import AccessControl from "./pages/AccessControl";
 /* ─── Page transition variants ─── */
 const pageVariants = {
   initial: { opacity: 0, y: 18 },
@@ -297,7 +298,7 @@ export default function App() {
             
             <Route path="/etemptation" element={<ETemptation />} />
             <Route path="/self-service" element={<SelfService />} />
-            
+            <Route path="/controle-acces" element={<AccessControl />} />
           </Routes>
       
       </AnimatePresence>

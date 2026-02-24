@@ -9,7 +9,7 @@ export default function AboutHoroquartz() {
         <div className="box-border grid grid-cols-6 lg:grid-cols-12">
           <div className="flex flex-col justify-center col-span-5">
             <h1 className="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
-              Pourquoi Horoquartaz ?
+              Pourquoi Horoquartz ?
             </h1>
             <p className="mt-5 md:mt-10 text-paragraph">
                Combien d'heures perdez-vous chaque semaine à essayer de reconstituer votre temps de travail ? Entre les feuilles Excel dispersées, les notes manuscrites oubliées et les estimations approximatives, la gestion du temps devient un casse-tête quotidien. Cette désorganisation coûte cher : facturation imprécise, projets non rentables, clients insatisfaits et stress constant.

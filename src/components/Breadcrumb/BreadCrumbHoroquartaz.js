@@ -18,7 +18,7 @@ export default function BreadCrumbHoroquartaz() {
         {/* Contenu texte à gauche */}
         <div className="col-span-12 md:col-span-6 flex flex-col justify-center items-start z-20">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            Horoquartaz
+            Horoquartz
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             Maîtrisez votre temps, optimisez votre productivité
