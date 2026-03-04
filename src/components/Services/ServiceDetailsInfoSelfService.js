@@ -18,16 +18,20 @@ export default function ServiceDetailsInfoSelfService() {
   ];
 
   return (
-    <section className="pt-16 md:pt-[130px]">
-      <div className="w-full mx-auto theme-container">
-        <div className="grid grid-cols-8 lg:grid-cols-12 gap-[30px]">
+    <section className="pt-16 md:pt-[130px]"> 
+  <div className="w-full mx-auto theme-container">
+    <div className="grid grid-cols-8 lg:grid-cols-12 gap-[30px]">
 
-          {/* Colonne gauche — Description */}
-          <div data-aos="fade-up" className="col-span-8">
-            {/* Logo/Icon */}
-            <div className="flex justify-center mb-8">
-              <div className="text-6xl">🔐</div>
-            </div>
+      {/* Colonne gauche — Description */}
+      <div data-aos="fade-up" className="col-span-8">
+        {/* Logo */}
+        <div className="flex justify-center mb-8">
+          <img
+            src="/assets/images/service/logo-horoquartz.png"
+            alt="Logo Horoquartz"
+            className="h-20 md:h-24 object-contain"
+          />
+        </div>
 
             {/* Description */}
             <p className="text-paragraph mt-[30px] mb-10 max-w-[786px]">

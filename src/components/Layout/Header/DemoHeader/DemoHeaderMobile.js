@@ -22,7 +22,7 @@ const menuData = [
       { title: "Contrôle d'accès", href: "/controle-acces" },
     ],
   },
-  { title: "Outsourcing de la Paie", href: "/about" },
+  { title: "Outsourcing de la Paie", href: "/outsourcing" },
   {
     title: "IDEMIA",
     subMenu: [

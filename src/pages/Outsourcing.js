@@ -17,7 +17,7 @@ export default function Services() {
       <SEO
         title="Outsourcing de la paie"
         description="Découvrez nos services : intégration Sage 100, formation, support technique, gestion commerciale, comptabilité et solutions Horoquartz."
-        path="/Outsourcing"
+        path="/outsourcing"
       />
       <HeroFC / >
       <Detail />

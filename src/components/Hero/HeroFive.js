@@ -596,7 +596,7 @@ export default function HeroFive() {
                 />
               </svg>
             </div>
-            <Link to="/Outsourcing" className="flex flex-col items-start">
+            <Link to="/outsourcing" className="flex flex-col items-start">
               <h1 className="pt-3 font-semibold text-22 text-main-black">
                 Outsourcing de la Paie & RH
               </h1>

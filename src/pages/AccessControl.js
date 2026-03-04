@@ -1,31 +1,37 @@
 import React from "react";
 import InnerPageLayout from "../components/Layout/InnerPageLayout";
-import BreadCrumb from "../components/Breadcrumb/BreadCrumb";
-import SEO from "../components/SEO";
-import AccessControlHero from "../components/AccessControl/AccessControlHero";
-import AccessControlPresentation from "../components/AccessControl/AccessControlPresentation";
-import AccessControlFeatures from "../components/AccessControl/AccessControlFeatures";
-import AccessControlBiometric from "../components/AccessControl/AccessControlBiometric";
-import AccessControlPartners from "../components/AccessControl/AccessControlPartners";
-import AccessControlBenefits from "../components/AccessControl/AccessControlBenefits";
-import AccessControlCTA from "../components/AccessControl/AccessControlCTA";
+import BreadCrumbAccessControl from "../components/Breadcrumb/BreadCrumbAccessControl";
+import SEOAccessControl from "../components/SEOAccessControl";
+import HeroAccessControl from "../components/Hero/HeroAccessControl";
+import ServiceDetailsInfoAccessControl from "../components/Services/ServiceDetailsInfoAccessControl";
+import BenefitsAccessControl from "../components/Services/BenefitsAccessControl";
+import ProcessAccessControl from "../components/Services/ProcessAccessControl";
+import AboutAccessControl from "../components/Layout/Footer/AboutAccessControl";
+import FAQAccessControl from "../components/Services/FAQAccessControl";
 
 export default function AccessControl() {
   return (
     <InnerPageLayout>
-      <SEO
-        title="Contrôle d'accès - Sécurité et gestion des accès"
-        description="Solutions modernes de contrôle d'accès et de sécurité. Biométrie, pointeuses intelligentes et gestion centralisée pour sécuriser votre entreprise."
-        path="/control-accès"
-      />
-      <BreadCrumb />
-      <AccessControlHero />
-      <AccessControlPresentation />
-      <AccessControlFeatures />
-      <AccessControlBiometric />
-      <AccessControlPartners />
-      <AccessControlBenefits />
-      <AccessControlCTA />
+      <SEOAccessControl />
+      <BreadCrumbAccessControl />
+      
+      {/* Section Héro avec Présentation Principale */}
+      <HeroAccessControl />
+      
+      {/* Section Détails et Informations Officielles */}
+      <ServiceDetailsInfoAccessControl />
+      
+      {/* Section Avantages et Bénéfices */}
+      <BenefitsAccessControl />
+      
+      {/* Section Processus d'Implémentation */}
+      <ProcessAccessControl />
+      
+      {/* Section À Propos Additionnelle */}
+      <AboutAccessControl />
+      
+      {/* Section FAQ */}
+      <FAQAccessControl />
     </InnerPageLayout>
   );
 }

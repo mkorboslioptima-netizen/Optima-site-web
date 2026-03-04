@@ -11,6 +11,7 @@ import FloatingDevis from "./components/Devis/FloatingDevis";
 import HomeOne from "./pages/HomeOne";
 import Acceuil from "./pages/Acceuil";
 import About from "./pages/About";
+import APropos from "./pages/APropos";
 
 import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
@@ -274,7 +275,10 @@ export default function App() {
           <Routes location={location}>
             <Route path="/" element={<Acceuil />} />
             <Route path="/about" element={<About />} />
+            <Route path="/a-propos" element={<APropos />} />
             <Route path="/Gestion_Du_Temps" element={<GTA />} />
+            {/* support lowercase and legacy uppercase for outsourcing */}
+            <Route path="/outsourcing" element={<Outsourcing />} />
             <Route path="/Outsourcing" element={<Outsourcing />} />
             <Route path="/blog-details" element={<BlogDetails />} />
             <Route path="/contact" element={<Contact />} />
