@@ -28,7 +28,7 @@ export default function AboutStoryOptima() {
           <div className="relative" data-aos="fade-right">
             <div className="rounded-2xl overflow-hidden h-[480px]">
               <img
-                src="/assets/images/about/optima-office.jpg"
+                src="/assets/images/about/d.png"
                 alt="OPTIMA Office Ariana"
                 className="w-full h-full object-cover"
               />

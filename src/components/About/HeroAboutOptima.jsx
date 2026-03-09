@@ -33,10 +33,11 @@ export default function HeroAboutOptima() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
-                  <button className="w-full sm:w-auto px-8 py-3 bg-buisness-red text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
+                <button className="w-full sm:w-auto px-8 py-3 bg-buisness-red text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
                   Contactez-nous
                 </button>
               </Link>
+
               <Link to="/devis">
                 <button className="w-full sm:w-auto px-8 py-3 bg-white border-2 border-buisness-red text-buisness-red font-semibold rounded-lg hover:bg-buisness-red/5 transition-all duration-300">
                   Demander un Devis
@@ -57,15 +58,18 @@ export default function HeroAboutOptima() {
 
           {/* Image Droite */}
           <div className="relative flex items-center justify-center" data-aos="fade-left">
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-2xl">
               <img
-                src="/assets/images/about/optima-hero.png"
+                src="/assets/images/about/a.png"
                 alt="OPTIMA Bureau"
-                className="w-full h-full object-contain drop-shadow-lg"
+                className="w-full h-auto object-contain drop-shadow-lg"
               />
+
               {/* Badge flottant */}
               <div className="absolute -bottom-4 -left-4 bg-buisness-red text-white px-5 py-3 rounded-xl shadow-lg">
-                <p className="text-xs font-semibold uppercase tracking-wide">Fondée en</p>
+                <p className="text-xs font-semibold uppercase tracking-wide">
+                  Fondée en
+                </p>
                 <p className="text-2xl font-bold">2006</p>
               </div>
             </div>
