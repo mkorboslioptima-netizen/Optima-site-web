@@ -106,7 +106,7 @@ export default function FooterFive() {
         <div className="w-fit max-w-[300px]">
           <div className="flex flex-col items-center">
             <div>
-              <h1 className="font-semibold text-white text-18">Services</h1>
+              <h1 className="font-semibold text-white text-18">Nos services</h1>
               <ul className="mt-3.5">
                 <li className="">
                   <Link to="/project-details">
@@ -128,7 +128,7 @@ export default function FooterFive() {
                         />
                       </svg>
                       <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Keyword Research
+                        Outsourcing de la paie
                       </span>
                     </div>
                   </Link>
@@ -153,7 +153,7 @@ export default function FooterFive() {
                         />
                       </svg>
                       <span className="transition-all duration-300 group-hover:translate-x-4">
-                        MorphoManager
+                        Gestion des temps 
                       </span>
                     </div>
                   </Link>
@@ -178,7 +178,7 @@ export default function FooterFive() {
                         />
                       </svg>
                       <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Content marketing
+                        Gestion d'entreprise
                       </span>
                     </div>
                   </Link>
@@ -203,7 +203,7 @@ export default function FooterFive() {
                         />
                       </svg>
                       <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Web Development
+                        Contrôle d'accès  
                       </span>
                     </div>
                   </Link>
@@ -228,7 +228,7 @@ export default function FooterFive() {
                         />
                       </svg>
                       <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Social Marketing
+                        Solution sur mesure
                       </span>
                     </div>
                   </Link>

@@ -53,7 +53,7 @@ export default function AccessControlPresentation() {
                     >
                       <path
                         d="M13.5 4.5L6 12L2.5 8.5"
-                        stroke="#D90A2C"
+                        stroke="#890011"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"

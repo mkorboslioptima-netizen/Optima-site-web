@@ -7,14 +7,14 @@ import LogoOptima2 from '../../../../assets/images/home-five/Optima.png';
 export default function DemoHeaderFour() {
   return (
     <header>
-      <div className="header-wrapper w-full fixed left-0 top-0 z-20 bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 xl:block hidden">
+      <div className="header-wrapper w-full fixed left-0 top-0 z-50 bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 xl:block hidden">
         <div className="relative z-20 w-full px-6 lg:px-10 xl:px-20 2xl:px-40">
           <div className="w-full h-[95px] flex justify-between items-center">
             <div className="flex space-x-6 xl:space-x-[40px] 2xl:space-x-[60px] items-center">
               <div>
                 <Link to="/">
-                  <img src="/assets/images/Logo.svg" 
-                  alt="logo" className=""  />
+                  <img src="/assets/images/logo.svg" alt="logo" className="h-20 xl:h-24 2xl:h-28 w-auto" />
+                
                 </Link>
               </div>
               <div>
@@ -25,7 +25,7 @@ export default function DemoHeaderFour() {
                    relative
                    text-gray-800 font-semibold text-sm 2xl:text-base
                    transition-all duration-300
-                   hover:text-[#E11D48]
+                   hover:text-[#890011]
 
                    after:content-['']
                   after:absolute
@@ -33,7 +33,7 @@ export default function DemoHeaderFour() {
                   after:-bottom-1
                   after:w-0
                   after:h-[2px]
-                  after:bg-[#E11D48]
+                  after:bg-[#890011]
                   after:transition-all
                   after:duration-300
                   hover:after:w-full
@@ -51,7 +51,7 @@ export default function DemoHeaderFour() {
                    relative
                    text-gray-800 font-semibold text-sm 2xl:text-base
                    transition-all duration-300
-                   hover:text-[#E11D48]
+                   hover:text-[#890011]
 
                    after:content-['']
                   after:absolute
@@ -59,7 +59,7 @@ export default function DemoHeaderFour() {
                   after:-bottom-1
                   after:w-0
                   after:h-[2px]
-                  after:bg-[#E11D48]
+                  after:bg-[#890011]
                   after:transition-all
                   after:duration-300
                   hover:after:w-full
@@ -89,7 +89,7 @@ export default function DemoHeaderFour() {
                         {pagesLinkData.map((item, index) => (
                           <li key={index} className="relative py-1">
                             <Link
-                              className="relative leading-5 text-white home-two-nav-item hover:text-[#E11D48] w-fit text-s"
+                              className="relative leading-5 text-white home-two-nav-item hover:text-[#890011] w-fit text-s"
                               to={item.pageLink}
                             >
                               {item.linkLabel}
@@ -107,7 +107,7 @@ export default function DemoHeaderFour() {
                       relative
                       text-gray-800 font-semibold text-sm 2xl:text-base
                       transition-all duration-300
-                      hover:text-[#E11D48]
+                      hover:text-[#890011]
 
                       after:content-['']
                       after:absolute
@@ -115,7 +115,7 @@ export default function DemoHeaderFour() {
                       after:-bottom-1
                       after:w-0
                       after:h-[2px]
-                      after:bg-[#E11D48]
+                      after:bg-[#890011]
                       after:transition-all
                       after:duration-300
                       hover:after:w-full
@@ -144,7 +144,7 @@ export default function DemoHeaderFour() {
                         {Horoquartzlink.map((item, index) => (
                           <li key={index} className="relative py-1">
                             <Link
-                              className="relative leading-5 text-white home-two-nav-item hover:text-[#E11D48] w-fit"
+                              className="relative leading-5 text-white home-two-nav-item hover:text-[#890011] w-fit"
                               to={item.pageLink}
                             >
                               {item.linkLabel}
@@ -160,7 +160,7 @@ export default function DemoHeaderFour() {
                       relative
                       text-gray-800 font-semibold text-sm 2xl:text-base
                       transition-all duration-300
-                      hover:text-[#E11D48]
+                      hover:text-[#890011]
 
                       after:content-['']
                       after:absolute
@@ -168,7 +168,7 @@ export default function DemoHeaderFour() {
                       after:-bottom-1
                       after:w-0
                       after:h-[2px]
-                      after:bg-[#E11D48]
+                      after:bg-[#890011]
                       after:transition-all
                       after:duration-300
                       hover:after:w-full
@@ -186,7 +186,7 @@ export default function DemoHeaderFour() {
                       relative
                       text-gray-800 font-semibold text-sm 2xl:text-base
                       transition-all duration-300
-                      hover:text-[#E11D48]
+                      hover:text-[#890011]
 
                       after:content-['']
                       after:absolute
@@ -194,7 +194,7 @@ export default function DemoHeaderFour() {
                       after:-bottom-1
                       after:w-0
                       after:h-[2px]
-                      after:bg-[#E11D48]
+                      after:bg-[#890011]
                       after:transition-all
                       after:duration-300
                       hover:after:w-full
@@ -223,7 +223,7 @@ export default function DemoHeaderFour() {
                         {Idemialink.map((item, index) => (
                           <li key={index} className="relative py-1">
                             <Link
-                              className="relative leading-5 text-white home-two-nav-item hover:text-[#E11D48] w-fit"
+                              className="relative leading-5 text-white home-two-nav-item hover:text-[#890011] w-fit"
                               to={item.pageLink}
                             >
                               {item.linkLabel}
@@ -240,7 +240,7 @@ export default function DemoHeaderFour() {
                       relative
                       text-gray-800 font-semibold text-sm 2xl:text-base
                       transition-all duration-300
-                      hover:text-[#E11D48]
+                      hover:text-[#890011]
 
                       after:content-['']
                       after:absolute
@@ -248,7 +248,7 @@ export default function DemoHeaderFour() {
                       after:-bottom-1
                       after:w-0
                       after:h-[2px]
-                      after:bg-[#E11D48]
+                      after:bg-[#890011]
                       after:transition-all
                       after:duration-300
                       hover:after:w-full
@@ -268,8 +268,8 @@ export default function DemoHeaderFour() {
                 
               </a>
               <Link to="/contact">
-                          <div className="home-two-btn-bg py-3.5 group bg-buisness-red border-buisness-red w-fit mt-0.5 whitespace-nowrap">
-                            <span className="relative z-10 text-sm font-semibold text-white transition-all duration-300 group-hover:text-[#E11D48] font-inter 2xl:text-base">
+                          <div className="home-two-btn-bg py-2 px-4 group bg-buisness-red border-buisness-red w-fit mt-0.5 whitespace-nowrap">
+                            <span className="relative z-10 text-xs font-semibold text-white transition-all duration-300 group-hover:text-[#890011] font-inter">
                               Contactez-nous 
                             </span>
                             <svg

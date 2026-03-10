@@ -158,7 +158,7 @@ export default function HeroFive() {
                           >
                             <path
                               d="M10.9611 8.29308L2.99228 12.8467C1.65896 13.6086 0 12.6459 0 11.1102V2.00295C0 0.467309 1.65896 -0.495425 2.99228 0.266469L10.9611 4.82011C12.3048 5.5879 12.3048 7.52529 10.9611 8.29308Z"
-                              fill="#D90A2C"
+                              fill="#890011"
                             />
                           </svg>
                         </span>
@@ -281,7 +281,7 @@ export default function HeroFive() {
                           >
                             <path
                               d="M10.9611 8.29308L2.99228 12.8467C1.65896 13.6086 0 12.6459 0 11.1102V2.00295C0 0.467309 1.65896 -0.495425 2.99228 0.266469L10.9611 4.82011C12.3048 5.5879 12.3048 7.52529 10.9611 8.29308Z"
-                              fill="#D90A2C"
+                              fill="#890011"
                             />
                           </svg>
                         </span>
@@ -405,7 +405,7 @@ export default function HeroFive() {
                           >
                             <path
                               d="M10.9611 8.29308L2.99228 12.8467C1.65896 13.6086 0 12.6459 0 11.1102V2.00295C0 0.467309 1.65896 -0.495425 2.99228 0.266469L10.9611 4.82011C12.3048 5.5879 12.3048 7.52529 10.9611 8.29308Z"
-                              fill="#D90A2C"
+                              fill="#890011"
                             />
                           </svg>
                         </span>
@@ -479,13 +479,13 @@ export default function HeroFive() {
                   cx="16"
                   cy="16"
                   r="14"
-                  stroke="#D90A2C"
+                  stroke="#890011"
                   strokeWidth="2"
                 />
                 <path
                   className="transition-all duration-300 group-hover:stroke-white"
                   d="M16 8V16L21 21"
-                  stroke="#D90A2C"
+                  stroke="#890011"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -495,28 +495,28 @@ export default function HeroFive() {
                   cx="16"
                   cy="4"
                   r="1.5"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
                 <circle
                   className="transition-all duration-300 group-hover:fill-white"
                   cx="28"
                   cy="16"
                   r="1.5"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
                 <circle
                   className="transition-all duration-300 group-hover:fill-white"
                   cx="16"
                   cy="28"
                   r="1.5"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
                 <circle
                   className="transition-all duration-300 group-hover:fill-white"
                   cx="4"
                   cy="16"
                   r="1.5"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
               </svg>
             </div>
@@ -555,13 +555,13 @@ export default function HeroFive() {
                   cx="16"
                   cy="16"
                   r="14"
-                  stroke="#D90A2C"
+                  stroke="#890011"
                   strokeWidth="2"
                 />
                 <path
                   className="transition-all duration-300 group-hover:stroke-white"
                   d="M16 8V16L21 21"
-                  stroke="#D90A2C"
+                  stroke="#890011"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -571,28 +571,28 @@ export default function HeroFive() {
                   cx="16"
                   cy="4"
                   r="1.5"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
                 <circle
                   className="transition-all duration-300 group-hover:fill-white"
                   cx="28"
                   cy="16"
                   r="1.5"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
                 <circle
                   className="transition-all duration-300 group-hover:fill-white"
                   cx="16"
                   cy="28"
                   r="1.5"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
                 <circle
                   className="transition-all duration-300 group-hover:fill-white"
                   cx="4"
                   cy="16"
                   r="1.5"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
               </svg>
             </div>
@@ -623,7 +623,7 @@ export default function HeroFive() {
   <path
     className="transition-all duration-300 group-hover:stroke-white"
     d="M12 2L20 5V11C20 16.55 16.16 20.74 12 22C7.84 20.74 4 16.55 4 11V5L12 2Z"
-    stroke="#D90A2C"
+    stroke="#890011"
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
@@ -631,7 +631,7 @@ export default function HeroFive() {
   <path
     className="transition-all duration-300 group-hover:stroke-white"
     d="M9 12L11 14L15 10"
-    stroke="#D90A2C"
+    stroke="#890011"
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"

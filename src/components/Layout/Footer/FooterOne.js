@@ -166,7 +166,7 @@ export default function FooterOne() {
         <div
           style={{
             backgroundImage:
-              "linear-gradient( 90deg, #D90A2C 0%, #f3f4f9 63.23%)",
+              "linear-gradient( 90deg, #890011 0%, #f3f4f9 63.23%)",
           }}
           className="w-full md:h-[65px] h-10"
         >
@@ -193,7 +193,7 @@ export default function FooterOne() {
                         cx="22.5"
                         cy="22.5"
                         r="21"
-                        fill="#D90A2C"
+                        fill="#890011"
                         stroke="white"
                         strokeWidth="3"
                       />

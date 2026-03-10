@@ -25,7 +25,7 @@ export default function AccessControlHero() {
               >
                 <path
                   d="M8 1L10.5 6H15.5L11.5 9.5L13 15L8 11.5L3 15L4.5 9.5L0.5 6H5.5L8 1Z"
-                  fill="#D90A2C"
+                  fill="#890011"
                 />
               </svg>
               <span className="text-sm font-semibold text-buisness-red">

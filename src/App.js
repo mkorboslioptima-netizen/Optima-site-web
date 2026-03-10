@@ -2,10 +2,12 @@ import React, { useEffect, useLayoutEffect, useRef, useState, useCallback } from
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { gsap } from "gsap";
-import Lenis from "@studio-freight/lenis";
+
 import AOS from "aos";
 import ChatBot from "./components/ChatBot";
 import FloatingDevis from "./components/Devis/FloatingDevis";
+import WhatsAppButton from "./components/WhatsAppButton";
+import CookieBanner from "./components/CookieBanner";
 
 /* Pages */
 import HomeOne from "./pages/HomeOne";
@@ -116,19 +118,21 @@ function PageLoader({ onComplete }) {
 }
 
 /* ─── Scroll Progress Bar ─── */
-function ScrollProgressBar({ progress }) {
+const ScrollProgressBar = React.forwardRef(function ScrollProgressBar(_, ref) {
   return (
     <div className="fixed top-0 left-0 w-full h-[3px] z-[9998] bg-transparent">
       <div
-        className="h-full transition-[width] duration-100 ease-out"
+        ref={ref}
         style={{
-          width: `${progress}%`,
-          background: "linear-gradient(90deg, #D90A2C, #ff4444)",
+          height: "100%",
+          width: "0%",
+          background: "linear-gradient(90deg, #890011, #ff4444)",
+          willChange: "width",
         }}
       />
     </div>
   );
-}
+});
 
 /* ─── Konami Easter Egg ─── */
 function useKonamiCode(callback) {
@@ -155,7 +159,7 @@ function useKonamiCode(callback) {
 
 /* ─── Confetti burst (Easter Egg) ─── */
 function triggerConfetti() {
-  const colors = ["#007a55", "#00dc87", "#D90A2C", "#FFD700", "#4A90D9"];
+  const colors = ["#007a55", "#00dc87", "#890011", "#FFD700", "#4A90D9"];
   for (let i = 0; i < 80; i++) {
     const el = document.createElement("div");
     el.style.cssText = `
@@ -182,67 +186,39 @@ function triggerConfetti() {
 
 export default function App() {
   const location = useLocation();
-  const lenisRef = useRef(null);
+  const progressBarRef = useRef(null);
   const [loading, setLoading] = useState(true);
-  const [scrollProgress, setScrollProgress] = useState(0);
   const isFirstLoad = useRef(true);
 
   /* ── Konami Code Easter Egg ── */
   useKonamiCode(useCallback(() => triggerConfetti(), []));
 
-  /* ── INIT LENIS ── */
+  /* ── Scroll natif : progress bar + parallax ── */
   useEffect(() => {
-    const lenis = new Lenis({
-      smoothWheel: true,
-      smoothTouch: false,
-      wheelMultiplier: 1.0,
-      lerp: 0.1,
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      infinite: false,
-      orientation: "vertical",
-      gestureOrientation: "vertical",
-      normalizeWheel: true,
-      syncTouch: false,
-      syncTouchLerp: 0.1,
-      touchInertiaMultiplier: 35,
-    });
+    let speedEls = null;
 
-    lenisRef.current = lenis;
+    function handleScroll() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    /* ── Scroll Progress ── */
-    lenis.on("scroll", () => {
-      const scrollTop = window.pageYOffset;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-      if (docHeight > 0) {
-        setScrollProgress((scrollTop / docHeight) * 100);
+      if (progressBarRef.current && docHeight > 0) {
+        progressBarRef.current.style.width = `${(scrollTop / docHeight) * 100}%`;
       }
-    });
 
-    /* ── Parallax data-speed ── */
-    lenis.on("scroll", ({ scroll }) => {
-      document.querySelectorAll("[data-speed]").forEach((el) => {
-        const speed = parseFloat(el.dataset.speed);
-        el.style.transform = `translateY(${scroll * speed}px)`;
+      if (!speedEls) speedEls = [...document.querySelectorAll("[data-speed]")];
+      speedEls.forEach((el) => {
+        el.style.transform = `translateY(${scrollTop * parseFloat(el.dataset.speed)}px)`;
       });
-    });
+    }
 
-    return () => {
-      lenis.destroy();
-    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   /* ── AOS ── */
   useEffect(() => {
     AOS.init({
-      once: false,
+      once: true,
       duration: 700,
       easing: "ease-out-cubic",
     });
@@ -250,9 +226,7 @@ export default function App() {
 
   /* ── Scroll to top on route change ── */
   useLayoutEffect(() => {
-    if (lenisRef.current) {
-      lenisRef.current.scrollTo(0, { immediate: true });
-    }
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   /* ── Loader complete handler ── */
@@ -267,11 +241,11 @@ export default function App() {
       {loading && <PageLoader onComplete={handleLoaderComplete} />}
 
       {/* Scroll Progress Bar */}
-      {!loading && <ScrollProgressBar progress={scrollProgress} />}
+      {!loading && <ScrollProgressBar ref={progressBarRef} />}
 
       {/* Routes with page transitions */}
       <AnimatePresence mode="wait">
-     
+
           <Routes location={location}>
             <Route path="/" element={<Acceuil />} />
             <Route path="/about" element={<About />} />
@@ -299,17 +273,19 @@ export default function App() {
             <Route path="*" element={<Notfound />} />
             <Route path="/Immobilisation" element={<Immobilisation />} />
             <Route path="/Sage-100-Gestion-Paie-RH" element={<SagePaieRh />} />
-            
+
             <Route path="/etemptation" element={<ETemptation />} />
             <Route path="/self-service" element={<SelfService />} />
             <Route path="/controle-acces" element={<AccessControl />} />
           </Routes>
-      
+
       </AnimatePresence>
 
-      {/* ChatBot & Devis */}
+      {/* ChatBot, Devis & WhatsApp */}
       {!loading && <ChatBot />}
       {!loading && <FloatingDevis />}
+      {!loading && <WhatsAppButton />}
+      <CookieBanner />
     </>
   );
 }

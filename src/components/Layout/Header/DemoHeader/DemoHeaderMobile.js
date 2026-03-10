@@ -81,7 +81,7 @@ const MobileHeader = () => {
     <header className="relative flex flex-col xl:hidden">
       <div className="h-16 bg-white flex items-center justify-between fixed top-0 left-0 z-50 w-full px-2.5">
         <Link href="/" aria-label="logo">
-          <img src="/assets/images/Logo.svg" alt="logo" />
+          <img src="/assets/images/logo.svg" alt="logo" className="h-12 sm:h-14 w-auto" />
         </Link>
         <button
           aria-label="mobile-Menu"
@@ -210,7 +210,7 @@ const MobileHeader = () => {
             </a>
             <Link to="/contact">
               <div className="home-two-btn-bg py-2.5 group bg-buisness-red border-buisness-red w-fit">
-                <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-[#E11D48] font-inter">
+                <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-[#890011] font-inter">
                   Contactez-nous
                 </span>
                 <svg

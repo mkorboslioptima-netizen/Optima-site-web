@@ -74,7 +74,7 @@ export default function ServiceFaq() {
                         >
                           <path
                             d="M2 2L9.5 8L17 2"
-                            stroke="#D90A2C"
+                            stroke="#890011"
                             strokeWidth="3"
                             strokeLinecap="round"
                             strokeLinejoin="round"

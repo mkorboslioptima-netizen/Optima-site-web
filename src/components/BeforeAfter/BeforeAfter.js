@@ -5,8 +5,8 @@ const beforeItems = [
     // Facture / document
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#DC2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M14 2V8H20M16 13H8M16 17H8M10 9H8" stroke="#DC2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#890011" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M14 2V8H20M16 13H8M16 17H8M10 9H8" stroke="#890011" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     text: "Saisie manuelle des factures et bons de commande",
@@ -15,8 +15,8 @@ const beforeItems = [
     // Horloge / pointage
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="10" stroke="#DC2626" strokeWidth="2"/>
-        <path d="M12 6V12L16 14" stroke="#DC2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="12" cy="12" r="10" stroke="#890011" strokeWidth="2"/>
+        <path d="M12 6V12L16 14" stroke="#890011" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
     text: "Pointage sur feuilles papier, erreurs fréquentes",
@@ -25,8 +25,8 @@ const beforeItems = [
     // Tableur / grille
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="3" y="3" width="18" height="18" rx="2" stroke="#DC2626" strokeWidth="2"/>
-        <path d="M3 9H21M3 15H21M9 3V21M15 3V21" stroke="#DC2626" strokeWidth="2"/>
+        <rect x="3" y="3" width="18" height="18" rx="2" stroke="#890011" strokeWidth="2"/>
+        <path d="M3 9H21M3 15H21M9 3V21M15 3V21" stroke="#890011" strokeWidth="2"/>
       </svg>
     ),
     text: "Tableurs Excel dispersés, données non fiables",
@@ -35,10 +35,10 @@ const beforeItems = [
     // Calculatrice / paie
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="2" width="16" height="20" rx="2" stroke="#DC2626" strokeWidth="2"/>
-        <rect x="8" y="6" width="8" height="4" rx="1" stroke="#DC2626" strokeWidth="2"/>
-        <circle cx="9" cy="14" r="1" fill="#DC2626"/><circle cx="12" cy="14" r="1" fill="#DC2626"/><circle cx="15" cy="14" r="1" fill="#DC2626"/>
-        <circle cx="9" cy="18" r="1" fill="#DC2626"/><circle cx="12" cy="18" r="1" fill="#DC2626"/><circle cx="15" cy="18" r="1" fill="#DC2626"/>
+        <rect x="4" y="2" width="16" height="20" rx="2" stroke="#890011" strokeWidth="2"/>
+        <rect x="8" y="6" width="8" height="4" rx="1" stroke="#890011" strokeWidth="2"/>
+        <circle cx="9" cy="14" r="1" fill="#890011"/><circle cx="12" cy="14" r="1" fill="#890011"/><circle cx="15" cy="14" r="1" fill="#890011"/>
+        <circle cx="9" cy="18" r="1" fill="#890011"/><circle cx="12" cy="18" r="1" fill="#890011"/><circle cx="15" cy="18" r="1" fill="#890011"/>
       </svg>
     ),
     text: "Calcul de paie complexe et sujet aux erreurs",
@@ -47,8 +47,8 @@ const beforeItems = [
     // Oeil barré / pas de visibilité
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17.94 17.94A10.07 10.07 0 0112 20C7 20 2.73 16.11 1 12C1.99 9.83 3.56 7.94 5.54 6.54M9.9 4.24A9.12 9.12 0 0112 4C17 4 21.27 7.89 23 12C22.44 13.22 21.68 14.33 20.77 15.28M14.12 14.12A3 3 0 019.88 9.88" stroke="#DC2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M1 1L23 23" stroke="#DC2626" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M17.94 17.94A10.07 10.07 0 0112 20C7 20 2.73 16.11 1 12C1.99 9.83 3.56 7.94 5.54 6.54M9.9 4.24A9.12 9.12 0 0112 4C17 4 21.27 7.89 23 12C22.44 13.22 21.68 14.33 20.77 15.28M14.12 14.12A3 3 0 019.88 9.88" stroke="#890011" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M1 1L23 23" stroke="#890011" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
     text: "Aucune visibilité en temps réel sur l'activité",

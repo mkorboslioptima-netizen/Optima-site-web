@@ -154,7 +154,7 @@ export default function FloatingDevis() {
                   <div
                     key={i}
                     className={`h-1 flex-1 rounded-full transition-colors ${
-                      i <= step ? "bg-[#D90A2C]" : "bg-gray-200"
+                      i <= step ? "bg-[#890011]" : "bg-gray-200"
                     }`}
                   />
                 ))}
@@ -180,7 +180,7 @@ export default function FloatingDevis() {
                   </p>
                   <button
                     onClick={handleReset}
-                    className="text-sm font-medium text-[#D90A2C] hover:underline"
+                    className="text-sm font-medium text-[#890011] hover:underline"
                   >
                     Fermer
                   </button>
@@ -203,12 +203,12 @@ export default function FloatingDevis() {
                                   key={mod.id}
                                   onClick={() => toggleModule(mod.id)}
                                   className={`w-full text-left p-3 rounded-xl border-2 transition-all ${
-                                    sel ? "border-[#D90A2C] bg-[#D90A2C]/5" : "border-gray-100 hover:border-gray-200"
+                                    sel ? "border-[#890011] bg-[#890011]/5" : "border-gray-100 hover:border-gray-200"
                                   }`}
                                 >
                                   <div className="flex items-center gap-2.5">
                                     <div className={`w-4 h-4 rounded border-2 flex items-center justify-center shrink-0 transition-colors ${
-                                      sel ? "border-[#D90A2C] bg-[#D90A2C]" : "border-gray-300"
+                                      sel ? "border-[#890011] bg-[#890011]" : "border-gray-300"
                                     }`}>
                                       {sel && (
                                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -238,14 +238,14 @@ export default function FloatingDevis() {
                               value={form.entreprise}
                               onChange={(e) => update("entreprise", e.target.value)}
                               placeholder="Nom de l'entreprise *"
-                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#D90A2C] focus:ring-1 focus:ring-[#D90A2C] outline-none text-sm bg-gray-50"
+                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#890011] focus:ring-1 focus:ring-[#890011] outline-none text-sm bg-gray-50"
                             />
                             <input
                               type="text"
                               value={form.secteur}
                               onChange={(e) => update("secteur", e.target.value)}
                               placeholder="Secteur d'activité"
-                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#D90A2C] focus:ring-1 focus:ring-[#D90A2C] outline-none text-sm bg-gray-50"
+                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#890011] focus:ring-1 focus:ring-[#890011] outline-none text-sm bg-gray-50"
                             />
                             <div>
                               <p className="text-xs font-medium text-gray-500 mb-2">Effectif *</p>
@@ -257,7 +257,7 @@ export default function FloatingDevis() {
                                     onClick={() => update("effectif", val)}
                                     className={`py-2 rounded-lg border-2 text-xs font-medium transition-all ${
                                       form.effectif === val
-                                        ? "border-[#D90A2C] bg-[#D90A2C]/5 text-[#D90A2C]"
+                                        ? "border-[#890011] bg-[#890011]/5 text-[#890011]"
                                         : "border-gray-100 text-gray-500 hover:border-gray-200"
                                     }`}
                                   >
@@ -280,28 +280,28 @@ export default function FloatingDevis() {
                               value={form.nom}
                               onChange={(e) => update("nom", e.target.value)}
                               placeholder="Nom complet *"
-                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#D90A2C] focus:ring-1 focus:ring-[#D90A2C] outline-none text-sm bg-gray-50"
+                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#890011] focus:ring-1 focus:ring-[#890011] outline-none text-sm bg-gray-50"
                             />
                             <input
                               type="email"
                               value={form.email}
                               onChange={(e) => update("email", e.target.value)}
                               placeholder="Email *"
-                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#D90A2C] focus:ring-1 focus:ring-[#D90A2C] outline-none text-sm bg-gray-50"
+                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#890011] focus:ring-1 focus:ring-[#890011] outline-none text-sm bg-gray-50"
                             />
                             <input
                               type="tel"
                               value={form.telephone}
                               onChange={(e) => update("telephone", e.target.value)}
                               placeholder="Téléphone *"
-                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#D90A2C] focus:ring-1 focus:ring-[#D90A2C] outline-none text-sm bg-gray-50"
+                              className="w-full h-10 px-3 rounded-lg border border-gray-200 focus:border-[#890011] focus:ring-1 focus:ring-[#890011] outline-none text-sm bg-gray-50"
                             />
                             <textarea
                               value={form.message}
                               onChange={(e) => update("message", e.target.value)}
                               rows={2}
                               placeholder="Message (optionnel)"
-                              className="w-full px-3 py-2 rounded-lg border border-gray-200 focus:border-[#D90A2C] focus:ring-1 focus:ring-[#D90A2C] outline-none text-sm bg-gray-50 resize-none"
+                              className="w-full px-3 py-2 rounded-lg border border-gray-200 focus:border-[#890011] focus:ring-1 focus:ring-[#890011] outline-none text-sm bg-gray-50 resize-none"
                             />
                           </div>
                         </motion.div>
@@ -318,7 +318,7 @@ export default function FloatingDevis() {
                                 {form.modules.map((id) => {
                                   const mod = MODULES.find((m) => m.id === id);
                                   return (
-                                    <span key={id} className="inline-block px-2 py-1 bg-[#D90A2C]/10 text-[#D90A2C] text-[11px] font-medium rounded-md">
+                                    <span key={id} className="inline-block px-2 py-1 bg-[#890011]/10 text-[#890011] text-[11px] font-medium rounded-md">
                                       {mod?.label}
                                     </span>
                                   );
@@ -365,7 +365,7 @@ export default function FloatingDevis() {
                         disabled={!canNext()}
                         className={`flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
                           canNext()
-                            ? "bg-[#D90A2C] text-white hover:bg-[#b8081f]"
+                            ? "bg-[#890011] text-white hover:bg-[#b8081f]"
                             : "bg-gray-200 text-gray-400 cursor-not-allowed"
                         }`}
                       >

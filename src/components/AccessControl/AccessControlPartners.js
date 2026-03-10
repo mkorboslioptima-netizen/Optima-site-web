@@ -68,12 +68,12 @@ export default function AccessControlPartners() {
                           cx="8"
                           cy="8"
                           r="7"
-                          stroke="#D90A2C"
+                          stroke="#890011"
                           strokeWidth="1"
                         />
                         <path
                           d="M11.5 5.5L7 11L4.5 8.5"
-                          stroke="#D90A2C"
+                          stroke="#890011"
                           strokeWidth="1.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"

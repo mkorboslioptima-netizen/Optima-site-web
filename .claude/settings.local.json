@@ -4,7 +4,9 @@
       "Bash(npm ls:*)",
       "Bash(npm install:*)",
       "Bash(npx react-scripts build)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(xargs sed -i 's/#D90A2C/#890011/g; s/#E11D48/#890011/g; s/#DC2626/#890011/g')",
+      "Bash(xargs -0 sed -i 's/#D90A2C/#890011/g; s/#E11D48/#890011/g; s/#DC2626/#890011/g')"
     ]
   }
 }

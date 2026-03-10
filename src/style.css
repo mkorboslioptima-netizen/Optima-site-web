@@ -71,7 +71,7 @@ h6 {
 .testimoial-section-wrapper
   .swiper-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #D90A2C;
+  background: #890011;
 }
 .testimoial-section-wrapper .swiper-button-prev,
 .testimoial-section-wrapper .swiper-button-next {
@@ -163,7 +163,7 @@ h6 {
 /* SEO Agency features card background  */
 
 .shadow-style-h2 {
-  box-shadow: 0px 10px 60px 0px #D90A2C4d;
+  box-shadow: 0px 10px 60px 0px #8900114d;
 }
 
 .h2_features_card_bg {
@@ -479,7 +479,7 @@ h6 {
 
 /* service_card_shadow  */
 .h3_service_card_shadow:hover {
-  box-shadow: 0px 10px 60px 0px #D90A2C1a;
+  box-shadow: 0px 10px 60px 0px #8900111a;
 }
 
 /* h3-case  */
@@ -927,7 +927,7 @@ h6 {
   transition: all 3s ease-in-out;
 }
 .what-we-do-wrapper .service-item .service-item-ico {
-  background: #D90A2C;
+  background: #890011;
   position: relative;
   overflow: hidden;
 }
@@ -941,7 +941,7 @@ h6 {
   top: 0;
   opacity: 0;
   transition: all 0.3s ease-in-out;
-  background: linear-gradient(94.31deg, #D90A2C 5.85%, #A00821 95.44%);
+  background: linear-gradient(94.31deg, #890011 5.85%, #A00821 95.44%);
 }
 .what-we-do-wrapper .service-item:hover .service-item-ico::before {
   opacity: 1;
@@ -966,7 +966,7 @@ h6 {
   opacity: 1;
 }
 .price_button_bg::before {
-  background: linear-gradient(94.31deg, #D90A2C 5.85%, #A00821 95.44%);
+  background: linear-gradient(94.31deg, #890011 5.85%, #A00821 95.44%);
 }
 .price_card_bg:hover {
   background: linear-gradient(
@@ -1019,14 +1019,14 @@ h6 {
 /* footer social background  */
 
 .h4_social_bg::before {
-  background: linear-gradient(94.31deg, #D90A2C 5.85%, #A00821 95.44%);
+  background: linear-gradient(94.31deg, #890011 5.85%, #A00821 95.44%);
 }
 .h4_contact_bg {
-  background: linear-gradient(94.31deg, #D90A2C 5.85%, #A00821 95.44%);
+  background: linear-gradient(94.31deg, #890011 5.85%, #A00821 95.44%);
 }
 
 .h4_contact_bg:hover {
-  color: linear-gradient(94.31deg, #D90A2C 5.85%, #A00821 95.44%);
+  color: linear-gradient(94.31deg, #890011 5.85%, #A00821 95.44%);
 }
 
 .bg-circle_color {
@@ -1038,7 +1038,7 @@ h6 {
 }
 
 .h4-cta-bg {
-  background: linear-gradient(94.31deg, #D90A2C 5.85%, #A00821 95.44%);
+  background: linear-gradient(94.31deg, #890011 5.85%, #A00821 95.44%);
 }
 
 /* mobile nav open animation  */
@@ -1190,7 +1190,7 @@ h6 {
   animation: spinner 1s infinite linear;
   border-radius: 50%;
   border: 10px solid rgba(0, 0, 0, 0.2);
-  border-top-color: #D90A2C; /* It is not in alphabetical order so that you do not overwrite it */
+  border-top-color: #890011; /* It is not in alphabetical order so that you do not overwrite it */
   height: 9em;
   margin: 0 auto 3.5em auto;
   width: 9em;
@@ -1203,7 +1203,7 @@ h6 {
 }
 .container-preloader .animation-preloader .txt-loading .characters:before {
   animation: characters 4s infinite;
-  color: #D90A2C;
+  color: #890011;
   content: attr(preloader-text);
   left: 0;
   opacity: 0;
@@ -1377,7 +1377,7 @@ h6 {
 }
 
 .h7-testimonial-slider .swiper-slide-active {
-  box-shadow: 0px 10px 60px 0px #D90A2C1a;
+  box-shadow: 0px 10px 60px 0px #8900111a;
 }
 
 .h7-pagination .swiper-pagination-bullet {
@@ -1448,7 +1448,7 @@ h6 {
 /* h8 cta  */
 
 .shape-1-bg {
-  background: linear-gradient(180deg, #ff9900 0%, #D90A2C 100%);
+  background: linear-gradient(180deg, #ff9900 0%, #890011 100%);
 }
 
 .cta_bg_anim {
