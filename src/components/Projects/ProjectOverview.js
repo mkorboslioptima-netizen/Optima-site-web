@@ -64,7 +64,7 @@ export default function ProjectOverview() {
             {/* Video preview (autoplay on scroll) */}
             <video
               ref={videoRef}
-              src="/videos/Sage.mp4"
+              src="/videos/Commerciale _ Interface.mp4"
               muted
               playsInline
               preload="metadata"
@@ -73,7 +73,7 @@ export default function ProjectOverview() {
 
             {/* Play button → Lightbox */}
             <a
-              href="/videos/Sage.mp4"
+              href="/videos/Commerciale _ Interface.mp4"
               data-type="video"
               data-source="local"
               className="absolute flex items-center justify-center video-play-btn"
