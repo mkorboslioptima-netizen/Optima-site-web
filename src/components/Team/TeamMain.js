@@ -52,7 +52,7 @@ export default function TeamMain() {
           <Link to="/teams">
             <div className="inline-flex py-3 home-two-btn-bg group bg-purple border-purple">
               <span className="relative z-10 text-base text-white transition-all duration-300 group-hover:text-purple font-inter">
-                Read More
+                En savoir plus
               </span>
               <svg
                 className="relative z-10"

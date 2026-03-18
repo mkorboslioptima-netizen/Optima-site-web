@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const MODULES = [
   { id: "sage-commerciale", label: "Sage 100 Gestion Commerciale", desc: "Gestion des ventes, achats, stocks et facturation" },
@@ -7,8 +8,35 @@ const MODULES = [
   { id: "sage-paie", label: "Sage 100 Paie & RH", desc: "Gestion de la paie, absences et ressources humaines" },
   { id: "sage-bi", label: "Sage BI / Reporting", desc: "Tableaux de bord et business intelligence" },
   { id: "horoquartz", label: "Horoquartz", desc: "Gestion des temps, planification et contrôle d'accès" },
+  { id: "outsourcing", label: "Outsourcing de la Paie", desc: "Externalisation complète de la gestion de la paie" },
+  { id: "idemia", label: "IDEMIA", desc: "Biométrie, pointeuses et contrôle d'accès IDEMIA" },
   { id: "formation", label: "Formation", desc: "Formations certifiées Sage et Horoquartz" },
 ];
+
+// Mapping URL → module pré-sélectionné
+const PAGE_MODULE_MAP = {
+  // Gestion d'entreprise
+  "/Sage-100-Gestion-Commerciale":  "sage-commerciale",
+  "/Sage-100-Gestion-comptabilite": "sage-comptabilite",
+  "/Immobilisation":                "sage-comptabilite",
+  "/Paie-RH":                       "sage-paie",
+  "/Sage-100-Gestion-Paie-RH":      "sage-paie",
+  "/Sage-BI":                        "sage-bi",
+  "/GestionEntreprise":              "sage-commerciale",
+  // Gestion des temps & Horoquartz
+  "/horoquartz":                     "horoquartz",
+  "/Gestion_Du_Temps":               "horoquartz",
+  "/etemptation":                    "horoquartz",
+  "/self-service":                   "horoquartz",
+  "/service-details":                "horoquartz",
+  // IDEMIA & contrôle d'accès
+  "/controle-acces":                 "idemia",
+  "/projects":                       "idemia",
+  "/project-details":                "idemia",
+  // Outsourcing (legacy uppercase + SEO lowercase)
+  "/outsourcing":                    "outsourcing",
+  "/Outsourcing":                    "outsourcing",
+};
 
 const STEPS = ["Modules", "Entreprise", "Contact", "Résumé"];
 
@@ -22,6 +50,7 @@ const stepVariants = {
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 export default function FloatingDevis() {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -37,6 +66,19 @@ export default function FloatingDevis() {
     telephone: "",
     message: "",
   });
+
+  // Pré-sélectionne le module selon la page à l'ouverture
+  useEffect(() => {
+    if (isOpen) {
+      const detected = PAGE_MODULE_MAP[location.pathname];
+      if (detected) {
+        setForm((prev) => ({
+          ...prev,
+          modules: prev.modules.length === 0 ? [detected] : prev.modules,
+        }));
+      }
+    }
+  }, [isOpen, location.pathname]);
 
   function update(field, value) {
     setForm((prev) => ({ ...prev, [field]: value }));

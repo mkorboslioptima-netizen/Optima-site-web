@@ -3,6 +3,30 @@ import { Helmet } from "react-helmet-async";
 const SITE_URL = "https://www.optima.tn";
 const DEFAULT_IMAGE = "/assets/images/Optima-Logo.png";
 
+/* Schema.org LocalBusiness — injecté sur toutes les pages */
+const LOCAL_BUSINESS_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "SoftwareApplication"],
+  name: "Optima",
+  description:
+    "Intégrateur certifié Sage 100 et Horoquartz en Tunisie. Solutions ERP, gestion des temps, outsourcing de la paie et contrôle d'accès IDEMIA.",
+  url: SITE_URL,
+  logo: `${SITE_URL}/assets/images/Optima-Logo.png`,
+  image: `${SITE_URL}/assets/images/Optima-Logo.png`,
+  email: "support@optima.tn",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "TN",
+    addressLocality: "Tunis",
+  },
+  areaServed: "TN",
+  knowsLanguage: ["fr", "ar"],
+  sameAs: [
+    "https://www.linkedin.com/company/optima-tn",
+    "https://www.facebook.com/optima.tn",
+  ],
+};
+
 export default function SEO({
   title,
   description,
@@ -24,6 +48,7 @@ export default function SEO({
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
+      <meta name="robots" content="index, follow" />
       <link rel="canonical" href={url} />
 
       {/* Open Graph */}
@@ -32,13 +57,21 @@ export default function SEO({
       <meta property="og:url" content={url} />
       <meta property="og:type" content={type} />
       <meta property="og:image" content={img} />
+      <meta property="og:locale" content="fr_TN" />
+      <meta property="og:site_name" content="Optima" />
 
-      {/* Twitter */}
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={desc} />
       <meta name="twitter:image" content={img} />
 
-      {/* JSON-LD */}
+      {/* Schema.org LocalBusiness (toutes pages) */}
+      <script type="application/ld+json">
+        {JSON.stringify(LOCAL_BUSINESS_SCHEMA)}
+      </script>
+
+      {/* JSON-LD spécifique à la page */}
       {jsonLd && (
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       )}

@@ -1,16 +1,14 @@
 import React, { useEffect, useLayoutEffect, useRef, useState, useCallback } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { gsap } from "gsap";
 
 import AOS from "aos";
-import ChatBot from "./components/ChatBot";
 import FloatingDevis from "./components/Devis/FloatingDevis";
-import WhatsAppButton from "./components/WhatsAppButton";
+import TawkToChat from "./components/TawkToChat";
 import CookieBanner from "./components/CookieBanner";
 
 /* Pages */
-import HomeOne from "./pages/HomeOne";
 import Acceuil from "./pages/Acceuil";
 import About from "./pages/About";
 import APropos from "./pages/APropos";
@@ -22,12 +20,9 @@ import SageCommerciale from "./pages/SageCommerciale";
 import Horoquartz from "./pages/Horoquartz";
 import ETemptation from "./pages/etemptation";
 import ProjectDetails from "./pages/ProjectDetails";
-import Cart from "./pages/Cart";
-import CourseDetails from "./pages/CourseDetails";
 import Faq from "./pages/Faq";
 import Teams from "./pages/Teams";
 import Blogs from "./pages/Blogs";
-import Checkout from "./pages/Checkout";
 import Notfound from "./pages/Notfound";
 import Devis from "./pages/Devis";
 import GTA from "./pages/Gestion_Du_Temps"
@@ -39,31 +34,8 @@ import Immobilisation from "./pages/Immobilisation";
 import SagePaieRh from "./pages/SagePaieRh";
 import SelfService from "./pages/SelfService";
 import AccessControl from "./pages/AccessControl";
-/* ─── Page transition variants ─── */
-const pageVariants = {
-  initial: { opacity: 0, y: 18 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -12 },
-};
-const pageTransition = { duration: 0.45, ease: [0.22, 1, 0.36, 1] };
-
-/* ─── Animated Page wrapper ─── */
-function PageWrap({ children, skipAnimation }) {
-  return (
-    <motion.div
-      className="page-transition"
-      variants={pageVariants}
-      initial={skipAnimation ? false : "initial"}
-      animate="animate"
-      exit={skipAnimation ? undefined : "exit"}
-      transition={pageTransition}
-      style={{ willChange: "opacity, transform" }}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
+import MentionsLegales from "./pages/MentionsLegales";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 /* ─── Page Loader ─── */
 function PageLoader({ onComplete }) {
   const [progress, setProgress] = useState(0);
@@ -97,16 +69,16 @@ function PageLoader({ onComplete }) {
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white"
     >
       <img
-        src="/assets/images/Optima-Logo.png"
+        src="/assets/images/logo.svg"
         alt="Optima"
-        className="w-32 mb-8 animate-pulse"
+        className="h-20 w-auto mb-10 animate-pulse"
       />
-      <div className="w-48 h-1 overflow-hidden rounded-full bg-gray-200">
+      <div className="w-56 h-1.5 overflow-hidden rounded-full bg-gray-100">
         <div
           className="h-full rounded-full transition-all duration-200 ease-out"
           style={{
             width: `${progress}%`,
-            background: "linear-gradient(90deg, #007a55, #00dc87)",
+            background: "linear-gradient(90deg, #890011, #b30016)",
           }}
         />
       </div>
@@ -247,44 +219,72 @@ export default function App() {
       <AnimatePresence mode="wait">
 
           <Routes location={location}>
+            {/* ── Page d'accueil ── */}
             <Route path="/" element={<Acceuil />} />
+
+            {/* ── À propos ── */}
             <Route path="/about" element={<About />} />
             <Route path="/a-propos" element={<APropos />} />
+
+            {/* ── Gestion des temps (legacy + SEO) ── */}
             <Route path="/Gestion_Du_Temps" element={<GTA />} />
-            {/* support lowercase and legacy uppercase for outsourcing */}
+            <Route path="/gestion-des-temps" element={<GTA />} />
+
+            {/* ── Outsourcing (legacy + SEO) ── */}
             <Route path="/outsourcing" element={<Outsourcing />} />
             <Route path="/Outsourcing" element={<Outsourcing />} />
+
+            {/* ── Sage 100 ERP (legacy + SEO) ── */}
+            <Route path="/Sage-100-Gestion-Commerciale" element={<SageCommerciale />} />
+            <Route path="/sage-100-gestion-commerciale" element={<SageCommerciale />} />
+
+            <Route path="/Sage-100-Gestion-comptabilite" element={<SageCompta />} />
+            <Route path="/sage-100-comptabilite" element={<SageCompta />} />
+
+            <Route path="/Sage-BI" element={<SageBI />} />
+            <Route path="/sage-bi" element={<SageBI />} />
+
+            <Route path="/Immobilisation" element={<Immobilisation />} />
+            <Route path="/sage-100-immobilisations" element={<Immobilisation />} />
+
+            <Route path="/Sage-100-Gestion-Paie-RH" element={<SagePaieRh />} />
+            <Route path="/sage-100-paie-rh" element={<SagePaieRh />} />
+
+            {/* ── Gestion entreprise (legacy + SEO) ── */}
+            <Route path="/GestionEntreprise" element={<GestionEntreprise />} />
+            <Route path="/gestion-entreprise" element={<GestionEntreprise />} />
+
+            {/* ── Solutions Horoquartz ── */}
+            <Route path="/horoquartz" element={<Horoquartz />} />
+            <Route path="/etemptation" element={<ETemptation />} />
+            <Route path="/self-service" element={<SelfService />} />
+
+            {/* ── Contrôle d'accès IDEMIA ── */}
+            <Route path="/controle-acces" element={<AccessControl />} />
+
+            {/* ── Pages utilitaires ── */}
             <Route path="/blog-details" element={<BlogDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/project-details" element={<ProjectDetails />} />
-            <Route path="/Sage-100-Gestion-Commerciale" element={<SageCommerciale />} />
-            <Route path="/Sage-100-Gestion-comptabilite" element={<SageCompta />} />
-            <Route path="/Sage-BI" element={<SageBI />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/course-details" element={<CourseDetails />} />
             <Route path="/faqs" element={<Faq />} />
             <Route path="/teams" element={<Teams />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/horoquartz" element={<Horoquartz />} />
-            <Route path="/GestionEntreprise" element={<GestionEntreprise />} />
             <Route path="/devis" element={<Devis />} />
-            <Route path="*" element={<Notfound />} />
-            <Route path="/Immobilisation" element={<Immobilisation />} />
-            <Route path="/Sage-100-Gestion-Paie-RH" element={<SagePaieRh />} />
 
-            <Route path="/etemptation" element={<ETemptation />} />
-            <Route path="/self-service" element={<SelfService />} />
-            <Route path="/controle-acces" element={<AccessControl />} />
+            {/* ── Pages légales ── */}
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+
+            {/* ── 404 — doit être EN DERNIER ── */}
+            <Route path="*" element={<Notfound />} />
           </Routes>
 
       </AnimatePresence>
 
-      {/* ChatBot, Devis & WhatsApp */}
-      {!loading && <ChatBot />}
+      {/* Devis & Chat */}
       {!loading && <FloatingDevis />}
-      {!loading && <WhatsAppButton />}
+      {!loading && <TawkToChat />}
       <CookieBanner />
     </>
   );

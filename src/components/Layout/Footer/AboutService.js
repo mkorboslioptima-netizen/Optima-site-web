@@ -17,7 +17,7 @@ export default function AboutService() {
             <Link to="/projects">
               <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-[15px]">
                 <span className="text-base group-hover:text-buisness-red text-white transition-all duration-300 font-semibold font-inter relative z-10">
-                  Explore Service
+                  Nos solutions
                 </span>
                 <svg
                   className="relative z-10"

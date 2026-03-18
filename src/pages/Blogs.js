@@ -56,7 +56,7 @@ export default function Blogs() {
               <Link to="/blog-details">
                 <div className="flex items-center gap-2 group">
                   <p className="mb-[1px] font-medium text-paragraph leading-5 font-inter border-b border-transparent before:block before:pb-[1px] before:border-purple before:font-medium before:text-purple before:leading-5 before:font-inter before:border-b before:content-['Read_More'] before:absolute before:-bottom-[1px] before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-[21px] relative">
-                    Read More
+                    En savoir plus
                   </p>
                   <svg
                     width="7"
@@ -159,7 +159,7 @@ export default function Blogs() {
               <Link to="/blog-details">
                 <div className="flex items-center gap-2 group">
                   <p className="mb-[1px] font-medium text-paragraph leading-5 font-inter border-b border-transparent before:block before:pb-[1px] before:border-purple before:font-medium before:text-purple before:leading-5 before:font-inter before:border-b before:content-['Read_More'] before:absolute before:-bottom-[1px] before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-[21px] relative">
-                    Read More
+                    En savoir plus
                   </p>
                   <svg
                     width="7"
@@ -262,7 +262,7 @@ export default function Blogs() {
               <Link to="/blog-details">
                 <div className="flex items-center gap-2 group">
                   <p className="mb-[1px] font-medium text-paragraph leading-5 font-inter border-b border-transparent before:block before:pb-[1px] before:border-purple before:font-medium before:text-purple before:leading-5 before:font-inter before:border-b before:content-['Read_More'] before:absolute before:-bottom-[1px] before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-[21px] relative">
-                    Read More
+                    En savoir plus
                   </p>
                   <svg
                     width="7"

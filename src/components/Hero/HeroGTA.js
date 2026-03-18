@@ -113,7 +113,7 @@ export default function HeroFive() {
                     <Link to="/services">
                       <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-3 sm:py-[15px]">
                         <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-red font-inter">
-                          Explore Service
+                          Nos solutions
                         </span>
                         <svg
                           className="relative z-10"

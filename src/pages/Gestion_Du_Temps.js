@@ -7,6 +7,7 @@ import ServiceFaq from "../components/Services/ServiceFaq";
 import HeroGTA from "../components/Hero/HeroGTA";
 import SEO from "../components/SEO";
 import CourseDetailsInfo from "../components/Course/CourseDetailsInfo";
+import ROICalculatorGTA from "../components/ROI/ROICalculatorGTA";
 export default function Services() {
   return (
     <InnerPageLayout>
@@ -20,7 +21,7 @@ export default function Services() {
       <AboutService />
       <ServiceFiveRed />
       <ServiceFaq />
-      
+      <ROICalculatorGTA />
     </InnerPageLayout>
   );
 }

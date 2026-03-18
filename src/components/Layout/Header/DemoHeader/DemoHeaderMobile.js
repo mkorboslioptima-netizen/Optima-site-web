@@ -9,7 +9,7 @@ const menuData = [
       { title: "Gestion commerciale", href: "/Sage-100-Gestion-Commerciale" },
       { title: "Comptabilité", href: "/Sage-100-Gestion-comptabilite" },
       { title: "Immobilisation", href: "/Immobilisation" },
-      { title: "Paie & RH", href: "/Paie-RH" },
+      { title: "Paie & RH", href: "/Sage-100-Gestion-Paie-RH" },
       { title: "Sage BI", href: "/Sage-BI" },
     ],
   },
@@ -18,7 +18,7 @@ const menuData = [
     subMenu: [
       { title: "Présentation Horoquartz", href: "/horoquartz" },
       { title: "eTemptation", href: "/etemptation" },
-      { title: "Self Service", href: "/service-details" },
+      { title: "Self Service", href: "/self-service" },
       { title: "Contrôle d'accès", href: "/controle-acces" },
     ],
   },

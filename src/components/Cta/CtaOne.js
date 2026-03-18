@@ -10,12 +10,12 @@ export default function CtaOne() {
   useEffect(() => {
     if (sceneRef.current) {
       const parallaxInstance = new Parallax(sceneRef.current);
-      // Cleanup the parallax instance on component unmount
       return () => {
         parallaxInstance.disable();
       };
     }
   }, []);
+
   return (
     <section data-aos="fade-up" id="consultation">
       <div className="relative w-full consultation-section-wrapper">
@@ -26,19 +26,18 @@ export default function CtaOne() {
             </div>
             <div className="md:w-[432px] w-full">
               <span className="mb-5 section-title-top-tag">
-                Get Consultations
+                Parlons de votre projet
               </span>
               <h2 className="md:text-48 text-34 font-semibold text-main-black mb-[32px]">
-                Get your free digital marketing audit
+                Obtenez un diagnostic gratuit de vos besoins
               </h2>
               <p className="text-paragraph mb-[45px]">
-                We’ve 25+ years of experience in digital marketing
+                Depuis 2006, Optima accompagne les entreprises tunisiennes dans le déploiement de leurs solutions de gestion. Nos experts vous répondent sous 24h.
               </p>
-
-              <Link href="/contact">
-                <div className="inline-flex py-3 home-two-btn-bg group bg-purple border-purple">
-                  <span className="relative z-10 text-base text-white transition-all duration-300 group-hover:text-purple font-inter">
-                    Get Consultation
+              <Link to="/contact">
+                <div className="inline-flex py-3 home-two-btn-bg group bg-buisness-red border-buisness-red">
+                  <span className="relative z-10 text-base text-white transition-all duration-300 group-hover:text-buisness-red font-inter font-semibold">
+                    Demander un diagnostic
                   </span>
                   <svg
                     className="relative z-10"
@@ -49,13 +48,13 @@ export default function CtaOne() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      className="transition-all duration-300 group-hover:stroke-blue-seo"
+                      className="transition-all duration-300 group-hover:stroke-buisness-red"
                       d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
                       stroke="white"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></path>
+                    />
                   </svg>
                 </div>
               </Link>
@@ -72,10 +71,7 @@ export default function CtaOne() {
                 <div data-depth="0.40" className="layer">
                   <img src="/assets/images/cta-p-1.webp" alt="" />
                 </div>
-                <div
-                  data-depth="0.20"
-                  className="absolute layer md:right-40 right-10"
-                >
+                <div data-depth="0.20" className="absolute layer md:right-40 right-10">
                   <img src="/assets/images/cta-p-2.webp" alt="" />
                 </div>
               </div>
@@ -84,11 +80,7 @@ export default function CtaOne() {
         </div>
         <div className="absolute flex justify-between top-20">
           <Lottie animationData={lineAnimation} loop={true} />
-          <Lottie
-            animationData={lineAnimation}
-            className="transform rotate-180"
-            loop={true}
-          />
+          <Lottie animationData={lineAnimation} className="transform rotate-180" loop={true} />
         </div>
       </div>
     </section>

@@ -263,34 +263,32 @@ export default function DemoHeaderFour() {
                 </ul>
               </div>
             </div>
-            <div className="flex space-x-[30px] items-center">
-              <a href="#">
-                
-              </a>
-              <Link to="/contact">
-                          <div className="home-two-btn-bg py-2 px-4 group bg-buisness-red border-buisness-red w-fit mt-0.5 whitespace-nowrap">
-                            <span className="relative z-10 text-xs font-semibold text-white transition-all duration-300 group-hover:text-[#890011] font-inter">
-                              Contactez-nous 
-                            </span>
-                            <svg
-                              className="relative z-10"
-                              width="6"
-                              height="12"
-                              viewBox="0 0 7 12"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                className="transition-all duration-300 group-hover:stroke-buisness-red"
-                                d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                                stroke="white"
-                                strokeWidth="1.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            </svg>
-                          </div>
-                        </Link>
+            <div className="flex items-center gap-6">
+              <div className="flex flex-col items-center gap-1">
+                <Link to="/contact">
+                  <div className="home-two-btn-bg py-2 px-4 group bg-buisness-red border-buisness-red w-fit whitespace-nowrap">
+                    <span className="relative z-10 text-xs font-semibold text-white transition-all duration-300 group-hover:text-[#890011] font-inter">
+                      Contactez-nous
+                    </span>
+                    <svg className="relative z-10" width="6" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        className="transition-all duration-300 group-hover:stroke-buisness-red"
+                        d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                        stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </Link>
+                <a
+                  href="tel:+21671000000"
+                  className="flex items-center gap-1 text-gray-500 hover:text-[#890011] transition-colors duration-300"
+                >
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.78-1.78a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span className="text-xs font-medium whitespace-nowrap">+216 71 000 000</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

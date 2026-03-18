@@ -14,10 +14,10 @@ export default function FeatureSix() {
     <section className="pt-[70px] md:pt-[116px]">
       <div className="mx-auto theme-container">
         <h1 className="px-5 bg-red/10 border border-red/20 text-main-black font-medium rounded-[30px] w-fit mx-auto">
-          Core Features
+          Nos Atouts
         </h1>
         <h2 className="sm:text-48 text-24 font-semibold text-main-black mb-[42px] mt-[18px] w-full max-w-[795px] text-center mx-auto">
-          Pourqoui choisir Optima pour votre gestion de la paie ?
+          Pourquoi choisir Optima pour votre gestion de la paie ?
         </h2>
         <div className="relative flex items-center justify-between w-full">
           <div

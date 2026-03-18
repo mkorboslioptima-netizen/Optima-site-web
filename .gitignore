@@ -22,6 +22,10 @@
 backend/.env
 backend/node_modules
 
+# Sécurité — bloquer tous les .env (mots de passe, clés API)
+**/.env
+*.env
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

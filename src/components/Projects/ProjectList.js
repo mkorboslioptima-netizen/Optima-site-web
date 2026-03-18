@@ -39,7 +39,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"
@@ -83,7 +83,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"
@@ -127,7 +127,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"
@@ -171,7 +171,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"
@@ -215,7 +215,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"
@@ -259,7 +259,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"
@@ -303,7 +303,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"
@@ -347,7 +347,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"
@@ -391,7 +391,7 @@ export default function ProjectList() {
                 <Link to="/project-details">
                   <div className="flex items-center gap-2 mt-4 group">
                     <span className="relative font-medium leading-5 text-white border-b border-transparent font-inter before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                      Read More
+                      En savoir plus
                     </span>
                     <svg
                       width="7"

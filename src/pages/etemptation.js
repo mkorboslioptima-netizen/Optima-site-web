@@ -11,7 +11,7 @@ import TestimonialsEtemptation from "../components/Services/TestimonialsEtemptat
 import AboutEtemptation from "../components/Layout/Footer/AboutEtemptation";
 import CTAEtemptation from "../components/Services/CTAEtemptation";
 import ServiceFiveRedEtemptation from "../components/Services/ServiceFiveRedEtemptation";
-
+import ROICalculatorGTA from "../components/ROI/ROICalculatorGTA";
 import SEO from "../components/SEO";
 
 export default function eTemptation() {
@@ -39,6 +39,9 @@ export default function eTemptation() {
       
       {/* Section FAQ */}
       <FAQEtemptation />
+
+      {/* Calculateur ROI */}
+      <ROICalculatorGTA />
       
       
      

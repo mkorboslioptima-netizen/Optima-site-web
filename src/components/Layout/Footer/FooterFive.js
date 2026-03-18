@@ -6,16 +6,17 @@ export default function FooterFive() {
     <footer className="pt-20 bg-buisness-light-black">
       <div className="flex flex-wrap justify-between gap-5 mx-auto mb-20 theme-container">
         <div className="w-fit max-w-[300px]">
-          <img src="/assets/images/logo-01-20 blanc.svg" alt="logo" />
+          <img src="/assets/images/logo-01-20 blanc.svg" alt="logo" className="-ml-12" />
           <p className="max-w-[300px] text-white my-6">
 Optima, intégrateur tunisien en gestion d’entreprise : commerce, comptabilité, paie et RH.            
             </p>
 
           <div className="flex gap-[15px]">
             <a
-              href="#"
+              href="https://www.facebook.com/optima.tn"
               aria-label="facebook"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-[46px] h-[46px] rounded-full flex justify-center items-center border border-white/10 overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-buisness-red before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
             >
               <span className="relative z-10">
@@ -34,9 +35,10 @@ Optima, intégrateur tunisien en gestion d’entreprise : commerce, comptabilit�
               </span>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/optima-tn"
               aria-label="linkedin"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-[46px] h-[46px] rounded-full flex justify-center items-center border border-white/10 overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-buisness-red before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
             >
               <span className="relative z-10">
@@ -53,131 +55,24 @@ Optima, intégrateur tunisien en gestion d’entreprise : commerce, comptabilit�
             <div>
               <h1 className="font-semibold text-white text-18">Nos services</h1>
               <ul className="mt-3.5">
-                <li className="">
-                  <Link to="/project-details">
-                    <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
-                      <svg
-                        className="absolute transition-all duration-300 -left-2 group-hover:left-0"
-                        width="6"
-                        height="12"
-                        viewBox="0 0 6 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 1L5 6L1 11"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Outsourcing de la paie
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link to="/project-details">
-                    <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
-                      <svg
-                        className="absolute transition-all duration-300 -left-2 group-hover:left-0"
-                        width="6"
-                        height="12"
-                        viewBox="0 0 6 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 1L5 6L1 11"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Gestion des temps 
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link to="/project-details">
-                    <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
-                      <svg
-                        className="absolute transition-all duration-300 -left-2 group-hover:left-0"
-                        width="6"
-                        height="12"
-                        viewBox="0 0 6 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 1L5 6L1 11"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Gestion d'entreprise
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link to="/project-details">
-                    <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
-                      <svg
-                        className="absolute transition-all duration-300 -left-2 group-hover:left-0"
-                        width="6"
-                        height="12"
-                        viewBox="0 0 6 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 1L5 6L1 11"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Contrôle d'accès  
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link to="/project-details">
-                    <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
-                      <svg
-                        className="absolute transition-all duration-300 -left-2 group-hover:left-0"
-                        width="6"
-                        height="12"
-                        viewBox="0 0 6 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 1L5 6L1 11"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <span className="transition-all duration-300 group-hover:translate-x-4">
-                        Solution sur mesure
-                      </span>
-                    </div>
-                  </Link>
-                </li>
+                {[
+                  { label: "Outsourcing de la paie", to: "/outsourcing" },
+                  { label: "Gestion des temps", to: "/gestion-des-temps" },
+                  { label: "Gestion d'entreprise", to: "/gestion-entreprise" },
+                  { label: "Contrôle d'accès", to: "/controle-acces" },
+                  { label: "Mentions légales", to: "/mentions-legales" },
+                ].map(({ label, to }) => (
+                  <li key={to}>
+                    <Link to={to}>
+                      <div className="relative flex items-center gap-2 overflow-hidden font-medium transition-all duration-300 group text-white/50 hover:text-white hover:underline">
+                        <svg className="absolute transition-all duration-300 -left-2 group-hover:left-0" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                          <path d="M1 1L5 6L1 11" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        <span className="transition-all duration-300 group-hover:translate-x-4">{label}</span>
+                      </div>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -185,7 +80,7 @@ Optima, intégrateur tunisien en gestion d’entreprise : commerce, comptabilit�
 
         <div className="w-fit max-w-[300px]">
           <div className="max-w-[223px]">
-            <h1 className="font-semibold text-white text-18">Addresse</h1>
+            <h1 className="font-semibold text-white text-18">Adresse</h1>
             <div className="flex gap-2 items-center relative group font-medium text-white/50 hover:text-white hover:underline transition-all duration-300 mt-3.5">
               <span className="transition-all duration-300">
                 6, Rue Echih – 2éme étage – App B2.1 -  2080 Ariana

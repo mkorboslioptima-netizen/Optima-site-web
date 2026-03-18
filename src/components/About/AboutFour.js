@@ -32,7 +32,7 @@ export default function AboutFour() {
               <Link to="/services">
                 <div className="home-two-btn-bg group bg-buisness-dark-black border-buisness-dark-black py-[15px] w-fit">
                   <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-dark-black font-inter">
-                    Explore Service
+                    Nos solutions
                   </span>
                   <svg
                     className="relative z-10"
@@ -102,7 +102,7 @@ export default function AboutFour() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="text-sm leading-8 text-white">We have</span>
+                <span className="text-sm leading-8 text-white">Notre expertise</span>
               </div>
 
               <h1 className="text-[27px] leading-[35px] text-white font-semibold tracking-tight max-w-[170px]">

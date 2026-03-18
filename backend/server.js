@@ -47,6 +47,8 @@ const MODULES = {
   'sage-paie': 'Sage 100 Paie & RH',
   'sage-bi': 'Sage BI / Reporting',
   'horoquartz': 'Horoquartz',
+  'outsourcing': 'Outsourcing de la Paie',
+  'idemia': 'IDEMIA (Biométrie & Contrôle d\'accès)',
   'formation': 'Formation',
 };
 

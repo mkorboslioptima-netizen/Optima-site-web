@@ -15,8 +15,8 @@ export default function Projects() {
         path="/projects"
       />
       <BreadCrumb
-        pageTitle="Latest Project"
-        currentPage="Latest Project"
+        pageTitle="Nos Projets"
+        currentPage="Nos Projets"
         href="/projects"
       />
       <ProjectList />
