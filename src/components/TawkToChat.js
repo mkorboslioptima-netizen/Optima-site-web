@@ -8,12 +8,24 @@ const HIDE_TAWK_CSS = `
   #tawk-bubble-container,
   .tawk-min-container,
   .tawk-button-circle,
+  .tawk-min-container--active,
+  .tawk-branding,
   iframe[title*="chat widget"],
-  div[data-id="tawkchat-minified-wrapper"] {
+  iframe[title*="Tawk"],
+  iframe[title*="tawk"],
+  div[data-id="tawkchat-minified-wrapper"],
+  div[id^="tawk-"],
+  div[class^="tawk-"],
+  #tawkchat-minified-wrapper,
+  #tawkchat-bubble-container {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
   }
 `;
 
@@ -65,10 +77,12 @@ export default function TawkToChat() {
 
     window.Tawk_API.onChatMinimized = function () {
       setIsOpen(false);
+      window.Tawk_API.hideWidget();
     };
 
     window.Tawk_API.onChatHidden = function () {
       setIsOpen(false);
+      window.Tawk_API.hideWidget();
     };
 
     window.Tawk_API.onUnreadCountChanged = function (count) {
@@ -98,7 +112,7 @@ export default function TawkToChat() {
   };
 
   return (
-    <div className="fixed z-50" style={{ bottom: "28px", right: "28px" }}>
+    <div className="fixed z-50 bottom-6 right-4 sm:bottom-7 sm:right-7">
 
       {/* ── tooltip d'invitation ── */}
       <div

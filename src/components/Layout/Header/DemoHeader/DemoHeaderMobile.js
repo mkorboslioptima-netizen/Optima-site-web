@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const menuData = [
@@ -26,213 +26,185 @@ const menuData = [
   {
     title: "IDEMIA",
     subMenu: [
-      { title: "Présentation Idemia", href: "/projects" },
+      { title: "Présentation IDEMIA", href: "/projects" },
       { title: "Morpho Manager Suite", href: "/project-details" },
       { title: "Pointeuses IDEMIA", href: "/service-details" },
     ],
   },
   { title: "À propos", href: "/about" },
+  { title: "Contact", href: "/contact" },
 ];
 
 const MobileHeader = () => {
-  const [isNavActive, setIsNavActive] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [activeSubNav, setActiveSubNav] = useState(null);
-  const navRef = useRef(null);
-  const overlayRef = useRef(null);
-  const toggleMenuRef = useRef(null);
-
-  const toggleNav = () => {
-    setIsNavActive((prev) => !prev);
-  };
-
-  const toggleSubNav = (index) => {
-    setActiveSubNav((prev) => (prev === index ? null : index));
-  };
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleOverlayClick = () => {
-      setIsNavActive(false);
-    };
-
-    if (overlayRef.current) {
-      overlayRef.current.addEventListener("click", handleOverlayClick);
-    }
-
-    return () => {
-      if (overlayRef.current) {
-        overlayRef.current.removeEventListener("click", handleOverlayClick);
-      }
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock body scroll when drawer open
   useEffect(() => {
-    const handleHashChange = () => {
-      setIsNavActive(false);
-    };
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
 
-    window.addEventListener("hashchange", handleHashChange);
-
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-    };
-  }, []);
+  const close = () => { setIsOpen(false); setActiveSubNav(null); };
 
   return (
-    <header className="relative flex flex-col xl:hidden">
-      <div className="h-16 bg-white flex items-center justify-between fixed top-0 left-0 z-50 w-full px-2.5">
-        <Link href="/" aria-label="logo">
-          <img src="/assets/images/logo.svg" alt="logo" className="h-12 sm:h-14 w-auto" />
-        </Link>
-        <button
-          aria-label="mobile-Menu"
-          className="w-6 h-6 text-main-black text-48 toggle_nav_menu"
-          id="mobile_nav_toggle_menu"
-          onClick={toggleNav}
-        >
-          <svg
-            className={`transition-all duration-300 pointer-events-none ${
-              isNavActive ? "hidden" : ""
-            }`}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-          >
-            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32-14.3 32 32z" />
-          </svg>
-          <svg
-            className={`transition-all duration-300 pointer-events-none ${
-              isNavActive ? "" : "hidden"
-            }`}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 384 512"
-          >
-            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-          </svg>
-        </button>
+    <header className="xl:hidden">
+      {/* ── Top bar ── */}
+      <div
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm shadow-sm"
+        }`}
+        style={{ height: "64px" }}
+      >
+        <div className="flex items-center justify-between h-full px-5">
+          {/* Logo */}
+          <Link to="/" onClick={close}>
+            <img src="/assets/images/logo.svg" alt="Optima" className="h-11 w-auto" />
+          </Link>
+
+          {/* Right: CTA + burger */}
+          <div className="flex items-center gap-2">
+            <Link
+              to="/devis"
+              onClick={close}
+              className="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#890011] text-white text-xs font-semibold hover:bg-[#6d0009] transition-colors"
+            >
+              Devis gratuit
+            </Link>
+
+            {/* Burger */}
+            <button
+              onClick={() => setIsOpen((v) => !v)}
+              aria-label="Menu"
+              className="flex flex-col items-center justify-center w-10 h-10 rounded-xl hover:bg-gray-100 transition-all gap-[5px]"
+            >
+              <span className={`block h-[2px] bg-gray-800 rounded-full transition-all duration-300 origin-center ${isOpen ? "w-5 rotate-45 translate-y-[7px]" : "w-5"}`} />
+              <span className={`block h-[2px] bg-gray-800 rounded-full transition-all duration-300 ${isOpen ? "opacity-0 w-0" : "w-3.5"}`} />
+              <span className={`block h-[2px] bg-gray-800 rounded-full transition-all duration-300 origin-center ${isOpen ? "w-5 -rotate-45 -translate-y-[7px]" : "w-5"}`} />
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="transition-all duration-300">
-        <div
-          className={`fixed z-40 w-full h-screen transition-all duration-300 delay-150 bg-black/80 ${
-            isNavActive ? "left-0" : "-left-full"
-          }`}
-          id="mobile-nav-div-overlay"
-          ref={overlayRef}
-        ></div>
-        <div
-          className={`fixed z-50 w-full h-screen overflow-y-scroll transition-all duration-300 bg-white top-16 ${
-            isNavActive ? "left-0" : "-left-full"
-          }`}
-          id="mobile-nav-div"
-          ref={navRef}
-        >
-          <div className="flex flex-col pt-5 pl-5 gap-28">
-            <ul className="flex flex-col gap-5 text-base font-medium leading-5 text-paragraph font-inter">
-              {menuData.map((menuItem, index) => (
-                <li key={index} className="group">
-                  {menuItem.subMenu ? (
-                    <>
-                      <button
-                        className="relative flex items-center gap-2 leading-5 home-two-nav-item w-fit m-nav-dropdown"
-                        onClick={() => toggleSubNav(index)}
+
+      {/* Spacer */}
+      <div style={{ height: "64px" }} />
+
+      {/* ── Overlay ── */}
+      <div
+        onClick={close}
+        className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-[2px] transition-opacity duration-300 ${
+          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      />
+
+      {/* ── Side Drawer (right) ── */}
+      <div
+        className={`fixed top-0 right-0 bottom-0 z-50 w-[300px] bg-white flex flex-col transition-transform duration-350 ease-in-out shadow-2xl ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Drawer header */}
+        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+          <Link to="/" onClick={close}>
+            <img src="/assets/images/logo.svg" alt="Optima" className="h-10 w-auto" />
+          </Link>
+          <button
+            onClick={close}
+            className="w-9 h-9 flex items-center justify-center rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+
+        {/* Nav items */}
+        <nav className="flex-1 overflow-y-auto px-4 py-3">
+          <ul className="flex flex-col gap-0.5">
+            {menuData.map((item, index) => (
+              <li key={index}>
+                {item.subMenu ? (
+                  <>
+                    <button
+                      onClick={() => setActiveSubNav((p) => (p === index ? null : index))}
+                      className="w-full flex items-center justify-between py-3 px-3 rounded-xl text-gray-800 font-semibold text-sm hover:bg-[#890011]/5 hover:text-[#890011] transition-all"
+                    >
+                      <span>{item.title}</span>
+                      <svg
+                        className={`transition-transform duration-300 text-gray-400 shrink-0 ${activeSubNav === index ? "rotate-180 text-[#890011]" : ""}`}
+                        width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
                       >
-                        {menuItem.title}
-                        <svg
-                          className="pointer-events-none"
-                          width="10"
-                          height="10"
-                          viewBox="0 0 19 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2 2L9.5 8L17 2"
-                            stroke="currentColor"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </button>
-                      <ul
-                        className={`overflow-hidden transition-all font-medium h-[150px] duration-300 pl-5 pt-4 ${
-                          activeSubNav === index ? "" : "mobile-sub-nav"
-                        }`}
-                      >
-                        {menuItem.subMenu.map((subItem, subIndex) => (
-                          <li key={subIndex} className="relative py-1">
-                            <a
-                              className="relative py-1 font-medium leading-5 home-two-nav-item hover:text-purple w-fit"
-                              href={subItem.href}
+                        <polyline points="6 9 12 15 18 9" />
+                      </svg>
+                    </button>
+
+                    <div className={`overflow-hidden transition-all duration-300 ${activeSubNav === index ? "max-h-80 opacity-100" : "max-h-0 opacity-0"}`}>
+                      <ul className="ml-3 mb-1 pl-4 border-l-2 border-[#890011]/20 flex flex-col gap-0.5">
+                        {item.subMenu.map((sub, si) => (
+                          <li key={si}>
+                            <Link
+                              to={sub.href}
+                              onClick={close}
+                              className="block py-2.5 px-2 text-sm text-gray-500 hover:text-[#890011] font-medium rounded-lg hover:bg-[#890011]/5 transition-all"
                             >
-                              {subItem.title}
-                            </a>
+                              {sub.title}
+                            </Link>
                           </li>
                         ))}
                       </ul>
-                    </>
-                  ) : (
-                    <a
-                      className="relative home-two-nav-item w-fit"
-                      href={menuItem.href}
-                    >
-                      {menuItem.title}
-                    </a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex flex-col gap-5 pl-5 mt-5">
-            <a href="#" className="flex gap-2.5 group">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.77762 11.9424C2.8296 10.2893 2.37185 8.93948 2.09584 7.57121C1.68762 5.54758 2.62181 3.57081 4.16938 2.30947C4.82345 1.77638 5.57323 1.95852 5.96 2.6524L6.83318 4.21891C7.52529 5.46057 7.87134 6.08139 7.8027 6.73959C7.73407 7.39779 7.26737 7.93386 6.33397 9.00601L3.77762 11.9424ZM3.77762 11.9424C5.69651 15.2883 8.70784 18.3013 12.0576 20.2224M12.0576 20.2224C13.7107 21.1704 15.0605 21.6282 16.4288 21.9042C18.4524 22.3124 20.4292 21.3782 21.6905 19.8306C22.2236 19.1766 22.0415 18.4268 21.3476 18.04L19.7811 17.1668C18.5394 16.4747 17.9186 16.1287 17.2604 16.1973C16.6022 16.2659 16.0661 16.7326 14.994 17.666L12.0576 20.2224Z"
-                  stroke="#5D51F2"
-                  strokeWidth="1.5"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M22 5L12 5M22 5C22 4.43982 20.604 3.39322 20.25 3M22 5C22 5.56018 20.604 6.60678 20.25 7M12 5C12 4.43982 13.396 3.39322 13.75 3M12 5C12 5.56018 13.396 6.60678 13.75 7"
-                  stroke="#5D51F2"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+                    </div>
+                  </>
+                ) : (
+                  <Link
+                    to={item.href}
+                    onClick={close}
+                    className="flex items-center py-3 px-3 rounded-xl text-gray-800 font-semibold text-sm hover:bg-[#890011]/5 hover:text-[#890011] transition-all"
+                  >
+                    {item.title}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Drawer footer */}
+        <div className="px-4 pb-6 pt-3 border-t border-gray-100 space-y-2.5">
+          <a
+            href="tel:+21671715397"
+            className="flex items-center gap-3 py-3 px-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
+          >
+            <div className="w-8 h-8 rounded-full bg-[#890011]/10 flex items-center justify-center shrink-0">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#890011" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.78-1.78a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
-              <span className="text-base font-bold leading-5 tracking-tight text-main-black">
-                Appelez-nous : +216 71 123 456
-              </span>
-            </a>
-            <Link to="/contact">
-              <div className="home-two-btn-bg py-2.5 group bg-buisness-red border-buisness-red w-fit">
-                <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-[#890011] font-inter">
-                  Contactez-nous
-                </span>
-                <svg
-                  className="relative z-10"
-                  width="7"
-                  height="12"
-                  viewBox="0 0 7 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    className="transition-all duration-300 group-hover:stroke-buisness-red"
-                    d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </Link>
-          </div>
+            </div>
+            <div>
+              <p className="text-xs text-gray-400 leading-none mb-0.5">Appelez-nous</p>
+              <p className="text-sm font-bold text-gray-800">+216 71 715 397</p>
+            </div>
+          </a>
+
+          <Link
+            to="/devis"
+            onClick={close}
+            className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-[#890011] text-white font-semibold text-sm hover:bg-[#6d0009] transition-colors"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+            Demander un devis gratuit
+          </Link>
         </div>
       </div>
     </header>

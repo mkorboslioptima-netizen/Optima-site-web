@@ -88,16 +88,17 @@ export default function HeroFive() {
   }, []);
 
   return (
-    <section className="relative w-full py-3 overflow-hidden bg-white" id="banner">
-      {/* arrière-plan */}
-      <img
-        src="/assets/images/home-five/hero/a.jpg"
-        alt=""
-        className="w-full object-cover absolute top-0 z-0 buisness-dark-black min-h-[520px]"
-      />
+    <section className="relative w-full bg-white" id="banner">
+      {/* ── zone hero avec image ── */}
+      <div className="relative overflow-hidden">
+        <img
+          src="/assets/images/home-five/hero/a.jpg"
+          alt=""
+          className="w-full object-cover absolute top-0 left-0 z-0 buisness-dark-black h-full min-h-[400px]"
+        />
 
       <div className="relative z-10 w-full mx-auto theme-container">
-        <div className="grid grid-cols-7 lg:grid-cols-12 pt-[113px] xl:pt-[140px] 2xl:pt-[213px] pb-[80px] 2xl:pb-[114px]">
+        <div className="grid grid-cols-7 lg:grid-cols-12 pt-[130px] xl:pt-[150px] 2xl:pt-[140px] pb-14 sm:pb-[70px] 2xl:pb-[90px]">
           <div className="col-span-7">
             <Swiper {...swiperOptions} className="h5_hero_slider">
               {SLIDES.map((slide, i) => (
@@ -136,7 +137,7 @@ export default function HeroFive() {
                     <a
                       href={slide.video}
                       aria-label="Voir la vidéo"
-                      className="flex items-center gap-4 video-play-btn ml-3 sm:ml-0"
+                      className="hidden sm:flex items-center gap-4 video-play-btn"
                     >
                       <span className="flex size-11 sm:size-[52px] rounded-full justify-center items-center bg-white relative flex-shrink-0">
                         <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,7 +158,7 @@ export default function HeroFive() {
           </div>
 
           {/* flèches navigation */}
-          <div className="flex items-end justify-end w-full h-full col-span-7 gap-2 xl:col-span-5 xl:flex-col xl:justify-center">
+          <div className="hidden xl:flex items-end justify-end w-full h-full col-span-7 gap-2 xl:col-span-5 xl:flex-col xl:justify-center">
             <button className="group h5-hero-prev border border-white/15 w-[38px] h-[38px] rounded-full flex items-center justify-center bg-white/10 overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-buisness-red before:bg-buisness-red relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
               <svg className="relative z-10 pointer-events-none" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -170,9 +171,12 @@ export default function HeroFive() {
             </button>
           </div>
         </div>
+      </div>{/* fin theme-container */}
+      </div>{/* fin zone hero avec image */}
 
-        {/* ── cards en bas ── */}
-        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] pb-16 sm:pb-[80px] 2xl:pb-[130px]">
+      {/* ── cards en bas — chevauchement sur l'image ── */}
+      <div className="w-full mx-auto theme-container -mt-16 relative z-10">
+        <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] pb-12 sm:pb-[60px]">
           <div data-aos="fade-up" className="px-6 py-5 sm:px-[50px] col-span-4 sm:py-10 bg-white rounded-[20px] group shadow-card">
             <div className="p-5 transition-all duration-300 ease-out rounded-full bg-buisness-red/5 group-hover:bg-buisness-red group-hover:shadow-business-red w-fit">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

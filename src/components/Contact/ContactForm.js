@@ -95,8 +95,8 @@ export default function ContactForm() {
               }
               title="Téléphone"
               lines={[
-                { text: "+216 71 000 000", href: "tel:+21671000000" },
-                { text: "+216 71 000 001", href: "tel:+21671000001" },
+                { text: "+216 71 000 000", href: "tel:+21671715397" },
+                
               ]}
             />
             <InfoBlock

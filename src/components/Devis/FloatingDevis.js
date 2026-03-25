@@ -141,7 +141,7 @@ export default function FloatingDevis() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-24 z-[9997] w-14 h-14 rounded-full bg-[#ADACAC] text-white shadow-lg hover:bg-[#b8081f] transition-colors flex items-center justify-center"
+        className="fixed bottom-[88px] right-4 sm:bottom-6 sm:right-24 z-[9997] w-14 h-14 rounded-full bg-[#ADACAC] text-white shadow-lg hover:bg-[#b8081f] transition-colors flex items-center justify-center"
         aria-label="Demander un devis"
       >
         {isOpen ? (
@@ -168,7 +168,7 @@ export default function FloatingDevis() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="fixed bottom-24 right-6 z-[9997] w-[400px] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col"
+            className="fixed bottom-[160px] right-4 sm:bottom-24 sm:right-6 z-[9997] w-[400px] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col"
             style={{ height: "520px" }}
           >
             {/* Header */}

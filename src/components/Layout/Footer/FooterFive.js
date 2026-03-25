@@ -89,7 +89,7 @@ Optima, intégrateur tunisien en gestion d’entreprise : commerce, comptabilit�
             <h1 className="mt-6 font-semibold text-white text-18">Contact</h1>
             <div className="flex gap-2 items-center relative group font-medium text-white/50 hover:text-white hover:underline transition-all duration-300 mt-3.5">
               <span className="transition-all duration-300">
-                info@optima.tn <br />
+                contact@optima.tn <br />
                 +216 71 000 000
               </span>
             </div>

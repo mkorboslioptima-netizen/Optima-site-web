@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import CountUp from "react-countup";
 
+function useInView() {
+  const ref = useRef(null);
+  const [inView, setInView] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setInView(true); observer.disconnect(); } },
+      { threshold: 0.2 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+  return [ref, inView];
+}
+
 export default function FunFactTwo() {
+  const [sectionRef, started] = useInView();
   return (
-    <section className="mt-20 pb-16 md:pb-[130px]">
+    <section className="mt-20 pb-16 md:pb-[130px]" ref={sectionRef}>
       <div className="w-full mx-auto theme-container">
         <div className="border border-buisness-dark-black/10 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-12 rounded-[15px]">
           {/* <!-- single card start --> */}
@@ -29,15 +46,15 @@ export default function FunFactTwo() {
               />
             </svg>
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={500}  duration={2} enableScrollSpy />
+              <CountUp start={0} end={started ? 500 : 0} duration={2} />
               +
             </h1>
 
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
-              Project Complete
+              Projets réalisés
             </h2>
             <p className="text-paragraph leading-[30px] tracking-tight pt-5">
-              Agencies may services related market research, branding
+              Des solutions ERP, paie et gestion des temps déployées avec succès
             </p>
           </div>
 
@@ -67,15 +84,15 @@ export default function FunFactTwo() {
             </svg>
 
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={98}  duration={2} enableScrollSpy />
+              <CountUp start={0} end={started ? 98 : 0} duration={2} />
               %
             </h1>
 
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
-              Happy Customers
+              Clients satisfaits
             </h2>
             <p className="text-paragraph leading-[30px] tracking-tight pt-5">
-              Agencies may services related market research, branding
+              Taux de satisfaction mesuré auprès de nos clients en Tunisie
             </p>
           </div>
           {/* <!-- single card  end --> */}
@@ -105,13 +122,13 @@ export default function FunFactTwo() {
               </defs>
             </svg>
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={300} duration={2} enableScrollSpy />+
+              <CountUp start={0} end={started ? 300 : 0} duration={2} />+
             </h1>
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
-              Clients
+              Entreprises clientes
             </h2>
             <p className="text-paragraph leading-[30px] tracking-tight pt-5">
-              Agencies may services related market research, branding
+              PME et grandes entreprises nous font confiance au quotidien
             </p>
           </div>
           {/* <!-- single card  end --> */}
@@ -198,14 +215,14 @@ export default function FunFactTwo() {
             </svg>
 
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={15} duration={2} enableScrollSpy />+
+              <CountUp start={0} end={started ? 15 : 0} duration={2} />+
             </h1>
 
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
               Collaborateurs
             </h2>
             <p className="text-paragraph leading-[30px] tracking-tight pt-5">
-              Agencies may services related market research, branding
+              Une équipe d'experts dédiée à votre transformation digitale
             </p>
           </div>
           {/* <!-- single card  end --> */}

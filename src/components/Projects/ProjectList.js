@@ -7,12 +7,11 @@ export default function ProjectList() {
       <div className="w-full mx-auto theme-container">
         <div className="flex flex-col items-center">
           <div className="py-0.5 px-5 bg-purple/5 border-purple/10 border rounded-[30px] font-medium text-purple mb-5">
-            <span>Our Cases Story</span>
+            <span>Nos Réalisations</span>
           </div>
           <div className="mb-[60px]">
             <h2 className="text-main-black font-semibold text-24 sm:text-48 text-center max-w-[819px]">
-              Our Journey to Success Navigating Challenges, Achieving
-              Milestones, and Building a Legacy
+              Des projets concrets pour des entreprises tunisiennes en pleine transformation
             </h2>
           </div>
         </div>
@@ -418,7 +417,7 @@ export default function ProjectList() {
           <Link to="/project-details">
             <div className="inline-flex py-3 bg-transparent home-two-btn-bg group border-purple/10 before:bg-purple after:bg-purple">
               <span className="relative z-10 text-base font-semibold transition-all duration-300 delay-150 text-main-black group-hover:text-white font-inter">
-                View More Projects
+                Voir tous les projets
               </span>
               <svg
                 className="relative z-10"
