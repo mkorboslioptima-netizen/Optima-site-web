@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function HeroAboutOptima() {
   const stats = [
-    { value: "19+", label: "Ans d'expérience" },
+    { value: "20+", label: "Ans d'expérience" },
     { value: "2", label: "Partenaires mondiaux" },
     { value: "100+", label: "Projets réalisés" },
   ];

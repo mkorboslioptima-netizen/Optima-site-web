@@ -17,14 +17,7 @@ export default function AboutEtemptation() {
               eTemptation est une solution globale et modulaire pour le suivi des
               temps de présence, le traitement des absences, la planification des
               équipes et la gestion des activités (GTA).
-              eTemptation est la solution par excellence pour les organisations
-              privées et publiques qui cherchent à optimiser la gestion de leur
-              capital temps. Elle permet une digitalisation efficace des processus
-              RH et apporte de l'efficience à tous les acteurs : service RH,
-              manager, collaborateurs.
-              eTemptation s'intègre de façon harmonieuse et sécurisée dans le SIRH
-              de l'entreprise. La solution gère plus de 4 millions de salariés au
-              quotidien, dans tous les secteurs d'activité.
+              
             </p>
             <br /><br />
 

@@ -128,7 +128,7 @@ export default function BreadCrumbAboutOptima() {
                 <div className="grid grid-cols-2 gap-4">
                   {[
                     { val: "2006", label: "Annee de creation" },
-                    { val: "19+", label: "Ans d'experience" },
+                    { val: "20+", label: "Ans d'experience" },
                     { val: "2", label: "Partenaires mondiaux" },
                     { val: "100+", label: "Projets realises" },
                   ].map((stat, i) => (

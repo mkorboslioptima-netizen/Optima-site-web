@@ -14,9 +14,7 @@ export default function AboutHoroquartz() {
             <p className="mt-5 md:mt-10 text-paragraph">
                Combien d'heures perdez-vous chaque semaine à essayer de reconstituer votre temps de travail ? Entre les feuilles Excel dispersées, les notes manuscrites oubliées et les estimations approximatives, la gestion du temps devient un casse-tête quotidien. Cette désorganisation coûte cher : facturation imprécise, projets non rentables, clients insatisfaits et stress constant.
             </p>
-            <p className="pb-10 mt-5 text-paragraph">
-               Horoquartaz met fin à cette anarchie. Notre solution transforme le suivi du temps en un processus simple, automatique et fiable. Plus de temps perdu à retrouver ce que vous avez fait la semaine dernière, plus d'heures de travail non facturées, plus de doutes sur la rentabilité de vos projets. Avec Horoquartaz, chaque minute compte et génère de la valeur.
-            </p>
+            
             <Link to="/projects">
               <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-[15px]">
                 <span className="text-base group-hover:text-buisness-red text-white transition-all duration-300 font-semibold font-inter relative z-10">

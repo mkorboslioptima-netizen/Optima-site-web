@@ -22,7 +22,7 @@ export default function eTemptation() {
         description="eTemptation : Plateforme intelligente pour gérer les congés payés, absences maladie, formations et roulements d'équipes. Solution RH modulable et conforme légalement."
         path="/etemptation"
       />
-      <BreadCrumb pageTitle="eTemptation" currentPage="eTemptation" href="/etemptation" />
+     
       {/* Section À Propos Additionnelle */}
       <AboutEtemptation />
       {/* Section Héro avec Présentation Principale */}

@@ -27,9 +27,15 @@ const TIMELINE_DATA = [
   },
   {
     year: "2025",
-    title: "19 ans d'Excellence",
-    desc: "Plus de 19 ans d'expérience, des centaines de projets réalisés, une réputation solide en Tunisie.",
+    title: "Certifié ISO 27001 & 9001",
+    desc: "Obtention des certifications ISO 27001 et ISO 9001, confirmant notre engagement envers la qualité et l'excellence des services.",
     side: "left",
+  },
+  {
+    year: "2026",
+    title: "20 ans d'Excellence",
+    desc: "Plus de 20 ans d'expérience, des centaines de projets réalisés, une réputation solide en Tunisie.",
+    side: "right",
   },
 ];
 
@@ -44,7 +50,7 @@ export default function AboutTimelineOptima() {
             Notre Parcours
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-main-black mb-6">
-            19 Ans d'Histoire et de Croissance
+            20 Ans d'Histoire et de Croissance
           </h2>
           <p className="text-lg text-paragraph max-w-3xl mx-auto">
             Une trajectoire régulière construite sur la qualité, la confiance et l'innovation.

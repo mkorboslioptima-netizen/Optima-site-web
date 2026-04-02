@@ -18,7 +18,7 @@ const STRENGTHS_DATA = [
   },
   {
     id: 2,
-    number: 19,
+    number: 20,
     suffix: "+",
     title: "Ans d'Expérience",
     desc: "Des centaines de projets traités avec succès dans tous les secteurs.",
@@ -36,10 +36,10 @@ const STRENGTHS_DATA = [
   },
   {
     id: 3,
-    number: 24,
-    suffix: "/7",
-    title: "Premium Support",
-    desc: "À votre service, toujours disponible pour répondre à vos besoins.",
+    number: 500,
+    suffix: "+" ,
+    title: "Projets Réalisés",
+    desc: "Une expertise prouvée au service de vos besoins.",
     svg: (
       <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip_support)">

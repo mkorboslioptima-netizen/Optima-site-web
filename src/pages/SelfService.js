@@ -21,7 +21,7 @@ export default function SelfService() {
         description="Self Service : Plateforme de portail employé pour la gestion autonome des congés, consultations RH, fiches de paie et communication. Solution moderne et sécurisée."
         path="/self-service"
       />
-      <BreadCrumbSelfService />
+      
       
       {/* Section Héro avec Présentation Principale */}
       <HeroSelfService />

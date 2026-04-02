@@ -13,7 +13,7 @@ export default function AccessControl() {
   return (
     <InnerPageLayout>
       <SEOAccessControl />
-      <BreadCrumbAccessControl />
+     
       
       {/* Section Héro avec Présentation Principale */}
       <HeroAccessControl />

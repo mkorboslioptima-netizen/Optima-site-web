@@ -1,30 +1,33 @@
 import React from "react";
 import InnerPageLayout from "../components/Layout/InnerPageLayout";
-import BreadCrumb from "../components/Breadcrumb/BreadCrumb";
-import AboutService from "../components/Layout/Footer/AboutService";
+import SEO from "../components/SEO";
+import HeroFC from "../components/Hero/HeroF&C";
+import Detail from "../components/Course/Description-Metier-Finance";
 import ServiceFiveRed from "../components/Services/ErpService";
 import ServiceFaq from "../components/Services/ServiceFaq";
-import OutsourcingFaq from "../components/Services/OutsourcingFaq";
-import HeroFC from "../components/Hero/HeroF&C";
-import SEO from "../components/SEO";
-import Detail from "../components/Course/Description-Metier-Finance";
-import OutsourcingService from "../components/Services/OutsourcingService";
-import Pkoptima from "../components/Services/PkOptima";
-import BeforeAfter from "../components/BeforeAfter/BeforeAfter";
-export default function Services() {
+
+export default function Outsourcing() {
   return (
     <InnerPageLayout>
       <SEO
         title="Outsourcing de la paie"
-        description="Découvrez nos services : intégration Sage 100, formation, support technique, gestion commerciale, comptabilité et solutions Horoquartz."
+        description="OPTIMA prend en charge l'intégralité de votre cycle de paie : calcul, éditions, déclarations sociales et fiscales, sécurité ISO 27001 et conformité garantie."
         path="/outsourcing"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Externalisation de la Paie",
+          provider: { "@type": "Organization", name: "Optima" },
+          description:
+            "Service d'externalisation de la paie certifié ISO 9001 & ISO 27001 : calcul des salaires, bulletins, déclarations CNSS et fiscales en Tunisie.",
+          areaServed: "TN",
+          knowsAbout: ["Sage Paie", "CNSS", "IRPP", "ISO 27001", "ISO 9001"],
+        }}
       />
-      <HeroFC / >
+      <HeroFC />
       <Detail />
-      <Pkoptima />
+      <ServiceFiveRed />
       
-      <OutsourcingService />
-      <OutsourcingFaq />
     </InnerPageLayout>
   );
 }

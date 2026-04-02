@@ -51,6 +51,7 @@ const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 export default function FloatingDevis() {
   const location = useLocation();
+  const isHoroPage = PAGE_MODULE_MAP[location.pathname] === "horoquartz" || location.pathname === "/horoquartz";
   const [isOpen, setIsOpen] = useState(false);
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -172,7 +173,7 @@ export default function FloatingDevis() {
             style={{ height: "520px" }}
           >
             {/* Header */}
-            <div className="bg-[#edede9] text-black px-5 py-4 flex items-center justify-between shrink-0">
+            <div className={`${isHoroPage ? "bg-buisness-red text-white" : "bg-[#edede9] text-black"} px-5 py-4 flex items-center justify-between shrink-0`}>
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -182,7 +183,7 @@ export default function FloatingDevis() {
                 </div>
                 <div>
                   <p className="font-semibold text-sm">Devis Express</p>
-                  <p className="text-xs text-black">
+                  <p className={`${isHoroPage ? "text-white/90" : "text-xs text-black"}`}>
                     {submitted ? "Terminé" : `Étape ${step + 1} / ${STEPS.length} — ${STEPS[step]}`}
                   </p>
                 </div>
@@ -196,7 +197,7 @@ export default function FloatingDevis() {
                   <div
                     key={i}
                     className={`h-1 flex-1 rounded-full transition-colors ${
-                      i <= step ? "bg-[#890011]" : "bg-gray-200"
+                      i <= step ? (isHoroPage ? "bg-buisness-red" : "bg-[#890011]") : "bg-gray-200"
                     }`}
                   />
                 ))}
@@ -211,8 +212,8 @@ export default function FloatingDevis() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="flex flex-col items-center justify-center h-full text-center"
                 >
-                  <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mb-4">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#007a55" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <div className={`w-16 h-16 rounded-full ${isHoroPage ? "bg-[rgba(137,0,17,0.08)]" : "bg-green-50"} flex items-center justify-center mb-4`}>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={isHoroPage ? "#890011" : "#007a55"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
@@ -222,7 +223,7 @@ export default function FloatingDevis() {
                   </p>
                   <button
                     onClick={handleReset}
-                    className="text-sm font-medium text-[#890011] hover:underline"
+                    className={`text-sm font-medium ${isHoroPage ? "text-buisness-red" : "text-[#890011]"} hover:underline`}
                   >
                     Fermer
                   </button>
@@ -391,11 +392,11 @@ export default function FloatingDevis() {
                         type="button"
                         onClick={() => setStep((s) => s - 1)}
                         className="flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-main-black transition-colors"
-                      >
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <polyline points="15 18 9 12 15 6" />
-                        </svg>
-                        Précédent
+                        className={`flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
+                          canNext()
+                            ? (isHoroPage ? "bg-buisness-red text-white hover:bg-[#b30016]" : "bg-[#890011] text-white hover:bg-[#b8081f]")
+                            : "bg-gray-200 text-gray-400 cursor-not-allowed"
+                        }`}>
                       </button>
                     ) : (
                       <div />
@@ -419,11 +420,11 @@ export default function FloatingDevis() {
                     ) : (
                       <button
                         type="submit"
-                        disabled={loading}
-                        className={`flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
-                          loading
-                            ? "bg-gray-400 cursor-not-allowed"
-                            : "bg-[#007a55] text-white hover:bg-[#005f43]"
+                          className={`flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
+                            loading
+                              ? "bg-gray-400 cursor-not-allowed"
+                              : (isHoroPage ? "bg-buisness-red text-white hover:bg-[#b30016]" : "bg-[#007a55] text-white hover:bg-[#005f43]")
+                          }`}>
                         }`}
                       >
                         {loading ? (
