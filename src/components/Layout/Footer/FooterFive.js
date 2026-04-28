@@ -35,7 +35,7 @@ Optima, intégrateur tunisien en gestion d’entreprise : commerce, comptabilit�
               </span>
             </a>
             <a
-              href="https://www.linkedin.com/company/optima-tn"
+              href="https://www.linkedin.com/company/optima-solution-gestion/"
               aria-label="linkedin"
               target="_blank"
               rel="noopener noreferrer"
@@ -97,11 +97,20 @@ Optima, intégrateur tunisien en gestion d’entreprise : commerce, comptabilit�
         </div>
         <div className="w-fit max-w-[300px]">
           <div className="flex items-center gap-4 mt-2.5">
-            <img
-              src="/assets/images/iso27001black.png"
-              alt="ISO 27001 Certified"
-              className="h-16 w-auto object-contain"
-            />
+            <a href="https://certificats-attestations.afnor.org/certification=103272166099" target="_blank" rel="noopener noreferrer" style={{ display: "contents" }}>
+              <img
+                src="/assets/images/iso27001black.png"
+                alt="ISO 27001 Certified"
+                className="h-16 w-auto object-contain hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            </a>
+            <a href="https://certificats-attestations.afnor.org/certification=196950197505" target="_blank" rel="noopener noreferrer" style={{ display: "contents" }}>
+              <img
+                src="/assets/images/iso9001black.png"
+                alt="ISO 9001 Certified"
+                className="h-16 w-auto object-contain hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            </a>
             <img
               src="/assets/images/SagepartnerB.svg"
               alt="Sage Partner"

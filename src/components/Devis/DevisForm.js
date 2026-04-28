@@ -48,7 +48,7 @@ const stepVariants = {
 };
 
 // URL de l'API backend
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || '';
 
 export default function DevisForm() {
   const [step, setStep] = useState(0);

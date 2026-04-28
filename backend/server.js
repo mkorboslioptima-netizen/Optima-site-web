@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -58,7 +59,8 @@ app.post('/api/devis', async (req, res) => {
     const { modules, entreprise, secteur, effectif, nom, email, telephone, message } = req.body;
 
     // Validation basique
-    if (!modules || !modules.length || !entreprise || !effectif || !nom || !email || !telephone) {
+    const isContact = modules && modules.length === 1 && modules[0] === 'contact';
+    if (!modules || !modules.length || (!isContact && (!entreprise || !effectif)) || !nom || !email || !telephone) {
       return res.status(400).json({
         success: false,
         message: 'Tous les champs obligatoires doivent être remplis'
@@ -166,7 +168,7 @@ Cet email a été envoyé automatiquement depuis le site web Optima.
       from: `"Site Web Optima" <${process.env.SMTP_USER}>`,
       to: process.env.EMAIL_TO,
       replyTo: email,
-      subject: `Nouvelle demande de devis - ${entreprise}`,
+      subject: isContact ? `Nouveau message de contact - ${nom}` : `Nouvelle demande de devis - ${entreprise}`,
       text: textContent,
       html: htmlContent,
     });
@@ -192,6 +194,13 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Le serveur fonctionne correctement' });
 });
 
+// Servir le build React
+const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(buildPath, 'index.html'));
+});
+
 app.listen(PORT, () => {
-  console.log(`Serveur backend démarré sur http://localhost:${PORT}`);
+  console.log(`Serveur démarré sur http://localhost:${PORT}`);
 });
