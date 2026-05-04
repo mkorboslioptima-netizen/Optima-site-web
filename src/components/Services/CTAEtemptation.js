@@ -9,7 +9,7 @@ export default function CTAEtemptation() {
       <div className="w-full mx-auto theme-container">
         <div className="max-w-4xl mx-auto text-center" data-aos="zoom-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Prêt à Transformer Votre Gestion des Absences ?
+            Prêt à transformer votre gestion des absences ?
           </h2>
 
           <p className="text-lg text-white/90 mb-10 leading-relaxed">
@@ -21,7 +21,7 @@ export default function CTAEtemptation() {
               onClick={() => document.getElementById("roi-calculator")?.scrollIntoView({ behavior: "smooth" })}
               className="group flex items-center gap-3 px-8 py-4 bg-white text-buisness-red font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl text-lg"
             >
-              Demander une Démo
+              Demander une démo
               <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
             </button>
 
@@ -29,7 +29,7 @@ export default function CTAEtemptation() {
               onClick={() => setModalOpen(true)}
               className="px-8 py-4 bg-white/20 border-2 border-white text-white font-bold rounded-lg hover:bg-white/30 transition-all duration-300 text-lg"
             >
-              Nous Contacter
+              Nous contacter
             </button>
           </div>
 

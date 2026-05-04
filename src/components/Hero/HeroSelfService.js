@@ -18,7 +18,7 @@ export default function HeroSelfService() {
             </span>
 
             <h1 className="text-5xl md:text-6xl font-bold text-main-black mb-6 leading-tight">
-              Autonomie & Liberté pour Vos Collaborateurs
+              Autonomie & liberté pour vos collaborateurs
             </h1>
 
             <p className="text-lg text-paragraph mb-8 leading-relaxed">
@@ -34,14 +34,14 @@ export default function HeroSelfService() {
                   <circle cx="12" cy="12" r="10" fill="white" fillOpacity="0.2"/>
                   <polygon points="10,8 16,12 10,16" fill="white"/>
                 </svg>
-                Voir la Démo
+                Voir la démo
               </button>
 
               <button
                 onClick={() => setModalOpen(true)}
                 className="px-8 py-4 border-2 border-buisness-red text-buisness-red rounded-lg font-semibold hover:bg-buisness-red/5 transition-all duration-300"
               >
-                Contacter Nous
+                Nous contacter
               </button>
             </div>
           </div>

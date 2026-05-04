@@ -19,12 +19,12 @@ export default function HeroAboutOptima() {
           <div className="flex flex-col justify-center" data-aos="fade-right">
             <div className="mb-6">
               <span className="px-4 py-2 bg-buisness-red/10 text-buisness-red font-semibold rounded-full text-sm">
-                Conseil & Solutions de Gestion
+                Conseil & solutions de gestion
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-main-black leading-tight mb-6">
-              OPTIMA — Votre Partenaire Informatique depuis 2006
+              OPTIMA — Votre partenaire informatique depuis 2006
             </h1>
 
             <p className="text-lg text-paragraph mb-8">
@@ -43,7 +43,7 @@ export default function HeroAboutOptima() {
 
               <Link to="/devis">
                 <button className="w-full sm:w-auto px-8 py-3 bg-white border-2 border-buisness-red text-buisness-red font-semibold rounded-lg hover:bg-buisness-red/5 transition-all duration-300">
-                  Demander un Devis
+                  Demander un devis
                 </button>
               </Link>
             </div>

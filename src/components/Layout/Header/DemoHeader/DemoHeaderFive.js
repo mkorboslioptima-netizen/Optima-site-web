@@ -178,7 +178,7 @@ export default function DemoHeaderFour() {
                       w-fit"
                       to="/outsourcing"
                     >
-                      Outsourcing de la Paie
+                      Outsourcing de la paie
                     </Link>
                   </li>
                    <li className="relative group">

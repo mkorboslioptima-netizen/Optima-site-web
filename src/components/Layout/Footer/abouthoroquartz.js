@@ -126,7 +126,7 @@ export default function AboutHoroquartz() {
               </div>
 
               <h1 className="text-18 text-white font-semibold tracking-tight max-w-[170px]">
-                En Gestion des temps
+                En gestion des temps
             
               </h1>
             </div>

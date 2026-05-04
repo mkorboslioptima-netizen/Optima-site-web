@@ -11,7 +11,7 @@ export default function CTASelfService() {
       <div className="w-full mx-auto theme-container">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Prêt à Transformer votre Expérience RH?
+            Prêt à transformer votre expérience RH ?
           </h2>
           <p className="text-white/90 text-lg mb-10">
             Découvrez comment Self Service peut libérer le potentiel de votre département RH et améliorer la satisfaction collaborateur.
@@ -25,13 +25,13 @@ export default function CTASelfService() {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="5,3 19,12 5,21" />
               </svg>
-              Démarrer une Démo
+              Démarrer une démo
             </button>
             <button
               onClick={() => setModalOpen(true)}
               className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-300"
             >
-              Contacter l'Équipe
+              Contacter l'équipe
             </button>
           </div>
 

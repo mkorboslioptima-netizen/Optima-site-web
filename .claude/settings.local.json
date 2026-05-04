@@ -44,7 +44,9 @@
       "PowerShell(foreach \\($port in @\\(587, 465, 2525\\)\\) { $r = Test-NetConnection -ComputerName \"41.226.27.49\" -Port $port -WarningAction SilentlyContinue; Write-Output \"Port $port : $\\($r.TcpTestSucceeded\\)\" })",
       "PowerShell(Get-Content \"C:\\\\Windows\\\\System32\\\\drivers\\\\etc\\\\hosts\" | Where-Object { $_ -notmatch \"^#\" -and $_.Trim\\(\\) -ne \"\" })",
       "PowerShell(foreach \\($ip in @\\(\"192.168.1.50\", \"192.168.1.14\", \"192.168.1.1\"\\)\\) { $r = Test-NetConnection -ComputerName $ip -Port 25 -WarningAction SilentlyContinue; Write-Output \"${ip}:25 -> $\\($r.TcpTestSucceeded\\)\" })",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }

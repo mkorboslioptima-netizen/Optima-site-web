@@ -12,11 +12,11 @@ export default function HeroAccessControl() {
           {/* Contenu texte */}
           <div data-aos="fade-right">
             <span className="px-4 py-2 bg-buisness-red/10 text-buisness-red font-semibold rounded-full text-sm inline-block mb-6">
-              Sécurité Biométrique
+              Sécurité biométrique
             </span>
 
             <h1 className="text-5xl md:text-6xl font-bold text-main-black mb-6 leading-tight">
-              Sécurisez vos Accès avec la Biométrie
+              Sécurisez vos accès avec la biométrie
             </h1>
 
             <p className="text-lg text-paragraph mb-8 leading-relaxed">
@@ -38,7 +38,7 @@ export default function HeroAccessControl() {
                 onClick={() => setModalOpen(true)}
                 className="px-8 py-4 border-2 border-buisness-red text-buisness-red rounded-lg font-semibold hover:bg-buisness-red/5 transition-all duration-300"
               >
-                Contacter Nous
+                Nous contacter
               </button>
             </div>
           </div>

@@ -14,12 +14,12 @@ export default function HeroEtemptation() {
             <div className="flex flex-col justify-center" data-aos="fade-right">
               <div className="mb-6">
                 <span className="px-4 py-2 bg-buisness-red/10 text-buisness-red font-semibold rounded-full text-sm">
-                  Gestion des Absences & Congés
+                  Gestion des absences & congés
                 </span>
               </div>
 
               <h1 className="text-4xl md:text-5xl font-bold text-main-black leading-tight mb-6">
-                Simplifiez la Gestion de vos Absences
+                Simplifiez la gestion de vos absences
               </h1>
 
               <p className="text-lg text-paragraph mb-8">
@@ -40,7 +40,7 @@ export default function HeroEtemptation() {
                   onClick={() => setModalOpen(true)}
                   className="w-full sm:w-auto px-8 py-3 bg-white border-2 border-buisness-red text-buisness-red font-semibold rounded-lg hover:bg-buisness-red/5 transition-all duration-300"
                 >
-                  Nous Contacter
+                  Nous contacter
                 </button>
               </div>
 
