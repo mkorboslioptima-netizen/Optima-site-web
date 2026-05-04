@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { demoLinkData, pagesLinkData, Horoquartzlink,Idemialink} from "../data";
 import { Link } from "react-router-dom";
 import LogoOptima from '../../../../assets/images/home-five/logo.svg';
 import LogoOptima2 from '../../../../assets/images/home-five/Optima.png';
+import ContactModalEtemptation from "../../../Services/ContactModalEtemptation";
 
 export default function DemoHeaderFour() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <header>
       <div className="header-wrapper w-full fixed left-0 top-0 z-50 bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 xl:block hidden">
@@ -249,7 +252,7 @@ export default function DemoHeaderFour() {
             </div>
             <div className="flex items-center gap-6">
               <div className="flex flex-col items-center gap-1">
-                <Link to="/about">
+                <button onClick={() => setModalOpen(true)}>
                   <div className="home-two-btn-bg py-2 px-4 group bg-buisness-red border-buisness-red w-fit whitespace-nowrap">
                     <span className="relative z-10 text-xs font-semibold text-white transition-all duration-300 group-hover:text-[#890011] font-inter">
                       Contactez-nous
@@ -262,7 +265,7 @@ export default function DemoHeaderFour() {
                       />
                     </svg>
                   </div>
-                </Link>
+                </button>
                 <a
                   href="tel:+21671715397"
                   className="flex items-center gap-1 text-gray-500 hover:text-[#890011] transition-colors duration-300"
@@ -278,6 +281,8 @@ export default function DemoHeaderFour() {
         </div>
         <div className="header-four-border w-full h-[1px]"></div>
       </div>
+
+      <ContactModalEtemptation isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </header>
   );
 }

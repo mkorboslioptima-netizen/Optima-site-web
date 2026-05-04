@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import GLightbox from "glightbox";
 
 export default function HeroFive() {
+
   const swiperOptions = {
     modules: [Autoplay, Navigation],
     slidesPerView: 1,
@@ -48,8 +49,6 @@ export default function HeroFive() {
               <h1 className="font-semibold text-white text-24 sm:text-48 xl:text-75 leading-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
                 Externalisation de la Paie
               </h1>
-              
-             
             </div>
           </div>
 
@@ -67,6 +66,8 @@ export default function HeroFive() {
           </div>
         </div>
       </div>
+
+
     </section>
   );
 }

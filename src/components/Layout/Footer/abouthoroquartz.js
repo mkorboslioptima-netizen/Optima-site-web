@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
+import ContactModalEtemptation from "../../Services/ContactModalEtemptation";
 
 export default function AboutHoroquartz() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section className="w-full py-16 md:pt-[94px] md:pb-[130px] items-center">
       <div className="w-full mx-auto theme-container">
@@ -15,10 +18,37 @@ export default function AboutHoroquartz() {
                Combien d'heures perdez-vous chaque semaine à essayer de reconstituer votre temps de travail ? Entre les feuilles Excel dispersées, les notes manuscrites oubliées et les estimations approximatives, la gestion du temps devient un casse-tête quotidien. Cette désorganisation coûte cher : facturation imprécise, projets non rentables, clients insatisfaits et stress constant.
             </p>
             
-            <Link to="/projects">
-              <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-[15px]">
-                <span className="text-base group-hover:text-buisness-red text-white transition-all duration-300 font-semibold font-inter relative z-10">
-                  Découvrez les solutions
+            <div className="flex flex-col sm:flex-row gap-4 mt-2">
+              <Link to="/etemptation">
+                <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-[15px]">
+                  <span className="text-base group-hover:text-buisness-red text-white transition-all duration-300 font-semibold font-inter relative z-10">
+                    Découvrez les solutions
+                  </span>
+                  <svg
+                    className="relative z-10"
+                    width="7"
+                    height="12"
+                    viewBox="0 0 7 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      className="group-hover:stroke-buisness-red stroke-white transition-all duration-300"
+                      d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                      stroke="white"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </Link>
+              <button
+                onClick={() => setModalOpen(true)}
+                className="home-two-btn-bg group border-buisness-red py-[15px]"
+              >
+                <span className="text-base group-hover:text-white text-buisness-red transition-all duration-300 font-semibold font-inter relative z-10">
+                  Demander une démo
                 </span>
                 <svg
                   className="relative z-10"
@@ -29,16 +59,16 @@ export default function AboutHoroquartz() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    className="group-hover:stroke-buisness-red stroke-white transition-all duration-300"
+                    className="group-hover:stroke-white stroke-buisness-red transition-all duration-300"
                     d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                    stroke="white"
+                    stroke="currentColor"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                 </svg>
-              </div>
-            </Link>
+              </button>
+            </div>
           </div>
           <div className="relative flex flex-col justify-end w-full col-span-7 overflow-hidden sm:flex-row">
             <img
@@ -103,6 +133,8 @@ export default function AboutHoroquartz() {
           </div>
         </div>
       </div>
+
+      <ContactModalEtemptation isOpen={modalOpen} onClose={() => setModalOpen(false)} defaultSubject="Démo Horoquartz" />
     </section>
   );
 }

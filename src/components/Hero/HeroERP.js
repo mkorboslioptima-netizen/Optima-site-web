@@ -48,7 +48,6 @@ export default function HeroFive() {
         <div className="grid grid-cols-7 lg:grid-cols-12 pt-[113px] xl:pt-[213px] pb-[114px]">
           <div className="col-span-7">
             <div>
-              {/* Titre principal */}
               <h1 className="font-semibold text-white text-24 sm:text-48 xl:text-75 drop-shadow-lg">
                 Gestion d'Entreprise & ERP
               </h1>
@@ -99,6 +98,8 @@ export default function HeroFive() {
           {/* Contenu des cartes si nécessaire */}
         </div>
       </div>
+
+
     </section>
   );
 }

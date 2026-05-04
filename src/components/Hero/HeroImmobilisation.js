@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function HeroTwo() {
+
   return (
     <section
       id="banner-two"
@@ -23,24 +24,18 @@ export default function HeroTwo() {
             Immobilisations
           </h1>
           <p className="mt-5 font-medium text-black text-18 font-inter md:mt-5">
-            maîtrisez le traitement de vos immobilisations et gérez l'ensemble de vos biens et amortissements.
+            Maîtrisez le traitement de vos immobilisations et gérez l'ensemble de vos biens et amortissements.
           </p>
           <div className="flex flex-col gap-3 mt-5 sm:flex-row sm:gap-6 md:mt-12">
             <Link to="/pricing">
-             
-               <img
-                  src="/assets/images/home-five/hero/Sagepartner.svg"
-                  alt="Gestion des temps"
-                  className="w-36 h-auto"         
-                />
-                
-             
+              <img
+                src="/assets/images/home-five/hero/Sagepartner.svg"
+                alt="Sage partner"
+                className="w-36 h-auto"
+              />
             </Link>
-            
           </div>
-          
         </div>
-        {/* <!-- circle animations elements  --> */}
 
         <img
           src="/assets/images/immo.png"
@@ -49,28 +44,13 @@ export default function HeroTwo() {
         />
       </div>
       <div className="rotating_circle z-0 absolute flex justify-center items-center -bottom-4 xl:-bottom-[150px] right-0 xl:-right-20 h-0 w-full xl:w-[880px] 2xl:max-w-[1250px]">
-        <img
-          src="/assets/images/home-two/round-shape-1.svg"
-          alt=""
-          className="w-full"
-        />
-        <img
-          src="/assets/images/home-two/round-shape-2.svg"
-          alt=""
-          className="absolute w-10/12"
-        />
-        <img
-          src="/assets/images/home-two/round-shape-3.svg"
-          alt=""
-          className="absolute w-8/12"
-        />
-        <img
-          src="/assets/images/home-two/round-shape-4.svg"
-          alt=""
-          className="absolute w-6/12"
-        />
+        <img src="/assets/images/home-two/round-shape-1.svg" alt="" className="w-full" />
+        <img src="/assets/images/home-two/round-shape-2.svg" alt="" className="absolute w-10/12" />
+        <img src="/assets/images/home-two/round-shape-3.svg" alt="" className="absolute w-8/12" />
+        <img src="/assets/images/home-two/round-shape-4.svg" alt="" className="absolute w-6/12" />
       </div>
-      {/* <!-- content end  --> */}
+
+
     </section>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function ServiceFiveRed1() {
   return (
@@ -37,28 +36,6 @@ export default function ServiceFiveRed1() {
 
                 Optimisez le suivi des heures de travail grâce à un système fiable de pointage, gestion des absences et contrôle des heures supplémentaires. Automatisez vos calculs et assurez la conformité légale en toute simplicité.
               </p>
-              <Link to="/service-details">
-                <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
-                  <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-buisness-red before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    En savoir plus
-                  </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
             </div>
           </div>
           {/* <!-- single card  --> */}
@@ -96,28 +73,6 @@ export default function ServiceFiveRed1() {
               <p className="text-paragraph line-clamp-3">
                 Planifiez efficacement les équipes selon les besoins de votre activité. Anticipez les contraintes, gérez les rotations et optimisez la productivité grâce à une planification claire et centralisée.
               </p>
-              <Link to="/service-details">
-                <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
-                  <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-buisness-red before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    En savoir plus
-                  </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
             </div>
           </div>
           {/* <!-- single card  --> */}
@@ -144,28 +99,6 @@ export default function ServiceFiveRed1() {
                 Analysez en temps réel les performances et le temps passé par projet, service ou collaborateur. Bénéficiez d’indicateurs précis pour piloter votre activité et améliorer votre rentabilité.
 
               </p>
-              <Link to="/service-details">
-                <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
-                  <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-buisness-red before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    En savoir plus
-                  </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
             </div>
           </div>
           {/* <!-- single card  --> */}
@@ -192,28 +125,6 @@ export default function ServiceFiveRed1() {
                 Contrôlez les accès à vos locaux et sécurisez vos infrastructures grâce à des solutions fiables et intégrées. Protégez vos collaborateurs, vos données et vos équipements avec une gestion centralisée.
                 
               </p>
-              <Link to="/service-details">
-                <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-buisness-red group">
-                  <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-buisness-red before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    En savoir plus
-                  </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
             </div>
           </div>
         </div>

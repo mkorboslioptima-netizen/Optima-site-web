@@ -46,8 +46,7 @@ const stepVariants = {
   exit: { opacity: 0, x: -30 },
 };
 
-// URL de l'API backend
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const FORMSUBMIT_URL = "https://formsubmit.co/ajax/contact@optima.tn";
 
 export default function FloatingDevis() {
   const location = useLocation();
@@ -107,21 +106,43 @@ export default function FloatingDevis() {
     setError(null);
 
     try {
-      const response = await fetch(`${API_URL}/api/devis`, {
+      const modulesLabels = form.modules.map(id => {
+        const labels = {
+          'sage-commerciale': 'Sage 100 Gestion Commerciale',
+          'sage-comptabilite': 'Sage 100 Comptabilité',
+          'sage-paie': 'Sage 100 Paie & RH',
+          'sage-bi': 'Sage BI / Reporting',
+          'horoquartz': 'Horoquartz',
+          'outsourcing': 'Outsourcing de la Paie',
+          'idemia': 'IDEMIA',
+          'formation': 'Formation',
+        };
+        return labels[id] || id;
+      }).join(', ');
+
+      const res = await fetch(FORMSUBMIT_URL, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(form),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          _subject: `Demande de devis — ${form.entreprise} — ${form.nom}`,
+          name: form.nom,
+          email: form.email,
+          telephone: form.telephone,
+          entreprise: form.entreprise,
+          secteur: form.secteur,
+          effectif: form.effectif,
+          modules: modulesLabels,
+          message: form.message,
+          _template: 'table',
+        }),
       });
 
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        throw new Error(data.message || 'Une erreur est survenue');
+      const data = await res.json();
+      if (data.success === 'true' || data.success === true) {
+        setSubmitted(true);
+      } else {
+        throw new Error('Une erreur est survenue');
       }
-
-      setSubmitted(true);
     } catch (err) {
       setError(err.message || 'Impossible d\'envoyer la demande. Veuillez réessayer.');
     } finally {

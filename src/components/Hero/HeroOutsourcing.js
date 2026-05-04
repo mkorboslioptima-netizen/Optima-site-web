@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function HeroOutsourcing() {
+
   return (
     <section className="w-full py-20 md:py-32 bg-gradient-to-br from-buisness-red/5 to-gray-50">
       <div className="w-full mx-auto theme-container">
@@ -23,21 +24,6 @@ export default function HeroOutsourcing() {
               qualité de service et la sécurité de vos données salariales.
             </p>
 
-            <div className="flex gap-6 flex-wrap">
-              <button
-                onClick={() => {
-                  const form = document.getElementById("audit-form");
-                  if (form) form.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="px-8 py-4 bg-buisness-red text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300"
-              >
-                Demander un audit gratuit
-              </button>
-
-              <button className="px-8 py-4 border-2 border-buisness-red text-buisness-red rounded-lg font-semibold hover:bg-buisness-red/5 transition-all duration-300">
-                Contactez-nous
-              </button>
-            </div>
           </div>
 
           <div data-aos="fade-left">
@@ -50,6 +36,8 @@ export default function HeroOutsourcing() {
 
         </div>
       </div>
+
+
     </section>
   );
 }

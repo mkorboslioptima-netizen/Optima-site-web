@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import ContactModalEtemptation from "./ContactModalEtemptation";
 
 export default function FAQEtemptation() {
   const [openIndex, setOpenIndex] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const faqs = [
     {
@@ -87,14 +89,16 @@ export default function FAQEtemptation() {
           <p className="text-paragraph mb-6">
             Vous n'avez pas trouvé votre réponse ?
           </p>
-          <a
-            href="/contact"
+          <button
+            onClick={() => setModalOpen(true)}
             className="inline-flex items-center gap-2 px-6 py-3 bg-buisness-red text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300"
           >
             Contactez notre équipe support
-          </a>
+          </button>
         </div>
       </div>
+
+      <ContactModalEtemptation isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   );
 }

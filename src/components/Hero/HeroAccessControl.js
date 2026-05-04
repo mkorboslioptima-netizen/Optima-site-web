@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import ContactModalEtemptation from "../Services/ContactModalEtemptation";
 
 export default function HeroAccessControl() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section className="w-full py-20 md:py-32 bg-gradient-to-br from-buisness-red/5 to-gray-50">
       <div className="w-full mx-auto theme-container">
@@ -21,11 +24,20 @@ export default function HeroAccessControl() {
             </p>
 
             <div className="flex gap-6 flex-wrap">
-              <button className="px-8 py-4 bg-buisness-red text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300">
-                Découvrir la Démo
+              <button
+                onClick={() => setModalOpen(true)}
+                className="px-8 py-4 bg-buisness-red text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                Audit gratuit
               </button>
 
-              <button className="px-8 py-4 border-2 border-buisness-red text-buisness-red rounded-lg font-semibold hover:bg-buisness-red/5 transition-all duration-300">
+              <button
+                onClick={() => setModalOpen(true)}
+                className="px-8 py-4 border-2 border-buisness-red text-buisness-red rounded-lg font-semibold hover:bg-buisness-red/5 transition-all duration-300"
+              >
                 Contacter Nous
               </button>
             </div>
@@ -42,6 +54,8 @@ export default function HeroAccessControl() {
 
         </div>
       </div>
+
+      <ContactModalEtemptation isOpen={modalOpen} onClose={() => setModalOpen(false)} defaultSubject="Audit Contrôle d'accès" />
     </section>
   );
 }

@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import ContactModalEtemptation from "../Services/ContactModalEtemptation";
+import VideoModalSelfService from "../Services/VideoModalSelfService";
 
 export default function HeroSelfService() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [videoOpen, setVideoOpen] = useState(false);
+
   return (
     <section className="w-full py-20 md:py-32 bg-gradient-to-br from-buisness-red/5 to-gray-50">
       <div className="w-full mx-auto theme-container">
@@ -21,11 +26,21 @@ export default function HeroSelfService() {
             </p>
 
             <div className="flex gap-6 flex-wrap">
-              <button className="px-8 py-4 bg-buisness-red text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300">
-                Découvrir la Démo
+              <button
+                onClick={() => setVideoOpen(true)}
+                className="px-8 py-4 bg-buisness-red text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="10" fill="white" fillOpacity="0.2"/>
+                  <polygon points="10,8 16,12 10,16" fill="white"/>
+                </svg>
+                Voir la Démo
               </button>
 
-              <button className="px-8 py-4 border-2 border-buisness-red text-buisness-red rounded-lg font-semibold hover:bg-buisness-red/5 transition-all duration-300">
+              <button
+                onClick={() => setModalOpen(true)}
+                className="px-8 py-4 border-2 border-buisness-red text-buisness-red rounded-lg font-semibold hover:bg-buisness-red/5 transition-all duration-300"
+              >
                 Contacter Nous
               </button>
             </div>
@@ -42,6 +57,9 @@ export default function HeroSelfService() {
 
         </div>
       </div>
+
+      <ContactModalEtemptation isOpen={modalOpen} onClose={() => setModalOpen(false)} defaultSubject="Démo Self Service" />
+      <VideoModalSelfService isOpen={videoOpen} onClose={() => setVideoOpen(false)} />
     </section>
   );
 }

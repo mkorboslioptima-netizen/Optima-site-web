@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
-
 export default function OutsourcingSidebar() {
   const [form, setForm] = useState({
     entreprise: "",
@@ -20,23 +18,28 @@ export default function OutsourcingSidebar() {
     setError(null);
 
     try {
-      const response = await fetch(`${API_URL}/api/devis`, {
+      const res = await fetch("https://formsubmit.co/ajax/contact@optima.tn", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          ...form,
-          modules: ["externalisation-paie"],
-          secteur: "Externalisation Paie",
+          _subject: `Outsourcing Paie — Demande de ${form.nom}`,
+          name: form.nom,
+          email: form.email,
+          telephone: form.telephone,
+          entreprise: form.entreprise,
+          message: form.message,
+          service: "Externalisation de la Paie",
+          _template: "table",
         }),
       });
-
-      const data = await response.json();
-      if (!response.ok || !data.success) {
+      const data = await res.json();
+      if (data.success === "true" || data.success === true) {
+        setSuccess(true);
+      } else {
         throw new Error(data.message || "Une erreur est survenue");
       }
-      setSuccess(true);
     } catch (err) {
-      setError(err.message);
+      setError(err.message || "Une erreur est survenue");
     } finally {
       setLoading(false);
     }

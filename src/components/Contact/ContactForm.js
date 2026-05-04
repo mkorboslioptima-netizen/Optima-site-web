@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
-
 const InfoBlock = ({ icon, title, lines }) => (
   <div className="col-span-1">
     <h2 className="flex gap-2.5 items-center font-semibold text-18 text-main-black mb-3">
@@ -34,25 +32,28 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("loading");
     try {
-      const res = await fetch(`${API_URL}/api/devis`, {
+      const res = await fetch("https://formsubmit.co/ajax/contact@optima.tn", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          nom: form.nom,
+          _subject: `Contact Optima${form.sujet ? " — " + form.sujet : ""} — ${form.nom}`,
+          name: form.nom,
           email: form.email,
           telephone: form.telephone,
-          message: `Sujet : ${form.sujet}\n\n${form.message}`,
-          modules: ["contact"],
-          entreprise: "",
-          secteur: "",
-          effectif: "",
+          sujet: form.sujet,
+          message: form.message,
+          _template: "table",
         }),
       });
       const data = await res.json();
-      if (!res.ok || !data.success) throw new Error(data.message || "Erreur");
-      setStatus("success");
-      setForm({ nom: "", email: "", telephone: "", sujet: "", message: "" });
-    } catch {
+      if (data.success === "true" || data.success === true) {
+        setStatus("success");
+        setForm({ nom: "", email: "", telephone: "", sujet: "", message: "" });
+      } else {
+        throw new Error(data.message || "Erreur");
+      }
+    } catch (err) {
+      console.error("FormSubmit error:", err.message);
       setStatus("error");
     }
   }

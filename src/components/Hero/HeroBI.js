@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function HeroBI() {
+
   return (
     <section
       id="banner-two"
@@ -44,28 +45,13 @@ export default function HeroBI() {
       </div>
 
       <div className="rotating_circle z-0 absolute flex justify-center items-center -bottom-4 xl:-bottom-[150px] right-0 xl:-right-20 h-0 w-full xl:w-[880px] 2xl:max-w-[1250px]">
-        <img
-          src="/assets/images/home-two/round-shape-1.svg"
-          alt=""
-          className="w-full"
-        />
-        <img
-          src="/assets/images/home-two/round-shape-2.svg"
-          alt=""
-          className="absolute w-10/12"
-        />
-        <img
-          src="/assets/images/home-two/round-shape-3.svg"
-          alt=""
-          className="absolute w-8/12"
-        />
-        <img
-          src="/assets/images/home-two/round-shape-4.svg"
-          alt=""
-          className="absolute w-6/12"
-        />
+        <img src="/assets/images/home-two/round-shape-1.svg" alt="" className="w-full" />
+        <img src="/assets/images/home-two/round-shape-2.svg" alt="" className="absolute w-10/12" />
+        <img src="/assets/images/home-two/round-shape-3.svg" alt="" className="absolute w-8/12" />
+        <img src="/assets/images/home-two/round-shape-4.svg" alt="" className="absolute w-6/12" />
       </div>
-      {/* <!-- content end  --> */}
+
+
     </section>
   );
 }

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ContactModalEtemptation from "../Services/ContactModalEtemptation";
 
 export default function HeroAboutOptima() {
+  const [modalOpen, setModalOpen] = useState(false);
   const stats = [
     { value: "20+", label: "Ans d'expérience" },
     { value: "2", label: "Partenaires mondiaux" },
@@ -32,11 +34,12 @@ export default function HeroAboutOptima() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact">
-                <button className="w-full sm:w-auto px-8 py-3 bg-buisness-red text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
-                  Contactez-nous
-                </button>
-              </Link>
+              <button
+                onClick={() => setModalOpen(true)}
+                className="w-full sm:w-auto px-8 py-3 bg-buisness-red text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Contactez-nous
+              </button>
 
               <Link to="/devis">
                 <button className="w-full sm:w-auto px-8 py-3 bg-white border-2 border-buisness-red text-buisness-red font-semibold rounded-lg hover:bg-buisness-red/5 transition-all duration-300">
@@ -77,6 +80,8 @@ export default function HeroAboutOptima() {
 
         </div>
       </div>
+
+      <ContactModalEtemptation isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   );
 }
