@@ -38,28 +38,7 @@ export default function ServiceFive() {
               <p className="text-paragraph line-clamp-3">
                 Plus de 20 ans d'expérience dans le développement de solutions de gestion d'entreprise
               </p>
-              <Link to="/service-details">
-                <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-it-blue group">
-                  <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-it-blue before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    En savoir plus
-                  </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
+             
             </div>
           </div>
           {/* <!-- single card  --> */}
@@ -96,28 +75,7 @@ export default function ServiceFive() {
               <p className="text-paragraph line-clamp-3">
                 Une équipe dédiée pour vous accompagner à chaque étape de votre projet
               </p>
-              <Link to="/service-details">
-                <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-it-blue group">
-                  <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-it-blue before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    En savoir plus
-                  </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
+            
             </div>
           </div>
           {/* <!-- single card  --> */}
@@ -143,28 +101,7 @@ export default function ServiceFive() {
               <p className="text-paragraph line-clamp-3">
                 Service client réactif disponible 24/7 pour répondre à toutes vos questions
               </p>
-              <Link to="/service-details">
-                <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-it-blue group">
-                  <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-it-blue before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    En savoir plus
-                  </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
+              
             </div>
           </div>
           {/* <!-- single card  --> */}
@@ -190,28 +127,7 @@ export default function ServiceFive() {
               <p className="text-paragraph line-clamp-3">
                 Investissement constant dans la R&D pour rester à la pointe de la technologie
               </p>
-              <Link to="/service-details">
-                <div className="flex items-center gap-2 mt-5 text-paragraph hover:text-it-blue group">
-                  <span className="relative font-medium leading-5 border-b border-transparent font-inter before:inline-block before:border-it-blue before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5">
-                    En savoir plus
-                  </span>
-                  <svg
-                    width="7"
-                    height="11"
-                    viewBox="0 0 7 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
+             
             </div>
           </div>
         </div>

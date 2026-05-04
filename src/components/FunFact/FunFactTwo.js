@@ -122,7 +122,7 @@ export default function FunFactTwo() {
               </defs>
             </svg>
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={started ? 300 : 0} duration={2} />+
+              <CountUp start={0} end={started ? 100 : 0} duration={2} />+
             </h1>
             <h2 className="text-18 font-medium text-paragraph pt-2.5">
               Entreprises clientes
@@ -215,7 +215,7 @@ export default function FunFactTwo() {
             </svg>
 
             <h1 className="pt-5 font-semibold text-48 text-main-black md:pt-11">
-              <CountUp start={0} end={started ? 15 : 0} duration={2} />+
+              <CountUp start={0} end={started ? 10 : 0} duration={2} />+
             </h1>
 
             <h2 className="text-18 font-medium text-paragraph pt-2.5">

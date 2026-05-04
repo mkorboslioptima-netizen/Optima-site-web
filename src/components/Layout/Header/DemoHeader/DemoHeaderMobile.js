@@ -32,7 +32,6 @@ const menuData = [
     ],
   },
   { title: "À propos", href: "/about" },
-  { title: "Contact", href: "/contact" },
 ];
 
 const MobileHeader = () => {

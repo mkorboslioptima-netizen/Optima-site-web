@@ -29,30 +29,7 @@ export default function AboutFour() {
                   Solutions 360° : ERP, Paie, GRH, formation et support
                 </li>
               </ul>
-              <Link to="/services">
-                <div className="home-two-btn-bg group bg-buisness-dark-black border-buisness-dark-black py-[15px] w-fit">
-                  <span className="relative z-10 text-base font-semibold text-white transition-all duration-300 group-hover:text-buisness-dark-black font-inter">
-                    Nos solutions
-                  </span>
-                  <svg
-                    className="relative z-10"
-                    width="7"
-                    height="12"
-                    viewBox="0 0 7 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      className="transition-all duration-300 group-hover:stroke-buisness-dark-black stroke-white"
-                      d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                      stroke="white"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </Link>
+              
             </div>
           </div>
           <div className="relative col-span-6 flex flex-col justify-center items-center">

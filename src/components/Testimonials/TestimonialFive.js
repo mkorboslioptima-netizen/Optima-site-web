@@ -40,10 +40,10 @@ export default function TestimonialFive() {
               <SwiperSlide className="flex flex-col justify-between swiper-slide">
                 <div className="relative">
                   <h1 className="font-medium text-white border border-white/10 bg-white/5 px-5 rounded-[30px] py-1 w-fit">
-                    Our Success Story
+                    Nos Success Stories
                   </h1>
                   <h2 className="pt-5 font-semibold text-white text-24 sm:text-48">
-                    Our Customer Feedback
+                    Témoignages Clients
                   </h2>
                   <div className="pt-7 md:pt-14">
                     <svg
@@ -65,7 +65,7 @@ export default function TestimonialFive() {
 
                     <div className="flex gap-4 items-center pt-[18px]">
                       <h1 className="font-semibold text-white text-18">
-                        Quality Service
+                        Service de qualité
                       </h1>
                       <div className="flex gap-2.5">
                         <svg
@@ -135,16 +135,9 @@ export default function TestimonialFive() {
                     Optima a transformé notre gestion d'entreprise. Une solution exceptionnelle!
                   </h1>
                   <div className="flex items-center gap-6 pt-10">
-                    <div className="flex w-[60px] h-[60px] rounded-full overflow-hidden">
-                      <img
-                        className="object-cover w-full"
-                        src="/assets/images//home-five/m.png"
-                        alt=""
-                      />
-                    </div>
                     <h1 className="font-semibold text-white text-18 sm:text-20">
-                      Mohamed Korbosli
-                      <p className="text-sm font-medium">CEO & Founder</p>
+                      M. B.
+                      <p className="text-sm font-medium">Directeur Général</p>
                     </h1>
                   </div>
                   <div className="absolute z-10 right-10 bottom-5 moving-h2-hero-main-img">
@@ -158,10 +151,10 @@ export default function TestimonialFive() {
               <SwiperSlide className="flex flex-col justify-between swiper-slide">
                 <div className="relative">
                   <h1 className="font-medium text-white border border-white/10 bg-white/5 px-5 rounded-[30px] py-1 w-fit">
-                    Our Success Story
+                    Nos Success Stories
                   </h1>
                   <h2 className="pt-5 font-semibold text-white text-24 sm:text-48">
-                    Our Customer Feedback
+                    Témoignages Clients
                   </h2>
                   <div className="pt-7 md:pt-14">
                     <svg
@@ -183,7 +176,7 @@ export default function TestimonialFive() {
 
                     <div className="flex gap-4 items-center pt-[18px]">
                       <h1 className="font-semibold text-white text-18">
-                        Quality Service
+                        Service de qualité
                       </h1>
                       <div className="flex gap-2.5">
                         <svg
@@ -253,16 +246,9 @@ export default function TestimonialFive() {
                     L'équipe Optima est toujours disponible et à l'écoute. Je recommande vivement!"
                   </h1>
                   <div className="flex items-center gap-6 pt-10">
-                    <div className="flex w-[60px] h-[60px] rounded-full overflow-hidden">
-                      <img
-                        className="object-cover w-full"
-                        src="/assets/images//home-five/w.png"
-                        alt=""
-                      />
-                    </div>
                     <h1 className="font-semibold text-white text-18 sm:text-20">
-                      Wael Chouchani,
-                      <p className="text-sm font-medium">CEO & Founder</p>
+                      S. T.
+                      <p className="text-sm font-medium">Responsable RH</p>
                     </h1>
                   </div>
                   <div className="absolute z-10 right-10 bottom-5 moving-h2-hero-main-img">
@@ -276,10 +262,10 @@ export default function TestimonialFive() {
               <SwiperSlide className="flex flex-col justify-between swiper-slide">
                 <div className="relative">
                   <h1 className="font-medium text-white border border-white/10 bg-white/5 px-5 rounded-[30px] py-1 w-fit">
-                    Our Success Story
+                    Nos Success Stories
                   </h1>
                   <h2 className="pt-5 font-semibold text-white text-24 sm:text-48">
-                    Our Customer Feedback
+                    Témoignages Clients
                   </h2>
                   <div className="pt-7 md:pt-14">
                     <svg
@@ -301,7 +287,7 @@ export default function TestimonialFive() {
 
                     <div className="flex gap-4 items-center pt-[18px]">
                       <h1 className="font-semibold text-white text-18">
-                        Quality Service
+                        Service de qualité
                       </h1>
                       <div className="flex gap-2.5">
                         <svg
@@ -371,16 +357,9 @@ export default function TestimonialFive() {
                     Un service professionnel et des solutions adaptées à nos besoins spécifiques
                   </h1>
                   <div className="flex items-center gap-6 pt-10">
-                    <div className="flex w-[60px] h-[60px] rounded-full overflow-hidden">
-                      <img
-                        className="object-cover w-full"
-                        src="/assets/images//home-five/o.png"
-                        alt=""
-                      />
-                    </div>
                     <h1 className="font-semibold text-white text-18 sm:text-20">
-                      Ons Aouadhi,
-                      <p className="text-sm font-medium">CEO & Founder</p>
+                      K. M.
+                      <p className="text-sm font-medium">Directeur Administratif et Financier</p>
                     </h1>
                   </div>
                   <div className="absolute z-10 right-10 bottom-5 moving-h2-hero-main-img">
