@@ -35,3 +35,6 @@ nul
 con
 prn
 aux
+
+# Images sources avant optimisation webp (104 Mo) — a sauvegarder hors Git
+media-originaux/

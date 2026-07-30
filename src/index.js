@@ -8,14 +8,13 @@ import "glightbox/dist/css/glightbox.min.css";
 import "swiper/css";
 import "swiper/css/bundle";
 import "aos/dist/aos.css";
-import "aos/dist/aos.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+const container = document.getElementById("root");
+const app = (
   <React.StrictMode>
     <HelmetProvider>
       <BrowserRouter>
@@ -24,6 +23,14 @@ root.render(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+// Les pages pré-rendues (scripts/prerender.js) arrivent avec du HTML déjà
+// présent dans #root : on hydrate au lieu de re-rendre de zéro.
+if (container.hasChildNodes()) {
+  ReactDOM.hydrateRoot(container, app);
+} else {
+  ReactDOM.createRoot(container).render(app);
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

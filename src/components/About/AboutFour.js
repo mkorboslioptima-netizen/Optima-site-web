@@ -1,7 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
-import Logo from '../../assets/images/home-five/hero/g.jpg';
+import Logo from '../../assets/images/home-five/hero/g.webp';
 export default function AboutFour() {
   return (
     <section id="about">

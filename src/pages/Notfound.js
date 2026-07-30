@@ -1,27 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function Notfound() {
   return (
     <div>
+      <SEO title="Page introuvable (404)" noindex />
       <div className="flex flex-col items-center justify-center w-screen h-screen p-4 overflow-hidden">
         <img
           data-aos="zoom-in"
           src="/assets/images/404.webp"
-          alt=""
+          alt="Page introuvable"
           className=""
         />
 
         <h1 className="text-20 lg:text-48 text-main-black font-semibold mt-5 md:mt-[70px] text-center">
-          OPPS! This Page Are Can’t Be Found
+          Oups ! Cette page est introuvable
         </h1>
         <h2 className="text-18 lg:text-24 text-paragraph mt-2.5 md:mt-5 mb-5 md:mb-10 text-center">
-          We can’t find this page your looking for
+          La page que vous cherchez n'existe pas ou a été déplacée
         </h2>
         <Link to="/">
           <div className="home-two-btn-bg py-3 group bg-[#4A7DFF] border-[#4A7DFF] inline-flex">
             <span className="text-base text-white group-hover:text-[#4A7DFF] transition-all duration-300 font-inter relative z-10">
-              Go to Home
+              Retour à l'accueil
             </span>
             <svg
               className="relative z-10"

@@ -92,7 +92,7 @@ export default function HeroFive() {
       {/* ── zone hero avec image ── */}
       <div className="relative overflow-hidden">
         <img
-          src="/assets/images/home-five/hero/a.jpg"
+          src="/assets/images/home-five/hero/a.webp"
           alt=""
           className="w-full object-cover absolute top-0 left-0 z-0 buisness-dark-black h-full min-h-[400px]"
         />

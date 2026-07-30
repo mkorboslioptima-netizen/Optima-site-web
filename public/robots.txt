@@ -1,7 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Disallow: /cart
-Disallow: /checkout
 
 Sitemap: https://www.optima.tn/sitemap.xml

@@ -7,7 +7,7 @@ const logos = [
   "./assets/images/home-five/clinets/Autoliv.svg",
   "./assets/images/home-five/clinets/Lloyd.png",
   "./assets/images/home-five/clinets/Hutchinson.jpg",
-  "./assets/images/home-five/clinets/Cotherm.jpg",
+  "./assets/images/home-five/clinets/Cotherm.webp",
   "./assets/images/home-five/clinets/sanofi.jpg",
   "./assets/images/home-five/clinets/Longchamp.png",
   "./assets/images/home-five/clinets/Bkfood.svg",

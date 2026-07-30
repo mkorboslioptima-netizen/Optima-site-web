@@ -29,7 +29,7 @@ export default function TestimonialFive() {
     >
       <img
         data-aos="fade-right"
-        src="/assets/images/home-five/testimonial-bg.svg"
+        src="/assets/images/home-five/testimonial-bg.webp"
         alt="right"
         className="w-full col-span-6 obgect-cover"
       />

@@ -14,10 +14,13 @@ const LOCAL_BUSINESS_SCHEMA = {
   logo: `${SITE_URL}/assets/images/Optima-Logo.png`,
   image: `${SITE_URL}/assets/images/Optima-Logo.png`,
   email: "support@optima.tn",
+  telephone: "+216 71 715 397",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "6, Rue Echih, 2ème étage, App B2.1",
+    addressLocality: "Ariana",
+    postalCode: "2080",
     addressCountry: "TN",
-    addressLocality: "Tunis",
   },
   areaServed: "TN",
   knowsLanguage: ["fr", "ar"],
@@ -34,6 +37,7 @@ export default function SEO({
   image,
   type = "website",
   jsonLd,
+  noindex = false,
 }) {
   const fullTitle = title
     ? `${title} | Optima`
@@ -48,8 +52,8 @@ export default function SEO({
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href={url} />
+      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
+      {!noindex && <link rel="canonical" href={url} />}
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />

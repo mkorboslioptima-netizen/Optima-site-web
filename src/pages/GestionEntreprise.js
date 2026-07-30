@@ -14,9 +14,18 @@ export default function GestionEntreprise() {
   return (
     <InnerPageLayout>
       <SEO
-        title="Gestion des entreprises"
-        description="Découvrez nos services : intégration Sage 100, formation, support technique, gestion commerciale, comptabilité et solutions Horoquartz."
-        path="/GestionEntreprise"
+        title="Solutions ERP pour PME — Intégrateur Sage 100 en Tunisie"
+        description="Optima, intégrateur Sage 100 certifié en Tunisie : ERP gestion commerciale, comptabilité, paie, immobilisations et business intelligence pour PME."
+        path="/gestion-entreprise"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Intégration ERP Sage 100",
+          provider: { "@type": "Organization", name: "Optima", url: "https://www.optima.tn" },
+          description: "Intégration, paramétrage, formation et support des solutions Sage 100 ERP pour les PME tunisiennes.",
+          areaServed: "TN",
+          serviceType: "ERP Integration",
+        }}
       />
       <HeroERP />
       <DescriptionMetierERP />

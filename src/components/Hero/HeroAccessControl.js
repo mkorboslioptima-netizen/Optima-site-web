@@ -46,7 +46,7 @@ export default function HeroAccessControl() {
           {/* Image sans cadre */}
           <div data-aos="fade-left">
             <img
-              src="/assets/images/service/badging_wincom.jpeg"
+              src="/assets/images/service/badging_wincom.webp"
               alt="Système de Contrôle d'Accès Biométrique"
               className="w-full h-auto transition-transform duration-500 hover:scale-105"
             />

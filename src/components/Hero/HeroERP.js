@@ -38,7 +38,7 @@ export default function HeroFive() {
     >
       {/* <!-- background  --> */}
       <img
-        src="/assets/images/home-five/hero/erp.jpeg"
+        src="/assets/images/home-five/hero/erp.webp"
         alt=""
         className="w-full object-cover absolute top-0 z-0 buisness-dark-black min-h-[520px]"
       />

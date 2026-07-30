@@ -16,7 +16,7 @@ export default function AboutOutsourcing() {
           <div data-aos="fade-right" className="relative">
             <div className="w-full h-96 rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/assets/images/service/paie1.png"
+                src="/assets/images/service/paie1.webp"
                 alt="Sécurité des données paie"
                 className="w-full h-full object-cover"
               />

@@ -316,7 +316,7 @@ export default function ServiceFour() {
                     Analyse complète de vos systèmes actuels, identification des failles, recommandations d'amélioration, plan de mise à niveau.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/c.png"
+                    src="/assets/images/home-five/hero/c.webp"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />
@@ -414,7 +414,7 @@ export default function ServiceFour() {
                     Connexion de vos différents logiciels (ERP, CRM, e-commerce, banque), flux automatisés, données synchronisées.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/j.png"
+                    src="/assets/images/home-five/hero/j.webp"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />
@@ -513,7 +513,7 @@ export default function ServiceFour() {
                     Formation complète des utilisateurs, documentation détaillée, création de procédures. Vos équipes deviennent autonomes.
                   </p>
                   <img
-                    src="/assets/images/home-five/hero/6.png"
+                    src="/assets/images/home-five/hero/6.webp"
                     alt=""
                     className="object-cover w-full mt-4 md:mt-14 rounded-2xl"
                   />

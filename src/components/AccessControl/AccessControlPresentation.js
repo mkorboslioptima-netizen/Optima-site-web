@@ -11,7 +11,7 @@ export default function AccessControlPresentation() {
           <div className="relative">
             <div className="bg-gradient-to-br from-buisness-red/10 to-transparent rounded-2xl p-8">
               <img
-                src="/assets/images/home-five/hero/GTA.jpeg"
+                src="/assets/images/home-five/hero/GTA.webp"
                 alt="Contrôle d'accès"
                 className="w-full rounded-xl shadow-lg"
               />

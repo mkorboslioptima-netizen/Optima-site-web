@@ -1,15 +1,91 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const compression = require('compression');
+const rateLimit = require('express-rate-limit');
 const nodemailer = require('nodemailer');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Domaine canonique unique : TOUTES les variantes (http, sans www) doivent
+// rediriger en 301 vers celui-ci, sinon Google voit 4 sites dupliqués.
+const CANONICAL_HOST = 'www.optima.tn';
+
+// Derrière Passenger/nginx (Plesk) : nécessaire pour lire le protocole
+// et l'IP réels depuis les en-têtes X-Forwarded-*
+app.set('trust proxy', 1);
+
+// Compression gzip des réponses (HTML, JS, CSS, JSON…)
+app.use(compression());
+
+/* ── Redirections 301 : https + www + suppression du slash final ── */
+app.use((req, res, next) => {
+  const host = req.headers.host || '';
+  // Ne rediriger qu'en production (pas en local)
+  if (host.endsWith('optima.tn')) {
+    const wrongHost = host !== CANONICAL_HOST;
+    const wrongProto = req.protocol !== 'https';
+    if (wrongHost || wrongProto) {
+      return res.redirect(301, `https://${CANONICAL_HOST}${req.originalUrl}`);
+    }
+  }
+  // /contact/ → /contact (évite les URLs dupliquées)
+  if (req.path.length > 1 && req.path.endsWith('/')) {
+    const query = req.originalUrl.slice(req.path.length);
+    return res.redirect(301, req.path.slice(0, -1) + query);
+  }
+  next();
+});
+
+/* ── Redirections 301 des anciennes URLs (avant : redirections JS côté
+      client via <Navigate>, invisibles pour Google) ── */
+const LEGACY_REDIRECTS = {
+  '/Gestion_Du_Temps': '/gestion-des-temps',
+  '/Outsourcing': '/outsourcing',
+  '/Sage-100-Gestion-Commerciale': '/sage-100-gestion-commerciale',
+  '/Sage-100-Gestion-comptabilite': '/sage-100-comptabilite',
+  '/Sage-BI': '/sage-bi',
+  '/Immobilisation': '/sage-100-immobilisations',
+  '/Sage-100-Gestion-Paie-RH': '/sage-100-paie-rh',
+  '/GestionEntreprise': '/gestion-entreprise',
+  '/a-propos': '/about',
+};
+app.use((req, res, next) => {
+  const target = LEGACY_REDIRECTS[req.path];
+  if (target) return res.redirect(301, target);
+  next();
+});
+
 // Middleware
-app.use(cors());
-app.use(express.json());
+const ALLOWED_ORIGINS = [
+  `https://${CANONICAL_HOST}`,
+  'https://optima.tn',
+  'http://localhost:3000',
+  `http://localhost:${PORT}`,
+];
+app.use(cors({ origin: ALLOWED_ORIGINS }));
+app.use(express.json({ limit: '50kb' }));
+
+// Anti-spam : max 10 requêtes API par IP par quart d'heure
+app.use('/api/', rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 10,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { success: false, message: 'Trop de requêtes, veuillez réessayer plus tard.' },
+}));
+
+// Neutralise le HTML dans les champs saisis par l'utilisateur avant de les
+// injecter dans les emails (sinon un visiteur peut y injecter du HTML/JS)
+const esc = (v) => String(v ?? '')
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;')
+  .replace(/'/g, '&#39;');
 
 // Configuration du transporteur SMTP
 const transporter = nodemailer.createTransport({
@@ -21,7 +97,10 @@ const transporter = nodemailer.createTransport({
     pass: process.env.SMTP_PASS,
   },
   tls: {
-    rejectUnauthorized: false
+    // Vérification du certificat activée par défaut. Si le serveur SMTP
+    // utilise un certificat auto-signé, mettre SMTP_ALLOW_SELF_SIGNED=true
+    // dans le fichier .env
+    rejectUnauthorized: process.env.SMTP_ALLOW_SELF_SIGNED !== 'true'
   }
 });
 
@@ -49,7 +128,16 @@ const MODULES = {
 // Endpoint pour les demandes de devis et de contact
 app.post('/api/devis', async (req, res) => {
   try {
-    const { modules, entreprise, secteur, effectif, nom, email, telephone, message } = req.body;
+    const raw = req.body || {};
+    // Tout ce qui vient du formulaire est échappé avant injection dans l'email
+    const modules = Array.isArray(raw.modules) ? raw.modules.map(esc) : raw.modules;
+    const entreprise = esc(raw.entreprise);
+    const secteur = esc(raw.secteur);
+    const effectif = esc(raw.effectif);
+    const nom = esc(raw.nom);
+    const email = esc(raw.email);
+    const telephone = esc(raw.telephone);
+    const message = esc(raw.message);
 
     // Pour les contacts simples, entreprise et effectif sont optionnels
     const isContactOnly = !modules || modules.includes('contact') || modules.includes('etemptation-contact');
@@ -199,7 +287,14 @@ Cet email a été envoyé automatiquement depuis le site web Optima.
 // Endpoint pour les formulaires de contact simples
 app.post('/api/contact', async (req, res) => {
   try {
-    const { subject, nom, entreprise, email, telephone, message } = req.body;
+    const raw = req.body || {};
+    // Tout ce qui vient du formulaire est échappé avant injection dans l'email
+    const subject = esc(raw.subject);
+    const nom = esc(raw.nom);
+    const entreprise = esc(raw.entreprise);
+    const email = esc(raw.email);
+    const telephone = esc(raw.telephone);
+    const message = esc(raw.message);
 
     if (!nom || !email || !telephone || !message) {
       return res.status(400).json({ success: false, message: 'Tous les champs obligatoires doivent être remplis' });
@@ -305,11 +400,51 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Le serveur fonctionne correctement' });
 });
 
-// Servir le build React
+// ─── Servir le build React (avec pages pré-rendues pour le SEO) ───
 const buildPath = path.join(__dirname, '..', 'build');
-app.use(express.static(buildPath));
+
+// Routes React valides SANS version pré-rendue (contenu dynamique)
+const SPA_ONLY_ROUTES = new Set([
+  '/blog-details', '/projects', '/project-details', '/teams',
+]);
+
+// Shell SPA non pré-rendu (généré par scripts/prerender.js) : sert de
+// fallback pour les routes dynamiques et les 404
+const spaShellPath = fs.existsSync(path.join(buildPath, 'spa-shell.html'))
+  ? path.join(buildPath, 'spa-shell.html')
+  : path.join(buildPath, 'index.html');
+
+// redirect:false : pas de 301 automatique vers les URLs à slash final.
+// Cache navigateur : les fichiers de /static portent un hash dans leur nom
+// (main.abc123.js) → cache 1 an immuable ; images et vidéos → 30 jours ;
+// HTML → jamais mis en cache (le contenu doit se rafraîchir au déploiement).
+app.use(express.static(buildPath, {
+  redirect: false,
+  setHeaders: (res, filePath) => {
+    if (filePath.includes(`${path.sep}static${path.sep}`)) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    } else if (/\.(png|jpe?g|webp|gif|svg|ico|mp4|webm|woff2?|ttf)$/i.test(filePath)) {
+      res.setHeader('Cache-Control', 'public, max-age=2592000');
+    } else if (/\.html$/i.test(filePath)) {
+      res.setHeader('Cache-Control', 'no-cache');
+    }
+  },
+}));
+
 app.get('*', (req, res) => {
-  res.sendFile(path.join(buildPath, 'index.html'));
+  res.setHeader('Cache-Control', 'no-cache');
+  // 1. Page pré-rendue disponible ? (build/<route>/index.html)
+  const prerendered = path.join(buildPath, req.path.slice(1), 'index.html');
+  if (prerendered.startsWith(buildPath) && fs.existsSync(prerendered)) {
+    return res.sendFile(prerendered);
+  }
+  // 2. Route SPA connue sans pré-rendu → shell en 200
+  if (SPA_ONLY_ROUTES.has(req.path)) {
+    return res.sendFile(spaShellPath);
+  }
+  // 3. URL inconnue → vrai statut 404 (fini les "soft 404" chez Google),
+  //    le shell React affiche la page Notfound
+  res.status(404).sendFile(spaShellPath);
 });
 
 app.listen(PORT, () => {

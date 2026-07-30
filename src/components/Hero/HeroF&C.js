@@ -37,7 +37,7 @@ export default function HeroFive() {
       id="banner"
     >
       <img
-        src="/assets/images/home-five/hero/paie.jpeg"
+        src="/assets/images/home-five/hero/paie.webp"
         alt="Externalisation de la Paie OPTIMA"
         className="w-full object-cover absolute top-0 z-0 buisness-dark-black min-h-[520px]"
       />

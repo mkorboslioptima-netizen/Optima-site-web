@@ -17,9 +17,20 @@ export default function ProjectDetails() {
   return (
     <InnerPageLayout>
       <SEO
-        title="Sage 100 RH : gérez votre paie et ressources humaines avec une solution ERP complète intégrée par Optima en Tunisie."
-        description="Sage 100 RH : gérez votre paie et ressources humaines avec une solution ERP complète intégrée par Optima en Tunisie."
-        path="/Sage-100-Gestion-Paie-RH"
+        title="Sage 100 Paie & RH — Logiciel de gestion de la paie en Tunisie"
+        description="Sage 100 Paie RH : automatisez votre paie, bulletins de salaire, déclarations CNSS et IRPP. Solution certifiée intégrée par Optima en Tunisie."
+        path="/sage-100-paie-rh"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: "Sage 100 Paie & Ressources Humaines",
+          applicationCategory: "BusinessApplication",
+          operatingSystem: "Windows",
+          description: "Logiciel de gestion de la paie et des ressources humaines : bulletins, CNSS, IRPP, congés et suivi du personnel.",
+          provider: { "@type": "Organization", name: "Optima", url: "https://www.optima.tn" },
+          areaServed: "TN",
+          offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        }}
       />
       <HeroSageRH />
     

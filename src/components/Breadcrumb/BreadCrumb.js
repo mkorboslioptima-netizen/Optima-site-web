@@ -32,7 +32,7 @@ export default function BreadCrumb() {
         {/* Colonne droite — Image animée centrée */}
         <div className="col-span-6 flex justify-center items-center py-10">
           <img
-            src="/assets/images/service/d.png"
+            src="/assets/images/service/d.webp"
             alt="eTemptation"
             className="w-auto h-64 md:h-80 lg:h-96 moving-h2-hero-main-img"
           />

@@ -28,7 +28,7 @@ export default function HeroOutsourcing() {
 
           <div data-aos="fade-left">
             <img
-              src="/assets/images/service/paie.png"
+              src="/assets/images/service/paie.webp"
               alt="Externalisation Paie"
               className="w-full h-auto transition-transform duration-500 hover:scale-105"
             />

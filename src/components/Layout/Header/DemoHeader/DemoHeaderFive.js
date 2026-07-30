@@ -16,7 +16,7 @@ export default function DemoHeaderFour() {
             <div className="flex space-x-6 xl:space-x-[40px] 2xl:space-x-[60px] items-center">
               <div>
                 <Link to="/">
-                  <img src="/assets/images/logo.svg" alt="logo" className="h-20 xl:h-24 2xl:h-28 w-auto" />
+                  <img src="/assets/images/logo.webp" alt="logo" className="h-20 xl:h-24 2xl:h-28 w-auto" />
                 
                 </Link>
               </div>

@@ -19,7 +19,7 @@ export default function SageBI() {
       <SEO
         title="Sage BI — Reporting & Tableaux de bord"
         description="Sage BI : tableaux de bord, reporting et business intelligence intégrés à Sage 100 — Solutions de pilotage proposées par Optima."
-        path="/Sage-BI"
+        path="/sage-bi"
       />
       <HeroBI />
 

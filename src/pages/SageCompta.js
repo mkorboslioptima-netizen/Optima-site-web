@@ -17,9 +17,20 @@ export default function ProjectDetails() {
   return (
     <InnerPageLayout>
       <SEO
-        title="Sage 100 Comptabilité"
+        title="Sage 100 Comptabilité — Logiciel comptable ERP en Tunisie"
         description="Sage 100 Comptabilité : gérez votre comptabilité, finances et reporting avec une solution ERP complète intégrée par Optima en Tunisie."
-        path="/Sage-100-Gestion-comptabilite"
+        path="/sage-100-comptabilite"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: "Sage 100 Comptabilité",
+          applicationCategory: "BusinessApplication",
+          operatingSystem: "Windows",
+          description: "Logiciel de comptabilité : saisie, lettrage, TVA, bilan et reporting financier pour PME en Tunisie.",
+          provider: { "@type": "Organization", name: "Optima", url: "https://www.optima.tn" },
+          areaServed: "TN",
+          offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        }}
       />
       <Hero />
     

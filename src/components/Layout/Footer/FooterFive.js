@@ -6,7 +6,7 @@ export default function FooterFive() {
     <footer className="pt-20 bg-buisness-light-black">
       <div className="flex flex-wrap justify-between gap-5 mx-auto mb-20 theme-container">
         <div className="w-fit max-w-[300px]">
-          <img src="/assets/images/logo-01-20 blanc.svg" alt="logo" className="-ml-12" />
+          <img src="/assets/images/logo-01-20 blanc.webp" alt="logo" className="-ml-12" />
           <p className="max-w-[300px] text-white my-6">
 Optima, intégrateur tunisien en gestion d’entreprise : commerce, comptabilité, paie et RH.            
             </p>

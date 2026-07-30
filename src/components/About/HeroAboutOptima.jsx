@@ -63,7 +63,7 @@ export default function HeroAboutOptima() {
           <div className="relative flex items-center justify-center" data-aos="fade-left">
             <div className="relative w-full max-w-2xl">
               <img
-                src="/assets/images/about/a.png"
+                src="/assets/images/about/a.webp"
                 alt="OPTIMA Bureau"
                 className="w-full h-auto object-contain drop-shadow-lg"
               />

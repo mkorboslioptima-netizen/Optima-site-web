@@ -2,67 +2,33 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/assets/images/optima.png" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#007a55" />
 
-    <!-- SEO Meta Tags -->
+    <!--
+      SEO : les balises title, description, canonical, Open Graph et Twitter
+      sont gérées PAR PAGE via le composant src/components/SEO.js (react-helmet-async)
+      et figées dans le HTML par le pré-rendu (scripts/prerender.js).
+      Ne pas remettre de canonical ou og:url en dur ici : la même valeur serait
+      servie pour toutes les URLs et Google dédupliquerait tout vers l'accueil.
+    -->
     <title>Optima | Intégrateur Sage 100 & Solutions de Gestion</title>
-    <meta
-      name="description"
-      content="Optima, intégrateur Sage 100 en Tunisie. Solutions de gestion commerciale, comptabilité, paie et ressources humaines. Accompagnement, formation et support."
-    />
-    <meta name="keywords" content="Optima, Sage 100, intégrateur Sage, gestion commerciale, ERP, comptabilité, paie, Tunisie, Horoquartz, logiciel de gestion" />
     <meta name="author" content="Optima" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.optima.tn/" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:site_name" content="Optima" />
-    <meta property="og:title" content="Optima | Intégrateur Sage 100 & Solutions de Gestion" />
-    <meta property="og:description" content="Optima, intégrateur Sage 100 en Tunisie. Solutions de gestion commerciale, comptabilité, paie et ressources humaines." />
-    <meta property="og:url" content="https://www.optima.tn/" />
-    <meta property="og:image" content="%PUBLIC_URL%/assets/images/Optima-Logo.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Optima | Intégrateur Sage 100 & Solutions de Gestion" />
-    <meta name="twitter:description" content="Optima, intégrateur Sage 100 en Tunisie. Solutions de gestion commerciale, comptabilité, paie et ressources humaines." />
-    <meta name="twitter:image" content="%PUBLIC_URL%/assets/images/Optima-Logo.png" />
 
     <!-- Favicon & App Icons -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <!-- Google Analytics -->
+    <!-- Google Analytics (page_view envoyé manuellement à chaque route, voir App.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJ7CP61KR9"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-QJ7CP61KR9');
-    </script>
-
-    <!-- JSON-LD Structured Data: Organization -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Optima",
-        "url": "https://www.optima.tn",
-        "logo": "https://www.optima.tn/assets/images/Optima-Logo.png",
-        "description": "Intégrateur Sage 100 en Tunisie - Solutions de gestion commerciale, comptabilité, paie et ressources humaines.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "TN"
-        },
-        "sameAs": []
-      }
+      gtag('config', 'G-QJ7CP61KR9', { send_page_view: false });
     </script>
   </head>
   <body>

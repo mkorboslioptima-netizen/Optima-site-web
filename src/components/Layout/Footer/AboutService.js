@@ -41,7 +41,7 @@ export default function AboutService() {
           </div>
           <div className="relative flex flex-col justify-end w-full col-span-7 overflow-hidden sm:flex-row">
             <img
-              src="/assets/images/service/GTA.png"
+              src="/assets/images/service/GTA.webp"
               alt="img"
               className="mt-9 w-full max-w-[630px]"
             />

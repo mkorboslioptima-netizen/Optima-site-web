@@ -1,5 +1,5 @@
-import React, { useEffect, useLayoutEffect, useRef, useState, useCallback } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import React, { useEffect, useLayoutEffect, useRef, useState, useCallback, Suspense, lazy } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { gsap } from "gsap";
 
@@ -8,34 +8,40 @@ import FloatingDevis from "./components/Devis/FloatingDevis";
 import TawkToChat from "./components/TawkToChat";
 import CookieBanner from "./components/CookieBanner";
 
-/* Pages */
+/* Pages — chargées à la demande (code splitting) : chaque page ne télécharge
+   que son propre code au lieu du site entier en un seul bundle.
+   L'accueil reste chargé immédiatement (première visite la plus fréquente). */
 import Acceuil from "./pages/Acceuil";
-import About from "./pages/About";
-import APropos from "./pages/APropos";
+const About = lazy(() => import("./pages/About"));
+const BlogDetails = lazy(() => import("./pages/BlogDetails"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Projects = lazy(() => import("./pages/Projects"));
+const SageCommerciale = lazy(() => import("./pages/SageCommerciale"));
+const Horoquartz = lazy(() => import("./pages/Horoquartz"));
+const ETemptation = lazy(() => import("./pages/etemptation"));
+const ProjectDetails = lazy(() => import("./pages/ProjectDetails"));
+const Faq = lazy(() => import("./pages/Faq"));
+const Teams = lazy(() => import("./pages/Teams"));
+const Blogs = lazy(() => import("./pages/Blogs"));
+const Notfound = lazy(() => import("./pages/Notfound"));
+const Devis = lazy(() => import("./pages/Devis"));
+const GTA = lazy(() => import("./pages/Gestion_Du_Temps"));
+const Outsourcing = lazy(() => import("./pages/Outsourcing"));
+const GestionEntreprise = lazy(() => import("./pages/GestionEntreprise"));
+const SageCompta = lazy(() => import("./pages/SageCompta"));
+const SageBI = lazy(() => import("./pages/SageBI"));
+const Immobilisation = lazy(() => import("./pages/Immobilisation"));
+const SagePaieRh = lazy(() => import("./pages/SagePaieRh"));
+const SelfService = lazy(() => import("./pages/SelfService"));
+const AccessControl = lazy(() => import("./pages/AccessControl"));
+const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
+const PolitiqueConfidentialite = lazy(() => import("./pages/PolitiqueConfidentialite"));
+/* Détecte le pré-rendu (puppeteer) et les robots : pas de loader pour eux,
+   le contenu doit être visible immédiatement */
+export const IS_PRERENDER =
+  typeof navigator !== "undefined" &&
+  /HeadlessChrome|Prerender|Googlebot|bingbot/i.test(navigator.userAgent);
 
-import BlogDetails from "./pages/BlogDetails";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import SageCommerciale from "./pages/SageCommerciale";
-import Horoquartz from "./pages/Horoquartz";
-import ETemptation from "./pages/etemptation";
-import ProjectDetails from "./pages/ProjectDetails";
-import Faq from "./pages/Faq";
-import Teams from "./pages/Teams";
-import Blogs from "./pages/Blogs";
-import Notfound from "./pages/Notfound";
-import Devis from "./pages/Devis";
-import GTA from "./pages/Gestion_Du_Temps"
-import Outsourcing from "./pages/Outsourcing";
-import GestionEntreprise from "./pages/GestionEntreprise";
-import SageCompta  from "./pages/SageCompta";
-import SageBI from "./pages/SageBI";
-import Immobilisation from "./pages/Immobilisation";
-import SagePaieRh from "./pages/SagePaieRh";
-import SelfService from "./pages/SelfService";
-import AccessControl from "./pages/AccessControl";
-import MentionsLegales from "./pages/MentionsLegales";
-import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 /* ─── Page Loader ─── */
 function PageLoader({ onComplete }) {
   const [progress, setProgress] = useState(0);
@@ -49,16 +55,16 @@ function PageLoader({ onComplete }) {
           setTimeout(() => {
             gsap.to(loaderRef.current, {
               yPercent: -100,
-              duration: 0.7,
+              duration: 0.4,
               ease: "power3.inOut",
               onComplete,
             });
-          }, 300);
+          }, 100);
           return 100;
         }
-        return Math.min(prev + Math.random() * 25 + 5, 100);
+        return Math.min(prev + Math.random() * 30 + 20, 100);
       });
-    }, 180);
+    }, 60);
 
     return () => clearInterval(interval);
   }, [onComplete]);
@@ -69,7 +75,7 @@ function PageLoader({ onComplete }) {
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white"
     >
       <img
-        src="/assets/images/logo.svg"
+        src="/assets/images/logo.webp"
         alt="Optima"
         className="h-20 w-auto mb-10 animate-pulse"
       />
@@ -159,8 +165,24 @@ function triggerConfetti() {
 export default function App() {
   const location = useLocation();
   const progressBarRef = useRef(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!IS_PRERENDER);
   const isFirstLoad = useRef(true);
+
+  /* ── Google Analytics : page_view à chaque changement de route ──
+     gtag('config') est appelé avec send_page_view:false dans index.html,
+     c'est donc ici que TOUTES les vues sont envoyées (SPA-friendly). */
+  useEffect(() => {
+    if (IS_PRERENDER || typeof window.gtag !== "function") return;
+    // Laisser le temps à react-helmet de mettre à jour document.title
+    const id = setTimeout(() => {
+      window.gtag("event", "page_view", {
+        page_path: location.pathname + location.search,
+        page_location: window.location.href,
+        page_title: document.title,
+      });
+    }, 100);
+    return () => clearTimeout(id);
+  }, [location.pathname, location.search]);
 
   /* ── Konami Code Easter Egg ── */
   useKonamiCode(useCallback(() => triggerConfetti(), []));
@@ -187,8 +209,9 @@ export default function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /* ── AOS ── */
+  /* ── AOS (désactivé pendant le pré-rendu : le contenu doit rester visible) ── */
   useEffect(() => {
+    if (IS_PRERENDER) return;
     AOS.init({
       once: true,
       duration: 700,
@@ -217,6 +240,7 @@ export default function App() {
 
       {/* Routes with page transitions */}
       <AnimatePresence mode="wait">
+        <Suspense fallback={<div className="min-h-screen" />}>
 
           <Routes location={location}>
             {/* ── Page d'accueil ── */}
@@ -224,34 +248,35 @@ export default function App() {
 
             {/* ── À propos ── */}
             <Route path="/about" element={<About />} />
-            <Route path="/a-propos" element={<APropos />} />
+            <Route path="/a-propos" element={<Navigate replace to="/about" />} />
 
-            {/* ── Gestion des temps (legacy + SEO) ── */}
-            <Route path="/Gestion_Du_Temps" element={<GTA />} />
+            {/* ── Gestion des temps ── */}
+            <Route path="/Gestion_Du_Temps" element={<Navigate replace to="/gestion-des-temps" />} />
             <Route path="/gestion-des-temps" element={<GTA />} />
 
-            {/* ── Outsourcing (legacy + SEO) ── */}
+            {/* ── Outsourcing ──
+                ATTENTION : le matching de React Router est INSENSIBLE à la casse.
+                Une route <Navigate> "/Outsourcing" capturerait aussi "/outsourcing"
+                et créerait une boucle de redirection infinie (page blanche).
+                Les anciennes URLs sont redirigées en 301 par backend/server.js. */}
             <Route path="/outsourcing" element={<Outsourcing />} />
-            <Route path="/Outsourcing" element={<Outsourcing />} />
 
-            {/* ── Sage 100 ERP (legacy + SEO) ── */}
-            <Route path="/Sage-100-Gestion-Commerciale" element={<SageCommerciale />} />
+            {/* ── Sage 100 ERP ── */}
             <Route path="/sage-100-gestion-commerciale" element={<SageCommerciale />} />
 
-            <Route path="/Sage-100-Gestion-comptabilite" element={<SageCompta />} />
+            <Route path="/Sage-100-Gestion-comptabilite" element={<Navigate replace to="/sage-100-comptabilite" />} />
             <Route path="/sage-100-comptabilite" element={<SageCompta />} />
 
-            <Route path="/Sage-BI" element={<SageBI />} />
             <Route path="/sage-bi" element={<SageBI />} />
 
-            <Route path="/Immobilisation" element={<Immobilisation />} />
+            <Route path="/Immobilisation" element={<Navigate replace to="/sage-100-immobilisations" />} />
             <Route path="/sage-100-immobilisations" element={<Immobilisation />} />
 
-            <Route path="/Sage-100-Gestion-Paie-RH" element={<SagePaieRh />} />
+            <Route path="/Sage-100-Gestion-Paie-RH" element={<Navigate replace to="/sage-100-paie-rh" />} />
             <Route path="/sage-100-paie-rh" element={<SagePaieRh />} />
 
-            {/* ── Gestion entreprise (legacy + SEO) ── */}
-            <Route path="/GestionEntreprise" element={<GestionEntreprise />} />
+            {/* ── Gestion entreprise ── */}
+            <Route path="/GestionEntreprise" element={<Navigate replace to="/gestion-entreprise" />} />
             <Route path="/gestion-entreprise" element={<GestionEntreprise />} />
 
             {/* ── Solutions Horoquartz ── */}
@@ -280,11 +305,12 @@ export default function App() {
             <Route path="*" element={<Notfound />} />
           </Routes>
 
+        </Suspense>
       </AnimatePresence>
 
       {/* Devis & Chat */}
       {!loading && <FloatingDevis />}
-      {!loading && <TawkToChat />}
+      {!loading && !IS_PRERENDER && <TawkToChat />}
       <CookieBanner />
     </>
   );
